@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,49 +93,32 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ability_warrior_weaponmastery.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_misc_bag_soulbag.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_potion_107.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_chest_mail_11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_jewelcrafting_gem_37.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_misc_dust_infinite.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_misc_ammo_bullet_06.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_tradeskillitem_02.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_enchant_formulaepic_01.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ability_hunter_wildquiver.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\achievement_quests_completed_06.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_misc_key_15.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_misc_bomb_04.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\inv_inscription_minorglyph17.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="hello.png" />
+    <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />
+    <Content Include="Resources\large_ability_warrior_weaponmastery.jpg" />
+    <Content Include="Resources\large_achievement_bg_captureflag_eos.jpg" />
+    <Content Include="Resources\large_achievement_bg_captureflag_wsg.jpg" />
+    <Content Include="Resources\large_achievement_bg_interruptx_flagcapture_attempts.jpg" />
+    <Content Include="Resources\large_achievement_quests_completed_06.jpg" />
+    <Content Include="Resources\large_inv_chest_mail_11.jpg" />
+    <Content Include="Resources\large_inv_enchant_formulaepic_01.jpg" />
+    <Content Include="Resources\large_inv_inscription_minorglyph17.jpg" />
+    <Content Include="Resources\large_inv_jewelcrafting_gem_37.jpg" />
+    <Content Include="Resources\large_inv_misc_ammo_bullet_06.jpg" />
+    <Content Include="Resources\large_inv_misc_bag_14.jpg" />
+    <Content Include="Resources\large_inv_misc_bag_soulbag.jpg" />
+    <Content Include="Resources\large_inv_misc_bomb_04.jpg" />
+    <Content Include="Resources\large_inv_misc_dust_infinite.jpg" />
+    <Content Include="Resources\large_inv_misc_head_02.jpg" />
+    <Content Include="Resources\large_inv_misc_key_15.jpg" />
+    <Content Include="Resources\large_inv_misc_tournaments_tabard_bloodelf.jpg" />
+    <Content Include="Resources\large_inv_potion_107.jpg" />
+    <Content Include="Resources\large_inv_tradeskillitem_02.jpg" />
+    <Content Include="Resources\medium_achievement_bg_captureflag_eos.jpg" />
+    <Content Include="Resources\medium_achievement_bg_captureflag_wsg.jpg" />
+    <Content Include="Resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg" />
+    <Content Include="Resources\medium_inv_misc_bag_14.jpg" />
+    <Content Include="Resources\medium_inv_misc_head_02.jpg" />
+    <Content Include="Resources\medium_inv_misc_tournaments_tabard_bloodelf.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

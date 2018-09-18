@@ -17,7 +17,6 @@ namespace TIC19
         public Form2(Form1 form1)
         {
             InitializeComponent();
-
             mainForm = form1;
         }
 
@@ -31,6 +30,8 @@ namespace TIC19
         {
             var myCF = new MyClass.Functions(mainForm);
             myCF.UnBlurMainForm();
+            myCF.SelectComboBoxIndexes();
+            myCF.EnableButtons();
         }
     }
 }

@@ -63,9 +63,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ability_hunter_wildquiver {
+        internal static System.Drawing.Bitmap large_ability_hunter_wildquiver {
             get {
-                object obj = ResourceManager.GetObject("ability_hunter_wildquiver", resourceCulture);
+                object obj = ResourceManager.GetObject("large_ability_hunter_wildquiver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ability_warrior_weaponmastery {
+        internal static System.Drawing.Bitmap large_ability_warrior_weaponmastery {
             get {
-                object obj = ResourceManager.GetObject("ability_warrior_weaponmastery", resourceCulture);
+                object obj = ResourceManager.GetObject("large_ability_warrior_weaponmastery", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap achievement_quests_completed_06 {
+        internal static System.Drawing.Bitmap large_achievement_bg_captureflag_eos {
             get {
-                object obj = ResourceManager.GetObject("achievement_quests_completed_06", resourceCulture);
+                object obj = ResourceManager.GetObject("large_achievement_bg_captureflag_eos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hello {
+        internal static System.Drawing.Bitmap large_achievement_bg_captureflag_wsg {
             get {
-                object obj = ResourceManager.GetObject("hello", resourceCulture);
+                object obj = ResourceManager.GetObject("large_achievement_bg_captureflag_wsg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_chest_mail_11 {
+        internal static System.Drawing.Bitmap large_achievement_bg_interruptx_flagcapture_attempts {
             get {
-                object obj = ResourceManager.GetObject("inv_chest_mail_11", resourceCulture);
+                object obj = ResourceManager.GetObject("large_achievement_bg_interruptx_flagcapture_attempts", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_enchant_formulaepic_01 {
+        internal static System.Drawing.Bitmap large_achievement_quests_completed_06 {
             get {
-                object obj = ResourceManager.GetObject("inv_enchant_formulaepic_01", resourceCulture);
+                object obj = ResourceManager.GetObject("large_achievement_quests_completed_06", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_inscription_minorglyph17 {
+        internal static System.Drawing.Bitmap large_inv_chest_mail_11 {
             get {
-                object obj = ResourceManager.GetObject("inv_inscription_minorglyph17", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_chest_mail_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_jewelcrafting_gem_37 {
+        internal static System.Drawing.Bitmap large_inv_enchant_formulaepic_01 {
             get {
-                object obj = ResourceManager.GetObject("inv_jewelcrafting_gem_37", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_enchant_formulaepic_01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_misc_ammo_bullet_06 {
+        internal static System.Drawing.Bitmap large_inv_inscription_minorglyph17 {
             get {
-                object obj = ResourceManager.GetObject("inv_misc_ammo_bullet_06", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_inscription_minorglyph17", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_misc_bag_soulbag {
+        internal static System.Drawing.Bitmap large_inv_jewelcrafting_gem_37 {
             get {
-                object obj = ResourceManager.GetObject("inv_misc_bag_soulbag", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_jewelcrafting_gem_37", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_misc_bomb_04 {
+        internal static System.Drawing.Bitmap large_inv_misc_ammo_bullet_06 {
             get {
-                object obj = ResourceManager.GetObject("inv_misc_bomb_04", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_misc_ammo_bullet_06", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_misc_dust_infinite {
+        internal static System.Drawing.Bitmap large_inv_misc_bag_14 {
             get {
-                object obj = ResourceManager.GetObject("inv_misc_dust_infinite", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_misc_bag_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_misc_key_15 {
+        internal static System.Drawing.Bitmap large_inv_misc_bag_soulbag {
             get {
-                object obj = ResourceManager.GetObject("inv_misc_key_15", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_misc_bag_soulbag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_potion_107 {
+        internal static System.Drawing.Bitmap large_inv_misc_bomb_04 {
             get {
-                object obj = ResourceManager.GetObject("inv_potion_107", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_misc_bomb_04", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,119 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inv_tradeskillitem_02 {
+        internal static System.Drawing.Bitmap large_inv_misc_dust_infinite {
             get {
-                object obj = ResourceManager.GetObject("inv_tradeskillitem_02", resourceCulture);
+                object obj = ResourceManager.GetObject("large_inv_misc_dust_infinite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap large_inv_misc_head_02 {
+            get {
+                object obj = ResourceManager.GetObject("large_inv_misc_head_02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap large_inv_misc_key_15 {
+            get {
+                object obj = ResourceManager.GetObject("large_inv_misc_key_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap large_inv_misc_tournaments_tabard_bloodelf {
+            get {
+                object obj = ResourceManager.GetObject("large_inv_misc_tournaments_tabard_bloodelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap large_inv_potion_107 {
+            get {
+                object obj = ResourceManager.GetObject("large_inv_potion_107", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap large_inv_tradeskillitem_02 {
+            get {
+                object obj = ResourceManager.GetObject("large_inv_tradeskillitem_02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_achievement_bg_captureflag_eos {
+            get {
+                object obj = ResourceManager.GetObject("medium_achievement_bg_captureflag_eos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_achievement_bg_captureflag_wsg {
+            get {
+                object obj = ResourceManager.GetObject("medium_achievement_bg_captureflag_wsg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_achievement_bg_interruptx_flagcapture_attempts {
+            get {
+                object obj = ResourceManager.GetObject("medium_achievement_bg_interruptx_flagcapture_attempts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_inv_misc_bag_14 {
+            get {
+                object obj = ResourceManager.GetObject("medium_inv_misc_bag_14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_inv_misc_head_02 {
+            get {
+                object obj = ResourceManager.GetObject("medium_inv_misc_head_02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_inv_misc_tournaments_tabard_bloodelf {
+            get {
+                object obj = ResourceManager.GetObject("medium_inv_misc_tournaments_tabard_bloodelf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

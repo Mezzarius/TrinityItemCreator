@@ -48,6 +48,7 @@ namespace TIC19.MyClass
             foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = true;
             foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.Enabled = true;
             foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = true;
+            foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
         }
     }
 }

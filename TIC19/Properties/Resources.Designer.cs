@@ -293,9 +293,29 @@ namespace TIC19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medium_inv_misc_bag_09_green {
+            get {
+                object obj = ResourceManager.GetObject("medium_inv_misc_bag_09_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medium_inv_misc_bag_14 {
             get {
                 object obj = ResourceManager.GetObject("medium_inv_misc_bag_14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_inv_misc_enggizmos_26 {
+            get {
+                object obj = ResourceManager.GetObject("medium_inv_misc_enggizmos_26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +336,16 @@ namespace TIC19.Properties {
         internal static System.Drawing.Bitmap medium_inv_misc_tournaments_tabard_bloodelf {
             get {
                 object obj = ResourceManager.GetObject("medium_inv_misc_tournaments_tabard_bloodelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_spell_fire_frostresistancetotem {
+            get {
+                object obj = ResourceManager.GetObject("medium_spell_fire_frostresistancetotem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -118,14 +118,65 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="large_ability_hunter_wildquiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_ability_hunter_wildquiver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_inv_misc_dust_infinite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_dust_infinite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_ability_warrior_weaponmastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_ability_warrior_weaponmastery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_inv_enchant_formulaepic_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_enchant_formulaepic_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large_achievement_bg_captureflag_eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\large_achievement_bg_captureflag_eos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_bag_soulbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_bag_soulbag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_ammo_bullet_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_ammo_bullet_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_achievement_quests_completed_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_achievement_quests_completed_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_achievement_bg_captureflag_eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\medium_achievement_bg_captureflag_eos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_achievement_bg_interruptx_flagcapture_attempts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_achievement_bg_captureflag_wsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\medium_achievement_bg_captureflag_wsg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_key_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_key_15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_bomb_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_bomb_04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_bag_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_bag_14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_inv_misc_enggizmos_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_inv_misc_enggizmos_26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_chest_mail_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_chest_mail_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_tournaments_tabard_bloodelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_misc_tournaments_tabard_bloodelf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_inv_misc_tournaments_tabard_bloodelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\medium_inv_misc_tournaments_tabard_bloodelf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_tradeskillitem_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_tradeskillitem_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\medium_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_jewelcrafting_gem_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_jewelcrafting_gem_37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large_achievement_bg_captureflag_wsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\large_achievement_bg_captureflag_wsg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,67 +184,25 @@
   <data name="large_achievement_bg_interruptx_flagcapture_attempts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\large_achievement_bg_interruptx_flagcapture_attempts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_achievement_quests_completed_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_achievement_quests_completed_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_chest_mail_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_chest_mail_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_enchant_formulaepic_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_enchant_formulaepic_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_inscription_minorglyph17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_inscription_minorglyph17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_jewelcrafting_gem_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_jewelcrafting_gem_37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_ammo_bullet_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_ammo_bullet_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_bag_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_bag_14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_bag_soulbag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_bag_soulbag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_bomb_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_bomb_04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_dust_infinite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_dust_infinite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_key_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_key_15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large_inv_misc_tournaments_tabard_bloodelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_misc_tournaments_tabard_bloodelf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="large_inv_potion_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\large_inv_potion_107.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_inv_tradeskillitem_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\large_inv_tradeskillitem_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medium_achievement_bg_captureflag_eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\medium_achievement_bg_captureflag_eos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medium_achievement_bg_captureflag_wsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\medium_achievement_bg_captureflag_wsg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medium_achievement_bg_interruptx_flagcapture_attempts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_ability_hunter_wildquiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_ability_hunter_wildquiver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medium_inv_misc_bag_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\medium_inv_misc_bag_14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\medium_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_inv_inscription_minorglyph17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_inv_inscription_minorglyph17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium_inv_misc_tournaments_tabard_bloodelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\medium_inv_misc_tournaments_tabard_bloodelf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_ability_warrior_weaponmastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\large_ability_warrior_weaponmastery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_spell_fire_frostresistancetotem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_spell_fire_frostresistancetotem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_inv_misc_bag_09_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_inv_misc_bag_09_green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

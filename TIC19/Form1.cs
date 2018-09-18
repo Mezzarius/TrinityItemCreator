@@ -100,5 +100,17 @@ namespace TIC19
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var wr = new Window_Resistances();
+            wr.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            var woO = new Window_Other_Options();
+            woO.ShowDialog();
+        }
     }
 }

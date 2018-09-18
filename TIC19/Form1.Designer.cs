@@ -55,12 +55,6 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
@@ -105,6 +99,79 @@
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.myTextBox68 = new MyTextBox();
+            this.myTextBox67 = new MyTextBox();
+            this.myTextBox66 = new MyTextBox();
+            this.myTextBox65 = new MyTextBox();
+            this.myTextBox64 = new MyTextBox();
+            this.myTextBox63 = new MyTextBox();
+            this.myTextBox62 = new MyTextBox();
+            this.myTextBox61 = new MyTextBox();
+            this.myTextBox55 = new MyTextBox();
+            this.myTextBox56 = new MyTextBox();
+            this.myTextBox57 = new MyTextBox();
+            this.myTextBox58 = new MyTextBox();
+            this.myTextBox59 = new MyTextBox();
+            this.myTextBox60 = new MyTextBox();
+            this.myTextBox49 = new MyTextBox();
+            this.myTextBox50 = new MyTextBox();
+            this.myTextBox51 = new MyTextBox();
+            this.myTextBox52 = new MyTextBox();
+            this.myTextBox53 = new MyTextBox();
+            this.myTextBox54 = new MyTextBox();
+            this.myTextBox43 = new MyTextBox();
+            this.myTextBox44 = new MyTextBox();
+            this.myTextBox45 = new MyTextBox();
+            this.myTextBox46 = new MyTextBox();
+            this.myTextBox47 = new MyTextBox();
+            this.myTextBox48 = new MyTextBox();
+            this.myTextBox37 = new MyTextBox();
+            this.myTextBox38 = new MyTextBox();
+            this.myTextBox39 = new MyTextBox();
+            this.myTextBox40 = new MyTextBox();
+            this.myTextBox41 = new MyTextBox();
+            this.myTextBox42 = new MyTextBox();
+            this.myTextBox36 = new MyTextBox();
+            this.myTextBox35 = new MyTextBox();
+            this.myTextBox34 = new MyTextBox();
+            this.myTextBox33 = new MyTextBox();
+            this.myTextBox32 = new MyTextBox();
+            this.myTextBox31 = new MyTextBox();
             this.myTextBox30 = new MyTextBox();
             this.myTextBox29 = new MyTextBox();
             this.myTextBox28 = new MyTextBox();
@@ -557,109 +624,12 @@
             this.panel3.Size = new System.Drawing.Size(596, 5);
             this.panel3.TabIndex = 58;
             // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Enabled = false;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TIC19.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(938, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 41);
-            this.button6.TabIndex = 65;
-            this.button6.Text = "Flag Custom Mask";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_eos;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(785, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 41);
-            this.button5.TabIndex = 64;
-            this.button5.Text = "Flag Extra Mask";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_wsg;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(632, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 41);
-            this.button4.TabIndex = 63;
-            this.button4.Text = "Flag Mask";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_14;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(938, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 41);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "Bag Family Mask";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TIC19.Properties.Resources.medium_inv_misc_head_02;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(632, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 41);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Class Mask";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TIC19.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(785, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Race Mask";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Location = new System.Drawing.Point(621, 80);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 550);
+            this.panel4.Size = new System.Drawing.Size(5, 658);
             this.panel4.TabIndex = 66;
             // 
             // label13
@@ -1731,6 +1701,1138 @@
             this.comboBox22.Size = new System.Drawing.Size(388, 21);
             this.comboBox22.TabIndex = 134;
             // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Enabled = false;
+            this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.DimGray;
+            this.label38.Location = new System.Drawing.Point(31, 588);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(73, 17);
+            this.label38.TabIndex = 136;
+            this.label38.Text = "Spell Entry";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Location = new System.Drawing.Point(15, 571);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(596, 5);
+            this.panel8.TabIndex = 130;
+            // 
+            // comboBox23
+            // 
+            this.comboBox23.BackColor = System.Drawing.Color.White;
+            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox23.Enabled = false;
+            this.comboBox23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox23.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
+            "[0] Use",
+            "[1] On Equip",
+            "[2] Chance on Hit",
+            "[4] Soulstone",
+            "[5] Use with no delay",
+            "[6] Learn Spell ID"});
+            this.comboBox23.Location = new System.Drawing.Point(124, 609);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(100, 21);
+            this.comboBox23.TabIndex = 142;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Enabled = false;
+            this.label39.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.DimGray;
+            this.label39.Location = new System.Drawing.Point(231, 589);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(57, 17);
+            this.label39.TabIndex = 144;
+            this.label39.Text = "Charges";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Enabled = false;
+            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.DimGray;
+            this.label40.Location = new System.Drawing.Point(294, 588);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(63, 17);
+            this.label40.TabIndex = 145;
+            this.label40.Text = "ppmRate";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Enabled = false;
+            this.label41.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.DimGray;
+            this.label41.Location = new System.Drawing.Point(367, 588);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(69, 17);
+            this.label41.TabIndex = 147;
+            this.label41.Text = "Cooldown";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Enabled = false;
+            this.label42.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.DimGray;
+            this.label42.Location = new System.Drawing.Point(451, 588);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(64, 17);
+            this.label42.TabIndex = 149;
+            this.label42.Text = "Category";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.Enabled = false;
+            this.label43.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.DimGray;
+            this.label43.Location = new System.Drawing.Point(528, 588);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(85, 17);
+            this.label43.TabIndex = 151;
+            this.label43.Text = "Category CD";
+            // 
+            // comboBox24
+            // 
+            this.comboBox24.BackColor = System.Drawing.Color.White;
+            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox24.Enabled = false;
+            this.comboBox24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox24.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox24.FormattingEnabled = true;
+            this.comboBox24.Items.AddRange(new object[] {
+            "[0] Use",
+            "[1] On Equip",
+            "[2] Chance on Hit",
+            "[4] Soulstone",
+            "[5] Use with no delay",
+            "[6] Learn Spell ID"});
+            this.comboBox24.Location = new System.Drawing.Point(124, 636);
+            this.comboBox24.Name = "comboBox24";
+            this.comboBox24.Size = new System.Drawing.Size(100, 21);
+            this.comboBox24.TabIndex = 154;
+            // 
+            // comboBox25
+            // 
+            this.comboBox25.BackColor = System.Drawing.Color.White;
+            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox25.Enabled = false;
+            this.comboBox25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox25.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Items.AddRange(new object[] {
+            "[0] Use",
+            "[1] On Equip",
+            "[2] Chance on Hit",
+            "[4] Soulstone",
+            "[5] Use with no delay",
+            "[6] Learn Spell ID"});
+            this.comboBox25.Location = new System.Drawing.Point(124, 663);
+            this.comboBox25.Name = "comboBox25";
+            this.comboBox25.Size = new System.Drawing.Size(100, 21);
+            this.comboBox25.TabIndex = 161;
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.BackColor = System.Drawing.Color.White;
+            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox26.Enabled = false;
+            this.comboBox26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox26.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Items.AddRange(new object[] {
+            "[0] Use",
+            "[1] On Equip",
+            "[2] Chance on Hit",
+            "[4] Soulstone",
+            "[5] Use with no delay",
+            "[6] Learn Spell ID"});
+            this.comboBox26.Location = new System.Drawing.Point(124, 690);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(100, 21);
+            this.comboBox26.TabIndex = 168;
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.BackColor = System.Drawing.Color.White;
+            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox27.Enabled = false;
+            this.comboBox27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox27.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Items.AddRange(new object[] {
+            "[0] Use",
+            "[1] On Equip",
+            "[2] Chance on Hit",
+            "[4] Soulstone",
+            "[5] Use with no delay",
+            "[6] Learn Spell ID"});
+            this.comboBox27.Location = new System.Drawing.Point(124, 717);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(100, 21);
+            this.comboBox27.TabIndex = 175;
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.BackColor = System.Drawing.Color.White;
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.Enabled = false;
+            this.comboBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox28.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Prismatic",
+            "[2] Red",
+            "[4] Yellow",
+            "[8] Blue"});
+            this.comboBox28.Location = new System.Drawing.Point(115, 480);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(160, 21);
+            this.comboBox28.TabIndex = 182;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Enabled = false;
+            this.label44.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.DimGray;
+            this.label44.Location = new System.Drawing.Point(61, 480);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(48, 17);
+            this.label44.TabIndex = 181;
+            this.label44.Text = "Socket";
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.BackColor = System.Drawing.Color.White;
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.Enabled = false;
+            this.comboBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox29.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Prismatic",
+            "[2] Red",
+            "[4] Yellow",
+            "[8] Blue"});
+            this.comboBox29.Location = new System.Drawing.Point(283, 480);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(160, 21);
+            this.comboBox29.TabIndex = 184;
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.BackColor = System.Drawing.Color.White;
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.Enabled = false;
+            this.comboBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox30.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Prismatic",
+            "[2] Red",
+            "[4] Yellow",
+            "[8] Blue"});
+            this.comboBox30.Location = new System.Drawing.Point(451, 480);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(160, 21);
+            this.comboBox30.TabIndex = 186;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Enabled = false;
+            this.label47.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.DimGray;
+            this.label47.Location = new System.Drawing.Point(8, 508);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(101, 17);
+            this.label47.TabIndex = 187;
+            this.label47.Text = "Socket Content";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Enabled = false;
+            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.DimGray;
+            this.label45.Location = new System.Drawing.Point(19, 534);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(90, 17);
+            this.label45.TabIndex = 191;
+            this.label45.Text = "Socket Bonus";
+            // 
+            // comboBox31
+            // 
+            this.comboBox31.BackColor = System.Drawing.Color.White;
+            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox31.Enabled = false;
+            this.comboBox31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox31.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[3312] +8 Strength",
+            "[3313] +8 Agility",
+            "[3305] +12 Stamina",
+            "[3353] +8 Intellect",
+            "[2872] +9 Healing",
+            "[3753] +9 Spell Power",
+            "[3877] +16 Attack Power"});
+            this.comboBox31.Location = new System.Drawing.Point(115, 536);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(160, 21);
+            this.comboBox31.TabIndex = 192;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.Location = new System.Drawing.Point(12, 465);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(596, 5);
+            this.panel9.TabIndex = 130;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Enabled = false;
+            this.label46.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.DimGray;
+            this.label46.Location = new System.Drawing.Point(665, 646);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(40, 17);
+            this.label46.TabIndex = 193;
+            this.label46.Text = "Block";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Location = new System.Drawing.Point(632, 636);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(453, 5);
+            this.panel10.TabIndex = 98;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Enabled = false;
+            this.label48.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.DimGray;
+            this.label48.Location = new System.Drawing.Point(768, 646);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(47, 17);
+            this.label48.TabIndex = 195;
+            this.label48.Text = "Armor";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Enabled = false;
+            this.label49.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.DimGray;
+            this.label49.Location = new System.Drawing.Point(857, 646);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(101, 17);
+            this.label49.TabIndex = 197;
+            this.label49.Text = "Armor Modifier";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Enabled = false;
+            this.label50.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.DimGray;
+            this.label50.Location = new System.Drawing.Point(980, 646);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(96, 17);
+            this.label50.TabIndex = 199;
+            this.label50.Text = "Max Durability";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Enabled = false;
+            this.label51.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.DimGray;
+            this.label51.Location = new System.Drawing.Point(632, 695);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(100, 17);
+            this.label51.TabIndex = 203;
+            this.label51.Text = "Container Slots";
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = global::TIC19.Properties.Resources.medium_inv_misc_bag_09_green;
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Enabled = false;
+            this.panel11.Location = new System.Drawing.Point(738, 701);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(38, 38);
+            this.panel11.TabIndex = 205;
+            // 
+            // button10
+            // 
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Enabled = false;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.DimGray;
+            this.button10.Image = global::TIC19.Properties.Resources.medium_inv_misc_enggizmos_26;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button10.Location = new System.Drawing.Point(955, 698);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 41);
+            this.button10.TabIndex = 202;
+            this.button10.Text = "Other Options";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Enabled = false;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.DimGray;
+            this.button9.Image = global::TIC19.Properties.Resources.medium_spell_fire_frostresistancetotem;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button9.Location = new System.Drawing.Point(831, 698);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(118, 41);
+            this.button9.TabIndex = 201;
+            this.button9.Text = "Resistances";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DimGray;
+            this.button6.Image = global::TIC19.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button6.Location = new System.Drawing.Point(938, 127);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 41);
+            this.button6.TabIndex = 65;
+            this.button6.Text = "Flag Custom Mask";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Enabled = false;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.DimGray;
+            this.button5.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button5.Location = new System.Drawing.Point(785, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 64;
+            this.button5.Text = "Flag Extra Mask";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Enabled = false;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
+            this.button4.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(632, 127);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 41);
+            this.button4.TabIndex = 63;
+            this.button4.Text = "Flag Mask";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_14;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.Location = new System.Drawing.Point(938, 80);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 41);
+            this.button3.TabIndex = 62;
+            this.button3.Text = "Bag Family Mask";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Image = global::TIC19.Properties.Resources.medium_inv_misc_head_02;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button2.Location = new System.Drawing.Point(632, 80);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 41);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "Class Mask";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Image = global::TIC19.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(785, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 41);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Race Mask";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // myTextBox68
+            // 
+            this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox68.Enabled = false;
+            this.myTextBox68.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox68.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox68.Location = new System.Drawing.Point(632, 715);
+            this.myTextBox68.Name = "myTextBox68";
+            this.myTextBox68.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox68.TabIndex = 204;
+            this.myTextBox68.Text = "0";
+            this.myTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // myTextBox67
+            // 
+            this.myTextBox67.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox67.Enabled = false;
+            this.myTextBox67.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox67.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox67.Location = new System.Drawing.Point(971, 666);
+            this.myTextBox67.Name = "myTextBox67";
+            this.myTextBox67.Size = new System.Drawing.Size(114, 23);
+            this.myTextBox67.TabIndex = 200;
+            this.myTextBox67.Text = "0";
+            this.myTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox67.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox67.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox66
+            // 
+            this.myTextBox66.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox66.Enabled = false;
+            this.myTextBox66.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox66.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox66.Location = new System.Drawing.Point(851, 666);
+            this.myTextBox66.Name = "myTextBox66";
+            this.myTextBox66.Size = new System.Drawing.Size(114, 23);
+            this.myTextBox66.TabIndex = 198;
+            this.myTextBox66.Text = "0";
+            this.myTextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox66.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox66.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox65
+            // 
+            this.myTextBox65.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox65.Enabled = false;
+            this.myTextBox65.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox65.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox65.Location = new System.Drawing.Point(738, 666);
+            this.myTextBox65.Name = "myTextBox65";
+            this.myTextBox65.Size = new System.Drawing.Size(107, 23);
+            this.myTextBox65.TabIndex = 196;
+            this.myTextBox65.Text = "0";
+            this.myTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox65.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox65.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox64
+            // 
+            this.myTextBox64.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox64.Enabled = false;
+            this.myTextBox64.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox64.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox64.Location = new System.Drawing.Point(632, 666);
+            this.myTextBox64.Name = "myTextBox64";
+            this.myTextBox64.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox64.TabIndex = 194;
+            this.myTextBox64.Text = "0";
+            this.myTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox64.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox64.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox63
+            // 
+            this.myTextBox63.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox63.Enabled = false;
+            this.myTextBox63.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox63.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox63.Location = new System.Drawing.Point(451, 507);
+            this.myTextBox63.Name = "myTextBox63";
+            this.myTextBox63.Size = new System.Drawing.Size(161, 23);
+            this.myTextBox63.TabIndex = 190;
+            this.myTextBox63.Text = "0";
+            this.myTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox63.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox63.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox62
+            // 
+            this.myTextBox62.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox62.Enabled = false;
+            this.myTextBox62.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox62.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox62.Location = new System.Drawing.Point(283, 507);
+            this.myTextBox62.Name = "myTextBox62";
+            this.myTextBox62.Size = new System.Drawing.Size(160, 23);
+            this.myTextBox62.TabIndex = 189;
+            this.myTextBox62.Text = "0";
+            this.myTextBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox62.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox62.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox61
+            // 
+            this.myTextBox61.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox61.Enabled = false;
+            this.myTextBox61.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox61.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox61.Location = new System.Drawing.Point(115, 507);
+            this.myTextBox61.Name = "myTextBox61";
+            this.myTextBox61.Size = new System.Drawing.Size(160, 23);
+            this.myTextBox61.TabIndex = 188;
+            this.myTextBox61.Text = "0";
+            this.myTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox61.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox61.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox55
+            // 
+            this.myTextBox55.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox55.Enabled = false;
+            this.myTextBox55.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox55.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox55.Location = new System.Drawing.Point(526, 716);
+            this.myTextBox55.Name = "myTextBox55";
+            this.myTextBox55.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox55.TabIndex = 180;
+            this.myTextBox55.Text = "0";
+            this.myTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox55.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox55.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox56
+            // 
+            this.myTextBox56.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox56.Enabled = false;
+            this.myTextBox56.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox56.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox56.Location = new System.Drawing.Point(447, 716);
+            this.myTextBox56.Name = "myTextBox56";
+            this.myTextBox56.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox56.TabIndex = 179;
+            this.myTextBox56.Text = "0";
+            this.myTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox56.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox56.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox57
+            // 
+            this.myTextBox57.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox57.Enabled = false;
+            this.myTextBox57.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox57.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox57.Location = new System.Drawing.Point(361, 716);
+            this.myTextBox57.Name = "myTextBox57";
+            this.myTextBox57.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox57.TabIndex = 178;
+            this.myTextBox57.Text = "0";
+            this.myTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox57.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox57.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox58
+            // 
+            this.myTextBox58.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox58.Enabled = false;
+            this.myTextBox58.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox58.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox58.Location = new System.Drawing.Point(295, 716);
+            this.myTextBox58.Name = "myTextBox58";
+            this.myTextBox58.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox58.TabIndex = 177;
+            this.myTextBox58.Text = "0";
+            this.myTextBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox58.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox58.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox59
+            // 
+            this.myTextBox59.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox59.Enabled = false;
+            this.myTextBox59.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox59.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox59.Location = new System.Drawing.Point(229, 716);
+            this.myTextBox59.Name = "myTextBox59";
+            this.myTextBox59.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox59.TabIndex = 176;
+            this.myTextBox59.Text = "0";
+            this.myTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox59.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox59.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox59.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox60
+            // 
+            this.myTextBox60.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox60.Enabled = false;
+            this.myTextBox60.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox60.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox60.Location = new System.Drawing.Point(18, 716);
+            this.myTextBox60.Name = "myTextBox60";
+            this.myTextBox60.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox60.TabIndex = 174;
+            this.myTextBox60.Text = "0";
+            this.myTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox60.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox60.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox49
+            // 
+            this.myTextBox49.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox49.Enabled = false;
+            this.myTextBox49.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox49.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox49.Location = new System.Drawing.Point(526, 689);
+            this.myTextBox49.Name = "myTextBox49";
+            this.myTextBox49.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox49.TabIndex = 173;
+            this.myTextBox49.Text = "0";
+            this.myTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox49.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox49.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox49.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox50
+            // 
+            this.myTextBox50.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox50.Enabled = false;
+            this.myTextBox50.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox50.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox50.Location = new System.Drawing.Point(447, 689);
+            this.myTextBox50.Name = "myTextBox50";
+            this.myTextBox50.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox50.TabIndex = 172;
+            this.myTextBox50.Text = "0";
+            this.myTextBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox50.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox50.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox51
+            // 
+            this.myTextBox51.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox51.Enabled = false;
+            this.myTextBox51.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox51.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox51.Location = new System.Drawing.Point(361, 689);
+            this.myTextBox51.Name = "myTextBox51";
+            this.myTextBox51.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox51.TabIndex = 171;
+            this.myTextBox51.Text = "0";
+            this.myTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox51.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox51.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox52
+            // 
+            this.myTextBox52.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox52.Enabled = false;
+            this.myTextBox52.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox52.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox52.Location = new System.Drawing.Point(295, 689);
+            this.myTextBox52.Name = "myTextBox52";
+            this.myTextBox52.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox52.TabIndex = 170;
+            this.myTextBox52.Text = "0";
+            this.myTextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox52.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox52.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox53
+            // 
+            this.myTextBox53.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox53.Enabled = false;
+            this.myTextBox53.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox53.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox53.Location = new System.Drawing.Point(229, 689);
+            this.myTextBox53.Name = "myTextBox53";
+            this.myTextBox53.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox53.TabIndex = 169;
+            this.myTextBox53.Text = "0";
+            this.myTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox53.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox53.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox54
+            // 
+            this.myTextBox54.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox54.Enabled = false;
+            this.myTextBox54.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox54.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox54.Location = new System.Drawing.Point(18, 689);
+            this.myTextBox54.Name = "myTextBox54";
+            this.myTextBox54.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox54.TabIndex = 167;
+            this.myTextBox54.Text = "0";
+            this.myTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox54.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox54.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox43
+            // 
+            this.myTextBox43.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox43.Enabled = false;
+            this.myTextBox43.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox43.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox43.Location = new System.Drawing.Point(526, 662);
+            this.myTextBox43.Name = "myTextBox43";
+            this.myTextBox43.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox43.TabIndex = 166;
+            this.myTextBox43.Text = "0";
+            this.myTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox43.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox43.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox44
+            // 
+            this.myTextBox44.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox44.Enabled = false;
+            this.myTextBox44.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox44.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox44.Location = new System.Drawing.Point(447, 662);
+            this.myTextBox44.Name = "myTextBox44";
+            this.myTextBox44.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox44.TabIndex = 165;
+            this.myTextBox44.Text = "0";
+            this.myTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox44.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox44.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox45
+            // 
+            this.myTextBox45.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox45.Enabled = false;
+            this.myTextBox45.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox45.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox45.Location = new System.Drawing.Point(361, 662);
+            this.myTextBox45.Name = "myTextBox45";
+            this.myTextBox45.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox45.TabIndex = 164;
+            this.myTextBox45.Text = "0";
+            this.myTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox45.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox45.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox46
+            // 
+            this.myTextBox46.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox46.Enabled = false;
+            this.myTextBox46.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox46.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox46.Location = new System.Drawing.Point(295, 662);
+            this.myTextBox46.Name = "myTextBox46";
+            this.myTextBox46.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox46.TabIndex = 163;
+            this.myTextBox46.Text = "0";
+            this.myTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox46.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox46.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox47
+            // 
+            this.myTextBox47.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox47.Enabled = false;
+            this.myTextBox47.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox47.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox47.Location = new System.Drawing.Point(229, 662);
+            this.myTextBox47.Name = "myTextBox47";
+            this.myTextBox47.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox47.TabIndex = 162;
+            this.myTextBox47.Text = "0";
+            this.myTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox47.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox47.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox48
+            // 
+            this.myTextBox48.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox48.Enabled = false;
+            this.myTextBox48.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox48.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox48.Location = new System.Drawing.Point(18, 662);
+            this.myTextBox48.Name = "myTextBox48";
+            this.myTextBox48.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox48.TabIndex = 160;
+            this.myTextBox48.Text = "0";
+            this.myTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox48.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox48.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox37
+            // 
+            this.myTextBox37.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox37.Enabled = false;
+            this.myTextBox37.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox37.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox37.Location = new System.Drawing.Point(526, 635);
+            this.myTextBox37.Name = "myTextBox37";
+            this.myTextBox37.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox37.TabIndex = 159;
+            this.myTextBox37.Text = "0";
+            this.myTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox37.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox37.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox38
+            // 
+            this.myTextBox38.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox38.Enabled = false;
+            this.myTextBox38.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox38.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox38.Location = new System.Drawing.Point(447, 635);
+            this.myTextBox38.Name = "myTextBox38";
+            this.myTextBox38.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox38.TabIndex = 158;
+            this.myTextBox38.Text = "0";
+            this.myTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox38.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox38.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox39
+            // 
+            this.myTextBox39.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox39.Enabled = false;
+            this.myTextBox39.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox39.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox39.Location = new System.Drawing.Point(361, 635);
+            this.myTextBox39.Name = "myTextBox39";
+            this.myTextBox39.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox39.TabIndex = 157;
+            this.myTextBox39.Text = "0";
+            this.myTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox39.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox39.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox39.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox40
+            // 
+            this.myTextBox40.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox40.Enabled = false;
+            this.myTextBox40.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox40.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox40.Location = new System.Drawing.Point(295, 635);
+            this.myTextBox40.Name = "myTextBox40";
+            this.myTextBox40.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox40.TabIndex = 156;
+            this.myTextBox40.Text = "0";
+            this.myTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox40.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox40.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox41
+            // 
+            this.myTextBox41.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox41.Enabled = false;
+            this.myTextBox41.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox41.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox41.Location = new System.Drawing.Point(229, 635);
+            this.myTextBox41.Name = "myTextBox41";
+            this.myTextBox41.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox41.TabIndex = 155;
+            this.myTextBox41.Text = "0";
+            this.myTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox41.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox41.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox42
+            // 
+            this.myTextBox42.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox42.Enabled = false;
+            this.myTextBox42.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox42.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox42.Location = new System.Drawing.Point(18, 635);
+            this.myTextBox42.Name = "myTextBox42";
+            this.myTextBox42.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox42.TabIndex = 153;
+            this.myTextBox42.Text = "0";
+            this.myTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox42.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox42.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox36
+            // 
+            this.myTextBox36.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox36.Enabled = false;
+            this.myTextBox36.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox36.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox36.Location = new System.Drawing.Point(526, 608);
+            this.myTextBox36.Name = "myTextBox36";
+            this.myTextBox36.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox36.TabIndex = 152;
+            this.myTextBox36.Text = "0";
+            this.myTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox36.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox36.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox35
+            // 
+            this.myTextBox35.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox35.Enabled = false;
+            this.myTextBox35.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox35.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox35.Location = new System.Drawing.Point(447, 608);
+            this.myTextBox35.Name = "myTextBox35";
+            this.myTextBox35.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox35.TabIndex = 150;
+            this.myTextBox35.Text = "0";
+            this.myTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox35.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox35.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox34
+            // 
+            this.myTextBox34.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox34.Enabled = false;
+            this.myTextBox34.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox34.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox34.Location = new System.Drawing.Point(361, 608);
+            this.myTextBox34.Name = "myTextBox34";
+            this.myTextBox34.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox34.TabIndex = 148;
+            this.myTextBox34.Text = "0";
+            this.myTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox34.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox34.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox33
+            // 
+            this.myTextBox33.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox33.Enabled = false;
+            this.myTextBox33.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox33.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox33.Location = new System.Drawing.Point(295, 608);
+            this.myTextBox33.Name = "myTextBox33";
+            this.myTextBox33.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox33.TabIndex = 146;
+            this.myTextBox33.Text = "0";
+            this.myTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox33.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox33.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox32
+            // 
+            this.myTextBox32.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox32.Enabled = false;
+            this.myTextBox32.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox32.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox32.Location = new System.Drawing.Point(229, 608);
+            this.myTextBox32.Name = "myTextBox32";
+            this.myTextBox32.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox32.TabIndex = 143;
+            this.myTextBox32.Text = "0";
+            this.myTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox32.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox32.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox31
+            // 
+            this.myTextBox31.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox31.Enabled = false;
+            this.myTextBox31.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox31.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox31.Location = new System.Drawing.Point(18, 608);
+            this.myTextBox31.Name = "myTextBox31";
+            this.myTextBox31.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox31.TabIndex = 137;
+            this.myTextBox31.Text = "0";
+            this.myTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox31.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox31.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
             // myTextBox30
             // 
             this.myTextBox30.BorderColor = System.Drawing.Color.Gainsboro;
@@ -2198,7 +3300,74 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 639);
+            this.ClientSize = new System.Drawing.Size(1105, 773);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.myTextBox68);
+            this.Controls.Add(this.label51);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.myTextBox67);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.myTextBox66);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.myTextBox65);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.myTextBox64);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.comboBox31);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.myTextBox63);
+            this.Controls.Add(this.myTextBox62);
+            this.Controls.Add(this.myTextBox61);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.comboBox30);
+            this.Controls.Add(this.comboBox29);
+            this.Controls.Add(this.comboBox28);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.myTextBox55);
+            this.Controls.Add(this.myTextBox56);
+            this.Controls.Add(this.myTextBox57);
+            this.Controls.Add(this.myTextBox58);
+            this.Controls.Add(this.myTextBox59);
+            this.Controls.Add(this.comboBox27);
+            this.Controls.Add(this.myTextBox60);
+            this.Controls.Add(this.myTextBox49);
+            this.Controls.Add(this.myTextBox50);
+            this.Controls.Add(this.myTextBox51);
+            this.Controls.Add(this.myTextBox52);
+            this.Controls.Add(this.myTextBox53);
+            this.Controls.Add(this.comboBox26);
+            this.Controls.Add(this.myTextBox54);
+            this.Controls.Add(this.myTextBox43);
+            this.Controls.Add(this.myTextBox44);
+            this.Controls.Add(this.myTextBox45);
+            this.Controls.Add(this.myTextBox46);
+            this.Controls.Add(this.myTextBox47);
+            this.Controls.Add(this.comboBox25);
+            this.Controls.Add(this.myTextBox48);
+            this.Controls.Add(this.myTextBox37);
+            this.Controls.Add(this.myTextBox38);
+            this.Controls.Add(this.myTextBox39);
+            this.Controls.Add(this.myTextBox40);
+            this.Controls.Add(this.myTextBox41);
+            this.Controls.Add(this.comboBox24);
+            this.Controls.Add(this.myTextBox42);
+            this.Controls.Add(this.myTextBox36);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.myTextBox35);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.myTextBox34);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.myTextBox33);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.myTextBox32);
+            this.Controls.Add(this.comboBox23);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.myTextBox31);
+            this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.comboBox22);
             this.Controls.Add(this.label36);
@@ -2311,9 +3480,12 @@
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -2431,6 +3603,73 @@
         public System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.Label label37;
         public System.Windows.Forms.ComboBox comboBox22;
+        public MyTextBox myTextBox31;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Panel panel8;
+        public System.Windows.Forms.ComboBox comboBox23;
+        public MyTextBox myTextBox32;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        public MyTextBox myTextBox33;
+        public MyTextBox myTextBox34;
+        private System.Windows.Forms.Label label41;
+        public MyTextBox myTextBox35;
+        private System.Windows.Forms.Label label42;
+        public MyTextBox myTextBox36;
+        private System.Windows.Forms.Label label43;
+        public MyTextBox myTextBox37;
+        public MyTextBox myTextBox38;
+        public MyTextBox myTextBox39;
+        public MyTextBox myTextBox40;
+        public MyTextBox myTextBox41;
+        public System.Windows.Forms.ComboBox comboBox24;
+        public MyTextBox myTextBox42;
+        public MyTextBox myTextBox43;
+        public MyTextBox myTextBox44;
+        public MyTextBox myTextBox45;
+        public MyTextBox myTextBox46;
+        public MyTextBox myTextBox47;
+        public System.Windows.Forms.ComboBox comboBox25;
+        public MyTextBox myTextBox48;
+        public MyTextBox myTextBox49;
+        public MyTextBox myTextBox50;
+        public MyTextBox myTextBox51;
+        public MyTextBox myTextBox52;
+        public MyTextBox myTextBox53;
+        public System.Windows.Forms.ComboBox comboBox26;
+        public MyTextBox myTextBox54;
+        public MyTextBox myTextBox55;
+        public MyTextBox myTextBox56;
+        public MyTextBox myTextBox57;
+        public MyTextBox myTextBox58;
+        public MyTextBox myTextBox59;
+        public System.Windows.Forms.ComboBox comboBox27;
+        public MyTextBox myTextBox60;
+        public System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.Label label44;
+        public System.Windows.Forms.ComboBox comboBox29;
+        public System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.Label label47;
+        public MyTextBox myTextBox61;
+        public MyTextBox myTextBox62;
+        public MyTextBox myTextBox63;
+        private System.Windows.Forms.Label label45;
+        public System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.Panel panel9;
+        public MyTextBox myTextBox64;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Panel panel10;
+        public MyTextBox myTextBox65;
+        private System.Windows.Forms.Label label48;
+        public MyTextBox myTextBox66;
+        private System.Windows.Forms.Label label49;
+        public MyTextBox myTextBox67;
+        private System.Windows.Forms.Label label50;
+        public System.Windows.Forms.Button button9;
+        public System.Windows.Forms.Button button10;
+        public MyTextBox myTextBox68;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Panel panel11;
     }
 }
 

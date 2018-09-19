@@ -18,9 +18,26 @@ namespace TIC19.MyClass
             mainForm = form1;
         }
 
+        public void BlurMainFormEffect()
+        {
+            //foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = false;
+            //foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = false;
+            //foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.Enabled = false;
+            //foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = false;
+            //foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = false;
+
+            //mainForm.panel1.BackColor = Color.DarkGray;
+        }
+
         public void UnBlurMainForm()
         {
-            mainForm.panel1.BackColor = Color.DarkCyan;
+            foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;
+            foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = true;
+            foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.Enabled = true;
+            foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = true;
+            foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
+
+            //mainForm.panel1.BackColor = Color.DarkCyan;
         }
 
         public string SpliceText(string text, int lineLength)
@@ -37,18 +54,9 @@ namespace TIC19.MyClass
             mainForm.myTextBox4.Text = placeHolder; // Textbox DISPLAY ID
         }
 
-        public void SelectComboBoxIndexes()
+        public void StartupSetComboBoxIndexes()
         {
             foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.SelectedIndex = 0;
-        }
-
-        public void EnableButtons()
-        {
-            foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;
-            foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = true;
-            foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.Enabled = true;
-            foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = true;
-            foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
         }
     }
 }

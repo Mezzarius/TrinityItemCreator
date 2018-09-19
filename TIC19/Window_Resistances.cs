@@ -12,14 +12,31 @@ namespace TIC19
 {
     public partial class Window_Resistances : Form
     {
-        public Window_Resistances()
+        private Form1 mainForm;
+
+        public Window_Resistances(Form1 form1)
         {
             InitializeComponent();
+
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
+
+            mainForm = form1;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected override CreateParams CreateParams
         {
-            this.Close();
+            get
+            {
+                var parms = base.CreateParams;
+                parms.Style &= ~0x02000000;  // Turn off WS_CLIPCHILDREN
+                return parms;
+            }
+        }
+
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Watermark_myTextBox_Leave(object sender, EventArgs e)
@@ -46,6 +63,23 @@ namespace TIC19
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void Window_Resistances_Load(object sender, EventArgs e)
+        {
+            var myCF = new MyClass.Functions(mainForm);
+            myCF.BlurMainFormEffect();
+        }
+
+        private void Window_Resistances_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var myCF = new MyClass.Functions(mainForm);
+            myCF.UnBlurMainForm();
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace TIC19
         {
             InitializeComponent();
 
-            SetStyle( ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
         }
 
         protected override CreateParams CreateParams
@@ -101,16 +101,34 @@ namespace TIC19
             WindowState = FormWindowState.Minimized;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void Button9_Click(object sender, EventArgs e)
         {
-            var wr = new Window_Resistances();
+            var wr = new Window_Resistances(this);
             wr.ShowDialog();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void Button10_Click(object sender, EventArgs e)
         {
-            var woO = new Window_Other_Options();
+            var woO = new Window_Other_Options(this);
             woO.ShowDialog();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            var wcM = new Window_ClassMask(this);
+            wcM.ShowDialog();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            var wbF = new Window_BagFamilyMask(this);
+            wbF.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var wrM = new Window_RaceMask(this);
+            wrM.ShowDialog();
         }
     }
 }

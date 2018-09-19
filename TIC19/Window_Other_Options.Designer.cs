@@ -30,47 +30,49 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.myTextBox25 = new MyTextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.myTextBox1 = new MyTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.myTextBox2 = new MyTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.myTextBox3 = new MyTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.myTextBox4 = new MyTextBox();
-            this.myTextBox5 = new MyTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.myTextBox6 = new MyTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.myTextBox7 = new MyTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.myTextBox8 = new MyTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.myTextBox9 = new MyTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.myTextBox10 = new MyTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.myTextBox11 = new MyTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.myTextBox12 = new MyTextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.myTextBox13 = new MyTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.myTextBox14 = new MyTextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.myTextBox15 = new MyTextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.myTextBox14 = new MyTextBox();
+            this.myTextBox15 = new MyTextBox();
+            this.myTextBox10 = new MyTextBox();
+            this.myTextBox11 = new MyTextBox();
+            this.myTextBox12 = new MyTextBox();
+            this.myTextBox13 = new MyTextBox();
+            this.myTextBox9 = new MyTextBox();
+            this.myTextBox8 = new MyTextBox();
+            this.myTextBox7 = new MyTextBox();
+            this.myTextBox6 = new MyTextBox();
+            this.myTextBox5 = new MyTextBox();
+            this.myTextBox4 = new MyTextBox();
+            this.myTextBox3 = new MyTextBox();
+            this.myTextBox2 = new MyTextBox();
+            this.myTextBox1 = new MyTextBox();
+            this.myTextBox25 = new MyTextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -82,27 +84,12 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label15.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label15.Location = new System.Drawing.Point(216, 9);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(96, 17);
             this.label15.TabIndex = 0;
             this.label15.Text = "Other Options";
-            // 
-            // myTextBox25
-            // 
-            this.myTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox25.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox25.Location = new System.Drawing.Point(154, 49);
-            this.myTextBox25.Name = "myTextBox25";
-            this.myTextBox25.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox25.TabIndex = 119;
-            this.myTextBox25.Text = "0";
-            this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox25.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox25.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label29
             // 
@@ -117,21 +104,6 @@
             this.label29.TabIndex = 118;
             this.label29.Text = "Money Loot Min/Max";
             // 
-            // myTextBox1
-            // 
-            this.myTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox1.Location = new System.Drawing.Point(260, 49);
-            this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox1.TabIndex = 120;
-            this.myTextBox1.Text = "0";
-            this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -144,21 +116,6 @@
             this.label1.TabIndex = 121;
             this.label1.Text = "Lock ID";
             // 
-            // myTextBox2
-            // 
-            this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox2.Location = new System.Drawing.Point(424, 49);
-            this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox2.TabIndex = 122;
-            this.myTextBox2.Text = "0";
-            this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox2.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox2.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -166,21 +123,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(512, 5);
             this.panel2.TabIndex = 123;
-            // 
-            // myTextBox3
-            // 
-            this.myTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox3.Location = new System.Drawing.Point(154, 89);
-            this.myTextBox3.Name = "myTextBox3";
-            this.myTextBox3.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox3.TabIndex = 125;
-            this.myTextBox3.Text = "0";
-            this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox3.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox3.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label2
             // 
@@ -194,36 +136,6 @@
             this.label2.Size = new System.Drawing.Size(138, 17);
             this.label2.TabIndex = 124;
             this.label2.Text = "Page ID Material/Text";
-            // 
-            // myTextBox4
-            // 
-            this.myTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox4.Location = new System.Drawing.Point(260, 89);
-            this.myTextBox4.Name = "myTextBox4";
-            this.myTextBox4.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox4.TabIndex = 126;
-            this.myTextBox4.Text = "0";
-            this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox4.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox4.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
-            // myTextBox5
-            // 
-            this.myTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox5.Location = new System.Drawing.Point(424, 89);
-            this.myTextBox5.Name = "myTextBox5";
-            this.myTextBox5.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox5.TabIndex = 128;
-            this.myTextBox5.Text = "0";
-            this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox5.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox5.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label3
             // 
@@ -245,21 +157,6 @@
             this.panel3.Size = new System.Drawing.Size(512, 5);
             this.panel3.TabIndex = 124;
             // 
-            // myTextBox6
-            // 
-            this.myTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox6.Location = new System.Drawing.Point(12, 150);
-            this.myTextBox6.Name = "myTextBox6";
-            this.myTextBox6.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox6.TabIndex = 130;
-            this.myTextBox6.Text = "0";
-            this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox6.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox6.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -272,21 +169,6 @@
             this.label4.Size = new System.Drawing.Size(94, 17);
             this.label4.TabIndex = 129;
             this.label4.Text = "Start Quest ID";
-            // 
-            // myTextBox7
-            // 
-            this.myTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox7.Location = new System.Drawing.Point(147, 150);
-            this.myTextBox7.Name = "myTextBox7";
-            this.myTextBox7.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox7.TabIndex = 132;
-            this.myTextBox7.Text = "0";
-            this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox7.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox7.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label5
             // 
@@ -301,21 +183,6 @@
             this.label5.TabIndex = 131;
             this.label5.Text = "Req Disenchant Skill";
             // 
-            // myTextBox8
-            // 
-            this.myTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox8.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox8.Location = new System.Drawing.Point(286, 150);
-            this.myTextBox8.Name = "myTextBox8";
-            this.myTextBox8.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox8.TabIndex = 134;
-            this.myTextBox8.Text = "0";
-            this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox8.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox8.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -328,21 +195,6 @@
             this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 133;
             this.label6.Text = "Disenchant ID";
-            // 
-            // myTextBox9
-            // 
-            this.myTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox9.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox9.Location = new System.Drawing.Point(424, 150);
-            this.myTextBox9.Name = "myTextBox9";
-            this.myTextBox9.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox9.TabIndex = 136;
-            this.myTextBox9.Text = "0";
-            this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox9.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox9.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label7
             // 
@@ -357,21 +209,6 @@
             this.label7.TabIndex = 135;
             this.label7.Text = "Gem Properties";
             // 
-            // myTextBox10
-            // 
-            this.myTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox10.Location = new System.Drawing.Point(424, 214);
-            this.myTextBox10.Name = "myTextBox10";
-            this.myTextBox10.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox10.TabIndex = 144;
-            this.myTextBox10.Text = "0";
-            this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox10.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox10.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -384,21 +221,6 @@
             this.label8.Size = new System.Drawing.Size(71, 17);
             this.label8.TabIndex = 143;
             this.label8.Text = "Holiday ID";
-            // 
-            // myTextBox11
-            // 
-            this.myTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox11.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox11.Location = new System.Drawing.Point(286, 214);
-            this.myTextBox11.Name = "myTextBox11";
-            this.myTextBox11.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox11.TabIndex = 142;
-            this.myTextBox11.Text = "0";
-            this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox11.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox11.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label9
             // 
@@ -413,21 +235,6 @@
             this.label9.TabIndex = 141;
             this.label9.Text = "Sound";
             // 
-            // myTextBox12
-            // 
-            this.myTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox12.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox12.Location = new System.Drawing.Point(147, 214);
-            this.myTextBox12.Name = "myTextBox12";
-            this.myTextBox12.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox12.TabIndex = 140;
-            this.myTextBox12.Text = "0";
-            this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox12.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox12.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -440,21 +247,6 @@
             this.label10.Size = new System.Drawing.Size(129, 17);
             this.label10.TabIndex = 139;
             this.label10.Text = "Item Limit Category";
-            // 
-            // myTextBox13
-            // 
-            this.myTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.myTextBox13.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox13.Location = new System.Drawing.Point(12, 214);
-            this.myTextBox13.Name = "myTextBox13";
-            this.myTextBox13.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox13.TabIndex = 138;
-            this.myTextBox13.Text = "0";
-            this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox13.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox13.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // label11
             // 
@@ -485,6 +277,32 @@
             this.panel5.Size = new System.Drawing.Size(512, 5);
             this.panel5.TabIndex = 126;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Enabled = false;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(317, 256);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 17);
+            this.label12.TabIndex = 147;
+            this.label12.Text = "Area";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Enabled = false;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(179, 256);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(35, 17);
+            this.label13.TabIndex = 145;
+            this.label13.Text = "Map";
+            // 
             // myTextBox14
             // 
             this.myTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
@@ -499,19 +317,6 @@
             this.myTextBox14.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox14.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Enabled = false;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(317, 256);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 17);
-            this.label12.TabIndex = 147;
-            this.label12.Text = "Area";
             // 
             // myTextBox15
             // 
@@ -528,39 +333,251 @@
             this.myTextBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox15.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // label13
+            // myTextBox10
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Enabled = false;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(179, 256);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 17);
-            this.label13.TabIndex = 145;
-            this.label13.Text = "Map";
+            this.myTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox10.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox10.Location = new System.Drawing.Point(424, 214);
+            this.myTextBox10.Name = "myTextBox10";
+            this.myTextBox10.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox10.TabIndex = 144;
+            this.myTextBox10.Text = "0";
+            this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox10.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox10.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox11
+            // 
+            this.myTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox11.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox11.Location = new System.Drawing.Point(286, 214);
+            this.myTextBox11.Name = "myTextBox11";
+            this.myTextBox11.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox11.TabIndex = 142;
+            this.myTextBox11.Text = "0";
+            this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox11.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox11.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox12
+            // 
+            this.myTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox12.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox12.Location = new System.Drawing.Point(147, 214);
+            this.myTextBox12.Name = "myTextBox12";
+            this.myTextBox12.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox12.TabIndex = 140;
+            this.myTextBox12.Text = "0";
+            this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox12.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox12.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox13
+            // 
+            this.myTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox13.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox13.Location = new System.Drawing.Point(12, 214);
+            this.myTextBox13.Name = "myTextBox13";
+            this.myTextBox13.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox13.TabIndex = 138;
+            this.myTextBox13.Text = "0";
+            this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox13.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox13.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox9
+            // 
+            this.myTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox9.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox9.Location = new System.Drawing.Point(424, 150);
+            this.myTextBox9.Name = "myTextBox9";
+            this.myTextBox9.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox9.TabIndex = 136;
+            this.myTextBox9.Text = "0";
+            this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox9.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox9.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox8
+            // 
+            this.myTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox8.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox8.Location = new System.Drawing.Point(286, 150);
+            this.myTextBox8.Name = "myTextBox8";
+            this.myTextBox8.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox8.TabIndex = 134;
+            this.myTextBox8.Text = "0";
+            this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox8.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox8.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox7
+            // 
+            this.myTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox7.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox7.Location = new System.Drawing.Point(147, 150);
+            this.myTextBox7.Name = "myTextBox7";
+            this.myTextBox7.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox7.TabIndex = 132;
+            this.myTextBox7.Text = "0";
+            this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox7.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox7.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox6
+            // 
+            this.myTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox6.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox6.Location = new System.Drawing.Point(12, 150);
+            this.myTextBox6.Name = "myTextBox6";
+            this.myTextBox6.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox6.TabIndex = 130;
+            this.myTextBox6.Text = "0";
+            this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox6.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox6.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox5
+            // 
+            this.myTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox5.Location = new System.Drawing.Point(424, 89);
+            this.myTextBox5.Name = "myTextBox5";
+            this.myTextBox5.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox5.TabIndex = 128;
+            this.myTextBox5.Text = "0";
+            this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox5.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox5.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox4
+            // 
+            this.myTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox4.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox4.Location = new System.Drawing.Point(260, 89);
+            this.myTextBox4.Name = "myTextBox4";
+            this.myTextBox4.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox4.TabIndex = 126;
+            this.myTextBox4.Text = "0";
+            this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox4.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox4.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox3
+            // 
+            this.myTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox3.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox3.Location = new System.Drawing.Point(154, 89);
+            this.myTextBox3.Name = "myTextBox3";
+            this.myTextBox3.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox3.TabIndex = 125;
+            this.myTextBox3.Text = "0";
+            this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox3.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox3.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox2
+            // 
+            this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox2.Location = new System.Drawing.Point(424, 49);
+            this.myTextBox2.Name = "myTextBox2";
+            this.myTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox2.TabIndex = 122;
+            this.myTextBox2.Text = "0";
+            this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox2.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox2.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox1
+            // 
+            this.myTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox1.Location = new System.Drawing.Point(260, 49);
+            this.myTextBox1.Name = "myTextBox1";
+            this.myTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox1.TabIndex = 120;
+            this.myTextBox1.Text = "0";
+            this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // myTextBox25
+            // 
+            this.myTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox25.ForeColor = System.Drawing.Color.DimGray;
+            this.myTextBox25.Location = new System.Drawing.Point(154, 49);
+            this.myTextBox25.Name = "myTextBox25";
+            this.myTextBox25.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox25.TabIndex = 119;
+            this.myTextBox25.Text = "0";
+            this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox25.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox25.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Silver;
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 320);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(543, 36);
+            this.panel6.TabIndex = 152;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(219, 317);
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(219, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 34);
-            this.button1.TabIndex = 149;
-            this.button1.Text = "OK, DONE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 151;
+            this.button1.Text = "OK DONE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // Window_Other_Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(543, 363);
+            this.ClientSize = new System.Drawing.Size(543, 356);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.myTextBox14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.myTextBox15);
@@ -605,8 +622,11 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_Other_Options";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_Other_Options_FormClosed);
+            this.Load += new System.EventHandler(this.Window_Other_Options_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -650,6 +670,7 @@
         private System.Windows.Forms.Label label12;
         public MyTextBox myTextBox15;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -23,15 +23,16 @@ namespace TIC19
         private void Button16_Click(object sender, EventArgs e)
         {
             //Application.Exit();
-            this.Close();
+            var myCF = new MyClass.Functions(mainForm);
+            myCF.StartupSetComboBoxIndexes();
+
+            Close();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             var myCF = new MyClass.Functions(mainForm);
             myCF.UnBlurMainForm();
-            myCF.SelectComboBoxIndexes();
-            myCF.EnableButtons();
         }
     }
 }

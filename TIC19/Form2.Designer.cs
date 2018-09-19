@@ -399,6 +399,7 @@
             this.button15.BackColor = System.Drawing.Color.CadetBlue;
             this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Location = new System.Drawing.Point(12, 7);
             this.button15.Name = "button15";

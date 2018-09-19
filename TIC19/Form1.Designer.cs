@@ -44,52 +44,35 @@
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -114,7 +97,6 @@
             this.comboBox28 = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.comboBox31 = new System.Windows.Forms.ComboBox();
@@ -125,15 +107,24 @@
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -202,6 +193,15 @@
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -370,7 +370,7 @@
             this.comboBox1.Location = new System.Drawing.Point(295, 139);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(317, 21);
-            this.comboBox1.TabIndex = 41;
+            this.comboBox1.TabIndex = 4;
             // 
             // label5
             // 
@@ -416,7 +416,7 @@
             this.comboBox2.Location = new System.Drawing.Point(115, 185);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(146, 21);
-            this.comboBox2.TabIndex = 43;
+            this.comboBox2.TabIndex = 5;
             // 
             // label7
             // 
@@ -430,26 +430,6 @@
             this.label7.Size = new System.Drawing.Size(50, 17);
             this.label7.TabIndex = 46;
             this.label7.Text = "Sheath";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Enabled = false;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "[0] (none)",
-            "[1] Two Handed Weapon",
-            "[2] Staff",
-            "[3] One Handed",
-            "[4] Shield",
-            "[5] Enchanter\'s Rod",
-            "[6] Off hand"});
-            this.comboBox3.Location = new System.Drawing.Point(338, 185);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(274, 21);
-            this.comboBox3.TabIndex = 45;
             // 
             // label8
             // 
@@ -490,36 +470,6 @@
             this.label10.TabIndex = 52;
             this.label10.Text = "Class";
             // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Enabled = false;
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "[0] Consumable",
-            "[1] Container",
-            "[2] Weapon",
-            "[3] Gem",
-            "[4] Armor",
-            "[5] Reagent",
-            "[6] Projectile",
-            "[7] Trade Goods",
-            "[8] Generic(OBSOLETE)",
-            "[9] Recipe",
-            "[10] Money(OBSOLETE)",
-            "[11] Quiver",
-            "[12] Quest",
-            "[13] Key",
-            "[14] Permanent(OBSOLETE)",
-            "[15] Miscellaneous",
-            "[16] Glyph"});
-            this.comboBox4.Location = new System.Drawing.Point(338, 212);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(274, 21);
-            this.comboBox4.TabIndex = 51;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -532,26 +482,6 @@
             this.label11.Size = new System.Drawing.Size(59, 17);
             this.label11.TabIndex = 54;
             this.label11.Text = "Subclass";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Enabled = false;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "[0] (none)",
-            "[1] Two Handed Weapon",
-            "[2] Staff",
-            "[3] One Handed",
-            "[4] Shield",
-            "[5] Enchanter\'s Rod",
-            "[6] Off hand"});
-            this.comboBox5.Location = new System.Drawing.Point(338, 239);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(274, 21);
-            this.comboBox5.TabIndex = 53;
             // 
             // label12
             // 
@@ -606,7 +536,7 @@
             this.comboBox6.Location = new System.Drawing.Point(115, 270);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(497, 21);
-            this.comboBox6.TabIndex = 55;
+            this.comboBox6.TabIndex = 11;
             // 
             // panel2
             // 
@@ -631,19 +561,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 658);
             this.panel4.TabIndex = 66;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Enabled = false;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(632, 185);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 17);
-            this.label13.TabIndex = 68;
-            this.label13.Text = "Stat";
             // 
             // comboBox7
             // 
@@ -701,20 +618,7 @@
             this.comboBox7.Location = new System.Drawing.Point(670, 185);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(308, 21);
-            this.comboBox7.TabIndex = 67;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Enabled = false;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(632, 212);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 17);
-            this.label14.TabIndex = 71;
-            this.label14.Text = "Stat";
+            this.comboBox7.TabIndex = 69;
             // 
             // comboBox8
             // 
@@ -772,20 +676,7 @@
             this.comboBox8.Location = new System.Drawing.Point(670, 212);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(308, 21);
-            this.comboBox8.TabIndex = 70;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Enabled = false;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(632, 239);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(32, 17);
-            this.label16.TabIndex = 74;
-            this.label16.Text = "Stat";
+            this.comboBox8.TabIndex = 71;
             // 
             // comboBox9
             // 
@@ -845,19 +736,6 @@
             this.comboBox9.Size = new System.Drawing.Size(308, 21);
             this.comboBox9.TabIndex = 73;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Enabled = false;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(632, 266);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 17);
-            this.label17.TabIndex = 77;
-            this.label17.Text = "Stat";
-            // 
             // comboBox10
             // 
             this.comboBox10.BackColor = System.Drawing.Color.White;
@@ -914,20 +792,7 @@
             this.comboBox10.Location = new System.Drawing.Point(670, 266);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(308, 21);
-            this.comboBox10.TabIndex = 76;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Enabled = false;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(632, 293);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(32, 17);
-            this.label18.TabIndex = 80;
-            this.label18.Text = "Stat";
+            this.comboBox10.TabIndex = 75;
             // 
             // comboBox11
             // 
@@ -985,20 +850,7 @@
             this.comboBox11.Location = new System.Drawing.Point(670, 293);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(308, 21);
-            this.comboBox11.TabIndex = 79;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Enabled = false;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(632, 320);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(32, 17);
-            this.label19.TabIndex = 83;
-            this.label19.Text = "Stat";
+            this.comboBox11.TabIndex = 77;
             // 
             // comboBox12
             // 
@@ -1056,20 +908,7 @@
             this.comboBox12.Location = new System.Drawing.Point(670, 320);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(308, 21);
-            this.comboBox12.TabIndex = 82;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Enabled = false;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(632, 347);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(32, 17);
-            this.label20.TabIndex = 86;
-            this.label20.Text = "Stat";
+            this.comboBox12.TabIndex = 79;
             // 
             // comboBox13
             // 
@@ -1127,20 +966,7 @@
             this.comboBox13.Location = new System.Drawing.Point(670, 347);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(308, 21);
-            this.comboBox13.TabIndex = 85;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Enabled = false;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(632, 374);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(32, 17);
-            this.label21.TabIndex = 89;
-            this.label21.Text = "Stat";
+            this.comboBox13.TabIndex = 81;
             // 
             // comboBox14
             // 
@@ -1198,20 +1024,7 @@
             this.comboBox14.Location = new System.Drawing.Point(670, 374);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(308, 21);
-            this.comboBox14.TabIndex = 88;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Enabled = false;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(632, 401);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(32, 17);
-            this.label22.TabIndex = 92;
-            this.label22.Text = "Stat";
+            this.comboBox14.TabIndex = 83;
             // 
             // comboBox15
             // 
@@ -1269,20 +1082,7 @@
             this.comboBox15.Location = new System.Drawing.Point(670, 401);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(308, 21);
-            this.comboBox15.TabIndex = 91;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Enabled = false;
-            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(632, 428);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 17);
-            this.label23.TabIndex = 95;
-            this.label23.Text = "Stat";
+            this.comboBox15.TabIndex = 85;
             // 
             // comboBox16
             // 
@@ -1340,7 +1140,7 @@
             this.comboBox16.Location = new System.Drawing.Point(670, 428);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(308, 21);
-            this.comboBox16.TabIndex = 94;
+            this.comboBox16.TabIndex = 87;
             // 
             // panel5
             // 
@@ -1349,19 +1149,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(453, 5);
             this.panel5.TabIndex = 97;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Enabled = false;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(632, 516);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(96, 17);
-            this.label24.TabIndex = 98;
-            this.label24.Text = "DMG Min/Max";
             // 
             // label25
             // 
@@ -1395,7 +1182,7 @@
             this.comboBox17.Location = new System.Drawing.Point(946, 516);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(139, 21);
-            this.comboBox17.TabIndex = 104;
+            this.comboBox17.TabIndex = 93;
             // 
             // comboBox18
             // 
@@ -1416,7 +1203,7 @@
             this.comboBox18.Location = new System.Drawing.Point(946, 545);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(139, 21);
-            this.comboBox18.TabIndex = 105;
+            this.comboBox18.TabIndex = 96;
             // 
             // comboBox19
             // 
@@ -1433,7 +1220,7 @@
             this.comboBox19.Location = new System.Drawing.Point(879, 606);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(100, 21);
-            this.comboBox19.TabIndex = 107;
+            this.comboBox19.TabIndex = 98;
             // 
             // label26
             // 
@@ -1461,19 +1248,6 @@
             this.label27.TabIndex = 110;
             this.label27.Text = "Speed";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Enabled = false;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.DimGray;
-            this.label28.Location = new System.Drawing.Point(684, 464);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(190, 17);
-            this.label28.TabIndex = 112;
-            this.label28.Text = "Scaling Stat Distribution/Value";
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1486,19 +1260,6 @@
             this.label29.Size = new System.Drawing.Size(64, 17);
             this.label29.TabIndex = 116;
             this.label29.Text = "Buy Price";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Enabled = false;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.DimGray;
-            this.label31.Location = new System.Drawing.Point(433, 316);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 17);
-            this.label31.TabIndex = 120;
-            this.label31.Text = "Buy Count";
             // 
             // label30
             // 
@@ -1525,19 +1286,6 @@
             this.label32.Size = new System.Drawing.Size(65, 17);
             this.label32.TabIndex = 124;
             this.label32.Text = "Stackable";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Enabled = false;
-            this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.DimGray;
-            this.label33.Location = new System.Drawing.Point(430, 359);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 17);
-            this.label33.TabIndex = 126;
-            this.label33.Text = "Max Count";
             // 
             // panel6
             // 
@@ -1595,7 +1343,7 @@
             this.comboBox20.Location = new System.Drawing.Point(115, 406);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(100, 21);
-            this.comboBox20.TabIndex = 130;
+            this.comboBox20.TabIndex = 18;
             // 
             // panel7
             // 
@@ -1639,7 +1387,7 @@
             this.comboBox21.Location = new System.Drawing.Point(315, 406);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(296, 21);
-            this.comboBox21.TabIndex = 132;
+            this.comboBox21.TabIndex = 19;
             // 
             // label37
             // 
@@ -1699,7 +1447,7 @@
             this.comboBox22.Location = new System.Drawing.Point(224, 435);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(388, 21);
-            this.comboBox22.TabIndex = 134;
+            this.comboBox22.TabIndex = 20;
             // 
             // label38
             // 
@@ -1740,7 +1488,7 @@
             this.comboBox23.Location = new System.Drawing.Point(124, 609);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(100, 21);
-            this.comboBox23.TabIndex = 142;
+            this.comboBox23.TabIndex = 29;
             // 
             // label39
             // 
@@ -1825,7 +1573,7 @@
             this.comboBox24.Location = new System.Drawing.Point(124, 636);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(100, 21);
-            this.comboBox24.TabIndex = 154;
+            this.comboBox24.TabIndex = 36;
             // 
             // comboBox25
             // 
@@ -1845,7 +1593,7 @@
             this.comboBox25.Location = new System.Drawing.Point(124, 663);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(100, 21);
-            this.comboBox25.TabIndex = 161;
+            this.comboBox25.TabIndex = 43;
             // 
             // comboBox26
             // 
@@ -1865,7 +1613,7 @@
             this.comboBox26.Location = new System.Drawing.Point(124, 690);
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(100, 21);
-            this.comboBox26.TabIndex = 168;
+            this.comboBox26.TabIndex = 50;
             // 
             // comboBox27
             // 
@@ -1885,7 +1633,7 @@
             this.comboBox27.Location = new System.Drawing.Point(124, 717);
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(100, 21);
-            this.comboBox27.TabIndex = 175;
+            this.comboBox27.TabIndex = 57;
             // 
             // comboBox28
             // 
@@ -1904,7 +1652,7 @@
             this.comboBox28.Location = new System.Drawing.Point(115, 480);
             this.comboBox28.Name = "comboBox28";
             this.comboBox28.Size = new System.Drawing.Size(160, 21);
-            this.comboBox28.TabIndex = 182;
+            this.comboBox28.TabIndex = 21;
             // 
             // label44
             // 
@@ -1936,26 +1684,7 @@
             this.comboBox29.Location = new System.Drawing.Point(283, 480);
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(160, 21);
-            this.comboBox29.TabIndex = 184;
-            // 
-            // comboBox30
-            // 
-            this.comboBox30.BackColor = System.Drawing.Color.White;
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.Enabled = false;
-            this.comboBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox30.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
-            "[0] (none)",
-            "[1] Prismatic",
-            "[2] Red",
-            "[4] Yellow",
-            "[8] Blue"});
-            this.comboBox30.Location = new System.Drawing.Point(451, 480);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(160, 21);
-            this.comboBox30.TabIndex = 186;
+            this.comboBox29.TabIndex = 22;
             // 
             // label47
             // 
@@ -2003,7 +1732,7 @@
             this.comboBox31.Location = new System.Drawing.Point(115, 536);
             this.comboBox31.Name = "comboBox31";
             this.comboBox31.Size = new System.Drawing.Size(160, 21);
-            this.comboBox31.TabIndex = 192;
+            this.comboBox31.TabIndex = 27;
             // 
             // panel9
             // 
@@ -2086,147 +1815,276 @@
             this.label51.TabIndex = 203;
             this.label51.Text = "Container Slots";
             // 
-            // panel11
+            // comboBox30
             // 
-            this.panel11.BackgroundImage = global::TIC19.Properties.Resources.medium_inv_misc_bag_09_green;
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Enabled = false;
-            this.panel11.Location = new System.Drawing.Point(738, 701);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(38, 38);
-            this.panel11.TabIndex = 205;
+            this.comboBox30.BackColor = System.Drawing.Color.White;
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.Enabled = false;
+            this.comboBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox30.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Prismatic",
+            "[2] Red",
+            "[4] Yellow",
+            "[8] Blue"});
+            this.comboBox30.Location = new System.Drawing.Point(451, 480);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(160, 21);
+            this.comboBox30.TabIndex = 23;
             // 
-            // button10
+            // label33
             // 
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Enabled = false;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.DimGray;
-            this.button10.Image = global::TIC19.Properties.Resources.medium_inv_misc_enggizmos_26;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button10.Location = new System.Drawing.Point(955, 698);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 41);
-            this.button10.TabIndex = 202;
-            this.button10.Text = "Other Options";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Enabled = false;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.DimGray;
+            this.label33.Location = new System.Drawing.Point(430, 359);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(75, 17);
+            this.label33.TabIndex = 126;
+            this.label33.Text = "Max Count";
             // 
-            // button9
+            // label31
             // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Enabled = false;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.DimGray;
-            this.button9.Image = global::TIC19.Properties.Resources.medium_spell_fire_frostresistancetotem;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.Location = new System.Drawing.Point(831, 698);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(118, 41);
-            this.button9.TabIndex = 201;
-            this.button9.Text = "Resistances";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Enabled = false;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.DimGray;
+            this.label31.Location = new System.Drawing.Point(433, 316);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 17);
+            this.label31.TabIndex = 120;
+            this.label31.Text = "Buy Count";
             // 
-            // button6
+            // label28
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Enabled = false;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TIC19.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(938, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 41);
-            this.button6.TabIndex = 65;
-            this.button6.Text = "Flag Custom Mask";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Enabled = false;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.DimGray;
+            this.label28.Location = new System.Drawing.Point(684, 464);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(190, 17);
+            this.label28.TabIndex = 112;
+            this.label28.Text = "Scaling Stat Distribution/Value";
             // 
-            // button5
+            // label24
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_eos;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(785, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 41);
-            this.button5.TabIndex = 64;
-            this.button5.Text = "Flag Extra Mask";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Enabled = false;
+            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DimGray;
+            this.label24.Location = new System.Drawing.Point(632, 516);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(96, 17);
+            this.label24.TabIndex = 98;
+            this.label24.Text = "DMG Min/Max";
             // 
-            // button4
+            // label23
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_wsg;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(632, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 41);
-            this.button4.TabIndex = 63;
-            this.button4.Text = "Flag Mask";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Enabled = false;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DimGray;
+            this.label23.Location = new System.Drawing.Point(632, 428);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(32, 17);
+            this.label23.TabIndex = 95;
+            this.label23.Text = "Stat";
             // 
-            // button3
+            // label22
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_14;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(938, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 41);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "Bag Family Mask";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Enabled = false;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DimGray;
+            this.label22.Location = new System.Drawing.Point(632, 401);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(32, 17);
+            this.label22.TabIndex = 92;
+            this.label22.Text = "Stat";
             // 
-            // button2
+            // label21
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TIC19.Properties.Resources.medium_inv_misc_head_02;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(632, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 41);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Class Mask";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Enabled = false;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DimGray;
+            this.label21.Location = new System.Drawing.Point(632, 374);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(32, 17);
+            this.label21.TabIndex = 89;
+            this.label21.Text = "Stat";
             // 
-            // button1
+            // label20
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TIC19.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(785, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Race Mask";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Enabled = false;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DimGray;
+            this.label20.Location = new System.Drawing.Point(632, 347);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(32, 17);
+            this.label20.TabIndex = 86;
+            this.label20.Text = "Stat";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Enabled = false;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DimGray;
+            this.label19.Location = new System.Drawing.Point(632, 320);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(32, 17);
+            this.label19.TabIndex = 83;
+            this.label19.Text = "Stat";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Enabled = false;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DimGray;
+            this.label18.Location = new System.Drawing.Point(632, 293);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(32, 17);
+            this.label18.TabIndex = 80;
+            this.label18.Text = "Stat";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Enabled = false;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DimGray;
+            this.label17.Location = new System.Drawing.Point(632, 266);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 17);
+            this.label17.TabIndex = 77;
+            this.label17.Text = "Stat";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Enabled = false;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
+            this.label16.Location = new System.Drawing.Point(632, 239);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(32, 17);
+            this.label16.TabIndex = 74;
+            this.label16.Text = "Stat";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Enabled = false;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
+            this.label14.Location = new System.Drawing.Point(632, 212);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 17);
+            this.label14.TabIndex = 71;
+            this.label14.Text = "Stat";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Enabled = false;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(632, 185);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(32, 17);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "Stat";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Enabled = false;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Two Handed Weapon",
+            "[2] Staff",
+            "[3] One Handed",
+            "[4] Shield",
+            "[5] Enchanter\'s Rod",
+            "[6] Off hand"});
+            this.comboBox5.Location = new System.Drawing.Point(338, 239);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(274, 21);
+            this.comboBox5.TabIndex = 10;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Enabled = false;
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "[0] Consumable",
+            "[1] Container",
+            "[2] Weapon",
+            "[3] Gem",
+            "[4] Armor",
+            "[5] Reagent",
+            "[6] Projectile",
+            "[7] Trade Goods",
+            "[8] Generic(OBSOLETE)",
+            "[9] Recipe",
+            "[10] Money(OBSOLETE)",
+            "[11] Quiver",
+            "[12] Quest",
+            "[13] Key",
+            "[14] Permanent(OBSOLETE)",
+            "[15] Miscellaneous",
+            "[16] Glyph"});
+            this.comboBox4.Location = new System.Drawing.Point(338, 212);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(274, 21);
+            this.comboBox4.TabIndex = 8;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Enabled = false;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "[0] (none)",
+            "[1] Two Handed Weapon",
+            "[2] Staff",
+            "[3] One Handed",
+            "[4] Shield",
+            "[5] Enchanter\'s Rod",
+            "[6] Off hand"});
+            this.comboBox3.Location = new System.Drawing.Point(338, 185);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(274, 21);
+            this.comboBox3.TabIndex = 6;
             // 
             // myTextBox68
             // 
@@ -2237,7 +2095,7 @@
             this.myTextBox68.Location = new System.Drawing.Point(632, 715);
             this.myTextBox68.Name = "myTextBox68";
             this.myTextBox68.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox68.TabIndex = 204;
+            this.myTextBox68.TabIndex = 104;
             this.myTextBox68.Text = "0";
             this.myTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2250,7 +2108,7 @@
             this.myTextBox67.Location = new System.Drawing.Point(971, 666);
             this.myTextBox67.Name = "myTextBox67";
             this.myTextBox67.Size = new System.Drawing.Size(114, 23);
-            this.myTextBox67.TabIndex = 200;
+            this.myTextBox67.TabIndex = 103;
             this.myTextBox67.Text = "0";
             this.myTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox67.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2266,7 +2124,7 @@
             this.myTextBox66.Location = new System.Drawing.Point(851, 666);
             this.myTextBox66.Name = "myTextBox66";
             this.myTextBox66.Size = new System.Drawing.Size(114, 23);
-            this.myTextBox66.TabIndex = 198;
+            this.myTextBox66.TabIndex = 102;
             this.myTextBox66.Text = "0";
             this.myTextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox66.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2282,7 +2140,7 @@
             this.myTextBox65.Location = new System.Drawing.Point(738, 666);
             this.myTextBox65.Name = "myTextBox65";
             this.myTextBox65.Size = new System.Drawing.Size(107, 23);
-            this.myTextBox65.TabIndex = 196;
+            this.myTextBox65.TabIndex = 101;
             this.myTextBox65.Text = "0";
             this.myTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox65.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2298,7 +2156,7 @@
             this.myTextBox64.Location = new System.Drawing.Point(632, 666);
             this.myTextBox64.Name = "myTextBox64";
             this.myTextBox64.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox64.TabIndex = 194;
+            this.myTextBox64.TabIndex = 100;
             this.myTextBox64.Text = "0";
             this.myTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox64.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2314,7 +2172,7 @@
             this.myTextBox63.Location = new System.Drawing.Point(451, 507);
             this.myTextBox63.Name = "myTextBox63";
             this.myTextBox63.Size = new System.Drawing.Size(161, 23);
-            this.myTextBox63.TabIndex = 190;
+            this.myTextBox63.TabIndex = 26;
             this.myTextBox63.Text = "0";
             this.myTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox63.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2330,7 +2188,7 @@
             this.myTextBox62.Location = new System.Drawing.Point(283, 507);
             this.myTextBox62.Name = "myTextBox62";
             this.myTextBox62.Size = new System.Drawing.Size(160, 23);
-            this.myTextBox62.TabIndex = 189;
+            this.myTextBox62.TabIndex = 25;
             this.myTextBox62.Text = "0";
             this.myTextBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox62.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2346,7 +2204,7 @@
             this.myTextBox61.Location = new System.Drawing.Point(115, 507);
             this.myTextBox61.Name = "myTextBox61";
             this.myTextBox61.Size = new System.Drawing.Size(160, 23);
-            this.myTextBox61.TabIndex = 188;
+            this.myTextBox61.TabIndex = 24;
             this.myTextBox61.Text = "0";
             this.myTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox61.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2362,7 +2220,7 @@
             this.myTextBox55.Location = new System.Drawing.Point(526, 716);
             this.myTextBox55.Name = "myTextBox55";
             this.myTextBox55.Size = new System.Drawing.Size(89, 23);
-            this.myTextBox55.TabIndex = 180;
+            this.myTextBox55.TabIndex = 62;
             this.myTextBox55.Text = "0";
             this.myTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox55.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2378,7 +2236,7 @@
             this.myTextBox56.Location = new System.Drawing.Point(447, 716);
             this.myTextBox56.Name = "myTextBox56";
             this.myTextBox56.Size = new System.Drawing.Size(73, 23);
-            this.myTextBox56.TabIndex = 179;
+            this.myTextBox56.TabIndex = 61;
             this.myTextBox56.Text = "0";
             this.myTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox56.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2394,7 +2252,7 @@
             this.myTextBox57.Location = new System.Drawing.Point(361, 716);
             this.myTextBox57.Name = "myTextBox57";
             this.myTextBox57.Size = new System.Drawing.Size(81, 23);
-            this.myTextBox57.TabIndex = 178;
+            this.myTextBox57.TabIndex = 60;
             this.myTextBox57.Text = "0";
             this.myTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox57.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2410,7 +2268,7 @@
             this.myTextBox58.Location = new System.Drawing.Point(295, 716);
             this.myTextBox58.Name = "myTextBox58";
             this.myTextBox58.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox58.TabIndex = 177;
+            this.myTextBox58.TabIndex = 59;
             this.myTextBox58.Text = "0";
             this.myTextBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox58.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2426,7 +2284,7 @@
             this.myTextBox59.Location = new System.Drawing.Point(229, 716);
             this.myTextBox59.Name = "myTextBox59";
             this.myTextBox59.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox59.TabIndex = 176;
+            this.myTextBox59.TabIndex = 58;
             this.myTextBox59.Text = "0";
             this.myTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox59.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2442,7 +2300,7 @@
             this.myTextBox60.Location = new System.Drawing.Point(18, 716);
             this.myTextBox60.Name = "myTextBox60";
             this.myTextBox60.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox60.TabIndex = 174;
+            this.myTextBox60.TabIndex = 56;
             this.myTextBox60.Text = "0";
             this.myTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox60.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2458,7 +2316,7 @@
             this.myTextBox49.Location = new System.Drawing.Point(526, 689);
             this.myTextBox49.Name = "myTextBox49";
             this.myTextBox49.Size = new System.Drawing.Size(89, 23);
-            this.myTextBox49.TabIndex = 173;
+            this.myTextBox49.TabIndex = 55;
             this.myTextBox49.Text = "0";
             this.myTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox49.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2474,7 +2332,7 @@
             this.myTextBox50.Location = new System.Drawing.Point(447, 689);
             this.myTextBox50.Name = "myTextBox50";
             this.myTextBox50.Size = new System.Drawing.Size(73, 23);
-            this.myTextBox50.TabIndex = 172;
+            this.myTextBox50.TabIndex = 54;
             this.myTextBox50.Text = "0";
             this.myTextBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox50.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2490,7 +2348,7 @@
             this.myTextBox51.Location = new System.Drawing.Point(361, 689);
             this.myTextBox51.Name = "myTextBox51";
             this.myTextBox51.Size = new System.Drawing.Size(81, 23);
-            this.myTextBox51.TabIndex = 171;
+            this.myTextBox51.TabIndex = 53;
             this.myTextBox51.Text = "0";
             this.myTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox51.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2506,7 +2364,7 @@
             this.myTextBox52.Location = new System.Drawing.Point(295, 689);
             this.myTextBox52.Name = "myTextBox52";
             this.myTextBox52.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox52.TabIndex = 170;
+            this.myTextBox52.TabIndex = 52;
             this.myTextBox52.Text = "0";
             this.myTextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox52.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2522,7 +2380,7 @@
             this.myTextBox53.Location = new System.Drawing.Point(229, 689);
             this.myTextBox53.Name = "myTextBox53";
             this.myTextBox53.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox53.TabIndex = 169;
+            this.myTextBox53.TabIndex = 51;
             this.myTextBox53.Text = "0";
             this.myTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox53.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2538,7 +2396,7 @@
             this.myTextBox54.Location = new System.Drawing.Point(18, 689);
             this.myTextBox54.Name = "myTextBox54";
             this.myTextBox54.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox54.TabIndex = 167;
+            this.myTextBox54.TabIndex = 49;
             this.myTextBox54.Text = "0";
             this.myTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox54.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2554,7 +2412,7 @@
             this.myTextBox43.Location = new System.Drawing.Point(526, 662);
             this.myTextBox43.Name = "myTextBox43";
             this.myTextBox43.Size = new System.Drawing.Size(89, 23);
-            this.myTextBox43.TabIndex = 166;
+            this.myTextBox43.TabIndex = 48;
             this.myTextBox43.Text = "0";
             this.myTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox43.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2570,7 +2428,7 @@
             this.myTextBox44.Location = new System.Drawing.Point(447, 662);
             this.myTextBox44.Name = "myTextBox44";
             this.myTextBox44.Size = new System.Drawing.Size(73, 23);
-            this.myTextBox44.TabIndex = 165;
+            this.myTextBox44.TabIndex = 47;
             this.myTextBox44.Text = "0";
             this.myTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox44.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2586,7 +2444,7 @@
             this.myTextBox45.Location = new System.Drawing.Point(361, 662);
             this.myTextBox45.Name = "myTextBox45";
             this.myTextBox45.Size = new System.Drawing.Size(81, 23);
-            this.myTextBox45.TabIndex = 164;
+            this.myTextBox45.TabIndex = 46;
             this.myTextBox45.Text = "0";
             this.myTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox45.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2602,7 +2460,7 @@
             this.myTextBox46.Location = new System.Drawing.Point(295, 662);
             this.myTextBox46.Name = "myTextBox46";
             this.myTextBox46.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox46.TabIndex = 163;
+            this.myTextBox46.TabIndex = 45;
             this.myTextBox46.Text = "0";
             this.myTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox46.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2618,7 +2476,7 @@
             this.myTextBox47.Location = new System.Drawing.Point(229, 662);
             this.myTextBox47.Name = "myTextBox47";
             this.myTextBox47.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox47.TabIndex = 162;
+            this.myTextBox47.TabIndex = 44;
             this.myTextBox47.Text = "0";
             this.myTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox47.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2634,7 +2492,7 @@
             this.myTextBox48.Location = new System.Drawing.Point(18, 662);
             this.myTextBox48.Name = "myTextBox48";
             this.myTextBox48.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox48.TabIndex = 160;
+            this.myTextBox48.TabIndex = 42;
             this.myTextBox48.Text = "0";
             this.myTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox48.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2650,7 +2508,7 @@
             this.myTextBox37.Location = new System.Drawing.Point(526, 635);
             this.myTextBox37.Name = "myTextBox37";
             this.myTextBox37.Size = new System.Drawing.Size(89, 23);
-            this.myTextBox37.TabIndex = 159;
+            this.myTextBox37.TabIndex = 41;
             this.myTextBox37.Text = "0";
             this.myTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox37.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2666,7 +2524,7 @@
             this.myTextBox38.Location = new System.Drawing.Point(447, 635);
             this.myTextBox38.Name = "myTextBox38";
             this.myTextBox38.Size = new System.Drawing.Size(73, 23);
-            this.myTextBox38.TabIndex = 158;
+            this.myTextBox38.TabIndex = 40;
             this.myTextBox38.Text = "0";
             this.myTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox38.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2682,7 +2540,7 @@
             this.myTextBox39.Location = new System.Drawing.Point(361, 635);
             this.myTextBox39.Name = "myTextBox39";
             this.myTextBox39.Size = new System.Drawing.Size(81, 23);
-            this.myTextBox39.TabIndex = 157;
+            this.myTextBox39.TabIndex = 39;
             this.myTextBox39.Text = "0";
             this.myTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox39.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2698,7 +2556,7 @@
             this.myTextBox40.Location = new System.Drawing.Point(295, 635);
             this.myTextBox40.Name = "myTextBox40";
             this.myTextBox40.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox40.TabIndex = 156;
+            this.myTextBox40.TabIndex = 38;
             this.myTextBox40.Text = "0";
             this.myTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox40.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2714,7 +2572,7 @@
             this.myTextBox41.Location = new System.Drawing.Point(229, 635);
             this.myTextBox41.Name = "myTextBox41";
             this.myTextBox41.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox41.TabIndex = 155;
+            this.myTextBox41.TabIndex = 37;
             this.myTextBox41.Text = "0";
             this.myTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox41.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2730,7 +2588,7 @@
             this.myTextBox42.Location = new System.Drawing.Point(18, 635);
             this.myTextBox42.Name = "myTextBox42";
             this.myTextBox42.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox42.TabIndex = 153;
+            this.myTextBox42.TabIndex = 35;
             this.myTextBox42.Text = "0";
             this.myTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox42.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2746,7 +2604,7 @@
             this.myTextBox36.Location = new System.Drawing.Point(526, 608);
             this.myTextBox36.Name = "myTextBox36";
             this.myTextBox36.Size = new System.Drawing.Size(89, 23);
-            this.myTextBox36.TabIndex = 152;
+            this.myTextBox36.TabIndex = 34;
             this.myTextBox36.Text = "0";
             this.myTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox36.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2762,7 +2620,7 @@
             this.myTextBox35.Location = new System.Drawing.Point(447, 608);
             this.myTextBox35.Name = "myTextBox35";
             this.myTextBox35.Size = new System.Drawing.Size(73, 23);
-            this.myTextBox35.TabIndex = 150;
+            this.myTextBox35.TabIndex = 33;
             this.myTextBox35.Text = "0";
             this.myTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox35.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2778,7 +2636,7 @@
             this.myTextBox34.Location = new System.Drawing.Point(361, 608);
             this.myTextBox34.Name = "myTextBox34";
             this.myTextBox34.Size = new System.Drawing.Size(81, 23);
-            this.myTextBox34.TabIndex = 148;
+            this.myTextBox34.TabIndex = 32;
             this.myTextBox34.Text = "0";
             this.myTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox34.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2794,7 +2652,7 @@
             this.myTextBox33.Location = new System.Drawing.Point(295, 608);
             this.myTextBox33.Name = "myTextBox33";
             this.myTextBox33.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox33.TabIndex = 146;
+            this.myTextBox33.TabIndex = 31;
             this.myTextBox33.Text = "0";
             this.myTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox33.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2810,7 +2668,7 @@
             this.myTextBox32.Location = new System.Drawing.Point(229, 608);
             this.myTextBox32.Name = "myTextBox32";
             this.myTextBox32.Size = new System.Drawing.Size(61, 23);
-            this.myTextBox32.TabIndex = 143;
+            this.myTextBox32.TabIndex = 30;
             this.myTextBox32.Text = "0";
             this.myTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox32.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2826,7 +2684,7 @@
             this.myTextBox31.Location = new System.Drawing.Point(18, 608);
             this.myTextBox31.Name = "myTextBox31";
             this.myTextBox31.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox31.TabIndex = 137;
+            this.myTextBox31.TabIndex = 28;
             this.myTextBox31.Text = "0";
             this.myTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox31.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2842,7 +2700,7 @@
             this.myTextBox30.Location = new System.Drawing.Point(511, 361);
             this.myTextBox30.Name = "myTextBox30";
             this.myTextBox30.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox30.TabIndex = 127;
+            this.myTextBox30.TabIndex = 17;
             this.myTextBox30.Text = "0";
             this.myTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2855,7 +2713,7 @@
             this.myTextBox29.Location = new System.Drawing.Point(315, 358);
             this.myTextBox29.Name = "myTextBox29";
             this.myTextBox29.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox29.TabIndex = 125;
+            this.myTextBox29.TabIndex = 16;
             this.myTextBox29.Text = "0";
             this.myTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2868,7 +2726,7 @@
             this.myTextBox28.Location = new System.Drawing.Point(115, 358);
             this.myTextBox28.Name = "myTextBox28";
             this.myTextBox28.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox28.TabIndex = 123;
+            this.myTextBox28.TabIndex = 15;
             this.myTextBox28.Text = "0";
             this.myTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2881,7 +2739,7 @@
             this.myTextBox27.Location = new System.Drawing.Point(511, 315);
             this.myTextBox27.Name = "myTextBox27";
             this.myTextBox27.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox27.TabIndex = 121;
+            this.myTextBox27.TabIndex = 14;
             this.myTextBox27.Text = "0";
             this.myTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox27.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2897,7 +2755,7 @@
             this.myTextBox26.Location = new System.Drawing.Point(315, 315);
             this.myTextBox26.Name = "myTextBox26";
             this.myTextBox26.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox26.TabIndex = 119;
+            this.myTextBox26.TabIndex = 13;
             this.myTextBox26.Text = "0";
             this.myTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox26.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2913,7 +2771,7 @@
             this.myTextBox25.Location = new System.Drawing.Point(115, 315);
             this.myTextBox25.Name = "myTextBox25";
             this.myTextBox25.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox25.TabIndex = 117;
+            this.myTextBox25.TabIndex = 12;
             this.myTextBox25.Text = "0";
             this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox25.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2929,7 +2787,7 @@
             this.myTextBox24.Location = new System.Drawing.Point(985, 463);
             this.myTextBox24.Name = "myTextBox24";
             this.myTextBox24.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox24.TabIndex = 115;
+            this.myTextBox24.TabIndex = 90;
             this.myTextBox24.Text = "0";
             this.myTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox24.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2945,7 +2803,7 @@
             this.myTextBox23.Location = new System.Drawing.Point(880, 463);
             this.myTextBox23.Name = "myTextBox23";
             this.myTextBox23.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox23.TabIndex = 113;
+            this.myTextBox23.TabIndex = 89;
             this.myTextBox23.Text = "0";
             this.myTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox23.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2961,7 +2819,7 @@
             this.myTextBox22.Location = new System.Drawing.Point(985, 574);
             this.myTextBox22.Name = "myTextBox22";
             this.myTextBox22.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox22.TabIndex = 111;
+            this.myTextBox22.TabIndex = 97;
             this.myTextBox22.Text = "1000";
             this.myTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox22.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2977,7 +2835,7 @@
             this.myTextBox21.Location = new System.Drawing.Point(985, 605);
             this.myTextBox21.Name = "myTextBox21";
             this.myTextBox21.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox21.TabIndex = 109;
+            this.myTextBox21.TabIndex = 99;
             this.myTextBox21.Text = "100";
             this.myTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox21.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -2993,7 +2851,7 @@
             this.myTextBox19.Location = new System.Drawing.Point(840, 544);
             this.myTextBox19.Name = "myTextBox19";
             this.myTextBox19.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox19.TabIndex = 103;
+            this.myTextBox19.TabIndex = 95;
             this.myTextBox19.Text = "0";
             this.myTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox19.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3009,7 +2867,7 @@
             this.myTextBox20.Location = new System.Drawing.Point(734, 544);
             this.myTextBox20.Name = "myTextBox20";
             this.myTextBox20.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox20.TabIndex = 102;
+            this.myTextBox20.TabIndex = 94;
             this.myTextBox20.Text = "0";
             this.myTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox20.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3025,7 +2883,7 @@
             this.myTextBox18.Location = new System.Drawing.Point(840, 515);
             this.myTextBox18.Name = "myTextBox18";
             this.myTextBox18.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox18.TabIndex = 100;
+            this.myTextBox18.TabIndex = 92;
             this.myTextBox18.Text = "0";
             this.myTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox18.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3041,7 +2899,7 @@
             this.myTextBox17.Location = new System.Drawing.Point(734, 515);
             this.myTextBox17.Name = "myTextBox17";
             this.myTextBox17.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox17.TabIndex = 99;
+            this.myTextBox17.TabIndex = 91;
             this.myTextBox17.Text = "0";
             this.myTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox17.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3057,7 +2915,7 @@
             this.myTextBox16.Location = new System.Drawing.Point(985, 427);
             this.myTextBox16.Name = "myTextBox16";
             this.myTextBox16.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox16.TabIndex = 96;
+            this.myTextBox16.TabIndex = 88;
             this.myTextBox16.Text = "0";
             this.myTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox16.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3073,7 +2931,7 @@
             this.myTextBox15.Location = new System.Drawing.Point(985, 400);
             this.myTextBox15.Name = "myTextBox15";
             this.myTextBox15.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox15.TabIndex = 93;
+            this.myTextBox15.TabIndex = 86;
             this.myTextBox15.Text = "0";
             this.myTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox15.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3089,7 +2947,7 @@
             this.myTextBox14.Location = new System.Drawing.Point(985, 373);
             this.myTextBox14.Name = "myTextBox14";
             this.myTextBox14.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox14.TabIndex = 90;
+            this.myTextBox14.TabIndex = 84;
             this.myTextBox14.Text = "0";
             this.myTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox14.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3105,7 +2963,7 @@
             this.myTextBox13.Location = new System.Drawing.Point(985, 346);
             this.myTextBox13.Name = "myTextBox13";
             this.myTextBox13.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox13.TabIndex = 87;
+            this.myTextBox13.TabIndex = 82;
             this.myTextBox13.Text = "0";
             this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox13.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3121,7 +2979,7 @@
             this.myTextBox12.Location = new System.Drawing.Point(985, 319);
             this.myTextBox12.Name = "myTextBox12";
             this.myTextBox12.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox12.TabIndex = 84;
+            this.myTextBox12.TabIndex = 80;
             this.myTextBox12.Text = "0";
             this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox12.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3137,7 +2995,7 @@
             this.myTextBox11.Location = new System.Drawing.Point(985, 292);
             this.myTextBox11.Name = "myTextBox11";
             this.myTextBox11.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox11.TabIndex = 81;
+            this.myTextBox11.TabIndex = 78;
             this.myTextBox11.Text = "0";
             this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox11.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3153,7 +3011,7 @@
             this.myTextBox10.Location = new System.Drawing.Point(985, 265);
             this.myTextBox10.Name = "myTextBox10";
             this.myTextBox10.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox10.TabIndex = 78;
+            this.myTextBox10.TabIndex = 76;
             this.myTextBox10.Text = "0";
             this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox10.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3169,7 +3027,7 @@
             this.myTextBox9.Location = new System.Drawing.Point(985, 238);
             this.myTextBox9.Name = "myTextBox9";
             this.myTextBox9.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox9.TabIndex = 75;
+            this.myTextBox9.TabIndex = 74;
             this.myTextBox9.Text = "0";
             this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox9.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3201,7 +3059,7 @@
             this.myTextBox7.Location = new System.Drawing.Point(985, 184);
             this.myTextBox7.Name = "myTextBox7";
             this.myTextBox7.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox7.TabIndex = 69;
+            this.myTextBox7.TabIndex = 70;
             this.myTextBox7.Text = "0";
             this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox7.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3217,7 +3075,7 @@
             this.myTextBox6.Location = new System.Drawing.Point(115, 241);
             this.myTextBox6.Name = "myTextBox6";
             this.myTextBox6.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox6.TabIndex = 50;
+            this.myTextBox6.TabIndex = 9;
             this.myTextBox6.Text = "0";
             this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox6.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3233,7 +3091,7 @@
             this.myTextBox5.Location = new System.Drawing.Point(115, 212);
             this.myTextBox5.Name = "myTextBox5";
             this.myTextBox5.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox5.TabIndex = 48;
+            this.myTextBox5.TabIndex = 7;
             this.myTextBox5.Text = "0";
             this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox5.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
@@ -3249,7 +3107,7 @@
             this.myTextBox4.Location = new System.Drawing.Point(115, 141);
             this.myTextBox4.Name = "myTextBox4";
             this.myTextBox4.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox4.TabIndex = 40;
+            this.myTextBox4.TabIndex = 3;
             this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox4.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
@@ -3264,7 +3122,7 @@
             this.myTextBox3.Location = new System.Drawing.Point(115, 109);
             this.myTextBox3.Name = "myTextBox3";
             this.myTextBox3.Size = new System.Drawing.Size(497, 23);
-            this.myTextBox3.TabIndex = 38;
+            this.myTextBox3.TabIndex = 2;
             this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // myTextBox2
@@ -3276,7 +3134,7 @@
             this.myTextBox2.Location = new System.Drawing.Point(295, 80);
             this.myTextBox2.Name = "myTextBox2";
             this.myTextBox2.Size = new System.Drawing.Size(317, 23);
-            this.myTextBox2.TabIndex = 36;
+            this.myTextBox2.TabIndex = 1;
             this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox2.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox2.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3290,16 +3148,160 @@
             this.myTextBox1.Location = new System.Drawing.Point(115, 80);
             this.myTextBox1.Name = "myTextBox1";
             this.myTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox1.TabIndex = 33;
+            this.myTextBox1.TabIndex = 0;
             this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = global::TIC19.Properties.Resources.medium_inv_misc_bag_09_green;
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Enabled = false;
+            this.panel11.Location = new System.Drawing.Point(738, 701);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(38, 38);
+            this.panel11.TabIndex = 205;
+            // 
+            // button10
+            // 
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Enabled = false;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.DimGray;
+            this.button10.Image = global::TIC19.Properties.Resources.medium_inv_misc_enggizmos_26;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button10.Location = new System.Drawing.Point(955, 698);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 41);
+            this.button10.TabIndex = 106;
+            this.button10.Text = "Other Options";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Enabled = false;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.DimGray;
+            this.button9.Image = global::TIC19.Properties.Resources.medium_spell_fire_frostresistancetotem;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button9.Location = new System.Drawing.Point(831, 698);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(118, 41);
+            this.button9.TabIndex = 105;
+            this.button9.Text = "Resistances";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DimGray;
+            this.button6.Image = global::TIC19.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button6.Location = new System.Drawing.Point(938, 127);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 41);
+            this.button6.TabIndex = 68;
+            this.button6.Text = "Flag Custom Mask";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Enabled = false;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.DimGray;
+            this.button5.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button5.Location = new System.Drawing.Point(785, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 67;
+            this.button5.Text = "Flag Extra Mask";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Enabled = false;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
+            this.button4.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(632, 127);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 41);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "Flag Mask";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_14;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.Location = new System.Drawing.Point(938, 80);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 41);
+            this.button3.TabIndex = 65;
+            this.button3.Text = "Bag Family Mask";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Image = global::TIC19.Properties.Resources.medium_inv_misc_head_02;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button2.Location = new System.Drawing.Point(632, 80);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 41);
+            this.button2.TabIndex = 63;
+            this.button2.Text = "Allowed Class";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Image = global::TIC19.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(785, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 41);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "Allowed Race";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1105, 773);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.myTextBox68);

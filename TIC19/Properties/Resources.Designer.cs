@@ -349,5 +349,205 @@ namespace TIC19.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_druid_improvedtreeform {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_druid_improvedtreeform", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_hunter_snipershot {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_hunter_snipershot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_mage_frostfirebolt {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_mage_frostfirebolt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_paladin_hammeroftherighteous {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_paladin_hammeroftherighteous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_rogue_dualweild {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_rogue_dualweild", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_warlock_improvedsoulleech {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_warlock_improvedsoulleech", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_warrior_savageblow {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_warrior_savageblow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_bloodelf_female {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_bloodelf_female", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_draenei_female {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_draenei_female", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_dwarf_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_dwarf_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_gnome_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_gnome_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_human_female {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_human_female", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_nightelf_female {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_nightelf_female", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_orc_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_orc_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_tauren_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_tauren_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_troll_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_troll_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_achievement_character_undead_male {
+            get {
+                object obj = ResourceManager.GetObject("small_achievement_character_undead_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_spell_deathknight_classicon {
+            get {
+                object obj = ResourceManager.GetObject("small_spell_deathknight_classicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_spell_holy_searinglightpriest {
+            get {
+                object obj = ResourceManager.GetObject("small_spell_holy_searinglightpriest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_spell_shaman_improvedstormstrike {
+            get {
+                object obj = ResourceManager.GetObject("small_spell_shaman_improvedstormstrike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

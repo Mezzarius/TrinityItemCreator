@@ -42,15 +42,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.myTextBox6 = new MyTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(339, 36);
@@ -60,7 +63,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label15.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label15.Location = new System.Drawing.Point(132, 9);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(78, 17);
@@ -229,25 +232,41 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "Shadow";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Silver;
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 177);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(339, 36);
+            this.panel6.TabIndex = 153;
+            // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(118, 178);
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(118, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 34);
-            this.button1.TabIndex = 61;
-            this.button1.Text = "OK, DONE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 151;
+            this.button1.Text = "OK DONE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // Window_Resistances
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(339, 225);
+            this.ClientSize = new System.Drawing.Size(339, 213);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.myTextBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.myTextBox4);
@@ -271,8 +290,11 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_Resistances";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_Resistances_FormClosed);
+            this.Load += new System.EventHandler(this.Window_Resistances_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,6 +316,7 @@
         private System.Windows.Forms.Label label4;
         public MyTextBox myTextBox6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button1;
     }
 }

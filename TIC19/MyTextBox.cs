@@ -5,16 +5,6 @@ using System.Windows.Forms;
 
 public class MyTextBox : TextBox
 {
-    protected override CreateParams CreateParams
-    {
-        get
-        {
-            var parms = base.CreateParams;
-            parms.Style &= ~0x02000000;  // Turn off WS_CLIPCHILDREN
-            return parms;
-        }
-    }
-
     const int WM_NCPAINT = 0x85;
     const uint RDW_INVALIDATE = 0x1;
     const uint RDW_IUPDATENOW = 0x100;

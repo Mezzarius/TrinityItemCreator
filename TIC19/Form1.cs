@@ -206,7 +206,7 @@ namespace TIC19
 
         private void aBOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reservered!");
+            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!");
         }
     }
 }

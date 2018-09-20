@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyClass\QueryHandler.cs" />
     <Compile Include="MyControls\MyOpacuePanel.cs">
       <SubType>Component</SubType>
     </Compile>

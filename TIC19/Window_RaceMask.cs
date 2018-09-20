@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
@@ -49,6 +50,16 @@ namespace TIC19
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void Window_RaceMask_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            QueryHandler.column_AllowableRace = 100;
+        }
+
+        private void Window_RaceMask_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(QueryHandler.column_AllowableRace.ToString());
         }
     }
 }

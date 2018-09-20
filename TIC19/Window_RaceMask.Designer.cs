@@ -35,13 +35,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -112,7 +112,7 @@
             this.button2.Location = new System.Drawing.Point(25, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 27);
-            this.button2.TabIndex = 157;
+            this.button2.TabIndex = 0;
             this.button2.Text = "SELECT/UNSELECT ALL";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
@@ -129,31 +129,32 @@
             this.button1.Location = new System.Drawing.Point(328, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 156;
+            this.button1.TabIndex = 1;
             this.button1.Text = "FINISH (ESC)";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // checkBox10
+            // checkBox4
             // 
-            this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.checkBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox10.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.checkBox10.FlatAppearance.CheckedBackColor = System.Drawing.Color.PaleGreen;
-            this.checkBox10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox10.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox10.Image = global::TIC19.Properties.Resources.small_achievement_character_nightelf_female;
-            this.checkBox10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox10.Location = new System.Drawing.Point(25, 125);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(136, 30);
-            this.checkBox10.TabIndex = 3;
-            this.checkBox10.Text = "Nightelf";
-            this.checkBox10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.checkBox10.UseVisualStyleBackColor = false;
+            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox4.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.checkBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.PaleGreen;
+            this.checkBox4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.checkBox4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
+            this.checkBox4.Image = global::TIC19.Properties.Resources.small_achievement_character_nightelf_female;
+            this.checkBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox4.Location = new System.Drawing.Point(25, 125);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(136, 30);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Tag = "8";
+            this.checkBox4.Text = "Nightelf";
+            this.checkBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.checkBox4.UseVisualStyleBackColor = false;
             // 
             // checkBox9
             // 
@@ -172,6 +173,7 @@
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(136, 30);
             this.checkBox9.TabIndex = 8;
+            this.checkBox9.Tag = "512";
             this.checkBox9.Text = "Bloodelf";
             this.checkBox9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox9.UseVisualStyleBackColor = false;
@@ -193,6 +195,7 @@
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(136, 30);
             this.checkBox8.TabIndex = 7;
+            this.checkBox8.Tag = "128";
             this.checkBox8.Text = "Troll";
             this.checkBox8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox8.UseVisualStyleBackColor = false;
@@ -214,6 +217,7 @@
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(136, 30);
             this.checkBox7.TabIndex = 6;
+            this.checkBox7.Tag = "64";
             this.checkBox7.Text = "Gnome";
             this.checkBox7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox7.UseVisualStyleBackColor = false;
@@ -235,9 +239,32 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(136, 30);
             this.checkBox6.TabIndex = 5;
+            this.checkBox6.Tag = "32";
             this.checkBox6.Text = "Tauren";
             this.checkBox6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox6.UseVisualStyleBackColor = false;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.checkBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox10.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.checkBox10.FlatAppearance.CheckedBackColor = System.Drawing.Color.PaleGreen;
+            this.checkBox10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.checkBox10.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.checkBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox10.ForeColor = System.Drawing.Color.DimGray;
+            this.checkBox10.Image = global::TIC19.Properties.Resources.small_achievement_character_draenei_female;
+            this.checkBox10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox10.Location = new System.Drawing.Point(167, 197);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(136, 30);
+            this.checkBox10.TabIndex = 9;
+            this.checkBox10.Tag = "1024";
+            this.checkBox10.Text = "Draenei";
+            this.checkBox10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.checkBox10.UseVisualStyleBackColor = false;
             // 
             // checkBox5
             // 
@@ -250,36 +277,16 @@
             this.checkBox5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox5.Image = global::TIC19.Properties.Resources.small_achievement_character_draenei_female;
+            this.checkBox5.Image = global::TIC19.Properties.Resources.small_achievement_character_undead_male;
             this.checkBox5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox5.Location = new System.Drawing.Point(167, 197);
+            this.checkBox5.Location = new System.Drawing.Point(167, 125);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(136, 30);
-            this.checkBox5.TabIndex = 9;
-            this.checkBox5.Text = "Draenei";
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Tag = "16";
+            this.checkBox5.Text = "Undead";
             this.checkBox5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox5.UseVisualStyleBackColor = false;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox4.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.checkBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.PaleGreen;
-            this.checkBox4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox4.Image = global::TIC19.Properties.Resources.small_achievement_character_undead_male;
-            this.checkBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(167, 125);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(136, 30);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "Undead";
-            this.checkBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.checkBox4.UseVisualStyleBackColor = false;
             // 
             // checkBox3
             // 
@@ -298,6 +305,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(136, 30);
             this.checkBox3.TabIndex = 2;
+            this.checkBox3.Tag = "4";
             this.checkBox3.Text = "Dwar";
             this.checkBox3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -319,6 +327,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(136, 30);
             this.checkBox2.TabIndex = 1;
+            this.checkBox2.Tag = "2";
             this.checkBox2.Text = "Orc";
             this.checkBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -340,6 +349,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(136, 30);
             this.checkBox1.TabIndex = 0;
+            this.checkBox1.Tag = "1";
             this.checkBox1.Text = "Human";
             this.checkBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -353,14 +363,14 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.checkBox10);
+            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.checkBox10);
             this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
@@ -378,6 +388,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_RaceMask";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_RaceMask_FormClosed);
+            this.Load += new System.EventHandler(this.Window_RaceMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_RaceMask_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -393,14 +405,14 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;

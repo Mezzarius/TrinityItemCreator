@@ -38,6 +38,7 @@
             this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -205,7 +206,6 @@
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
-            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -332,6 +332,13 @@
             this.sQLToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.sQLToolStripMenuItem.Text = "SQL";
             this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
+            // 
+            // aBOUTToolStripMenuItem
+            // 
+            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(58, 27);
+            this.aBOUTToolStripMenuItem.Text = "ABOUT";
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.aBOUTToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -2282,6 +2289,9 @@
             this.myTextBox68.TabIndex = 104;
             this.myTextBox68.Text = "0";
             this.myTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myTextBox68.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox68.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // myTextBox67
             // 
@@ -2898,7 +2908,7 @@
             this.myTextBox29.Name = "myTextBox29";
             this.myTextBox29.Size = new System.Drawing.Size(100, 23);
             this.myTextBox29.TabIndex = 16;
-            this.myTextBox29.Text = "0";
+            this.myTextBox29.Text = "1";
             this.myTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // myTextBox28
@@ -3337,13 +3347,6 @@
             this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
-            // aBOUTToolStripMenuItem
-            // 
-            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
-            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(58, 27);
-            this.aBOUTToolStripMenuItem.Text = "ABOUT";
-            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.aBOUTToolStripMenuItem_Click);
             // 
             // Form1
             // 

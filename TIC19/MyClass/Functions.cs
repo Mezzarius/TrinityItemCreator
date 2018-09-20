@@ -13,6 +13,8 @@ namespace TIC19.MyClass
     {
         private Form1 mainForm;
 
+        public Functions() { }
+
         public Functions(Form1 form1)
         {
             mainForm = form1;

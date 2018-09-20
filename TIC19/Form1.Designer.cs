@@ -35,6 +35,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -202,13 +205,14 @@
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
+            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.label15);
@@ -278,7 +282,9 @@
             this.menuStrip1.Enabled = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.applicationToolStripMenuItem,
-            this.templateToolStripMenuItem});
+            this.templateToolStripMenuItem,
+            this.exportAsToolStripMenuItem,
+            this.aBOUTToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 36);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1105, 31);
@@ -289,15 +295,43 @@
             // 
             this.applicationToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
-            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(85, 27);
-            this.applicationToolStripMenuItem.Text = "Application";
+            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(96, 27);
+            this.applicationToolStripMenuItem.Text = "APPLICATION";
             // 
             // templateToolStripMenuItem
             // 
             this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
-            this.templateToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
-            this.templateToolStripMenuItem.Text = "Template";
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
+            this.templateToolStripMenuItem.Text = "TEMPLATE";
+            // 
+            // exportAsToolStripMenuItem
+            // 
+            this.exportAsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToClipboardCTRLEToolStripMenuItem,
+            this.sQLToolStripMenuItem});
+            this.exportAsToolStripMenuItem.ForeColor = System.Drawing.Color.Teal;
+            this.exportAsToolStripMenuItem.Name = "exportAsToolStripMenuItem";
+            this.exportAsToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
+            this.exportAsToolStripMenuItem.Text = "EXPORT AS";
+            // 
+            // copyToClipboardCTRLEToolStripMenuItem
+            // 
+            this.copyToClipboardCTRLEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkBlue;
+            this.copyToClipboardCTRLEToolStripMenuItem.Name = "copyToClipboardCTRLEToolStripMenuItem";
+            this.copyToClipboardCTRLEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.copyToClipboardCTRLEToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.copyToClipboardCTRLEToolStripMenuItem.Text = "Copy to Clipboard";
+            this.copyToClipboardCTRLEToolStripMenuItem.Click += new System.EventHandler(this.CopyToClipboardCTRLEToolStripMenuItem_Click);
+            // 
+            // sQLToolStripMenuItem
+            // 
+            this.sQLToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
+            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
+            this.sQLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.sQLToolStripMenuItem.Text = "SQL";
+            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -2098,7 +2132,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(130, 41);
             this.button10.TabIndex = 106;
-            this.button10.Text = "Other Options";
+            this.button10.Text = "Other Options\r\n(CTRL+O)";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.Button10_Click);
@@ -2115,7 +2149,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(118, 41);
             this.button9.TabIndex = 105;
-            this.button9.Text = "Resistances";
+            this.button9.Text = "Resistances\r\n(CTRL+R)";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.Button9_Click);
@@ -2132,7 +2166,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(147, 41);
             this.button6.TabIndex = 68;
-            this.button6.Text = "Flag Custom Mask";
+            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.Button6_Click);
@@ -2149,7 +2183,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(147, 41);
             this.button5.TabIndex = 67;
-            this.button5.Text = "Flag Extra Mask";
+            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
@@ -2166,7 +2200,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(147, 41);
             this.button4.TabIndex = 66;
-            this.button4.Text = "Flag Mask";
+            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
@@ -2183,7 +2217,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 41);
             this.button3.TabIndex = 65;
-            this.button3.Text = "Bag Family Mask";
+            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
@@ -2200,7 +2234,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 41);
             this.button2.TabIndex = 63;
-            this.button2.Text = "Allowed Class";
+            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
@@ -2218,7 +2252,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 41);
             this.button1.TabIndex = 64;
-            this.button1.Text = "Allowed Race";
+            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -3304,6 +3338,13 @@
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
+            // aBOUTToolStripMenuItem
+            // 
+            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(58, 27);
+            this.aBOUTToolStripMenuItem.Text = "ABOUT";
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.aBOUTToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3480,6 +3521,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -3491,6 +3533,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             this.panel1.ResumeLayout(false);
@@ -3677,6 +3720,10 @@
         public MyTextBox myTextBox68;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ToolStripMenuItem exportAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sQLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToClipboardCTRLEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBOUTToolStripMenuItem;
     }
 }
 

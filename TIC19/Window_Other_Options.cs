@@ -63,5 +63,11 @@ namespace TIC19
         {
             Close();
         }
+
+        private void Window_Other_Options_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

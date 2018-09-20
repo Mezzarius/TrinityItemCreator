@@ -83,7 +83,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 27);
             this.button1.TabIndex = 154;
-            this.button1.Text = "OK DONE";
+            this.button1.Text = "FINISH (ESC)";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -173,6 +173,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Window_FlagCustomMask";
@@ -181,6 +182,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_FlagCustomMask";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_FlagCustomMask_KeyDown);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

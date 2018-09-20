@@ -255,7 +255,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 27);
             this.button1.TabIndex = 155;
-            this.button1.Text = "OK DONE";
+            this.button1.Text = "FINISH (ESC)";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -282,6 +282,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Window_Resistances";
@@ -290,6 +291,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_Resistances";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_Resistances_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);

@@ -148,5 +148,65 @@ namespace TIC19
             var wfCM = new Window_FlagCustomMask(this);
             wfCM.ShowDialog();
         }
+
+        private void CopyToClipboardCTRLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // copy to clipboard
+        }
+
+        private void SQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // save as *.sql
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D1)
+            {
+                var wcM = new Window_ClassMask(this);
+                wcM.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D2)
+            {
+                var wrM = new Window_RaceMask(this);
+                wrM.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D3)
+            {
+                var wbF = new Window_BagFamilyMask(this);
+                wbF.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D1)
+            {
+                var wfM = new Window_FlagMask(this);
+                wfM.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D2)
+            {
+                var wfEM = new Window_FlagExtraMask(this);
+                wfEM.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D3)
+            {
+                var wfCM = new Window_FlagCustomMask(this);
+                wfCM.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.R)
+            {
+                var wr = new Window_Resistances(this);
+                wr.ShowDialog();
+            }
+            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.O)
+            {
+                var woO = new Window_Other_Options(this);
+                woO.ShowDialog();
+            }
+        }
+
+        private void aBOUTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reservered!");
+        }
     }
 }

@@ -18,11 +18,6 @@ namespace TIC19.MyClass
             mainForm = form1;
         }
 
-        public void BlurMainFormEffect()
-        {
-            // unused atm.
-        }
-
         public void UnBlurMainForm()
         {
             foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;
@@ -31,12 +26,7 @@ namespace TIC19.MyClass
             foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = true;
             foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
 
-            mainForm.panel1.BackColor = Color.DarkCyan;
-        }
-
-        public string SpliceText(string text, int lineLength)
-        {
-            return Regex.Replace(text, "(.{" + lineLength + "})", "$1" + Environment.NewLine);
+            mainForm.panel1.BackColor = Color.DarkSlateGray;
         }
 
         public void LoadTextBoxWaterMarks()
@@ -50,7 +40,13 @@ namespace TIC19.MyClass
 
         public void StartupSetComboBoxIndexes()
         {
-            foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.SelectedIndex = 0;
+            foreach (var comboBox in mainForm.Controls.OfType<ComboBox>())
+            {
+                if (comboBox.Name == "comboBox20") // exception because -1 Consumable
+                    comboBox.SelectedIndex = 1;
+                else
+                    comboBox.SelectedIndex = 0;
+            }
         }
     }
 }

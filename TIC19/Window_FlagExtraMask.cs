@@ -44,5 +44,11 @@ namespace TIC19
             for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
             mIsChecked = mIsChecked ? false : true;
         }
+
+        private void Window_FlagExtraMask_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

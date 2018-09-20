@@ -44,5 +44,11 @@ namespace TIC19
             foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = mIsChecked ? false : true;
             mIsChecked = mIsChecked ? false : true;
         }
+
+        private void Window_RaceMask_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

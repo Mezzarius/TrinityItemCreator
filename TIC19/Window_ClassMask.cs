@@ -13,6 +13,7 @@ namespace TIC19
     public partial class Window_ClassMask : Form
     {
         private Form1 mainForm;
+        private bool mIsChecked = false;
 
         public Window_ClassMask(Form1 form1)
         {
@@ -33,21 +34,15 @@ namespace TIC19
             }
         }
 
-        private void Window_ClassMask_Load(object sender, EventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.BlurMainFormEffect();
-        }
-
-        private void Window_ClassMask_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.UnBlurMainForm();
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = mIsChecked ? false : true;
+            mIsChecked = mIsChecked ? false : true;
         }
     }
 }

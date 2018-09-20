@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace TIC19
 {
-    public partial class Window_RaceMask : Form
+    public partial class Window_FlagMask : Form
     {
         private Form1 mainForm;
         private bool mIsChecked = false;
 
-        public Window_RaceMask(Form1 form1)
+        public Window_FlagMask(Form1 form1)
         {
             InitializeComponent();
 
@@ -41,7 +41,7 @@ namespace TIC19
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = mIsChecked ? false : true;
+            for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
             mIsChecked = mIsChecked ? false : true;
         }
     }

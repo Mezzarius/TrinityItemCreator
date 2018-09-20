@@ -20,13 +20,7 @@ namespace TIC19.MyClass
 
         public void BlurMainFormEffect()
         {
-            //foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = false;
-            //foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = false;
-            //foreach (var comboBox in mainForm.Controls.OfType<ComboBox>()) comboBox.Enabled = false;
-            //foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = false;
-            //foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = false;
-
-            //mainForm.panel1.BackColor = Color.DarkGray;
+            // unused atm.
         }
 
         public void UnBlurMainForm()
@@ -37,7 +31,7 @@ namespace TIC19.MyClass
             foreach (var button in mainForm.Controls.OfType<Button>()) button.Enabled = true;
             foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
 
-            //mainForm.panel1.BackColor = Color.DarkCyan;
+            mainForm.panel1.BackColor = Color.DarkCyan;
         }
 
         public string SpliceText(string text, int lineLength)

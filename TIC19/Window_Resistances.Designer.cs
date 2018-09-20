@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -237,27 +237,27 @@
             this.panel6.BackColor = System.Drawing.Color.Silver;
             this.panel6.Controls.Add(this.button1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 177);
+            this.panel6.Location = new System.Drawing.Point(0, 171);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(339, 36);
+            this.panel6.Size = new System.Drawing.Size(339, 42);
             this.panel6.TabIndex = 153;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(118, 7);
+            this.button1.Location = new System.Drawing.Point(108, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 151;
+            this.button1.Size = new System.Drawing.Size(117, 27);
+            this.button1.TabIndex = 155;
             this.button1.Text = "OK DONE";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Window_Resistances
             // 
@@ -290,8 +290,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_Resistances";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_Resistances_FormClosed);
-            this.Load += new System.EventHandler(this.Window_Resistances_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);

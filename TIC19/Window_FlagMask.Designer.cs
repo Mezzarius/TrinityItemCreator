@@ -1,6 +1,6 @@
 ﻿namespace TIC19
 {
-    partial class Window_BagFamilyMask
+    partial class Window_FlagMask
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
@@ -42,23 +42,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(235, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 151;
-            this.button1.Text = "OK DONE";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
@@ -67,7 +50,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 408);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(370, 42);
+            this.panel3.Size = new System.Drawing.Size(733, 42);
             this.panel3.TabIndex = 153;
             // 
             // button2
@@ -82,10 +65,27 @@
             this.button2.Location = new System.Drawing.Point(26, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 27);
-            this.button2.TabIndex = 153;
+            this.button2.TabIndex = 155;
             this.button2.Text = "SELECT/UNSELECT ALL";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(591, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 27);
+            this.button1.TabIndex = 154;
+            this.button1.Text = "OK DONE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel1
             // 
@@ -94,7 +94,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 42);
+            this.panel1.Size = new System.Drawing.Size(733, 42);
             this.panel1.TabIndex = 152;
             // 
             // label15
@@ -102,11 +102,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label15.Location = new System.Drawing.Point(124, 13);
+            this.label15.Location = new System.Drawing.Point(294, 13);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(112, 17);
+            this.label15.Size = new System.Drawing.Size(70, 17);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Bag Family Mask";
+            this.label15.Text = "Flag Mask";
             // 
             // checkedListBox1
             // 
@@ -116,25 +116,43 @@
             this.checkedListBox1.ForeColor = System.Drawing.Color.DimGray;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "[0] None",
-            "[1] Arrows",
-            "[2] Bullets",
-            "[4] Soul Shards",
-            "[8] Leatherworking Supplies",
-            "[16] Inscription Supplies",
-            "[32] Herbs",
-            "[64] Enchanting Supplies",
-            "[128] Engineering Supplies",
-            "[256] Keys",
-            "[512] Gems",
-            "[1024] Mining Supplies",
-            "[2048] Soulbound Equipment",
-            "[4096] Vanity Pets",
-            "[8192] Currency Tokens",
-            "[16384] Quest Items"});
-            this.checkedListBox1.Location = new System.Drawing.Point(26, 66);
+            "[1] UNK1",
+            "[2] Conjured item",
+            "[4] Openable (can be opened by right-click)",
+            "[8] Makes green \"Heroic\" text appear on item",
+            "[16] Deprecated Item",
+            "[32] Item can not be destroyed, except by using spell (item can be reagent for sp" +
+                "ell)",
+            "[64] UNK2",
+            "[128] No default 30 seconds cooldown when equipped",
+            "[256] UNK3",
+            "[512] Wrapper : Item can wrap other items",
+            "[1024] UNK4",
+            "[2048] Item is party loot and can be looted by all",
+            "[4096] Item is refundable",
+            "[8192] Charter (Arena or Guild)",
+            "[16384] UNK5 // comment in code : Only readable items have this (but not all)",
+            "[32768] UNK6",
+            "[65536] UNK7",
+            "[131072] UNK8",
+            "[262144] Item can be prospected",
+            "[524288] Unique equipped (player can only have one equipped at the same time)",
+            "[1048576] UNK9",
+            "[2097152] Item can be used during arena match",
+            "[4194304] Throwable (for tooltip ingame)",
+            "[8388608] Item can be used in shapeshift forms",
+            "[16777216] UNK10",
+            "[33554432] Profession recipes: can only be looted if you meet requirements and do" +
+                "n\'t already know it",
+            "[67108864] Item cannot be used in arena",
+            "[134217728] Bind to Account (Also needs Quality = 7 set)",
+            "[268435456] Spell is cast with triggered flag",
+            "[536870912] Millable",
+            "[1073741824] UNK11",
+            "[2147483648] Bind on Pickup tradeable"});
+            this.checkedListBox1.Location = new System.Drawing.Point(27, 66);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(326, 320);
+            this.checkedListBox1.Size = new System.Drawing.Size(681, 320);
             this.checkedListBox1.TabIndex = 154;
             // 
             // panel2
@@ -142,13 +160,13 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Location = new System.Drawing.Point(26, 386);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(326, 6);
+            this.panel2.Size = new System.Drawing.Size(682, 6);
             this.panel2.TabIndex = 155;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Location = new System.Drawing.Point(352, 66);
+            this.panel4.Location = new System.Drawing.Point(708, 66);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(6, 326);
             this.panel4.TabIndex = 156;
@@ -166,15 +184,15 @@
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Location = new System.Drawing.Point(20, 60);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(338, 6);
+            this.panel6.Size = new System.Drawing.Size(694, 6);
             this.panel6.TabIndex = 158;
             // 
-            // Window_BagFamilyMask
+            // Window_FlagMask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(370, 450);
+            this.ClientSize = new System.Drawing.Size(733, 450);
             this.ControlBox = false;
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -188,12 +206,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_BagFamilyMask";
+            this.Name = "Window_FlagMask";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Window_BagFamilyMask";
+            this.Text = "Window_FlagMask";
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -202,8 +220,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
@@ -213,5 +229,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

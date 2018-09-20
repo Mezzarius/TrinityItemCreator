@@ -125,10 +125,28 @@ namespace TIC19
             wbF.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             var wrM = new Window_RaceMask(this);
             wrM.ShowDialog();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            var wfM = new Window_FlagMask(this);
+            wfM.ShowDialog();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            var wfEM = new Window_FlagExtraMask(this);
+            wfEM.ShowDialog();
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            var wfCM = new Window_FlagCustomMask(this);
+            wfCM.ShowDialog();
         }
     }
 }

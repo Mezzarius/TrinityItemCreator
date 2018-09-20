@@ -33,7 +33,6 @@ namespace TIC19
             }
         }
 
-
         private void Watermark_myTextBox_Leave(object sender, EventArgs e)
         {
             MyTextBox mTextBox = (MyTextBox)sender;
@@ -61,23 +60,6 @@ namespace TIC19
         }
 
         private void Button1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Window_Other_Options_Load(object sender, EventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.BlurMainFormEffect();
-        }
-
-        private void Window_Other_Options_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.UnBlurMainForm();
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
         {
             Close();
         }

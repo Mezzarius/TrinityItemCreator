@@ -33,12 +33,6 @@ namespace TIC19
             }
         }
 
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void Watermark_myTextBox_Leave(object sender, EventArgs e)
         {
             MyTextBox mTextBox = (MyTextBox)sender;
@@ -65,19 +59,7 @@ namespace TIC19
                 e.Handled = true;
         }
 
-        private void Window_Resistances_Load(object sender, EventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.BlurMainFormEffect();
-        }
-
-        private void Window_Resistances_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.UnBlurMainForm();
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Close();
         }

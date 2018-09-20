@@ -13,6 +13,7 @@ namespace TIC19
     public partial class Window_BagFamilyMask : Form
     {
         private Form1 mainForm;
+        private bool mIsChecked;
 
         public Window_BagFamilyMask(Form1 form1)
         {
@@ -33,21 +34,15 @@ namespace TIC19
             }
         }
 
-        private void Window_BagFamilyMask_Load(object sender, EventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.BlurMainFormEffect();
-        }
-
-        private void Window_BagFamilyMask_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.UnBlurMainForm();
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
+            mIsChecked = mIsChecked ? false : true;
         }
     }
 }

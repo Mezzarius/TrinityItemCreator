@@ -45,10 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyOpacuePanel.cs">
+    <Compile Include="MyControls\MyOpacuePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyTextBox.cs">
+    <Compile Include="MyControls\MyTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">
@@ -78,6 +78,24 @@
     </Compile>
     <Compile Include="Window_ClassMask.Designer.cs">
       <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window_FlagCustomMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_FlagCustomMask.Designer.cs">
+      <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window_FlagExtraMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_FlagExtraMask.Designer.cs">
+      <DependentUpon>Window_FlagExtraMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window_FlagMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_FlagMask.Designer.cs">
+      <DependentUpon>Window_FlagMask.cs</DependentUpon>
     </Compile>
     <Compile Include="Window_Other_Options.cs">
       <SubType>Form</SubType>
@@ -118,6 +136,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Window_ClassMask.resx">
       <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window_FlagCustomMask.resx">
+      <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window_FlagExtraMask.resx">
+      <DependentUpon>Window_FlagExtraMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window_FlagMask.resx">
+      <DependentUpon>Window_FlagMask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Window_Other_Options.resx">
       <DependentUpon>Window_Other_Options.cs</DependentUpon>

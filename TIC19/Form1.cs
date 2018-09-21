@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using TIC19.MyClass;
 
@@ -139,7 +140,19 @@ namespace TIC19
 
         private void SQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // save as *.sql
+            SaveFileDialog sd = new SaveFileDialog();
+            sd.FileName = QueryHandler.column_entry.ToString() + "_" + QueryHandler.column_name;
+            sd.Filter = "SQL File | *.sql";
+
+            if (sd.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(sd.FileName))
+                {
+                    sw.Write(QueryHandler.GetExportQuery());
+                    sw.Flush();
+                    sw.Close();
+                }
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

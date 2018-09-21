@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace TIC19.MyClass
 {
@@ -29,15 +30,6 @@ namespace TIC19.MyClass
             foreach (var picBox in mainForm.Controls.OfType<PictureBox>()) picBox.Enabled = true;
 
             mainForm.panel1.BackColor = Color.DarkSlateGray;
-        }
-
-        public void LoadTextBoxWaterMarks()
-        {
-            string placeHolder = "Required!";
-
-            mainForm.myTextBox1.Text = placeHolder; // Textbox ENTRY
-            mainForm.myTextBox2.Text = placeHolder; // Textbox NAME
-            mainForm.myTextBox4.Text = placeHolder; // Textbox DISPLAY ID
         }
 
         public void StartupSetComboBoxIndexes()

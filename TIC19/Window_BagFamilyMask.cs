@@ -68,6 +68,9 @@ namespace TIC19
                 mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
             }
             QueryHandler.column_BagFamily = bagFamilyMask;
+
+            if ((bagFamilyMask & 256) != 0)
+                MessageBox.Show("has keys bag family mask");
         }
 
         private void Window_BagFamilyMask_Load(object sender, EventArgs e)

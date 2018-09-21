@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
@@ -68,6 +69,60 @@ namespace TIC19
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void myTextBox5_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_holy_res = userVal;
+        }
+
+        private void myTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_frost_res = userVal;
+        }
+
+        private void myTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_fire_res = userVal;
+        }
+
+        private void myTextBox6_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_shadow_res = userVal;
+        }
+
+        private void myTextBox4_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_nature_res = userVal;
+        }
+
+        private void myTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            MyTextBox objTextBox = (MyTextBox)sender;
+
+            int userVal;
+            if (int.TryParse(objTextBox.Text, out userVal))
+                QueryHandler.column_arcane_res = userVal;
         }
     }
 }

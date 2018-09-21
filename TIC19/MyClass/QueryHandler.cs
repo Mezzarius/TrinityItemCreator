@@ -15,7 +15,7 @@ namespace TIC19.MyClass
             string VQuery = "";
 
             VQuery = "INSERT INTO `item_template` (`entry`, " +
-            // COLUMNS
+            // COLUMNS ---------------------------------------------------------------
                         "`class`, " +
                         "`subclass`, " +
                         "`SoundOverrideSubclass`, " +
@@ -154,8 +154,7 @@ namespace TIC19.MyClass
                         "`maxMoneyLoot`, " +
                         "`flagsCustom`, " +
                         "`VerifiedBuild`) VALUES \n(" +
-
-                        // VALUES
+            // VALUES ---------------------------------------------------------------
                         column_entry.ToString() + ", " +
                         column_class.ToString() + ", " +
                         column_subclass.ToString() + ", " +
@@ -362,7 +361,7 @@ namespace TIC19.MyClass
         public static int column_frost_res { get; set; }
         public static int column_shadow_res { get; set; }
         public static int column_arcane_res { get; set; }
-        public static int column_delay { get; set; } = 1000;
+        public static int column_delay { get; set; } = 0;
         public static int column_ammo_type { get; set; }
         public static float column_RangedModRange { get; set; }
         public static int column_spellid_1 { get; set; }

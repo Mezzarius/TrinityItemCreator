@@ -140,14 +140,13 @@ namespace TIC19
 
         private void CopyToClipboardCTRLEToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // copy to clipboard
+            Clipboard.SetText(QueryHandler.GetExportQuery());
+            MessageBox.Show("Copied to clipboard!");
         }
 
         private void SQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // save as *.sql
-            MessageBox.Show(QueryHandler.GetExportQuery());
-            Clipboard.SetText(QueryHandler.GetExportQuery());
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

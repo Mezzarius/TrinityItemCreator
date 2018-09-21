@@ -34,5 +34,11 @@ namespace TIC19
             var myCF = new MyClass.Functions(mainForm);
             myCF.UnBlurMainForm();
         }
+
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+                Close();
+        }
     }
 }

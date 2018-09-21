@@ -390,7 +390,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(104, 23);
             this.button16.TabIndex = 1;
-            this.button16.Text = "EXIT";
+            this.button16.Text = "SKIP (SPACE)";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.Button16_Click);
             // 
@@ -456,10 +456,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -837,6 +837,216 @@ namespace TIC19
             ComboBox objTextBox = (ComboBox)sender;
             string s = objTextBox.SelectedItem.ToString();
             QueryHandler.column_class = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+            comboBox5.Items.Clear();
+            switch (comboBox4.SelectedIndex)
+            {
+                case 0: // menu class: consumables -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Consumable",
+                        "[1] Potion",
+                        "[2] Elixir",
+                        "[3] Flask",
+                        "[4] Scroll",
+                        "[5] Food & Drink",
+                        "[6] Item Enhancement",
+                        "[7] Bandage",
+                        "[8] Other",
+                    });
+                    break;
+                case 1: // menu class: container -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Bag",
+                        "[1] Soul Bag",
+                        "[2] Herb Bag",
+                        "[3] Enchanting Bag",
+                        "[4] Engineering Bag",
+                        "[5] Gem Bag",
+                        "[6] Mining Bag",
+                        "[7] Leatherworking Bag",
+                        "[8] Inscription Bag",
+                    });
+                    break;
+                case 2: // menu class: weapon -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Axe One-Handed",
+                        "[1] Axe Two-Handed",
+                        "[2] Bow",
+                        "[3] Gun",
+                        "[4] Mace One-Handed",
+                        "[5] Mace Two-Handed",
+                        "[6] Polearm",
+                        "[7] Sword One-Handed",
+                        "[8] Sword Two-Handed",
+                        "[9] Obsolete",
+                        "[10] Staff",
+                        "[11] Exotic 1",
+                        "[12] Exotic 2",
+                        "[13] Fist Weapon",
+                        "[14] Miscellaneous",
+                        "[15] Dagger",
+                        "[16] Thrown",
+                        "[17] Spear",
+                        "[18] Crossbow",
+                        "[19] Wand",
+                        "[20] Fishing Pole",
+                    });
+                    break;
+                case 3: // menu class: gem -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Red",
+                        "[1] Blue",
+                        "[2] Yellow",
+                        "[3] Purple",
+                        "[4] Green",
+                        "[5] Orange",
+                        "[6] Meta",
+                        "[7] Simple",
+                        "[8] Prismatic",
+                    });
+                    break;
+                case 4: // menu class: armor -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Miscellaneous",
+                        "[1] Cloth",
+                        "[2] Leather",
+                        "[3] Mail",
+                        "[4] Plate",
+                        "[5] Blucker (OBSOLETE)",
+                        "[6] Shield",
+                        "[7] Libram",
+                        "[8] Idol",
+                        "[9] Totem",
+                        "[10] Sigil",
+                    });
+                    break;
+                case 5: // menu class: reagent -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Reagent",
+                    });
+                    break;
+                case 6: // menu class: projectile -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Wand (OBSOLETE)",
+                        "[1] Bolt (OBSOLETE)",
+                        "[2] Arrow",
+                        "[3] Bullet",
+                        "[4] Thrown (OBSOLETE)",
+                    });
+                    break;
+                case 7: // menu class: trade goods -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Trade Goods",
+                        "[1] Parts",
+                        "[2] Explosives",
+                        "[3] Devices",
+                        "[4] Jewelcrafting",
+                        "[5] Cloth",
+                        "[6] Leather",
+                        "[7] Metal & Stone",
+                        "[8] Meat",
+                        "[9] Herb",
+                        "[10] Elemental",
+                        "[11] Other",
+                        "[12] Enchantment",
+                        "[13] Materials",
+                        "[14] Armor Enchantment",
+                        "[15] Weapon Enchantment",
+                    });
+                    break;
+                case 8: // menu class: generic (obsolete) -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Generic (OBSOLETE)",
+                    });
+                    break;
+                case 9: // menu class: recipe -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Book",
+                        "[1] Leatherworking",
+                        "[2] Tailoring",
+                        "[3] Engineering",
+                        "[4] Blacksmithing",
+                        "[5] Cooking",
+                        "[6] Alchemy",
+                        "[7] First Aid",
+                        "[8] Enchanting",
+                        "[9] Fishing",
+                        "[10] Jewelcrafting",
+                    });
+                    break;
+                case 10: // menu class: money (obsolete) -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Money (OBSOLETE)",
+                    });
+                    break;
+                case 11: // menu class: quiver -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Quiver (OBSOLETE)",
+                        "[1] Quiver (OBSOLETE)",
+                        "[2] Quiver",
+                        "[3] Money Pouch",
+                    });
+                    break;
+                case 12: // menu class: quest -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Quest",
+                    });
+                    break;
+                case 13: // menu class: key -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Key",
+                        "[1] Lockpick",
+                    });
+                    break;
+                case 14: // menu class: permanent (obsolete) -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Permanent",
+                    });
+                    break;
+                case 15: // menu class: Miscellaneous -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[0] Junk",
+                        "[1] Reagent",
+                        "[2] Pet",
+                        "[3] Holiday",
+                        "[4] Other",
+                        "[5] Mount",
+                    });
+                    break;
+                case 16: // menu class: glyph -> SUBCLASS:
+                    comboBox5.Items.AddRange(new object[]
+                    {
+                        "[1] Warrior",
+                        "[2] Paladin",
+                        "[3] Hunter",
+                        "[4] Rogue",
+                        "[5] Priest",
+                        "[6] Death Knight",
+                        "[7] Shaman",
+                        "[8] Mage",
+                        "[9] Warlock",
+                        "[11] Druid",
+                    });
+                    break;
+            }
+            comboBox5.SelectedIndex = 0; // always show the first item
+            // -- End of the code, empty divide
         }
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
@@ -1026,6 +1236,18 @@ namespace TIC19
             ComboBox objTextBox = (ComboBox)sender;
             string s = objTextBox.SelectedItem.ToString();
             QueryHandler.column_ammo_type = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var myCF = new Functions(this);
+            myCF.StartupSetComboBoxIndexes();
+
+            if (TemplateLoader.templateLoad)
+            {
+                var wTL = new TemplateLoader(this);
+                wTL.Load(TemplateLoader.templateType);
+            }
         }
     }
 }

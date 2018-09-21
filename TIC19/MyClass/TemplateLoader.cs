@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
-
-namespace TIC19.MyClass
+﻿namespace TIC19.MyClass
 {
     class TemplateLoader
     {
@@ -15,6 +8,9 @@ namespace TIC19.MyClass
         {
             mainForm = form1;
         }
+
+        public static bool templateLoad = false;
+        public static int templateType = 0;
 
         public void Load(int templateType)
         {

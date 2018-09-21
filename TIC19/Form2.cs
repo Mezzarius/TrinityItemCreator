@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
@@ -15,16 +16,12 @@ namespace TIC19
 
         private void Button16_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
-            var myCF = new MyClass.Functions(mainForm);
-            myCF.StartupSetComboBoxIndexes();
-
             Close();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            var myCF = new MyClass.Functions(mainForm);
+            var myCF = new Functions(mainForm);
             myCF.UnBlurMainForm();
         }
 
@@ -32,6 +29,104 @@ namespace TIC19
         {
             if (e.KeyCode == Keys.Space)
                 Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 0;
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 1;
+            Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 2;
+            Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 3;
+            Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 4;
+            Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 5;
+            Close();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 6;
+            Close();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 7;
+            Close();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 8;
+            Close();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 9;
+            Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 10;
+            Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 11;
+            Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 12;
+            Close();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            TemplateLoader.templateLoad = true;
+            TemplateLoader.templateType = 13;
+            Close();
         }
     }
 }

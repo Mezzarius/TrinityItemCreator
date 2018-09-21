@@ -86,7 +86,8 @@
             this.checkBox1.Location = new System.Drawing.Point(25, 89);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(136, 30);
-            this.checkBox1.TabIndex = 156;
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Tag = "1";
             this.checkBox1.Text = "Warrior";
             this.checkBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -107,7 +108,8 @@
             this.checkBox2.Location = new System.Drawing.Point(167, 89);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(136, 30);
-            this.checkBox2.TabIndex = 157;
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Tag = "2";
             this.checkBox2.Text = "Paladin";
             this.checkBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -128,7 +130,8 @@
             this.checkBox3.Location = new System.Drawing.Point(309, 89);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(136, 30);
-            this.checkBox3.TabIndex = 158;
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Tag = "4";
             this.checkBox3.Text = "Hunter";
             this.checkBox3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -149,7 +152,8 @@
             this.checkBox4.Location = new System.Drawing.Point(167, 125);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(136, 30);
-            this.checkBox4.TabIndex = 159;
+            this.checkBox4.TabIndex = 4;
+            this.checkBox4.Tag = "16";
             this.checkBox4.Text = "Priest";
             this.checkBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox4.UseVisualStyleBackColor = false;
@@ -170,7 +174,8 @@
             this.checkBox5.Location = new System.Drawing.Point(167, 197);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(136, 30);
-            this.checkBox5.TabIndex = 160;
+            this.checkBox5.TabIndex = 9;
+            this.checkBox5.Tag = "32";
             this.checkBox5.Text = "Death Knight";
             this.checkBox5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox5.UseVisualStyleBackColor = false;
@@ -191,7 +196,8 @@
             this.checkBox6.Location = new System.Drawing.Point(309, 125);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(136, 30);
-            this.checkBox6.TabIndex = 161;
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.Tag = "64";
             this.checkBox6.Text = "Shaman";
             this.checkBox6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox6.UseVisualStyleBackColor = false;
@@ -212,7 +218,8 @@
             this.checkBox7.Location = new System.Drawing.Point(25, 161);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(136, 30);
-            this.checkBox7.TabIndex = 162;
+            this.checkBox7.TabIndex = 6;
+            this.checkBox7.Tag = "128";
             this.checkBox7.Text = "Mage";
             this.checkBox7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox7.UseVisualStyleBackColor = false;
@@ -233,7 +240,8 @@
             this.checkBox8.Location = new System.Drawing.Point(167, 161);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(136, 30);
-            this.checkBox8.TabIndex = 163;
+            this.checkBox8.TabIndex = 7;
+            this.checkBox8.Tag = "256";
             this.checkBox8.Text = "Warlock";
             this.checkBox8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox8.UseVisualStyleBackColor = false;
@@ -254,7 +262,8 @@
             this.checkBox9.Location = new System.Drawing.Point(309, 161);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(136, 30);
-            this.checkBox9.TabIndex = 164;
+            this.checkBox9.TabIndex = 8;
+            this.checkBox9.Tag = "1024";
             this.checkBox9.Text = "Druid";
             this.checkBox9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox9.UseVisualStyleBackColor = false;
@@ -286,7 +295,8 @@
             this.checkBox10.Location = new System.Drawing.Point(25, 125);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(136, 30);
-            this.checkBox10.TabIndex = 166;
+            this.checkBox10.TabIndex = 3;
+            this.checkBox10.Tag = "8";
             this.checkBox10.Text = "Rogue";
             this.checkBox10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox10.UseVisualStyleBackColor = false;
@@ -322,7 +332,7 @@
             this.button2.Location = new System.Drawing.Point(25, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 27);
-            this.button2.TabIndex = 155;
+            this.button2.TabIndex = 0;
             this.button2.Text = "SELECT/UNSELECT ALL";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
@@ -339,7 +349,7 @@
             this.button1.Location = new System.Drawing.Point(328, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 154;
+            this.button1.TabIndex = 1;
             this.button1.Text = "FINISH (ESC)";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -378,6 +388,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_ClassMask";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_ClassMask_FormClosed);
+            this.Load += new System.EventHandler(this.Window_ClassMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_ClassMask_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

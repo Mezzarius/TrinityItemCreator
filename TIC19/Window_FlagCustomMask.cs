@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
     public partial class Window_FlagCustomMask : Form
     {
         private Form1 mainForm;
-        private bool mIsChecked;
+        private static bool mIsChecked;
+        private static bool[] mCheckBoxeItemsSate = new bool[8];
 
         public Window_FlagCustomMask(Form1 form1)
         {
@@ -49,6 +51,29 @@ namespace TIC19
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void Window_FlagCustomMask_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            int customFlagMask = 0;
+
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                if (checkedListBox1.GetItemChecked(i))
+                {
+                    string s = checkedListBox1.Items[i].ToString();
+
+                    customFlagMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                }
+                mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
+            }
+            QueryHandler.column_flagsCustom = customFlagMask;
+        }
+
+        private void Window_FlagCustomMask_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+                checkedListBox1.SetItemChecked(i, mCheckBoxeItemsSate[i]);
         }
     }
 }

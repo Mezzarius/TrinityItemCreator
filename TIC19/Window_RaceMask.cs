@@ -64,11 +64,9 @@ namespace TIC19
                 int mTAG = (Convert.ToInt32(chkBox.Tag));
 
                 raceMask += chkBox.Checked ? mTAG : 0;
-
                 // save checkbox checked state by index
                 mCheckBoxesSate[mTAG] = chkBox.Checked;
             }
-
             QueryHandler.column_AllowableRace = raceMask;
         }
 

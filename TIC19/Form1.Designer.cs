@@ -338,7 +338,7 @@
             this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
             this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(58, 27);
             this.aBOUTToolStripMenuItem.Text = "ABOUT";
-            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.aBOUTToolStripMenuItem_Click);
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.ABOUTToolStripMenuItem_Click);
             // 
             // label1
             // 

@@ -65,10 +65,8 @@ namespace TIC19
 
                     bagFamilyMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
                 }
-
                 mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
             }
-
             QueryHandler.column_BagFamily = bagFamilyMask;
         }
 

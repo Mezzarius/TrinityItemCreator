@@ -16,7 +16,7 @@ namespace TIC19.MyClass
         public static string column_name { get; set; }
         public static int column_displayid { get; set; }
         public static int column_Quality { get; set; }
-        public static int column_Flags { get; set; }
+        public static ulong column_Flags { get; set; }
         public static int column_FlagsExtra { get; set; }
         public static int column_BuyCount { get; set; }
         public static int column_BuyPrice { get; set; }

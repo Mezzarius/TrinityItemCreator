@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
@@ -204,9 +205,9 @@ namespace TIC19
             }
         }
 
-        private void aBOUTToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ABOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!");
+            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!" + "\n \nResult: " + QueryHandler.column_Flags);
         }
     }
 }

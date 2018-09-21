@@ -182,6 +182,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_FlagCustomMask";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_FlagCustomMask_FormClosed);
+            this.Load += new System.EventHandler(this.Window_FlagCustomMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_FlagCustomMask_KeyDown);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

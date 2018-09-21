@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIC19.MyClass;
 
 namespace TIC19
 {
     public partial class Window_FlagExtraMask : Form
     {
         private Form1 mainForm;
-        private bool mIsChecked;
+        private static bool mIsChecked;
+        private static bool[] mCheckBoxeItemsSate = new bool[8388609];
 
         public Window_FlagExtraMask(Form1 form1)
         {
@@ -41,7 +43,9 @@ namespace TIC19
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+                checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
+
             mIsChecked = mIsChecked ? false : true;
         }
 
@@ -49,6 +53,29 @@ namespace TIC19
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void Window_FlagExtraMask_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            int extraFlagMask = 0;
+
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                if (checkedListBox1.GetItemChecked(i))
+                {
+                    string s = checkedListBox1.Items[i].ToString();
+
+                    extraFlagMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                }
+                mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
+            }
+            QueryHandler.column_FlagsExtra = extraFlagMask;
+        }
+
+        private void Window_FlagExtraMask_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+                checkedListBox1.SetItemChecked(i, mCheckBoxeItemsSate[i]);
         }
     }
 }

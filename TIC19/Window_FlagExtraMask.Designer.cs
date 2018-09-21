@@ -189,6 +189,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_FlagExtraMask";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_FlagExtraMask_FormClosed);
+            this.Load += new System.EventHandler(this.Window_FlagExtraMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_FlagExtraMask_KeyDown);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

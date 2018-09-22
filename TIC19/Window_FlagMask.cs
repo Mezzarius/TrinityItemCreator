@@ -66,6 +66,7 @@ namespace TIC19
 
         private void Window_FlagMask_Load(object sender, EventArgs e)
         {
+            checkedListHex = QueryHandler.column_Flags;
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();

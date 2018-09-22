@@ -32,20 +32,14 @@ namespace TIC19
         {
             MyTextBox mTextBox = (MyTextBox)sender;
             if (mTextBox.Text.Length == 0)
-            {
-                mTextBox.Text = "Required!";
-                mTextBox.ForeColor = Color.Red;
-            }
+                mTextBox.Text = "0";
         }
 
         private void Watermark_myTextBox_Enter(object sender, EventArgs e)
         {
             MyTextBox mTextBox = (MyTextBox)sender;
-            if (mTextBox.Text == "Required!")
-            {
+            if (mTextBox.Text == "0")
                 mTextBox.Text = "";
-                mTextBox.ForeColor = Color.DimGray;
-            }
         }
 
         private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)

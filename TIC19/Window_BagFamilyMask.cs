@@ -67,6 +67,7 @@ namespace TIC19
 
         private void Window_BagFamilyMask_Load(object sender, EventArgs e)
         {
+            checkedListHex = QueryHandler.column_BagFamily;
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();

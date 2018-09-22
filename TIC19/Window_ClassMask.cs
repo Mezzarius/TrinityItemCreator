@@ -63,6 +63,7 @@ namespace TIC19
 
         private void Window_ClassMask_Load(object sender, EventArgs e)
         {
+            classMaskHex = QueryHandler.column_AllowableClass;
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
                 if ((classMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)

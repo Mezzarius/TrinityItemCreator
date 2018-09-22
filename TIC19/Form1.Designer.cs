@@ -2093,13 +2093,7 @@
             this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "[0] (none)",
-            "[1] Two Handed Weapon",
-            "[2] Staff",
-            "[3] One Handed",
-            "[4] Shield",
-            "[5] Enchanter\'s Rod",
-            "[6] Off hand"});
+            "[0] (none)"});
             this.comboBox5.Location = new System.Drawing.Point(338, 239);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(274, 21);

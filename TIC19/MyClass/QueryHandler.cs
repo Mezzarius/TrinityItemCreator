@@ -355,7 +355,7 @@
         public static int column_frost_res { get; set; }
         public static int column_shadow_res { get; set; }
         public static int column_arcane_res { get; set; }
-        public static int column_delay { get; set; } = 0;
+        public static int column_delay { get; set; }
         public static int column_ammo_type { get; set; }
         public static float column_RangedModRange { get; set; }
         public static int column_spellid_1 { get; set; }

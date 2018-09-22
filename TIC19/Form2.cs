@@ -33,99 +33,98 @@ namespace TIC19
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 0;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(0);
             Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 1;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(1);
             Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 2;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(2);
             Close();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 3;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(3);
             Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 4;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(4);
             Close();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 5;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(5);
             Close();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 6;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(6);
             Close();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 7;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(7);
             Close();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 8;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(8);
             Close();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 9;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(9);
             Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 10;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(10);
             Close();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 11;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(11);
             Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 12;
-            Close();
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(12);
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            TemplateLoader.templateLoad = true;
-            TemplateLoader.templateType = 13;
+            Functions myF = new Functions(mainForm);
+            myF.LoadDefaultTemplate(13);
             Close();
         }
     }

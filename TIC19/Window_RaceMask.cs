@@ -65,6 +65,7 @@ namespace TIC19
 
         private void Window_RaceMask_Load(object sender, EventArgs e)
         {
+            raceMaskHex = QueryHandler.column_AllowableRace;
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
                 if ((raceMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)

@@ -182,7 +182,6 @@ namespace TIC19.MyClass
                         QueryHandler.column_class = 5;
                         QueryHandler.column_subclass = 0;
                         QueryHandler.column_name = "My Custom Reagent";
-                        QueryHandler.column_description = "This is a custom reagent item";
                         QueryHandler.column_Material = 2;
                         QueryHandler.column_stackable = 10;
 
@@ -191,14 +190,37 @@ namespace TIC19.MyClass
                     }
                 case 11: // trade good
                     {
+                        QueryHandler.column_class = 7;
+                        QueryHandler.column_subclass = 14;
+                        QueryHandler.column_name = "My Custom Trade Good";
+                        QueryHandler.column_Material = 4;
+                        QueryHandler.column_stackable = 20;
+
+                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 12: // consumable
                     {
+                        QueryHandler.column_class = 0;
+                        QueryHandler.column_subclass = 5;
+                        QueryHandler.column_name = "My Custom Item Enchantment";
+                        QueryHandler.column_Material = 4;
+                        QueryHandler.column_stackable = 20;
+                        QueryHandler.column_spellid_1 = 26389;
+                        QueryHandler.column_spellcategory_1 = 59;
+                        QueryHandler.column_spellcategorycooldown_1 = 1000;
+
+                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 13: // misc
                     {
+                        QueryHandler.column_class = 4;
+                        QueryHandler.column_subclass = 0;
+                        QueryHandler.column_name = "Misc Custom Miscellaneous Item";
+                        QueryHandler.column_Material = 0;
+
+                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 default:

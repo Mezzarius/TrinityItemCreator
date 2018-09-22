@@ -8,7 +8,7 @@ namespace TIC19
     {
         private Form1 mainForm;
         private static bool mIsChecked;
-        private static bool[] mCheckBoxeItemsSate = new bool[8388609];
+        private static int checkedListHex = 0;
 
         public Window_FlagExtraMask(Form1 form1)
         {
@@ -57,18 +57,22 @@ namespace TIC19
                 if (checkedListBox1.GetItemChecked(i))
                 {
                     string s = checkedListBox1.Items[i].ToString();
-
                     extraFlagMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
                 }
-                mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
             }
+
             QueryHandler.column_FlagsExtra = extraFlagMask;
+            checkedListHex = extraFlagMask;
         }
 
         private void Window_FlagExtraMask_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
-                checkedListBox1.SetItemChecked(i, mCheckBoxeItemsSate[i]);
+            {
+                string s = checkedListBox1.Items[i].ToString();
+                if ((checkedListHex & Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1))) != 0)
+                    checkedListBox1.SetItemChecked(i, true);
+            }
         }
     }
 }

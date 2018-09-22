@@ -8,7 +8,7 @@ namespace TIC19
     {
         private Form1 mainForm;
         private static bool mIsChecked = false;
-        private static bool[] mCheckBoxeItemsSate = new bool[255];
+        private static ulong checkedListHex = 0;
 
         public Window_FlagMask(Form1 form1)
         {
@@ -55,20 +55,23 @@ namespace TIC19
             {
                 if (checkedListBox1.GetItemChecked(i))
                 {
-                    // item's text
                     string s = checkedListBox1.Items[i].ToString();
-                    // flag mask += get number between "[123]"
                     flagMask += Convert.ToUInt64(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
                 }
-                mCheckBoxeItemsSate[i] = checkedListBox1.GetItemChecked(i);
             }
+
             QueryHandler.column_Flags = flagMask;
+            checkedListHex = flagMask;
         }
 
         private void Window_FlagMask_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
-                checkedListBox1.SetItemChecked(i, mCheckBoxeItemsSate[i]);
+            {
+                string s = checkedListBox1.Items[i].ToString();
+                if ((checkedListHex & Convert.ToUInt64(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1))) != 0)
+                    checkedListBox1.SetItemChecked(i, true);
+            }
         }
     }
 }

@@ -118,5 +118,15 @@ namespace TIC19
             if (int.TryParse(objTextBox.Text, out userVal))
                 QueryHandler.column_arcane_res = userVal;
         }
+
+        private void Window_Resistances_Load(object sender, EventArgs e)
+        {
+            myTextBox1.Text = QueryHandler.column_frost_res.ToString();
+            myTextBox2.Text = QueryHandler.column_fire_res.ToString();
+            myTextBox3.Text = QueryHandler.column_arcane_res.ToString();
+            myTextBox4.Text = QueryHandler.column_nature_res.ToString();
+            myTextBox5.Text = QueryHandler.column_holy_res.ToString();
+            myTextBox6.Text = QueryHandler.column_shadow_res.ToString();
+        }
     }
 }

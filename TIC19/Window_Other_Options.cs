@@ -32,20 +32,14 @@ namespace TIC19
         {
             MyTextBox mTextBox = (MyTextBox)sender;
             if (mTextBox.Text.Length == 0)
-            {
-                mTextBox.Text = "Required!";
-                mTextBox.ForeColor = Color.Red;
-            }
+                mTextBox.Text = "0";
         }
 
         private void Watermark_myTextBox_Enter(object sender, EventArgs e)
         {
             MyTextBox mTextBox = (MyTextBox)sender;
-            if (mTextBox.Text == "Required!")
-            {
+            if (mTextBox.Text == "0")
                 mTextBox.Text = "";
-                mTextBox.ForeColor = Color.DimGray;
-            }
         }
 
         private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -270,6 +264,33 @@ namespace TIC19
             int userVal;
             if (int.TryParse(objTextBox.Text, out userVal))
                 QueryHandler.column_ItemLimitCategory = userVal;
+        }
+
+        private void Window_Other_Options_Load(object sender, EventArgs e)
+        {
+            myTextBox1.Text = QueryHandler.column_maxMoneyLoot.ToString();
+            myTextBox2.Text = QueryHandler.column_lockid.ToString();
+            myTextBox3.Text = QueryHandler.column_PageMaterial.ToString();
+            myTextBox4.Text = QueryHandler.column_PageText.ToString();
+            myTextBox5.Text = QueryHandler.column_LanguageID.ToString();
+            myTextBox6.Text = QueryHandler.column_startquest.ToString();
+            myTextBox7.Text = QueryHandler.column_RequiredDisenchantSkill.ToString();
+            myTextBox8.Text = QueryHandler.column_DisenchantID.ToString();
+            myTextBox9.Text = QueryHandler.column_GemProperties.ToString();
+            myTextBox10.Text = QueryHandler.column_HolidayId.ToString();
+            myTextBox11.Text = QueryHandler.column_SoundOverrideSubclass.ToString();
+            myTextBox12.Text = QueryHandler.column_ItemLimitCategory.ToString();
+            myTextBox13.Text = QueryHandler.column_duration.ToString();
+            myTextBox14.Text = QueryHandler.column_area.ToString();
+            myTextBox15.Text = QueryHandler.column_Map.ToString();
+            myTextBox16.Text = QueryHandler.column_RequiredSkill.ToString();
+            myTextBox17.Text = QueryHandler.column_RequiredSkillRank.ToString();
+            myTextBox18.Text = QueryHandler.column_requiredspell.ToString();
+            myTextBox19.Text = QueryHandler.column_requiredhonorrank.ToString();
+            myTextBox20.Text = QueryHandler.column_RequiredCityRank.ToString();
+            myTextBox21.Text = QueryHandler.column_RequiredReputationFaction.ToString();
+            myTextBox22.Text = QueryHandler.column_RequiredReputationRank.ToString();
+            myTextBox25.Text = QueryHandler.column_minMoneyLoot.ToString();
         }
     }
 }

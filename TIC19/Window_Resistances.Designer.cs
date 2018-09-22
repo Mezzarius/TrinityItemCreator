@@ -78,7 +78,7 @@
             this.myTextBox5.Location = new System.Drawing.Point(12, 70);
             this.myTextBox5.Name = "myTextBox5";
             this.myTextBox5.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox5.TabIndex = 50;
+            this.myTextBox5.TabIndex = 0;
             this.myTextBox5.Text = "0";
             this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox5.TextChanged += new System.EventHandler(this.myTextBox5_TextChanged);
@@ -106,7 +106,7 @@
             this.myTextBox1.Location = new System.Drawing.Point(118, 70);
             this.myTextBox1.Name = "myTextBox1";
             this.myTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox1.TabIndex = 52;
+            this.myTextBox1.TabIndex = 1;
             this.myTextBox1.Text = "0";
             this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox1.TextChanged += new System.EventHandler(this.myTextBox1_TextChanged);
@@ -134,7 +134,7 @@
             this.myTextBox2.Location = new System.Drawing.Point(224, 70);
             this.myTextBox2.Name = "myTextBox2";
             this.myTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox2.TabIndex = 54;
+            this.myTextBox2.TabIndex = 2;
             this.myTextBox2.Text = "0";
             this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox2.TextChanged += new System.EventHandler(this.myTextBox2_TextChanged);
@@ -162,7 +162,7 @@
             this.myTextBox3.Location = new System.Drawing.Point(224, 134);
             this.myTextBox3.Name = "myTextBox3";
             this.myTextBox3.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox3.TabIndex = 60;
+            this.myTextBox3.TabIndex = 5;
             this.myTextBox3.Text = "0";
             this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox3.TextChanged += new System.EventHandler(this.myTextBox3_TextChanged);
@@ -190,7 +190,7 @@
             this.myTextBox4.Location = new System.Drawing.Point(118, 134);
             this.myTextBox4.Name = "myTextBox4";
             this.myTextBox4.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox4.TabIndex = 58;
+            this.myTextBox4.TabIndex = 4;
             this.myTextBox4.Text = "0";
             this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox4.TextChanged += new System.EventHandler(this.myTextBox4_TextChanged);
@@ -218,7 +218,7 @@
             this.myTextBox6.Location = new System.Drawing.Point(12, 134);
             this.myTextBox6.Name = "myTextBox6";
             this.myTextBox6.Size = new System.Drawing.Size(100, 23);
-            this.myTextBox6.TabIndex = 56;
+            this.myTextBox6.TabIndex = 3;
             this.myTextBox6.Text = "0";
             this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox6.TextChanged += new System.EventHandler(this.myTextBox6_TextChanged);
@@ -260,7 +260,7 @@
             this.button1.Location = new System.Drawing.Point(108, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 155;
+            this.button1.TabIndex = 0;
             this.button1.Text = "FINISH (ESC)";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -297,6 +297,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_Resistances";
+            this.Load += new System.EventHandler(this.Window_Resistances_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_Resistances_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

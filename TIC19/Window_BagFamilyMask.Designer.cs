@@ -65,7 +65,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 408);
+            this.panel3.Location = new System.Drawing.Point(0, 391);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(377, 42);
             this.panel3.TabIndex = 153;
@@ -116,7 +116,6 @@
             this.checkedListBox1.ForeColor = System.Drawing.Color.DimGray;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "[0] None",
             "[1] Arrows",
             "[2] Bullets",
             "[4] Soul Shards",
@@ -134,13 +133,13 @@
             "[16384] Quest Items"});
             this.checkedListBox1.Location = new System.Drawing.Point(26, 66);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(326, 320);
+            this.checkedListBox1.Size = new System.Drawing.Size(326, 300);
             this.checkedListBox1.TabIndex = 154;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Location = new System.Drawing.Point(26, 386);
+            this.panel2.Location = new System.Drawing.Point(26, 366);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(326, 6);
             this.panel2.TabIndex = 155;
@@ -150,7 +149,7 @@
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Location = new System.Drawing.Point(352, 66);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(6, 326);
+            this.panel4.Size = new System.Drawing.Size(6, 306);
             this.panel4.TabIndex = 156;
             // 
             // panel5
@@ -158,7 +157,7 @@
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.Location = new System.Drawing.Point(20, 66);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(6, 326);
+            this.panel5.Size = new System.Drawing.Size(6, 306);
             this.panel5.TabIndex = 157;
             // 
             // panel6
@@ -174,7 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(377, 450);
+            this.ClientSize = new System.Drawing.Size(377, 433);
             this.ControlBox = false;
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);

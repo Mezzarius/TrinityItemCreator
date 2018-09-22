@@ -9,7 +9,7 @@ namespace TIC19
     {
         private Form1 mainForm;
         private static bool mIsChecked = false;
-        private static bool[] mCheckBoxesSate = new bool[1025];
+        private static int raceMaskHex = 0;
 
         public Window_RaceMask(Form1 form1)
         {
@@ -51,25 +51,24 @@ namespace TIC19
 
         private void Window_RaceMask_FormClosed(object sender, FormClosedEventArgs e)
         {
-            int raceMask = -1;
+            int _mask = 0; // start from 0 not -1
 
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
-                int mTAG = (Convert.ToInt32(chkBox.Tag));
-
-                raceMask += chkBox.Checked ? mTAG : 0;
-                // save checkbox checked state by index
-                mCheckBoxesSate[mTAG] = chkBox.Checked;
+                if (chkBox.Checked)
+                    _mask += Convert.ToInt32(chkBox.Tag);
             }
-            QueryHandler.column_AllowableRace = raceMask;
+
+            QueryHandler.column_AllowableRace = _mask == 1791 ? -1 : _mask;
+            raceMaskHex = _mask;
         }
 
         private void Window_RaceMask_Load(object sender, EventArgs e)
         {
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
-                int mTAG = Convert.ToInt32(chkBox.Tag);
-                chkBox.Checked = mCheckBoxesSate[mTAG];
+                if ((raceMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)
+                    chkBox.Checked = true;
             }
         }
     }

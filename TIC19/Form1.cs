@@ -1243,11 +1243,75 @@ namespace TIC19
             var myCF = new Functions(this);
             myCF.StartupSetComboBoxIndexes();
 
-            if (TemplateLoader.templateLoad)
-            {
-                var wTL = new TemplateLoader(this);
-                wTL.Load(TemplateLoader.templateType);
-            }
+            myTextBox1.Text = QueryHandler.column_entry.ToString();
+            myTextBox2.Text = QueryHandler.column_name;
+            myTextBox3.Text = QueryHandler.column_description;
+            myTextBox4.Text = QueryHandler.column_displayid.ToString();
+            myTextBox5.Text = QueryHandler.column_ItemLevel.ToString();
+            myTextBox6.Text = QueryHandler.column_RequiredLevel.ToString();
+
+            myTextBox7.Text = QueryHandler.column_entry.ToString();
+            myTextBox8.Text = QueryHandler.column_entry.ToString();
+            myTextBox9.Text = QueryHandler.column_entry.ToString();
+            myTextBox10.Text = QueryHandler.column_entry.ToString();
+            myTextBox11.Text = QueryHandler.column_entry.ToString();
+            myTextBox12.Text = QueryHandler.column_entry.ToString();
+            myTextBox13.Text = QueryHandler.column_entry.ToString();
+            myTextBox14.Text = QueryHandler.column_entry.ToString();
+            myTextBox15.Text = QueryHandler.column_entry.ToString();
+            myTextBox16.Text = QueryHandler.column_entry.ToString();
+            myTextBox17.Text = QueryHandler.column_entry.ToString();
+            myTextBox18.Text = QueryHandler.column_entry.ToString();
+            myTextBox19.Text = QueryHandler.column_entry.ToString();
+            myTextBox20.Text = QueryHandler.column_entry.ToString();
+            myTextBox21.Text = QueryHandler.column_entry.ToString();
+            myTextBox22.Text = QueryHandler.column_entry.ToString();
+            myTextBox23.Text = QueryHandler.column_entry.ToString();
+            myTextBox24.Text = QueryHandler.column_entry.ToString();
+            myTextBox25.Text = QueryHandler.column_BuyPrice.ToString();
+            myTextBox26.Text = QueryHandler.column_SellPrice.ToString();
+            myTextBox27.Text = QueryHandler.column_BuyCount.ToString();
+            myTextBox28.Text = QueryHandler.column_itemset.ToString();
+            myTextBox29.Text = QueryHandler.column_stackable.ToString();
+            myTextBox30.Text = QueryHandler.column_maxcount.ToString();
+            myTextBox31.Text = QueryHandler.column_spellid_1.ToString();
+            myTextBox32.Text = QueryHandler.column_spellcharges_1.ToString();
+            myTextBox33.Text = QueryHandler.column_spellppmRate_1.ToString();
+            myTextBox34.Text = QueryHandler.column_spellcooldown_1.ToString();
+            myTextBox35.Text = QueryHandler.column_spellcategory_1.ToString();
+            myTextBox36.Text = QueryHandler.column_spellcategorycooldown_1.ToString();
+            myTextBox37.Text = QueryHandler.column_spellcategorycooldown_2.ToString();
+            myTextBox38.Text = QueryHandler.column_spellcategory_2.ToString();
+            myTextBox39.Text = QueryHandler.column_spellcooldown_2.ToString();
+            myTextBox40.Text = QueryHandler.column_spellppmRate_2.ToString();
+            myTextBox41.Text = QueryHandler.column_spellcharges_2.ToString();
+            myTextBox42.Text = QueryHandler.column_spellid_2.ToString();
+            myTextBox43.Text = QueryHandler.column_spellcategorycooldown_3.ToString();
+            myTextBox44.Text = QueryHandler.column_spellcategory_3.ToString();
+            myTextBox45.Text = QueryHandler.column_spellcooldown_3.ToString();
+            myTextBox46.Text = QueryHandler.column_spellppmRate_3.ToString();
+            myTextBox47.Text = QueryHandler.column_spellcharges_3.ToString();
+            myTextBox48.Text = QueryHandler.column_spellid_3.ToString();
+            myTextBox49.Text = QueryHandler.column_entry.ToString();
+            myTextBox50.Text = QueryHandler.column_entry.ToString();
+            myTextBox51.Text = QueryHandler.column_entry.ToString();
+            myTextBox52.Text = QueryHandler.column_entry.ToString();
+            myTextBox53.Text = QueryHandler.column_entry.ToString();
+            myTextBox54.Text = QueryHandler.column_entry.ToString();
+            myTextBox55.Text = QueryHandler.column_entry.ToString();
+            myTextBox56.Text = QueryHandler.column_entry.ToString();
+            myTextBox57.Text = QueryHandler.column_entry.ToString();
+            myTextBox58.Text = QueryHandler.column_entry.ToString();
+            myTextBox59.Text = QueryHandler.column_entry.ToString();
+            myTextBox60.Text = QueryHandler.column_entry.ToString();
+            myTextBox61.Text = QueryHandler.column_socketContent_1.ToString();
+            myTextBox62.Text = QueryHandler.column_socketContent_2.ToString();
+            myTextBox63.Text = QueryHandler.column_socketContent_3.ToString();
+            myTextBox64.Text = QueryHandler.column_entry.ToString();
+            myTextBox65.Text = QueryHandler.column_entry.ToString();
+            myTextBox66.Text = QueryHandler.column_entry.ToString();
+            myTextBox67.Text = QueryHandler.column_entry.ToString();
+            myTextBox68.Text = QueryHandler.column_entry.ToString();
         }
     }
 }

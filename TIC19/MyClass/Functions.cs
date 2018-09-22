@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
+using System;
 
 namespace TIC19.MyClass
 {
@@ -8,7 +9,6 @@ namespace TIC19.MyClass
     {
         private Form1 mainForm;
         public static bool preLoadTemplate;
-        public static int preLoadTemplateID;
         public static bool preLoadSubClassMenu;
 
         public Functions() { }
@@ -29,7 +29,7 @@ namespace TIC19.MyClass
             mainForm.panel1.BackColor = Color.DarkSlateGray;
         }
 
-        public void LoadDefaultTemplate(int templateID)
+        public void LoadDefaultTemplate(int templateID, string[] lines = null)
         {
             switch(templateID)
             {
@@ -219,6 +219,151 @@ namespace TIC19.MyClass
                         QueryHandler.column_subclass = 0;
                         QueryHandler.column_name = "Misc Custom Miscellaneous Item";
                         QueryHandler.column_Material = 0;
+
+                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        break;
+                    }
+                case 14: // custom
+                    {
+                        QueryHandler.column_entry = Convert.ToInt32(lines[0]);
+                        QueryHandler.column_class = Convert.ToInt32(lines[1]);
+                        QueryHandler.column_subclass = Convert.ToInt32(lines[2]);
+                        QueryHandler.column_SoundOverrideSubclass = Convert.ToInt32(lines[3]);
+                        QueryHandler.column_name = lines[4];
+                        QueryHandler.column_displayid = Convert.ToInt32(lines[5]);
+                        QueryHandler.column_Quality = Convert.ToInt32(lines[6]);
+                        QueryHandler.column_Flags = Convert.ToUInt64(lines[7]);
+                        QueryHandler.column_FlagsExtra = Convert.ToInt32(lines[8]);
+                        QueryHandler.column_BuyCount = Convert.ToInt32(lines[9]);
+                        QueryHandler.column_BuyPrice = Convert.ToInt32(lines[10]);
+                        QueryHandler.column_SellPrice = Convert.ToInt32(lines[11]);
+                        QueryHandler.column_InventoryType = Convert.ToInt32(lines[12]);
+                        QueryHandler.column_AllowableClass = Convert.ToInt32(lines[13]);
+                        QueryHandler.column_AllowableRace = Convert.ToInt32(lines[14]);
+                        QueryHandler.column_ItemLevel = Convert.ToInt32(lines[15]);
+                        QueryHandler.column_RequiredLevel = Convert.ToInt32(lines[16]);
+                        QueryHandler.column_RequiredSkill = Convert.ToInt32(lines[17]);
+                        QueryHandler.column_RequiredSkillRank = Convert.ToInt32(lines[18]);
+                        QueryHandler.column_requiredspell = Convert.ToInt32(lines[19]);
+                        QueryHandler.column_requiredhonorrank = Convert.ToInt32(lines[20]);
+                        QueryHandler.column_RequiredCityRank = Convert.ToInt32(lines[21]);
+                        QueryHandler.column_RequiredReputationFaction = Convert.ToInt32(lines[22]);
+                        QueryHandler.column_RequiredReputationRank = Convert.ToInt32(lines[23]);
+                        QueryHandler.column_maxcount = Convert.ToInt32(lines[24]);
+                        QueryHandler.column_stackable = Convert.ToInt32(lines[25]);
+                        QueryHandler.column_ContainerSlots = Convert.ToInt32(lines[26]);
+                        QueryHandler.column_StatsCount = Convert.ToInt32(lines[27]);
+                        QueryHandler.column_stat_type1 = Convert.ToInt32(lines[28]);
+                        QueryHandler.column_stat_value1 = Convert.ToInt32(lines[29]);
+                        QueryHandler.column_stat_type2 = Convert.ToInt32(lines[30]);
+                        QueryHandler.column_stat_value2 = Convert.ToInt32(lines[31]);
+                        QueryHandler.column_stat_type3 = Convert.ToInt32(lines[32]);
+                        QueryHandler.column_stat_value3 = Convert.ToInt32(lines[33]);
+                        QueryHandler.column_stat_type4 = Convert.ToInt32(lines[34]);
+                        QueryHandler.column_stat_value4 = Convert.ToInt32(lines[35]);
+                        QueryHandler.column_stat_type5 = Convert.ToInt32(lines[36]);
+                        QueryHandler.column_stat_value5 = Convert.ToInt32(lines[37]);
+                        QueryHandler.column_stat_type6 = Convert.ToInt32(lines[38]);
+                        QueryHandler.column_stat_value6 = Convert.ToInt32(lines[39]);
+                        QueryHandler.column_stat_type7 = Convert.ToInt32(lines[40]);
+                        QueryHandler.column_stat_value7 = Convert.ToInt32(lines[41]);
+                        QueryHandler.column_stat_type8 = Convert.ToInt32(lines[42]);
+                        QueryHandler.column_stat_value8 = Convert.ToInt32(lines[43]);
+                        QueryHandler.column_stat_type9 = Convert.ToInt32(lines[44]);
+                        QueryHandler.column_stat_value9 = Convert.ToInt32(lines[45]);
+                        QueryHandler.column_stat_type10 = Convert.ToInt32(lines[46]);
+                        QueryHandler.column_stat_value10 = Convert.ToInt32(lines[47]);
+                        QueryHandler.column_ScalingStatDistribution = Convert.ToInt32(lines[48]);
+                        QueryHandler.column_ScalingStatValue = Convert.ToInt32(lines[49]);
+                        QueryHandler.column_dmg_min1 = Convert.ToInt32(lines[50]);
+                        QueryHandler.column_dmg_max1 = Convert.ToInt32(lines[51]);
+                        QueryHandler.column_dmg_type1 = Convert.ToInt32(lines[52]);
+                        QueryHandler.column_dmg_min2 = Convert.ToInt32(lines[53]);
+                        QueryHandler.column_dmg_max2 = Convert.ToInt32(lines[54]);
+                        QueryHandler.column_dmg_type2 = Convert.ToInt32(lines[55]);
+                        QueryHandler.column_armor = Convert.ToInt32(lines[56]);
+                        QueryHandler.column_holy_res = Convert.ToInt32(lines[57]);
+                        QueryHandler.column_fire_res = Convert.ToInt32(lines[58]);
+                        QueryHandler.column_nature_res = Convert.ToInt32(lines[59]);
+                        QueryHandler.column_frost_res = Convert.ToInt32(lines[60]);
+                        QueryHandler.column_shadow_res = Convert.ToInt32(lines[61]);
+                        QueryHandler.column_arcane_res = Convert.ToInt32(lines[62]);
+                        QueryHandler.column_delay = Convert.ToInt32(lines[63]);
+                        QueryHandler.column_ammo_type = Convert.ToInt32(lines[64]);
+                        QueryHandler.column_RangedModRange = Convert.ToInt32(lines[65]);
+                        QueryHandler.column_spellid_1 = Convert.ToInt32(lines[66]);
+                        QueryHandler.column_spelltrigger_1 = Convert.ToInt32(lines[67]);
+                        QueryHandler.column_spellcharges_1 = Convert.ToInt32(lines[68]);
+                        QueryHandler.column_spellppmRate_1 = Convert.ToInt32(lines[69]);
+                        QueryHandler.column_spellcooldown_1 = Convert.ToInt32(lines[70]);
+                        QueryHandler.column_spellcategory_1 = Convert.ToInt32(lines[71]);
+                        QueryHandler.column_spellcategorycooldown_1 = Convert.ToInt32(lines[72]);
+                        QueryHandler.column_spellid_2 = Convert.ToInt32(lines[73]);
+                        QueryHandler.column_spelltrigger_2 = Convert.ToInt32(lines[74]);
+                        QueryHandler.column_spellcharges_2 = Convert.ToInt32(lines[75]);
+                        QueryHandler.column_spellppmRate_2 = Convert.ToInt32(lines[76]);
+                        QueryHandler.column_spellcooldown_2 = Convert.ToInt32(lines[77]);
+                        QueryHandler.column_spellcategory_2 = Convert.ToInt32(lines[78]);
+                        QueryHandler.column_spellcategorycooldown_2 = Convert.ToInt32(lines[79]);
+                        QueryHandler.column_spellid_3 = Convert.ToInt32(lines[80]);
+                        QueryHandler.column_spelltrigger_3 = Convert.ToInt32(lines[81]);
+                        QueryHandler.column_spellcharges_3 = Convert.ToInt32(lines[82]);
+                        QueryHandler.column_spellppmRate_3 = Convert.ToInt32(lines[83]);
+                        QueryHandler.column_spellcooldown_3 = Convert.ToInt32(lines[84]);
+                        QueryHandler.column_spellcategory_3 = Convert.ToInt32(lines[85]);
+                        QueryHandler.column_spellcategorycooldown_3 = Convert.ToInt32(lines[86]);
+                        QueryHandler.column_spellid_4 = Convert.ToInt32(lines[87]);
+                        QueryHandler.column_spelltrigger_4 = Convert.ToInt32(lines[88]);
+                        QueryHandler.column_spellcharges_4 = Convert.ToInt32(lines[89]);
+                        QueryHandler.column_spellppmRate_4 = Convert.ToInt32(lines[90]);
+                        QueryHandler.column_spellcooldown_4 = Convert.ToInt32(lines[91]);
+                        QueryHandler.column_spellcategory_4 = Convert.ToInt32(lines[92]);
+                        QueryHandler.column_spellcategorycooldown_4 = Convert.ToInt32(lines[93]);
+                        QueryHandler.column_spellid_5 = Convert.ToInt32(lines[94]);
+                        QueryHandler.column_spelltrigger_5 = Convert.ToInt32(lines[95]);
+                        QueryHandler.column_spellcharges_5 = Convert.ToInt32(lines[96]);
+                        QueryHandler.column_spellppmRate_5 = Convert.ToInt32(lines[97]);
+                        QueryHandler.column_spellcooldown_5 = Convert.ToInt32(lines[98]);
+                        QueryHandler.column_spellcategory_5 = Convert.ToInt32(lines[99]);
+                        QueryHandler.column_spellcategorycooldown_5 = Convert.ToInt32(lines[100]);
+                        QueryHandler.column_bonding = Convert.ToInt32(lines[101]);
+                        QueryHandler.column_description = lines[102];
+                        QueryHandler.column_PageText = Convert.ToInt32(lines[103]);
+                        QueryHandler.column_LanguageID = Convert.ToInt32(lines[104]);
+                        QueryHandler.column_PageMaterial = Convert.ToInt32(lines[105]);
+                        QueryHandler.column_startquest = Convert.ToInt32(lines[106]);
+                        QueryHandler.column_lockid = Convert.ToInt32(lines[107]);
+                        QueryHandler.column_Material = Convert.ToInt32(lines[108]);
+                        QueryHandler.column_sheath = Convert.ToInt32(lines[109]);
+                        QueryHandler.column_RandomProperty = Convert.ToInt32(lines[110]);
+                        QueryHandler.column_RandomSuffix = Convert.ToInt32(lines[111]);
+                        QueryHandler.column_block = Convert.ToInt32(lines[112]);
+                        QueryHandler.column_itemset = Convert.ToInt32(lines[113]);
+                        QueryHandler.column_MaxDurability = Convert.ToInt32(lines[114]);
+                        QueryHandler.column_area = Convert.ToInt32(lines[115]);
+                        QueryHandler.column_Map = Convert.ToInt32(lines[116]);
+                        QueryHandler.column_BagFamily = Convert.ToInt32(lines[117]);
+                        QueryHandler.column_TotemCategory = Convert.ToInt32(lines[118]);
+                        QueryHandler.column_socketColor_1 = Convert.ToInt32(lines[119]);
+                        QueryHandler.column_socketContent_1 = Convert.ToInt32(lines[120]);
+                        QueryHandler.column_socketColor_2 = Convert.ToInt32(lines[121]);
+                        QueryHandler.column_socketContent_2 = Convert.ToInt32(lines[122]);
+                        QueryHandler.column_socketColor_3 = Convert.ToInt32(lines[123]);
+                        QueryHandler.column_socketContent_3 = Convert.ToInt32(lines[124]);
+                        QueryHandler.column_socketBonus = Convert.ToInt32(lines[125]);
+                        QueryHandler.column_GemProperties = Convert.ToInt32(lines[126]);
+                        QueryHandler.column_RequiredDisenchantSkill = Convert.ToInt32(lines[127]);
+                        QueryHandler.column_ArmorDamageModifier = Convert.ToInt32(lines[128]);
+                        QueryHandler.column_duration = Convert.ToInt32(lines[129]);
+                        QueryHandler.column_ItemLimitCategory = Convert.ToInt32(lines[130]);
+                        QueryHandler.column_HolidayId = Convert.ToInt32(lines[131]);
+                        QueryHandler.column_ScriptName = lines[132];
+                        QueryHandler.column_DisenchantID = Convert.ToInt32(lines[133]);
+                        QueryHandler.column_FoodType = Convert.ToInt32(lines[134]);
+                        QueryHandler.column_minMoneyLoot = Convert.ToInt32(lines[135]);
+                        QueryHandler.column_maxMoneyLoot = Convert.ToInt32(lines[136]);
+                        QueryHandler.column_flagsCustom = Convert.ToInt32(lines[137]);
+                        QueryHandler.column_VerifiedBuild = Convert.ToInt32(lines[138]);
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;

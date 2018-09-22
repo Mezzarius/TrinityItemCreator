@@ -202,7 +202,7 @@ namespace TIC19
 
         private void ABOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!" + "\n \nResult: " + QueryHandler.column_Flags);
+            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!");
         }
 
         private void MyTextBox1_TextChanged(object sender, EventArgs e)
@@ -1250,6 +1250,18 @@ namespace TIC19
                 Functions myF = new Functions(this);
                 myF.LoadDefaultTemplate(99999);
             }
+        }
+
+        private void SaveCurrentTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(this);
+            form3.ShowDialog();
+        }
+
+        private void LoadCustomTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4(this);
+            form4.ShowDialog();
         }
     }
 }

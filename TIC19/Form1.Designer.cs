@@ -35,6 +35,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -272,9 +274,9 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(429, 9);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 20);
+            this.label15.Size = new System.Drawing.Size(141, 20);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Trinity Item Creator 19";
+            this.label15.Text = "Trinity Item Creator";
             // 
             // menuStrip1
             // 
@@ -300,10 +302,29 @@
             // 
             // templateToolStripMenuItem
             // 
+            this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveCurrentTemplateToolStripMenuItem,
+            this.loadCustomTemplateToolStripMenuItem});
             this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
             this.templateToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
             this.templateToolStripMenuItem.Text = "TEMPLATE";
+            // 
+            // saveCurrentTemplateToolStripMenuItem
+            // 
+            this.saveCurrentTemplateToolStripMenuItem.Name = "saveCurrentTemplateToolStripMenuItem";
+            this.saveCurrentTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
+            this.saveCurrentTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveCurrentTemplateToolStripMenuItem.Text = "Save Custom Template";
+            this.saveCurrentTemplateToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentTemplateToolStripMenuItem_Click);
+            // 
+            // loadCustomTemplateToolStripMenuItem
+            // 
+            this.loadCustomTemplateToolStripMenuItem.Name = "loadCustomTemplateToolStripMenuItem";
+            this.loadCustomTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
+            this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom Template";
+            this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
             // 
             // exportAsToolStripMenuItem
             // 
@@ -3819,6 +3840,8 @@
         private System.Windows.Forms.ToolStripMenuItem sQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToClipboardCTRLEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBOUTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveCurrentTemplateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadCustomTemplateToolStripMenuItem;
     }
 }
 

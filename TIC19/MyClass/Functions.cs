@@ -48,7 +48,7 @@ namespace TrinityItemCreator.MyClass
                         QueryHandler.column_sheath = 3;
                         QueryHandler.column_class = 2;
                         QueryHandler.column_subclass = 7;
-                        QueryHandler.column_InventoryType = 26;
+                        QueryHandler.column_InventoryType = 13;
                         QueryHandler.column_Material = 1;
                         QueryHandler.column_dmg_min1 = 100;
                         QueryHandler.column_dmg_max1 = 200;

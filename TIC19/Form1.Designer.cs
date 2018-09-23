@@ -1,4 +1,4 @@
-﻿namespace TIC19
+﻿namespace TrinityItemCreator
 {
     partial class Form1
     {
@@ -209,6 +209,7 @@
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
+            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -305,7 +306,8 @@
             // 
             this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveCurrentTemplateToolStripMenuItem,
-            this.loadCustomTemplateToolStripMenuItem});
+            this.loadCustomTemplateToolStripMenuItem,
+            this.loadDefaultTemplateToolStripMenuItem});
             this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
             this.templateToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
@@ -2180,7 +2182,7 @@
             this.button10.Enabled = false;
             this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.DimGray;
-            this.button10.Image = global::TIC19.Properties.Resources.medium_inv_misc_enggizmos_26;
+            this.button10.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_enggizmos_26;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button10.Location = new System.Drawing.Point(955, 698);
             this.button10.Name = "button10";
@@ -2197,7 +2199,7 @@
             this.button9.Enabled = false;
             this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.DimGray;
-            this.button9.Image = global::TIC19.Properties.Resources.medium_spell_fire_frostresistancetotem;
+            this.button9.Image = global::TrinityItemCreator.Properties.Resources.medium_spell_fire_frostresistancetotem;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button9.Location = new System.Drawing.Point(831, 698);
             this.button9.Name = "button9";
@@ -2214,7 +2216,7 @@
             this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TIC19.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.Location = new System.Drawing.Point(938, 127);
             this.button6.Name = "button6";
@@ -2231,7 +2233,7 @@
             this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.Location = new System.Drawing.Point(785, 127);
             this.button5.Name = "button5";
@@ -2248,7 +2250,7 @@
             this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TIC19.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.Location = new System.Drawing.Point(632, 127);
             this.button4.Name = "button4";
@@ -2265,7 +2267,7 @@
             this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_14;
+            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.Location = new System.Drawing.Point(938, 80);
             this.button3.Name = "button3";
@@ -2282,7 +2284,7 @@
             this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TIC19.Properties.Resources.medium_inv_misc_head_02;
+            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.Location = new System.Drawing.Point(632, 80);
             this.button2.Name = "button2";
@@ -2300,7 +2302,7 @@
             this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TIC19.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(785, 80);
             this.button1.Name = "button1";
@@ -2317,7 +2319,7 @@
             this.button11.Enabled = false;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = global::TIC19.Properties.Resources.medium_inv_misc_bag_09_green;
+            this.button11.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_09_green;
             this.button11.Location = new System.Drawing.Point(736, 698);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(39, 39);
@@ -3533,6 +3535,14 @@
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
+            // loadDefaultTemplateToolStripMenuItem
+            // 
+            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
+            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default Template";
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3912,6 +3922,7 @@
         private System.Windows.Forms.ToolStripMenuItem aBOUTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveCurrentTemplateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadCustomTemplateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadDefaultTemplateToolStripMenuItem;
     }
 }
 

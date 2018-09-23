@@ -1,4 +1,4 @@
-﻿namespace TIC19
+﻿namespace TrinityItemCreator
 {
     partial class Form2
     {
@@ -211,7 +211,7 @@
             // button14
             // 
             this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.Image = global::TIC19.Properties.Resources.large_inv_inscription_minorglyph17;
+            this.button14.Image = global::TrinityItemCreator.Properties.Resources.large_inv_inscription_minorglyph17;
             this.button14.Location = new System.Drawing.Point(20, 166);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(58, 58);
@@ -222,7 +222,7 @@
             // button13
             // 
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.Image = global::TIC19.Properties.Resources.large_inv_misc_bomb_04;
+            this.button13.Image = global::TrinityItemCreator.Properties.Resources.large_inv_misc_bomb_04;
             this.button13.Location = new System.Drawing.Point(320, 262);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(58, 58);
@@ -233,7 +233,7 @@
             // button12
             // 
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Image = global::TIC19.Properties.Resources.large_inv_misc_key_15;
+            this.button12.Image = global::TrinityItemCreator.Properties.Resources.large_inv_misc_key_15;
             this.button12.Location = new System.Drawing.Point(320, 166);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(58, 58);
@@ -244,7 +244,7 @@
             // button11
             // 
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Image = global::TIC19.Properties.Resources.large_achievement_quests_completed_06;
+            this.button11.Image = global::TrinityItemCreator.Properties.Resources.large_achievement_quests_completed_06;
             this.button11.Location = new System.Drawing.Point(220, 166);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(58, 58);
@@ -255,7 +255,7 @@
             // button10
             // 
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Image = global::TIC19.Properties.Resources.large_ability_hunter_wildquiver;
+            this.button10.Image = global::TrinityItemCreator.Properties.Resources.large_ability_hunter_wildquiver;
             this.button10.Location = new System.Drawing.Point(520, 70);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(58, 58);
@@ -266,7 +266,7 @@
             // button9
             // 
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Image = global::TIC19.Properties.Resources.large_inv_enchant_formulaepic_01;
+            this.button9.Image = global::TrinityItemCreator.Properties.Resources.large_inv_enchant_formulaepic_01;
             this.button9.Location = new System.Drawing.Point(120, 166);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(58, 58);
@@ -277,7 +277,7 @@
             // button8
             // 
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Image = global::TIC19.Properties.Resources.large_inv_tradeskillitem_02;
+            this.button8.Image = global::TrinityItemCreator.Properties.Resources.large_inv_tradeskillitem_02;
             this.button8.Location = new System.Drawing.Point(520, 166);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(58, 58);
@@ -288,7 +288,7 @@
             // button7
             // 
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Image = global::TIC19.Properties.Resources.large_inv_misc_ammo_bullet_06;
+            this.button7.Image = global::TrinityItemCreator.Properties.Resources.large_inv_misc_ammo_bullet_06;
             this.button7.Location = new System.Drawing.Point(320, 70);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(58, 58);
@@ -299,7 +299,7 @@
             // button6
             // 
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Image = global::TIC19.Properties.Resources.large_inv_misc_dust_infinite;
+            this.button6.Image = global::TrinityItemCreator.Properties.Resources.large_inv_misc_dust_infinite;
             this.button6.Location = new System.Drawing.Point(420, 166);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 58);
@@ -310,7 +310,7 @@
             // button5
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Image = global::TIC19.Properties.Resources.large_inv_misc_bag_soulbag;
+            this.button5.Image = global::TrinityItemCreator.Properties.Resources.large_inv_misc_bag_soulbag;
             this.button5.Location = new System.Drawing.Point(420, 70);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 58);
@@ -321,7 +321,7 @@
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Image = global::TIC19.Properties.Resources.large_inv_potion_107;
+            this.button4.Image = global::TrinityItemCreator.Properties.Resources.large_inv_potion_107;
             this.button4.Location = new System.Drawing.Point(220, 262);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 58);
@@ -332,7 +332,7 @@
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Image = global::TIC19.Properties.Resources.large_inv_jewelcrafting_gem_37;
+            this.button3.Image = global::TrinityItemCreator.Properties.Resources.large_inv_jewelcrafting_gem_37;
             this.button3.Location = new System.Drawing.Point(220, 70);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 58);
@@ -343,7 +343,7 @@
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Image = global::TIC19.Properties.Resources.large_inv_chest_mail_11;
+            this.button2.Image = global::TrinityItemCreator.Properties.Resources.large_inv_chest_mail_11;
             this.button2.Location = new System.Drawing.Point(120, 70);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 58);
@@ -354,7 +354,7 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Image = global::TIC19.Properties.Resources.large_ability_warrior_weaponmastery;
+            this.button1.Image = global::TrinityItemCreator.Properties.Resources.large_ability_warrior_weaponmastery;
             this.button1.Location = new System.Drawing.Point(20, 70);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 58);

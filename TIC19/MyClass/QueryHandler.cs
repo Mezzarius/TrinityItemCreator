@@ -1,4 +1,4 @@
-﻿namespace TIC19.MyClass
+﻿namespace TrinityItemCreator.MyClass
 {
     class QueryHandler
     {

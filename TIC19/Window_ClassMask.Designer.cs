@@ -1,4 +1,4 @@
-﻿namespace TIC19
+﻿namespace TrinityItemCreator
 {
     partial class Window_ClassMask
     {
@@ -81,7 +81,7 @@
             this.checkBox1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox1.Image = global::TIC19.Properties.Resources.small_ability_warrior_savageblow;
+            this.checkBox1.Image = global::TrinityItemCreator.Properties.Resources.small_ability_warrior_savageblow;
             this.checkBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Location = new System.Drawing.Point(25, 89);
             this.checkBox1.Name = "checkBox1";
@@ -103,7 +103,7 @@
             this.checkBox2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox2.Image = global::TIC19.Properties.Resources.small_ability_paladin_hammeroftherighteous;
+            this.checkBox2.Image = global::TrinityItemCreator.Properties.Resources.small_ability_paladin_hammeroftherighteous;
             this.checkBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Location = new System.Drawing.Point(167, 89);
             this.checkBox2.Name = "checkBox2";
@@ -125,7 +125,7 @@
             this.checkBox3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox3.Image = global::TIC19.Properties.Resources.small_ability_hunter_snipershot;
+            this.checkBox3.Image = global::TrinityItemCreator.Properties.Resources.small_ability_hunter_snipershot;
             this.checkBox3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Location = new System.Drawing.Point(309, 89);
             this.checkBox3.Name = "checkBox3";
@@ -147,7 +147,7 @@
             this.checkBox4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox4.Image = global::TIC19.Properties.Resources.small_spell_holy_searinglightpriest;
+            this.checkBox4.Image = global::TrinityItemCreator.Properties.Resources.small_spell_holy_searinglightpriest;
             this.checkBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Location = new System.Drawing.Point(167, 125);
             this.checkBox4.Name = "checkBox4";
@@ -169,7 +169,7 @@
             this.checkBox5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox5.Image = global::TIC19.Properties.Resources.small_spell_deathknight_classicon;
+            this.checkBox5.Image = global::TrinityItemCreator.Properties.Resources.small_spell_deathknight_classicon;
             this.checkBox5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox5.Location = new System.Drawing.Point(167, 197);
             this.checkBox5.Name = "checkBox5";
@@ -191,7 +191,7 @@
             this.checkBox6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox6.Image = global::TIC19.Properties.Resources.small_spell_shaman_improvedstormstrike;
+            this.checkBox6.Image = global::TrinityItemCreator.Properties.Resources.small_spell_shaman_improvedstormstrike;
             this.checkBox6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox6.Location = new System.Drawing.Point(309, 125);
             this.checkBox6.Name = "checkBox6";
@@ -213,7 +213,7 @@
             this.checkBox7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox7.Image = global::TIC19.Properties.Resources.small_ability_mage_frostfirebolt;
+            this.checkBox7.Image = global::TrinityItemCreator.Properties.Resources.small_ability_mage_frostfirebolt;
             this.checkBox7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox7.Location = new System.Drawing.Point(25, 161);
             this.checkBox7.Name = "checkBox7";
@@ -235,7 +235,7 @@
             this.checkBox8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox8.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox8.Image = global::TIC19.Properties.Resources.small_ability_warlock_improvedsoulleech;
+            this.checkBox8.Image = global::TrinityItemCreator.Properties.Resources.small_ability_warlock_improvedsoulleech;
             this.checkBox8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox8.Location = new System.Drawing.Point(167, 161);
             this.checkBox8.Name = "checkBox8";
@@ -257,7 +257,7 @@
             this.checkBox9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox9.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox9.Image = global::TIC19.Properties.Resources.small_ability_druid_improvedtreeform;
+            this.checkBox9.Image = global::TrinityItemCreator.Properties.Resources.small_ability_druid_improvedtreeform;
             this.checkBox9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox9.Location = new System.Drawing.Point(309, 161);
             this.checkBox9.Name = "checkBox9";
@@ -290,7 +290,7 @@
             this.checkBox10.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox10.Image = global::TIC19.Properties.Resources.small_ability_rogue_dualweild;
+            this.checkBox10.Image = global::TrinityItemCreator.Properties.Resources.small_ability_rogue_dualweild;
             this.checkBox10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox10.Location = new System.Drawing.Point(25, 125);
             this.checkBox10.Name = "checkBox10";

@@ -1,4 +1,4 @@
-﻿namespace TIC19
+﻿namespace TrinityItemCreator
 {
     partial class Window_Resistances
     {

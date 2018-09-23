@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System;
 
-namespace TIC19.MyClass
+namespace TrinityItemCreator.MyClass
 {
     class Functions
     {

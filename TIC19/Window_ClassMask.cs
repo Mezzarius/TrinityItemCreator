@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
-using TIC19.MyClass;
+using TrinityItemCreator.MyClass;
 
-namespace TIC19
+namespace TrinityItemCreator
 {
     public partial class Window_ClassMask : Form
     {

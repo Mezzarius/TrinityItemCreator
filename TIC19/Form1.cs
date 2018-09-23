@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using TIC19.MyClass;
+using TrinityItemCreator.MyClass;
 
-namespace TIC19
+namespace TrinityItemCreator
 {
     public partial class Form1 : Form
     {
@@ -1262,6 +1262,12 @@ namespace TIC19
         {
             Form4 form4 = new Form4(this);
             form4.ShowDialog();
+        }
+
+        private void loadDefaultTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(this);
+            form2.ShowDialog();
         }
     }
 }

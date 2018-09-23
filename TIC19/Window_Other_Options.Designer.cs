@@ -46,37 +46,37 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.myTextBox14 = new MyTextBox();
-            this.myTextBox15 = new MyTextBox();
-            this.myTextBox10 = new MyTextBox();
-            this.myTextBox11 = new MyTextBox();
-            this.myTextBox12 = new MyTextBox();
-            this.myTextBox13 = new MyTextBox();
-            this.myTextBox9 = new MyTextBox();
-            this.myTextBox8 = new MyTextBox();
-            this.myTextBox7 = new MyTextBox();
-            this.myTextBox6 = new MyTextBox();
-            this.myTextBox5 = new MyTextBox();
-            this.myTextBox4 = new MyTextBox();
-            this.myTextBox3 = new MyTextBox();
-            this.myTextBox2 = new MyTextBox();
-            this.myTextBox1 = new MyTextBox();
-            this.myTextBox25 = new MyTextBox();
+            this.MyTextBox14 = new MyTextBox();
+            this.MyTextBox15 = new MyTextBox();
+            this.MyTextBox10 = new MyTextBox();
+            this.MyTextBox11 = new MyTextBox();
+            this.MyTextBox12 = new MyTextBox();
+            this.MyTextBox13 = new MyTextBox();
+            this.MyTextBox9 = new MyTextBox();
+            this.MyTextBox8 = new MyTextBox();
+            this.MyTextBox7 = new MyTextBox();
+            this.MyTextBox6 = new MyTextBox();
+            this.MyTextBox5 = new MyTextBox();
+            this.MyTextBox4 = new MyTextBox();
+            this.MyTextBox3 = new MyTextBox();
+            this.MyTextBox2 = new MyTextBox();
+            this.MyTextBox1 = new MyTextBox();
+            this.MyTextBox25 = new MyTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.myTextBox16 = new MyTextBox();
+            this.MyTextBox16 = new MyTextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.myTextBox17 = new MyTextBox();
+            this.MyTextBox17 = new MyTextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.myTextBox18 = new MyTextBox();
+            this.MyTextBox18 = new MyTextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.myTextBox19 = new MyTextBox();
+            this.MyTextBox19 = new MyTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.myTextBox20 = new MyTextBox();
+            this.MyTextBox20 = new MyTextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.myTextBox21 = new MyTextBox();
+            this.MyTextBox21 = new MyTextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.myTextBox22 = new MyTextBox();
+            this.MyTextBox22 = new MyTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -299,277 +299,277 @@
             this.label13.TabIndex = 145;
             this.label13.Text = "Map";
             // 
-            // myTextBox14
+            // MyTextBox14
             // 
-            this.myTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox14.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox14.Location = new System.Drawing.Point(285, 261);
-            this.myTextBox14.Name = "myTextBox14";
-            this.myTextBox14.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox14.TabIndex = 16;
-            this.myTextBox14.Text = "0";
-            this.myTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox14.TextChanged += new System.EventHandler(this.myTextBox14_TextChanged);
-            this.myTextBox14.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox14.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox14.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox14.Location = new System.Drawing.Point(285, 261);
+            this.MyTextBox14.Name = "MyTextBox14";
+            this.MyTextBox14.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox14.TabIndex = 16;
+            this.MyTextBox14.Text = "0";
+            this.MyTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox14.TextChanged += new System.EventHandler(this.MyTextBox14_TextChanged);
+            this.MyTextBox14.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox14.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox15
+            // MyTextBox15
             // 
-            this.myTextBox15.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox15.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox15.Location = new System.Drawing.Point(154, 261);
-            this.myTextBox15.Name = "myTextBox15";
-            this.myTextBox15.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox15.TabIndex = 15;
-            this.myTextBox15.Text = "0";
-            this.myTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox15.TextChanged += new System.EventHandler(this.myTextBox15_TextChanged);
-            this.myTextBox15.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox15.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox15.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox15.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox15.Location = new System.Drawing.Point(154, 261);
+            this.MyTextBox15.Name = "MyTextBox15";
+            this.MyTextBox15.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox15.TabIndex = 15;
+            this.MyTextBox15.Text = "0";
+            this.MyTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox15.TextChanged += new System.EventHandler(this.MyTextBox15_TextChanged);
+            this.MyTextBox15.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox15.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox10
+            // MyTextBox10
             // 
-            this.myTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox10.Location = new System.Drawing.Point(285, 331);
-            this.myTextBox10.Name = "myTextBox10";
-            this.myTextBox10.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox10.TabIndex = 20;
-            this.myTextBox10.Text = "0";
-            this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox10.TextChanged += new System.EventHandler(this.myTextBox10_TextChanged);
-            this.myTextBox10.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox10.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox10.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox10.Location = new System.Drawing.Point(285, 331);
+            this.MyTextBox10.Name = "MyTextBox10";
+            this.MyTextBox10.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox10.TabIndex = 20;
+            this.MyTextBox10.Text = "0";
+            this.MyTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox10.TextChanged += new System.EventHandler(this.MyTextBox10_TextChanged);
+            this.MyTextBox10.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox10.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox11
+            // MyTextBox11
             // 
-            this.myTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox11.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox11.Location = new System.Drawing.Point(424, 331);
-            this.myTextBox11.Name = "myTextBox11";
-            this.myTextBox11.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox11.TabIndex = 21;
-            this.myTextBox11.Text = "0";
-            this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox11.TextChanged += new System.EventHandler(this.myTextBox11_TextChanged);
-            this.myTextBox11.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox11.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox11.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox11.Location = new System.Drawing.Point(424, 331);
+            this.MyTextBox11.Name = "MyTextBox11";
+            this.MyTextBox11.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox11.TabIndex = 21;
+            this.MyTextBox11.Text = "0";
+            this.MyTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox11.TextChanged += new System.EventHandler(this.MyTextBox11_TextChanged);
+            this.MyTextBox11.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox11.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox12
+            // MyTextBox12
             // 
-            this.myTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox12.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox12.Location = new System.Drawing.Point(19, 389);
-            this.myTextBox12.Name = "myTextBox12";
-            this.myTextBox12.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox12.TabIndex = 22;
-            this.myTextBox12.Text = "0";
-            this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox12.TextChanged += new System.EventHandler(this.myTextBox12_TextChanged);
-            this.myTextBox12.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox12.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox12.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox12.Location = new System.Drawing.Point(19, 389);
+            this.MyTextBox12.Name = "MyTextBox12";
+            this.MyTextBox12.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox12.TabIndex = 22;
+            this.MyTextBox12.Text = "0";
+            this.MyTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox12.TextChanged += new System.EventHandler(this.MyTextBox12_TextChanged);
+            this.MyTextBox12.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox12.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox13
+            // MyTextBox13
             // 
-            this.myTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox13.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox13.Location = new System.Drawing.Point(424, 261);
-            this.myTextBox13.Name = "myTextBox13";
-            this.myTextBox13.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox13.TabIndex = 17;
-            this.myTextBox13.Text = "0";
-            this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox13.TextChanged += new System.EventHandler(this.myTextBox13_TextChanged);
-            this.myTextBox13.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox13.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox13.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox13.Location = new System.Drawing.Point(424, 261);
+            this.MyTextBox13.Name = "MyTextBox13";
+            this.MyTextBox13.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox13.TabIndex = 17;
+            this.MyTextBox13.Text = "0";
+            this.MyTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox13.TextChanged += new System.EventHandler(this.MyTextBox13_TextChanged);
+            this.MyTextBox13.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox13.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox9
+            // MyTextBox9
             // 
-            this.myTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox9.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox9.Location = new System.Drawing.Point(154, 331);
-            this.myTextBox9.Name = "myTextBox9";
-            this.myTextBox9.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox9.TabIndex = 19;
-            this.myTextBox9.Text = "0";
-            this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox9.TextChanged += new System.EventHandler(this.myTextBox9_TextChanged);
-            this.myTextBox9.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox9.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox9.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox9.Location = new System.Drawing.Point(154, 331);
+            this.MyTextBox9.Name = "MyTextBox9";
+            this.MyTextBox9.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox9.TabIndex = 19;
+            this.MyTextBox9.Text = "0";
+            this.MyTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox9.TextChanged += new System.EventHandler(this.MyTextBox9_TextChanged);
+            this.MyTextBox9.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox9.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox8
+            // MyTextBox8
             // 
-            this.myTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox8.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox8.Location = new System.Drawing.Point(424, 151);
-            this.myTextBox8.Name = "myTextBox8";
-            this.myTextBox8.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox8.TabIndex = 9;
-            this.myTextBox8.Text = "0";
-            this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox8.TextChanged += new System.EventHandler(this.myTextBox8_TextChanged);
-            this.myTextBox8.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox8.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox8.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox8.Location = new System.Drawing.Point(424, 151);
+            this.MyTextBox8.Name = "MyTextBox8";
+            this.MyTextBox8.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox8.TabIndex = 9;
+            this.MyTextBox8.Text = "0";
+            this.MyTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox8.TextChanged += new System.EventHandler(this.MyTextBox8_TextChanged);
+            this.MyTextBox8.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox8.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox7
+            // MyTextBox7
             // 
-            this.myTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox7.Location = new System.Drawing.Point(285, 151);
-            this.myTextBox7.Name = "myTextBox7";
-            this.myTextBox7.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox7.TabIndex = 8;
-            this.myTextBox7.Text = "0";
-            this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox7.TextChanged += new System.EventHandler(this.myTextBox7_TextChanged);
-            this.myTextBox7.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox7.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox7.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox7.Location = new System.Drawing.Point(285, 151);
+            this.MyTextBox7.Name = "MyTextBox7";
+            this.MyTextBox7.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox7.TabIndex = 8;
+            this.MyTextBox7.Text = "0";
+            this.MyTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox7.TextChanged += new System.EventHandler(this.MyTextBox7_TextChanged);
+            this.MyTextBox7.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox7.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox6
+            // MyTextBox6
             // 
-            this.myTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox6.Location = new System.Drawing.Point(19, 331);
-            this.myTextBox6.Name = "myTextBox6";
-            this.myTextBox6.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox6.TabIndex = 18;
-            this.myTextBox6.Text = "0";
-            this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox6.TextChanged += new System.EventHandler(this.myTextBox6_TextChanged);
-            this.myTextBox6.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox6.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox6.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox6.Location = new System.Drawing.Point(19, 331);
+            this.MyTextBox6.Name = "MyTextBox6";
+            this.MyTextBox6.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox6.TabIndex = 18;
+            this.MyTextBox6.Text = "0";
+            this.MyTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox6.TextChanged += new System.EventHandler(this.MyTextBox6_TextChanged);
+            this.MyTextBox6.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox6.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox5
+            // MyTextBox5
             // 
-            this.myTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox5.Location = new System.Drawing.Point(424, 89);
-            this.myTextBox5.Name = "myTextBox5";
-            this.myTextBox5.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox5.TabIndex = 5;
-            this.myTextBox5.Text = "0";
-            this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox5.TextChanged += new System.EventHandler(this.myTextBox5_TextChanged);
-            this.myTextBox5.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox5.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox5.Location = new System.Drawing.Point(424, 89);
+            this.MyTextBox5.Name = "MyTextBox5";
+            this.MyTextBox5.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox5.TabIndex = 5;
+            this.MyTextBox5.Text = "0";
+            this.MyTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox5.TextChanged += new System.EventHandler(this.MyTextBox5_TextChanged);
+            this.MyTextBox5.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox5.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox4
+            // MyTextBox4
             // 
-            this.myTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox4.Location = new System.Drawing.Point(260, 89);
-            this.myTextBox4.Name = "myTextBox4";
-            this.myTextBox4.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox4.TabIndex = 4;
-            this.myTextBox4.Text = "0";
-            this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox4.TextChanged += new System.EventHandler(this.myTextBox4_TextChanged);
-            this.myTextBox4.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox4.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox4.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox4.Location = new System.Drawing.Point(260, 89);
+            this.MyTextBox4.Name = "MyTextBox4";
+            this.MyTextBox4.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox4.TabIndex = 4;
+            this.MyTextBox4.Text = "0";
+            this.MyTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox4.TextChanged += new System.EventHandler(this.MyTextBox4_TextChanged);
+            this.MyTextBox4.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox4.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox3
+            // MyTextBox3
             // 
-            this.myTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox3.Location = new System.Drawing.Point(154, 89);
-            this.myTextBox3.Name = "myTextBox3";
-            this.myTextBox3.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox3.TabIndex = 3;
-            this.myTextBox3.Text = "0";
-            this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox3.TextChanged += new System.EventHandler(this.myTextBox3_TextChanged);
-            this.myTextBox3.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox3.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox3.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox3.Location = new System.Drawing.Point(154, 89);
+            this.MyTextBox3.Name = "MyTextBox3";
+            this.MyTextBox3.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox3.TabIndex = 3;
+            this.MyTextBox3.Text = "0";
+            this.MyTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox3.TextChanged += new System.EventHandler(this.MyTextBox3_TextChanged);
+            this.MyTextBox3.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox3.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox2
+            // MyTextBox2
             // 
-            this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox2.Location = new System.Drawing.Point(424, 49);
-            this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox2.TabIndex = 2;
-            this.myTextBox2.Text = "0";
-            this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox2.TextChanged += new System.EventHandler(this.myTextBox2_TextChanged);
-            this.myTextBox2.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox2.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox2.Location = new System.Drawing.Point(424, 49);
+            this.MyTextBox2.Name = "MyTextBox2";
+            this.MyTextBox2.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox2.TabIndex = 2;
+            this.MyTextBox2.Text = "0";
+            this.MyTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox2.TextChanged += new System.EventHandler(this.MyTextBox2_TextChanged);
+            this.MyTextBox2.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox2.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox1
+            // MyTextBox1
             // 
-            this.myTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox1.Location = new System.Drawing.Point(260, 49);
-            this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox1.TabIndex = 1;
-            this.myTextBox1.Text = "0";
-            this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox1.TextChanged += new System.EventHandler(this.myTextBox1_TextChanged);
-            this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox1.Location = new System.Drawing.Point(260, 49);
+            this.MyTextBox1.Name = "MyTextBox1";
+            this.MyTextBox1.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox1.TabIndex = 1;
+            this.MyTextBox1.Text = "0";
+            this.MyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox1.TextChanged += new System.EventHandler(this.MyTextBox1_TextChanged);
+            this.MyTextBox1.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox1.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // myTextBox25
+            // MyTextBox25
             // 
-            this.myTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox25.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox25.Location = new System.Drawing.Point(154, 49);
-            this.myTextBox25.Name = "myTextBox25";
-            this.myTextBox25.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox25.TabIndex = 0;
-            this.myTextBox25.Text = "0";
-            this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox25.TextChanged += new System.EventHandler(this.myTextBox25_TextChanged);
-            this.myTextBox25.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox25.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox25.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox25.Location = new System.Drawing.Point(154, 49);
+            this.MyTextBox25.Name = "MyTextBox25";
+            this.MyTextBox25.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox25.TabIndex = 0;
+            this.MyTextBox25.Text = "0";
+            this.MyTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox25.TextChanged += new System.EventHandler(this.MyTextBox25_TextChanged);
+            this.MyTextBox25.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox25.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // panel6
             // 
@@ -598,22 +598,22 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // myTextBox16
+            // MyTextBox16
             // 
-            this.myTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox16.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox16.Location = new System.Drawing.Point(285, 205);
-            this.myTextBox16.Name = "myTextBox16";
-            this.myTextBox16.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox16.TabIndex = 12;
-            this.myTextBox16.Text = "0";
-            this.myTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox16.TextChanged += new System.EventHandler(this.myTextBox16_TextChanged);
-            this.myTextBox16.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox16.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox16.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox16.Location = new System.Drawing.Point(285, 205);
+            this.MyTextBox16.Name = "MyTextBox16";
+            this.MyTextBox16.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox16.TabIndex = 12;
+            this.MyTextBox16.Text = "0";
+            this.MyTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox16.TextChanged += new System.EventHandler(this.MyTextBox16_TextChanged);
+            this.MyTextBox16.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox16.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label14
             // 
@@ -628,22 +628,22 @@
             this.label14.TabIndex = 153;
             this.label14.Text = "Required Skill";
             // 
-            // myTextBox17
+            // MyTextBox17
             // 
-            this.myTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox17.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox17.Location = new System.Drawing.Point(424, 205);
-            this.myTextBox17.Name = "myTextBox17";
-            this.myTextBox17.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox17.TabIndex = 13;
-            this.myTextBox17.Text = "0";
-            this.myTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox17.TextChanged += new System.EventHandler(this.myTextBox17_TextChanged);
-            this.myTextBox17.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox17.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox17.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox17.Location = new System.Drawing.Point(424, 205);
+            this.MyTextBox17.Name = "MyTextBox17";
+            this.MyTextBox17.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox17.TabIndex = 13;
+            this.MyTextBox17.Text = "0";
+            this.MyTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox17.TextChanged += new System.EventHandler(this.MyTextBox17_TextChanged);
+            this.MyTextBox17.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox17.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label16
             // 
@@ -658,22 +658,22 @@
             this.label16.TabIndex = 155;
             this.label16.Text = "Req Skill Rank";
             // 
-            // myTextBox18
+            // MyTextBox18
             // 
-            this.myTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox18.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox18.Location = new System.Drawing.Point(19, 261);
-            this.myTextBox18.Name = "myTextBox18";
-            this.myTextBox18.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox18.TabIndex = 14;
-            this.myTextBox18.Text = "0";
-            this.myTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox18.TextChanged += new System.EventHandler(this.myTextBox18_TextChanged);
-            this.myTextBox18.Enter += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            this.myTextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox18.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox18.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox18.Location = new System.Drawing.Point(19, 261);
+            this.MyTextBox18.Name = "MyTextBox18";
+            this.MyTextBox18.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox18.TabIndex = 14;
+            this.MyTextBox18.Text = "0";
+            this.MyTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox18.TextChanged += new System.EventHandler(this.MyTextBox18_TextChanged);
+            this.MyTextBox18.Enter += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            this.MyTextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox18.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label17
             // 
@@ -688,22 +688,22 @@
             this.label17.TabIndex = 157;
             this.label17.Text = "Required Spell";
             // 
-            // myTextBox19
+            // MyTextBox19
             // 
-            this.myTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox19.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox19.Location = new System.Drawing.Point(19, 205);
-            this.myTextBox19.Name = "myTextBox19";
-            this.myTextBox19.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox19.TabIndex = 10;
-            this.myTextBox19.Text = "0";
-            this.myTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox19.TextChanged += new System.EventHandler(this.myTextBox19_TextChanged);
-            this.myTextBox19.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox19.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox19.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox19.Location = new System.Drawing.Point(19, 205);
+            this.MyTextBox19.Name = "MyTextBox19";
+            this.MyTextBox19.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox19.TabIndex = 10;
+            this.MyTextBox19.Text = "0";
+            this.MyTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox19.TextChanged += new System.EventHandler(this.MyTextBox19_TextChanged);
+            this.MyTextBox19.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox19.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label18
             // 
@@ -718,22 +718,22 @@
             this.label18.TabIndex = 159;
             this.label18.Text = "Req Honor Rank";
             // 
-            // myTextBox20
+            // MyTextBox20
             // 
-            this.myTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox20.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox20.Location = new System.Drawing.Point(154, 205);
-            this.myTextBox20.Name = "myTextBox20";
-            this.myTextBox20.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox20.TabIndex = 11;
-            this.myTextBox20.Text = "0";
-            this.myTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox20.TextChanged += new System.EventHandler(this.myTextBox20_TextChanged);
-            this.myTextBox20.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox20.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox20.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox20.Location = new System.Drawing.Point(154, 205);
+            this.MyTextBox20.Name = "MyTextBox20";
+            this.MyTextBox20.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox20.TabIndex = 11;
+            this.MyTextBox20.Text = "0";
+            this.MyTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox20.TextChanged += new System.EventHandler(this.MyTextBox20_TextChanged);
+            this.MyTextBox20.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox20.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label19
             // 
@@ -748,22 +748,22 @@
             this.label19.TabIndex = 161;
             this.label19.Text = "Req City Rank";
             // 
-            // myTextBox21
+            // MyTextBox21
             // 
-            this.myTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox21.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox21.Location = new System.Drawing.Point(19, 151);
-            this.myTextBox21.Name = "myTextBox21";
-            this.myTextBox21.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox21.TabIndex = 6;
-            this.myTextBox21.Text = "0";
-            this.myTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox21.TextChanged += new System.EventHandler(this.myTextBox21_TextChanged);
-            this.myTextBox21.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox21.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox21.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox21.Location = new System.Drawing.Point(19, 151);
+            this.MyTextBox21.Name = "MyTextBox21";
+            this.MyTextBox21.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox21.TabIndex = 6;
+            this.MyTextBox21.Text = "0";
+            this.MyTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox21.TextChanged += new System.EventHandler(this.MyTextBox21_TextChanged);
+            this.MyTextBox21.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox21.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label20
             // 
@@ -778,22 +778,22 @@
             this.label20.TabIndex = 163;
             this.label20.Text = "Req Rep Faction";
             // 
-            // myTextBox22
+            // MyTextBox22
             // 
-            this.myTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox22.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox22.Location = new System.Drawing.Point(154, 151);
-            this.myTextBox22.Name = "myTextBox22";
-            this.myTextBox22.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox22.TabIndex = 7;
-            this.myTextBox22.Text = "0";
-            this.myTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox22.TextChanged += new System.EventHandler(this.myTextBox22_TextChanged);
-            this.myTextBox22.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox22.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.MyTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox22.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox22.Location = new System.Drawing.Point(154, 151);
+            this.MyTextBox22.Name = "MyTextBox22";
+            this.MyTextBox22.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox22.TabIndex = 7;
+            this.MyTextBox22.Text = "0";
+            this.MyTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox22.TextChanged += new System.EventHandler(this.MyTextBox22_TextChanged);
+            this.MyTextBox22.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox22.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // label21
             // 
@@ -815,52 +815,52 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(544, 474);
             this.ControlBox = false;
-            this.Controls.Add(this.myTextBox22);
+            this.Controls.Add(this.MyTextBox22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.myTextBox21);
+            this.Controls.Add(this.MyTextBox21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.myTextBox20);
+            this.Controls.Add(this.MyTextBox20);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.myTextBox19);
+            this.Controls.Add(this.MyTextBox19);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.myTextBox18);
+            this.Controls.Add(this.MyTextBox18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.myTextBox17);
+            this.Controls.Add(this.MyTextBox17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.myTextBox16);
+            this.Controls.Add(this.MyTextBox16);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.myTextBox14);
+            this.Controls.Add(this.MyTextBox14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.myTextBox15);
+            this.Controls.Add(this.MyTextBox15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.myTextBox10);
+            this.Controls.Add(this.MyTextBox10);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.myTextBox11);
+            this.Controls.Add(this.MyTextBox11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.myTextBox12);
+            this.Controls.Add(this.MyTextBox12);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.myTextBox13);
+            this.Controls.Add(this.MyTextBox13);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.myTextBox9);
+            this.Controls.Add(this.MyTextBox9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.myTextBox8);
+            this.Controls.Add(this.MyTextBox8);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.myTextBox7);
+            this.Controls.Add(this.MyTextBox7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.myTextBox6);
+            this.Controls.Add(this.MyTextBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.myTextBox5);
+            this.Controls.Add(this.MyTextBox5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.myTextBox4);
-            this.Controls.Add(this.myTextBox3);
+            this.Controls.Add(this.MyTextBox4);
+            this.Controls.Add(this.MyTextBox3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.myTextBox2);
+            this.Controls.Add(this.MyTextBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.myTextBox1);
-            this.Controls.Add(this.myTextBox25);
+            this.Controls.Add(this.MyTextBox1);
+            this.Controls.Add(this.MyTextBox25);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -887,53 +887,53 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
-        public MyTextBox myTextBox25;
+        public MyTextBox MyTextBox25;
         private System.Windows.Forms.Label label29;
-        public MyTextBox myTextBox1;
+        public MyTextBox MyTextBox1;
         private System.Windows.Forms.Label label1;
-        public MyTextBox myTextBox2;
-        public MyTextBox myTextBox3;
+        public MyTextBox MyTextBox2;
+        public MyTextBox MyTextBox3;
         private System.Windows.Forms.Label label2;
-        public MyTextBox myTextBox4;
-        public MyTextBox myTextBox5;
+        public MyTextBox MyTextBox4;
+        public MyTextBox MyTextBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        public MyTextBox myTextBox6;
+        public MyTextBox MyTextBox6;
         private System.Windows.Forms.Label label4;
-        public MyTextBox myTextBox7;
+        public MyTextBox MyTextBox7;
         private System.Windows.Forms.Label label5;
-        public MyTextBox myTextBox8;
+        public MyTextBox MyTextBox8;
         private System.Windows.Forms.Label label6;
-        public MyTextBox myTextBox9;
+        public MyTextBox MyTextBox9;
         private System.Windows.Forms.Label label7;
-        public MyTextBox myTextBox10;
+        public MyTextBox MyTextBox10;
         private System.Windows.Forms.Label label8;
-        public MyTextBox myTextBox11;
+        public MyTextBox MyTextBox11;
         private System.Windows.Forms.Label label9;
-        public MyTextBox myTextBox12;
+        public MyTextBox MyTextBox12;
         private System.Windows.Forms.Label label10;
-        public MyTextBox myTextBox13;
+        public MyTextBox MyTextBox13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
-        public MyTextBox myTextBox14;
+        public MyTextBox MyTextBox14;
         private System.Windows.Forms.Label label12;
-        public MyTextBox myTextBox15;
+        public MyTextBox MyTextBox15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button1;
-        public MyTextBox myTextBox16;
+        public MyTextBox MyTextBox16;
         private System.Windows.Forms.Label label14;
-        public MyTextBox myTextBox17;
+        public MyTextBox MyTextBox17;
         private System.Windows.Forms.Label label16;
-        public MyTextBox myTextBox18;
+        public MyTextBox MyTextBox18;
         private System.Windows.Forms.Label label17;
-        public MyTextBox myTextBox19;
+        public MyTextBox MyTextBox19;
         private System.Windows.Forms.Label label18;
-        public MyTextBox myTextBox20;
+        public MyTextBox MyTextBox20;
         private System.Windows.Forms.Label label19;
-        public MyTextBox myTextBox21;
+        public MyTextBox MyTextBox21;
         private System.Windows.Forms.Label label20;
-        public MyTextBox myTextBox22;
+        public MyTextBox MyTextBox22;
         private System.Windows.Forms.Label label21;
     }
 }

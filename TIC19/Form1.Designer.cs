@@ -34,7 +34,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -141,6 +140,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -209,7 +209,6 @@
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
-            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -285,7 +284,6 @@
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.Enabled = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.applicationToolStripMenuItem,
             this.templateToolStripMenuItem,
             this.exportAsToolStripMenuItem,
             this.aBOUTToolStripMenuItem});
@@ -294,13 +292,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1105, 31);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // applicationToolStripMenuItem
-            // 
-            this.applicationToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
-            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(96, 27);
-            this.applicationToolStripMenuItem.Text = "APPLICATION";
             // 
             // templateToolStripMenuItem
             // 
@@ -2326,6 +2317,14 @@
             this.button11.TabIndex = 204;
             this.button11.UseVisualStyleBackColor = true;
             // 
+            // loadDefaultTemplateToolStripMenuItem
+            // 
+            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
+            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default Template";
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
+            // 
             // myTextBox68
             // 
             this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
@@ -3535,14 +3534,6 @@
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // loadDefaultTemplateToolStripMenuItem
-            // 
-            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
-            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
-            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default Template";
-            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3744,7 +3735,6 @@
         #endregion
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem applicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem;
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

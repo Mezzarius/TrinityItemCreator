@@ -61,13 +61,13 @@ namespace TrinityItemCreator
                 }
             }
 
-            QueryHandler.column_BagFamily = bagFamilyMask;
+            MyData.Field_BagFamily = bagFamilyMask;
             checkedListHex = bagFamilyMask;
         }
 
         private void Window_BagFamilyMask_Load(object sender, EventArgs e)
         {
-            checkedListHex = QueryHandler.column_BagFamily;
+            checkedListHex = MyData.Field_BagFamily;
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();

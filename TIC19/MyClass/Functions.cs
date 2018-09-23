@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -26,7 +27,7 @@ namespace TrinityItemCreator.MyClass
             mainForm.Opacity = .99;
         }
 
-    public void UnBlurMainForm()
+        public void UnBlurMainForm()
         {
             foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;
             foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = true;
@@ -37,341 +38,351 @@ namespace TrinityItemCreator.MyClass
             mainForm.panel1.BackColor = Color.DarkSlateGray;
         }
 
+        public void LoadMyCustomTemplate(string listboxItemToFileName)
+        {
+            string path = "templates";
+            
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            LoadDefaultTemplate(14, File.ReadAllLines(string.Format(path + @"\{0}.txt", listboxItemToFileName)));
+        }
+
         public void LoadDefaultTemplate(int templateID, string[] lines = null)
         {
             switch(templateID)
             {
                 case 0: // weapon
                     {
-                        QueryHandler.column_name = "My One Handed Sword";
-                        QueryHandler.column_Quality = 4;
-                        QueryHandler.column_sheath = 3;
-                        QueryHandler.column_class = 2;
-                        QueryHandler.column_subclass = 7;
-                        QueryHandler.column_InventoryType = 13;
-                        QueryHandler.column_Material = 1;
-                        QueryHandler.column_dmg_min1 = 100;
-                        QueryHandler.column_dmg_max1 = 200;
-                        QueryHandler.column_delay = 1000;
+                        MyData.Field_name = "My One Handed Sword";
+                        MyData.Field_Quality = 4;
+                        MyData.Field_sheath = 3;
+                        MyData.Field_class = 2;
+                        MyData.Field_subclass = 7;
+                        MyData.Field_InventoryType = 13;
+                        MyData.Field_Material = 1;
+                        MyData.Field_dmg_min1 = 100;
+                        MyData.Field_dmg_max1 = 200;
+                        MyData.Field_delay = 1000;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 1: // armor
                     {
-                        QueryHandler.column_name = "My Helm Cloth";
-                        QueryHandler.column_Quality = 4;
-                        QueryHandler.column_class = 4;
-                        QueryHandler.column_subclass = 1;
-                        QueryHandler.column_InventoryType = 2;
-                        QueryHandler.column_Material = 7;
-                        QueryHandler.column_stat_type1 = 1;
-                        QueryHandler.column_stat_type2 = 7;
-                        QueryHandler.column_stat_value1 = 10;
-                        QueryHandler.column_stat_value2 = 20;
-                        QueryHandler.column_armor = 100;
+                        MyData.Field_name = "My Helm Cloth";
+                        MyData.Field_Quality = 4;
+                        MyData.Field_class = 4;
+                        MyData.Field_subclass = 1;
+                        MyData.Field_InventoryType = 2;
+                        MyData.Field_Material = 7;
+                        MyData.Field_stat_type1 = 1;
+                        MyData.Field_stat_type2 = 7;
+                        MyData.Field_stat_value1 = 10;
+                        MyData.Field_stat_value2 = 20;
+                        MyData.Field_armor = 100;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 2: // gem
                     {
-                        QueryHandler.column_class = 3;
-                        QueryHandler.column_subclass = 6;
-                        QueryHandler.column_name = "My Meta Gem";
-                        QueryHandler.column_description = "Only fits in a meta gem slot.";
-                        QueryHandler.column_Material = -1;
-                        QueryHandler.column_GemProperties = 942;
+                        MyData.Field_class = 3;
+                        MyData.Field_subclass = 6;
+                        MyData.Field_name = "My Meta Gem";
+                        MyData.Field_description = "Only fits in a meta gem slot.";
+                        MyData.Field_Material = -1;
+                        MyData.Field_GemProperties = 942;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 3: // projectile
                     {
-                        QueryHandler.column_class = 6;
-                        QueryHandler.column_subclass = 3;
-                        QueryHandler.column_name = "My Projectile Bullets";
-                        QueryHandler.column_description = "More Pew Pew,Less QQ";
-                        QueryHandler.column_BuyCount = 200;
-                        QueryHandler.column_stackable = 200;
-                        QueryHandler.column_Material = 2;
-                        QueryHandler.column_dmg_min1 = 100;
-                        QueryHandler.column_dmg_max1 = 200;
-                        QueryHandler.column_delay = 1000;
+                        MyData.Field_class = 6;
+                        MyData.Field_subclass = 3;
+                        MyData.Field_name = "My Projectile Bullets";
+                        MyData.Field_description = "More Pew Pew,Less QQ";
+                        MyData.Field_BuyCount = 200;
+                        MyData.Field_stackable = 200;
+                        MyData.Field_Material = 2;
+                        MyData.Field_dmg_min1 = 100;
+                        MyData.Field_dmg_max1 = 200;
+                        MyData.Field_delay = 1000;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 4:// container
                     {
-                        QueryHandler.column_class = 1;
-                        QueryHandler.column_name = "My Fancy Container";
-                        QueryHandler.column_description = "Some Extra Slots";
-                        QueryHandler.column_ContainerSlots = 36;
-                        QueryHandler.column_Material = 8;
+                        MyData.Field_class = 1;
+                        MyData.Field_name = "My Fancy Container";
+                        MyData.Field_description = "Some Extra Slots";
+                        MyData.Field_ContainerSlots = 36;
+                        MyData.Field_Material = 8;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 5: // quiver
                     {
-                        QueryHandler.column_class = 11;
-                        QueryHandler.column_subclass = 2;
-                        QueryHandler.column_name = "My Fancy Quiver for Arrows";
-                        QueryHandler.column_description = "Some Extra Space for Arrows";
-                        QueryHandler.column_ContainerSlots = 36;
-                        QueryHandler.column_Material = 8;
+                        MyData.Field_class = 11;
+                        MyData.Field_subclass = 2;
+                        MyData.Field_name = "My Fancy Quiver for Arrows";
+                        MyData.Field_description = "Some Extra Space for Arrows";
+                        MyData.Field_ContainerSlots = 36;
+                        MyData.Field_Material = 8;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 6: // glyph
                     {
-                        QueryHandler.column_class = 16;
-                        QueryHandler.column_subclass = 11;
-                        QueryHandler.column_name = "My Custom Glyph";
-                        QueryHandler.column_Material = 4;
-                        QueryHandler.column_Flags = 64;
-                        QueryHandler.column_spellid_1 = 65244;
-                        QueryHandler.column_spellcooldown_1 = 0;
-                        QueryHandler.column_BagFamily = 16;
+                        MyData.Field_class = 16;
+                        MyData.Field_subclass = 11;
+                        MyData.Field_name = "My Custom Glyph";
+                        MyData.Field_Material = 4;
+                        MyData.Field_Flags = 64;
+                        MyData.Field_spellid_1 = 65244;
+                        MyData.Field_spellcooldown_1 = 0;
+                        MyData.Field_BagFamily = 16;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 7: // recipe
                     {
-                        QueryHandler.column_class = 9;
-                        QueryHandler.column_subclass = 2;
-                        QueryHandler.column_name = "My Custom Recipe";
-                        QueryHandler.column_Material = -1;
-                        QueryHandler.column_Flags = 64;
-                        QueryHandler.column_spellid_1 = 483;
-                        QueryHandler.column_spellcharges_1 = -1;
-                        QueryHandler.column_spellppmRate_1 = -1;
-                        QueryHandler.column_spellid_2 = 3336;
-                        QueryHandler.column_spelltrigger_2 = 6;
-                        QueryHandler.column_spellcooldown_2 = -1;
-                        QueryHandler.column_spellcategorycooldown_2 = -1;
+                        MyData.Field_class = 9;
+                        MyData.Field_subclass = 2;
+                        MyData.Field_name = "My Custom Recipe";
+                        MyData.Field_Material = -1;
+                        MyData.Field_Flags = 64;
+                        MyData.Field_spellid_1 = 483;
+                        MyData.Field_spellcharges_1 = -1;
+                        MyData.Field_spellppmRate_1 = -1;
+                        MyData.Field_spellid_2 = 3336;
+                        MyData.Field_spelltrigger_2 = 6;
+                        MyData.Field_spellcooldown_2 = -1;
+                        MyData.Field_spellcategorycooldown_2 = -1;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 8: // quest
                     {
-                        QueryHandler.column_class = 12;
-                        QueryHandler.column_subclass = 0;
-                        QueryHandler.column_name = "My Custom Quest Item";
-                        QueryHandler.column_Material = -1;
-                        QueryHandler.column_startquest = 337;
+                        MyData.Field_class = 12;
+                        MyData.Field_subclass = 0;
+                        MyData.Field_name = "My Custom Quest Item";
+                        MyData.Field_Material = -1;
+                        MyData.Field_startquest = 337;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 9: // key
                     {
-                        QueryHandler.column_class = 13;
-                        QueryHandler.column_subclass = 0;
-                        QueryHandler.column_name = "My Custom Key Item";
-                        QueryHandler.column_Material = -1;
-                        QueryHandler.column_Flags = 64;
-                        QueryHandler.column_spellid_1 = 42323;
-                        QueryHandler.column_spellcharges_1 = -1;
-                        QueryHandler.column_spellppmRate_1 = -1;
-                        QueryHandler.column_spellcooldown_1 = -1;
-                        QueryHandler.column_spellcategorycooldown_1 = -1;
-                        QueryHandler.column_BagFamily = 256;
+                        MyData.Field_class = 13;
+                        MyData.Field_subclass = 0;
+                        MyData.Field_name = "My Custom Key Item";
+                        MyData.Field_Material = -1;
+                        MyData.Field_Flags = 64;
+                        MyData.Field_spellid_1 = 42323;
+                        MyData.Field_spellcharges_1 = -1;
+                        MyData.Field_spellppmRate_1 = -1;
+                        MyData.Field_spellcooldown_1 = -1;
+                        MyData.Field_spellcategorycooldown_1 = -1;
+                        MyData.Field_BagFamily = 256;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 10: // reagent
                     {
-                        QueryHandler.column_class = 5;
-                        QueryHandler.column_subclass = 0;
-                        QueryHandler.column_name = "My Custom Reagent";
-                        QueryHandler.column_Material = 2;
-                        QueryHandler.column_stackable = 10;
+                        MyData.Field_class = 5;
+                        MyData.Field_subclass = 0;
+                        MyData.Field_name = "My Custom Reagent";
+                        MyData.Field_Material = 2;
+                        MyData.Field_stackable = 10;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 11: // trade good
                     {
-                        QueryHandler.column_class = 7;
-                        QueryHandler.column_subclass = 14;
-                        QueryHandler.column_name = "My Custom Trade Good";
-                        QueryHandler.column_Material = 4;
-                        QueryHandler.column_stackable = 20;
+                        MyData.Field_class = 7;
+                        MyData.Field_subclass = 14;
+                        MyData.Field_name = "My Custom Trade Good";
+                        MyData.Field_Material = 4;
+                        MyData.Field_stackable = 20;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 12: // consumable
                     {
-                        QueryHandler.column_class = 0;
-                        QueryHandler.column_subclass = 5;
-                        QueryHandler.column_name = "My Custom Item Enchantment";
-                        QueryHandler.column_Material = 4;
-                        QueryHandler.column_stackable = 20;
-                        QueryHandler.column_spellid_1 = 26389;
-                        QueryHandler.column_spellcategory_1 = 59;
-                        QueryHandler.column_spellcategorycooldown_1 = 1000;
+                        MyData.Field_class = 0;
+                        MyData.Field_subclass = 5;
+                        MyData.Field_name = "My Custom Item Enchantment";
+                        MyData.Field_Material = 4;
+                        MyData.Field_stackable = 20;
+                        MyData.Field_spellid_1 = 26389;
+                        MyData.Field_spellcategory_1 = 59;
+                        MyData.Field_spellcategorycooldown_1 = 1000;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 13: // misc
                     {
-                        QueryHandler.column_class = 4;
-                        QueryHandler.column_subclass = 0;
-                        QueryHandler.column_name = "Misc Custom Miscellaneous Item";
-                        QueryHandler.column_Material = 0;
+                        MyData.Field_class = 4;
+                        MyData.Field_subclass = 0;
+                        MyData.Field_name = "Misc Custom Miscellaneous Item";
+                        MyData.Field_Material = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 14: // custom
                     {
-                        QueryHandler.column_entry = Convert.ToInt32(lines[0]);
-                        QueryHandler.column_class = Convert.ToInt32(lines[1]);
-                        QueryHandler.column_subclass = Convert.ToInt32(lines[2]);
-                        QueryHandler.column_SoundOverrideSubclass = Convert.ToInt32(lines[3]);
-                        QueryHandler.column_name = lines[4];
-                        QueryHandler.column_displayid = Convert.ToInt32(lines[5]);
-                        QueryHandler.column_Quality = Convert.ToInt32(lines[6]);
-                        QueryHandler.column_Flags = Convert.ToUInt64(lines[7]);
-                        QueryHandler.column_FlagsExtra = Convert.ToInt32(lines[8]);
-                        QueryHandler.column_BuyCount = Convert.ToInt32(lines[9]);
-                        QueryHandler.column_BuyPrice = Convert.ToInt32(lines[10]);
-                        QueryHandler.column_SellPrice = Convert.ToInt32(lines[11]);
-                        QueryHandler.column_InventoryType = Convert.ToInt32(lines[12]);
-                        QueryHandler.column_AllowableClass = Convert.ToInt32(lines[13]);
-                        QueryHandler.column_AllowableRace = Convert.ToInt32(lines[14]);
-                        QueryHandler.column_ItemLevel = Convert.ToInt32(lines[15]);
-                        QueryHandler.column_RequiredLevel = Convert.ToInt32(lines[16]);
-                        QueryHandler.column_RequiredSkill = Convert.ToInt32(lines[17]);
-                        QueryHandler.column_RequiredSkillRank = Convert.ToInt32(lines[18]);
-                        QueryHandler.column_requiredspell = Convert.ToInt32(lines[19]);
-                        QueryHandler.column_requiredhonorrank = Convert.ToInt32(lines[20]);
-                        QueryHandler.column_RequiredCityRank = Convert.ToInt32(lines[21]);
-                        QueryHandler.column_RequiredReputationFaction = Convert.ToInt32(lines[22]);
-                        QueryHandler.column_RequiredReputationRank = Convert.ToInt32(lines[23]);
-                        QueryHandler.column_maxcount = Convert.ToInt32(lines[24]);
-                        QueryHandler.column_stackable = Convert.ToInt32(lines[25]);
-                        QueryHandler.column_ContainerSlots = Convert.ToInt32(lines[26]);
-                        QueryHandler.column_StatsCount = Convert.ToInt32(lines[27]);
-                        QueryHandler.column_stat_type1 = Convert.ToInt32(lines[28]);
-                        QueryHandler.column_stat_value1 = Convert.ToInt32(lines[29]);
-                        QueryHandler.column_stat_type2 = Convert.ToInt32(lines[30]);
-                        QueryHandler.column_stat_value2 = Convert.ToInt32(lines[31]);
-                        QueryHandler.column_stat_type3 = Convert.ToInt32(lines[32]);
-                        QueryHandler.column_stat_value3 = Convert.ToInt32(lines[33]);
-                        QueryHandler.column_stat_type4 = Convert.ToInt32(lines[34]);
-                        QueryHandler.column_stat_value4 = Convert.ToInt32(lines[35]);
-                        QueryHandler.column_stat_type5 = Convert.ToInt32(lines[36]);
-                        QueryHandler.column_stat_value5 = Convert.ToInt32(lines[37]);
-                        QueryHandler.column_stat_type6 = Convert.ToInt32(lines[38]);
-                        QueryHandler.column_stat_value6 = Convert.ToInt32(lines[39]);
-                        QueryHandler.column_stat_type7 = Convert.ToInt32(lines[40]);
-                        QueryHandler.column_stat_value7 = Convert.ToInt32(lines[41]);
-                        QueryHandler.column_stat_type8 = Convert.ToInt32(lines[42]);
-                        QueryHandler.column_stat_value8 = Convert.ToInt32(lines[43]);
-                        QueryHandler.column_stat_type9 = Convert.ToInt32(lines[44]);
-                        QueryHandler.column_stat_value9 = Convert.ToInt32(lines[45]);
-                        QueryHandler.column_stat_type10 = Convert.ToInt32(lines[46]);
-                        QueryHandler.column_stat_value10 = Convert.ToInt32(lines[47]);
-                        QueryHandler.column_ScalingStatDistribution = Convert.ToInt32(lines[48]);
-                        QueryHandler.column_ScalingStatValue = Convert.ToInt32(lines[49]);
-                        QueryHandler.column_dmg_min1 = Convert.ToInt32(lines[50]);
-                        QueryHandler.column_dmg_max1 = Convert.ToInt32(lines[51]);
-                        QueryHandler.column_dmg_type1 = Convert.ToInt32(lines[52]);
-                        QueryHandler.column_dmg_min2 = Convert.ToInt32(lines[53]);
-                        QueryHandler.column_dmg_max2 = Convert.ToInt32(lines[54]);
-                        QueryHandler.column_dmg_type2 = Convert.ToInt32(lines[55]);
-                        QueryHandler.column_armor = Convert.ToInt32(lines[56]);
-                        QueryHandler.column_holy_res = Convert.ToInt32(lines[57]);
-                        QueryHandler.column_fire_res = Convert.ToInt32(lines[58]);
-                        QueryHandler.column_nature_res = Convert.ToInt32(lines[59]);
-                        QueryHandler.column_frost_res = Convert.ToInt32(lines[60]);
-                        QueryHandler.column_shadow_res = Convert.ToInt32(lines[61]);
-                        QueryHandler.column_arcane_res = Convert.ToInt32(lines[62]);
-                        QueryHandler.column_delay = Convert.ToInt32(lines[63]);
-                        QueryHandler.column_ammo_type = Convert.ToInt32(lines[64]);
-                        QueryHandler.column_RangedModRange = Convert.ToInt32(lines[65]);
-                        QueryHandler.column_spellid_1 = Convert.ToInt32(lines[66]);
-                        QueryHandler.column_spelltrigger_1 = Convert.ToInt32(lines[67]);
-                        QueryHandler.column_spellcharges_1 = Convert.ToInt32(lines[68]);
-                        QueryHandler.column_spellppmRate_1 = Convert.ToInt32(lines[69]);
-                        QueryHandler.column_spellcooldown_1 = Convert.ToInt32(lines[70]);
-                        QueryHandler.column_spellcategory_1 = Convert.ToInt32(lines[71]);
-                        QueryHandler.column_spellcategorycooldown_1 = Convert.ToInt32(lines[72]);
-                        QueryHandler.column_spellid_2 = Convert.ToInt32(lines[73]);
-                        QueryHandler.column_spelltrigger_2 = Convert.ToInt32(lines[74]);
-                        QueryHandler.column_spellcharges_2 = Convert.ToInt32(lines[75]);
-                        QueryHandler.column_spellppmRate_2 = Convert.ToInt32(lines[76]);
-                        QueryHandler.column_spellcooldown_2 = Convert.ToInt32(lines[77]);
-                        QueryHandler.column_spellcategory_2 = Convert.ToInt32(lines[78]);
-                        QueryHandler.column_spellcategorycooldown_2 = Convert.ToInt32(lines[79]);
-                        QueryHandler.column_spellid_3 = Convert.ToInt32(lines[80]);
-                        QueryHandler.column_spelltrigger_3 = Convert.ToInt32(lines[81]);
-                        QueryHandler.column_spellcharges_3 = Convert.ToInt32(lines[82]);
-                        QueryHandler.column_spellppmRate_3 = Convert.ToInt32(lines[83]);
-                        QueryHandler.column_spellcooldown_3 = Convert.ToInt32(lines[84]);
-                        QueryHandler.column_spellcategory_3 = Convert.ToInt32(lines[85]);
-                        QueryHandler.column_spellcategorycooldown_3 = Convert.ToInt32(lines[86]);
-                        QueryHandler.column_spellid_4 = Convert.ToInt32(lines[87]);
-                        QueryHandler.column_spelltrigger_4 = Convert.ToInt32(lines[88]);
-                        QueryHandler.column_spellcharges_4 = Convert.ToInt32(lines[89]);
-                        QueryHandler.column_spellppmRate_4 = Convert.ToInt32(lines[90]);
-                        QueryHandler.column_spellcooldown_4 = Convert.ToInt32(lines[91]);
-                        QueryHandler.column_spellcategory_4 = Convert.ToInt32(lines[92]);
-                        QueryHandler.column_spellcategorycooldown_4 = Convert.ToInt32(lines[93]);
-                        QueryHandler.column_spellid_5 = Convert.ToInt32(lines[94]);
-                        QueryHandler.column_spelltrigger_5 = Convert.ToInt32(lines[95]);
-                        QueryHandler.column_spellcharges_5 = Convert.ToInt32(lines[96]);
-                        QueryHandler.column_spellppmRate_5 = Convert.ToInt32(lines[97]);
-                        QueryHandler.column_spellcooldown_5 = Convert.ToInt32(lines[98]);
-                        QueryHandler.column_spellcategory_5 = Convert.ToInt32(lines[99]);
-                        QueryHandler.column_spellcategorycooldown_5 = Convert.ToInt32(lines[100]);
-                        QueryHandler.column_bonding = Convert.ToInt32(lines[101]);
-                        QueryHandler.column_description = lines[102];
-                        QueryHandler.column_PageText = Convert.ToInt32(lines[103]);
-                        QueryHandler.column_LanguageID = Convert.ToInt32(lines[104]);
-                        QueryHandler.column_PageMaterial = Convert.ToInt32(lines[105]);
-                        QueryHandler.column_startquest = Convert.ToInt32(lines[106]);
-                        QueryHandler.column_lockid = Convert.ToInt32(lines[107]);
-                        QueryHandler.column_Material = Convert.ToInt32(lines[108]);
-                        QueryHandler.column_sheath = Convert.ToInt32(lines[109]);
-                        QueryHandler.column_RandomProperty = Convert.ToInt32(lines[110]);
-                        QueryHandler.column_RandomSuffix = Convert.ToInt32(lines[111]);
-                        QueryHandler.column_block = Convert.ToInt32(lines[112]);
-                        QueryHandler.column_itemset = Convert.ToInt32(lines[113]);
-                        QueryHandler.column_MaxDurability = Convert.ToInt32(lines[114]);
-                        QueryHandler.column_area = Convert.ToInt32(lines[115]);
-                        QueryHandler.column_Map = Convert.ToInt32(lines[116]);
-                        QueryHandler.column_BagFamily = Convert.ToInt32(lines[117]);
-                        QueryHandler.column_TotemCategory = Convert.ToInt32(lines[118]);
-                        QueryHandler.column_socketColor_1 = Convert.ToInt32(lines[119]);
-                        QueryHandler.column_socketContent_1 = Convert.ToInt32(lines[120]);
-                        QueryHandler.column_socketColor_2 = Convert.ToInt32(lines[121]);
-                        QueryHandler.column_socketContent_2 = Convert.ToInt32(lines[122]);
-                        QueryHandler.column_socketColor_3 = Convert.ToInt32(lines[123]);
-                        QueryHandler.column_socketContent_3 = Convert.ToInt32(lines[124]);
-                        QueryHandler.column_socketBonus = Convert.ToInt32(lines[125]);
-                        QueryHandler.column_GemProperties = Convert.ToInt32(lines[126]);
-                        QueryHandler.column_RequiredDisenchantSkill = Convert.ToInt32(lines[127]);
-                        QueryHandler.column_ArmorDamageModifier = Convert.ToInt32(lines[128]);
-                        QueryHandler.column_duration = Convert.ToInt32(lines[129]);
-                        QueryHandler.column_ItemLimitCategory = Convert.ToInt32(lines[130]);
-                        QueryHandler.column_HolidayId = Convert.ToInt32(lines[131]);
-                        QueryHandler.column_ScriptName = lines[132];
-                        QueryHandler.column_DisenchantID = Convert.ToInt32(lines[133]);
-                        QueryHandler.column_FoodType = Convert.ToInt32(lines[134]);
-                        QueryHandler.column_minMoneyLoot = Convert.ToInt32(lines[135]);
-                        QueryHandler.column_maxMoneyLoot = Convert.ToInt32(lines[136]);
-                        QueryHandler.column_flagsCustom = Convert.ToInt32(lines[137]);
-                        QueryHandler.column_VerifiedBuild = Convert.ToInt32(lines[138]);
+                        MyData.Field_entry = Convert.ToInt32(lines[0]);
+                        MyData.Field_class = Convert.ToInt32(lines[1]);
+                        MyData.Field_subclass = Convert.ToInt32(lines[2]);
+                        MyData.Field_SoundOverrideSubclass = Convert.ToInt32(lines[3]);
+                        MyData.Field_name = lines[4];
+                        MyData.Field_displayid = Convert.ToInt32(lines[5]);
+                        MyData.Field_Quality = Convert.ToInt32(lines[6]);
+                        MyData.Field_Flags = Convert.ToUInt64(lines[7]);
+                        MyData.Field_FlagsExtra = Convert.ToInt32(lines[8]);
+                        MyData.Field_BuyCount = Convert.ToInt32(lines[9]);
+                        MyData.Field_BuyPrice = Convert.ToInt32(lines[10]);
+                        MyData.Field_SellPrice = Convert.ToInt32(lines[11]);
+                        MyData.Field_InventoryType = Convert.ToInt32(lines[12]);
+                        MyData.Field_AllowableClass = Convert.ToInt32(lines[13]);
+                        MyData.Field_AllowableRace = Convert.ToInt32(lines[14]);
+                        MyData.Field_ItemLevel = Convert.ToInt32(lines[15]);
+                        MyData.Field_RequiredLevel = Convert.ToInt32(lines[16]);
+                        MyData.Field_RequiredSkill = Convert.ToInt32(lines[17]);
+                        MyData.Field_RequiredSkillRank = Convert.ToInt32(lines[18]);
+                        MyData.Field_requiredspell = Convert.ToInt32(lines[19]);
+                        MyData.Field_requiredhonorrank = Convert.ToInt32(lines[20]);
+                        MyData.Field_RequiredCityRank = Convert.ToInt32(lines[21]);
+                        MyData.Field_RequiredReputationFaction = Convert.ToInt32(lines[22]);
+                        MyData.Field_RequiredReputationRank = Convert.ToInt32(lines[23]);
+                        MyData.Field_maxcount = Convert.ToInt32(lines[24]);
+                        MyData.Field_stackable = Convert.ToInt32(lines[25]);
+                        MyData.Field_ContainerSlots = Convert.ToInt32(lines[26]);
+                        MyData.Field_StatsCount = Convert.ToInt32(lines[27]);
+                        MyData.Field_stat_type1 = Convert.ToInt32(lines[28]);
+                        MyData.Field_stat_value1 = Convert.ToInt32(lines[29]);
+                        MyData.Field_stat_type2 = Convert.ToInt32(lines[30]);
+                        MyData.Field_stat_value2 = Convert.ToInt32(lines[31]);
+                        MyData.Field_stat_type3 = Convert.ToInt32(lines[32]);
+                        MyData.Field_stat_value3 = Convert.ToInt32(lines[33]);
+                        MyData.Field_stat_type4 = Convert.ToInt32(lines[34]);
+                        MyData.Field_stat_value4 = Convert.ToInt32(lines[35]);
+                        MyData.Field_stat_type5 = Convert.ToInt32(lines[36]);
+                        MyData.Field_stat_value5 = Convert.ToInt32(lines[37]);
+                        MyData.Field_stat_type6 = Convert.ToInt32(lines[38]);
+                        MyData.Field_stat_value6 = Convert.ToInt32(lines[39]);
+                        MyData.Field_stat_type7 = Convert.ToInt32(lines[40]);
+                        MyData.Field_stat_value7 = Convert.ToInt32(lines[41]);
+                        MyData.Field_stat_type8 = Convert.ToInt32(lines[42]);
+                        MyData.Field_stat_value8 = Convert.ToInt32(lines[43]);
+                        MyData.Field_stat_type9 = Convert.ToInt32(lines[44]);
+                        MyData.Field_stat_value9 = Convert.ToInt32(lines[45]);
+                        MyData.Field_stat_type10 = Convert.ToInt32(lines[46]);
+                        MyData.Field_stat_value10 = Convert.ToInt32(lines[47]);
+                        MyData.Field_ScalingStatDistribution = Convert.ToInt32(lines[48]);
+                        MyData.Field_ScalingStatValue = Convert.ToInt32(lines[49]);
+                        MyData.Field_dmg_min1 = Convert.ToInt32(lines[50]);
+                        MyData.Field_dmg_max1 = Convert.ToInt32(lines[51]);
+                        MyData.Field_dmg_type1 = Convert.ToInt32(lines[52]);
+                        MyData.Field_dmg_min2 = Convert.ToInt32(lines[53]);
+                        MyData.Field_dmg_max2 = Convert.ToInt32(lines[54]);
+                        MyData.Field_dmg_type2 = Convert.ToInt32(lines[55]);
+                        MyData.Field_armor = Convert.ToInt32(lines[56]);
+                        MyData.Field_holy_res = Convert.ToInt32(lines[57]);
+                        MyData.Field_fire_res = Convert.ToInt32(lines[58]);
+                        MyData.Field_nature_res = Convert.ToInt32(lines[59]);
+                        MyData.Field_frost_res = Convert.ToInt32(lines[60]);
+                        MyData.Field_shadow_res = Convert.ToInt32(lines[61]);
+                        MyData.Field_arcane_res = Convert.ToInt32(lines[62]);
+                        MyData.Field_delay = Convert.ToInt32(lines[63]);
+                        MyData.Field_ammo_type = Convert.ToInt32(lines[64]);
+                        MyData.Field_RangedModRange = Convert.ToInt32(lines[65]);
+                        MyData.Field_spellid_1 = Convert.ToInt32(lines[66]);
+                        MyData.Field_spelltrigger_1 = Convert.ToInt32(lines[67]);
+                        MyData.Field_spellcharges_1 = Convert.ToInt32(lines[68]);
+                        MyData.Field_spellppmRate_1 = Convert.ToInt32(lines[69]);
+                        MyData.Field_spellcooldown_1 = Convert.ToInt32(lines[70]);
+                        MyData.Field_spellcategory_1 = Convert.ToInt32(lines[71]);
+                        MyData.Field_spellcategorycooldown_1 = Convert.ToInt32(lines[72]);
+                        MyData.Field_spellid_2 = Convert.ToInt32(lines[73]);
+                        MyData.Field_spelltrigger_2 = Convert.ToInt32(lines[74]);
+                        MyData.Field_spellcharges_2 = Convert.ToInt32(lines[75]);
+                        MyData.Field_spellppmRate_2 = Convert.ToInt32(lines[76]);
+                        MyData.Field_spellcooldown_2 = Convert.ToInt32(lines[77]);
+                        MyData.Field_spellcategory_2 = Convert.ToInt32(lines[78]);
+                        MyData.Field_spellcategorycooldown_2 = Convert.ToInt32(lines[79]);
+                        MyData.Field_spellid_3 = Convert.ToInt32(lines[80]);
+                        MyData.Field_spelltrigger_3 = Convert.ToInt32(lines[81]);
+                        MyData.Field_spellcharges_3 = Convert.ToInt32(lines[82]);
+                        MyData.Field_spellppmRate_3 = Convert.ToInt32(lines[83]);
+                        MyData.Field_spellcooldown_3 = Convert.ToInt32(lines[84]);
+                        MyData.Field_spellcategory_3 = Convert.ToInt32(lines[85]);
+                        MyData.Field_spellcategorycooldown_3 = Convert.ToInt32(lines[86]);
+                        MyData.Field_spellid_4 = Convert.ToInt32(lines[87]);
+                        MyData.Field_spelltrigger_4 = Convert.ToInt32(lines[88]);
+                        MyData.Field_spellcharges_4 = Convert.ToInt32(lines[89]);
+                        MyData.Field_spellppmRate_4 = Convert.ToInt32(lines[90]);
+                        MyData.Field_spellcooldown_4 = Convert.ToInt32(lines[91]);
+                        MyData.Field_spellcategory_4 = Convert.ToInt32(lines[92]);
+                        MyData.Field_spellcategorycooldown_4 = Convert.ToInt32(lines[93]);
+                        MyData.Field_spellid_5 = Convert.ToInt32(lines[94]);
+                        MyData.Field_spelltrigger_5 = Convert.ToInt32(lines[95]);
+                        MyData.Field_spellcharges_5 = Convert.ToInt32(lines[96]);
+                        MyData.Field_spellppmRate_5 = Convert.ToInt32(lines[97]);
+                        MyData.Field_spellcooldown_5 = Convert.ToInt32(lines[98]);
+                        MyData.Field_spellcategory_5 = Convert.ToInt32(lines[99]);
+                        MyData.Field_spellcategorycooldown_5 = Convert.ToInt32(lines[100]);
+                        MyData.Field_bonding = Convert.ToInt32(lines[101]);
+                        MyData.Field_description = lines[102];
+                        MyData.Field_PageText = Convert.ToInt32(lines[103]);
+                        MyData.Field_LanguageID = Convert.ToInt32(lines[104]);
+                        MyData.Field_PageMaterial = Convert.ToInt32(lines[105]);
+                        MyData.Field_startquest = Convert.ToInt32(lines[106]);
+                        MyData.Field_lockid = Convert.ToInt32(lines[107]);
+                        MyData.Field_Material = Convert.ToInt32(lines[108]);
+                        MyData.Field_sheath = Convert.ToInt32(lines[109]);
+                        MyData.Field_RandomProperty = Convert.ToInt32(lines[110]);
+                        MyData.Field_RandomSuffix = Convert.ToInt32(lines[111]);
+                        MyData.Field_block = Convert.ToInt32(lines[112]);
+                        MyData.Field_itemset = Convert.ToInt32(lines[113]);
+                        MyData.Field_MaxDurability = Convert.ToInt32(lines[114]);
+                        MyData.Field_area = Convert.ToInt32(lines[115]);
+                        MyData.Field_Map = Convert.ToInt32(lines[116]);
+                        MyData.Field_BagFamily = Convert.ToInt32(lines[117]);
+                        MyData.Field_TotemCategory = Convert.ToInt32(lines[118]);
+                        MyData.Field_socketColor_1 = Convert.ToInt32(lines[119]);
+                        MyData.Field_socketContent_1 = Convert.ToInt32(lines[120]);
+                        MyData.Field_socketColor_2 = Convert.ToInt32(lines[121]);
+                        MyData.Field_socketContent_2 = Convert.ToInt32(lines[122]);
+                        MyData.Field_socketColor_3 = Convert.ToInt32(lines[123]);
+                        MyData.Field_socketContent_3 = Convert.ToInt32(lines[124]);
+                        MyData.Field_socketBonus = Convert.ToInt32(lines[125]);
+                        MyData.Field_GemProperties = Convert.ToInt32(lines[126]);
+                        MyData.Field_RequiredDisenchantSkill = Convert.ToInt32(lines[127]);
+                        MyData.Field_ArmorDamageModifier = Convert.ToInt32(lines[128]);
+                        MyData.Field_duration = Convert.ToInt32(lines[129]);
+                        MyData.Field_ItemLimitCategory = Convert.ToInt32(lines[130]);
+                        MyData.Field_HolidayId = Convert.ToInt32(lines[131]);
+                        MyData.Field_ScriptName = lines[132];
+                        MyData.Field_DisenchantID = Convert.ToInt32(lines[133]);
+                        MyData.Field_FoodType = Convert.ToInt32(lines[134]);
+                        MyData.Field_minMoneyLoot = Convert.ToInt32(lines[135]);
+                        MyData.Field_maxMoneyLoot = Convert.ToInt32(lines[136]);
+                        MyData.Field_flagsCustom = Convert.ToInt32(lines[137]);
+                        MyData.Field_VerifiedBuild = Convert.ToInt32(lines[138]);
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -383,110 +394,109 @@ namespace TrinityItemCreator.MyClass
                         break;
                     }
             }
-            
 
             // TEXTBOX
-            mainForm.myTextBox1.Text = QueryHandler.column_entry.ToString();
-            mainForm.myTextBox2.Text = QueryHandler.column_name;
-            mainForm.myTextBox3.Text = QueryHandler.column_description;
-            mainForm.myTextBox4.Text = QueryHandler.column_displayid.ToString();
-            mainForm.myTextBox5.Text = QueryHandler.column_ItemLevel.ToString();
-            mainForm.myTextBox6.Text = QueryHandler.column_RequiredLevel.ToString();
-            mainForm.myTextBox7.Text = QueryHandler.column_stat_value1.ToString();
-            mainForm.myTextBox8.Text = QueryHandler.column_stat_value2.ToString();
-            mainForm.myTextBox9.Text = QueryHandler.column_stat_value3.ToString();
-            mainForm.myTextBox10.Text = QueryHandler.column_stat_value4.ToString();
-            mainForm.myTextBox11.Text = QueryHandler.column_stat_value5.ToString();
-            mainForm.myTextBox12.Text = QueryHandler.column_stat_value6.ToString();
-            mainForm.myTextBox13.Text = QueryHandler.column_stat_value7.ToString();
-            mainForm.myTextBox14.Text = QueryHandler.column_stat_value8.ToString();
-            mainForm.myTextBox15.Text = QueryHandler.column_stat_value9.ToString();
-            mainForm.myTextBox16.Text = QueryHandler.column_stat_value10.ToString();
-            mainForm.myTextBox17.Text = QueryHandler.column_dmg_min1.ToString();
-            mainForm.myTextBox18.Text = QueryHandler.column_dmg_max1.ToString();
-            mainForm.myTextBox19.Text = QueryHandler.column_dmg_max2.ToString();
-            mainForm.myTextBox20.Text = QueryHandler.column_dmg_min2.ToString();
-            mainForm.myTextBox21.Text = QueryHandler.column_RangedModRange.ToString();
-            mainForm.myTextBox22.Text = QueryHandler.column_delay.ToString();
-            mainForm.myTextBox23.Text = QueryHandler.column_ScalingStatDistribution.ToString();
-            mainForm.myTextBox24.Text = QueryHandler.column_ScalingStatValue.ToString();
-            mainForm.myTextBox25.Text = QueryHandler.column_BuyPrice.ToString();
-            mainForm.myTextBox26.Text = QueryHandler.column_SellPrice.ToString();
-            mainForm.myTextBox27.Text = QueryHandler.column_BuyCount.ToString();
-            mainForm.myTextBox28.Text = QueryHandler.column_itemset.ToString();
-            mainForm.myTextBox29.Text = QueryHandler.column_stackable.ToString();
-            mainForm.myTextBox30.Text = QueryHandler.column_maxcount.ToString();
-            mainForm.myTextBox31.Text = QueryHandler.column_spellid_1.ToString();
-            mainForm.myTextBox32.Text = QueryHandler.column_spellcharges_1.ToString();
-            mainForm.myTextBox33.Text = QueryHandler.column_spellppmRate_1.ToString();
-            mainForm.myTextBox34.Text = QueryHandler.column_spellcooldown_1.ToString();
-            mainForm.myTextBox35.Text = QueryHandler.column_spellcategory_1.ToString();
-            mainForm.myTextBox36.Text = QueryHandler.column_spellcategorycooldown_1.ToString();
-            mainForm.myTextBox37.Text = QueryHandler.column_spellcategorycooldown_2.ToString();
-            mainForm.myTextBox38.Text = QueryHandler.column_spellcategory_2.ToString();
-            mainForm.myTextBox39.Text = QueryHandler.column_spellcooldown_2.ToString();
-            mainForm.myTextBox40.Text = QueryHandler.column_spellppmRate_2.ToString();
-            mainForm.myTextBox41.Text = QueryHandler.column_spellcharges_2.ToString();
-            mainForm.myTextBox42.Text = QueryHandler.column_spellid_2.ToString();
-            mainForm.myTextBox43.Text = QueryHandler.column_spellcategorycooldown_3.ToString();
-            mainForm.myTextBox44.Text = QueryHandler.column_spellcategory_3.ToString();
-            mainForm.myTextBox45.Text = QueryHandler.column_spellcooldown_3.ToString();
-            mainForm.myTextBox46.Text = QueryHandler.column_spellppmRate_3.ToString();
-            mainForm.myTextBox47.Text = QueryHandler.column_spellcharges_3.ToString();
-            mainForm.myTextBox48.Text = QueryHandler.column_spellid_3.ToString();
-            mainForm.myTextBox49.Text = QueryHandler.column_spellcategorycooldown_4.ToString();
-            mainForm.myTextBox50.Text = QueryHandler.column_spellcategory_4.ToString();
-            mainForm.myTextBox51.Text = QueryHandler.column_spellcooldown_4.ToString();
-            mainForm.myTextBox52.Text = QueryHandler.column_spellppmRate_4.ToString();
-            mainForm.myTextBox53.Text = QueryHandler.column_spellcharges_4.ToString();
-            mainForm.myTextBox54.Text = QueryHandler.column_spellid_4.ToString();
-            mainForm.myTextBox55.Text = QueryHandler.column_spellcategorycooldown_5.ToString();
-            mainForm.myTextBox56.Text = QueryHandler.column_spellcategory_5.ToString();
-            mainForm.myTextBox57.Text = QueryHandler.column_spellcooldown_5.ToString();
-            mainForm.myTextBox58.Text = QueryHandler.column_spellppmRate_5.ToString();
-            mainForm.myTextBox59.Text = QueryHandler.column_spellcharges_5.ToString();
-            mainForm.myTextBox60.Text = QueryHandler.column_spellid_5.ToString();
-            mainForm.myTextBox61.Text = QueryHandler.column_socketContent_1.ToString();
-            mainForm.myTextBox62.Text = QueryHandler.column_socketContent_2.ToString();
-            mainForm.myTextBox63.Text = QueryHandler.column_socketContent_3.ToString();
-            mainForm.myTextBox64.Text = QueryHandler.column_block.ToString();
-            mainForm.myTextBox65.Text = QueryHandler.column_armor.ToString();
-            mainForm.myTextBox66.Text = QueryHandler.column_ArmorDamageModifier.ToString();
-            mainForm.myTextBox67.Text = QueryHandler.column_MaxDurability.ToString();
-            mainForm.myTextBox68.Text = QueryHandler.column_ContainerSlots.ToString();
+            mainForm.myTextBox1.Text = MyData.Field_entry.ToString();
+            mainForm.myTextBox2.Text = MyData.Field_name;
+            mainForm.myTextBox3.Text = MyData.Field_description;
+            mainForm.myTextBox4.Text = MyData.Field_displayid.ToString();
+            mainForm.myTextBox5.Text = MyData.Field_ItemLevel.ToString();
+            mainForm.myTextBox6.Text = MyData.Field_RequiredLevel.ToString();
+            mainForm.myTextBox7.Text = MyData.Field_stat_value1.ToString();
+            mainForm.myTextBox8.Text = MyData.Field_stat_value2.ToString();
+            mainForm.myTextBox9.Text = MyData.Field_stat_value3.ToString();
+            mainForm.myTextBox10.Text = MyData.Field_stat_value4.ToString();
+            mainForm.myTextBox11.Text = MyData.Field_stat_value5.ToString();
+            mainForm.myTextBox12.Text = MyData.Field_stat_value6.ToString();
+            mainForm.myTextBox13.Text = MyData.Field_stat_value7.ToString();
+            mainForm.myTextBox14.Text = MyData.Field_stat_value8.ToString();
+            mainForm.myTextBox15.Text = MyData.Field_stat_value9.ToString();
+            mainForm.myTextBox16.Text = MyData.Field_stat_value10.ToString();
+            mainForm.myTextBox17.Text = MyData.Field_dmg_min1.ToString();
+            mainForm.myTextBox18.Text = MyData.Field_dmg_max1.ToString();
+            mainForm.myTextBox19.Text = MyData.Field_dmg_max2.ToString();
+            mainForm.myTextBox20.Text = MyData.Field_dmg_min2.ToString();
+            mainForm.myTextBox21.Text = MyData.Field_RangedModRange.ToString();
+            mainForm.myTextBox22.Text = MyData.Field_delay.ToString();
+            mainForm.myTextBox23.Text = MyData.Field_ScalingStatDistribution.ToString();
+            mainForm.myTextBox24.Text = MyData.Field_ScalingStatValue.ToString();
+            mainForm.myTextBox25.Text = MyData.Field_BuyPrice.ToString();
+            mainForm.myTextBox26.Text = MyData.Field_SellPrice.ToString();
+            mainForm.myTextBox27.Text = MyData.Field_BuyCount.ToString();
+            mainForm.myTextBox28.Text = MyData.Field_itemset.ToString();
+            mainForm.myTextBox29.Text = MyData.Field_stackable.ToString();
+            mainForm.myTextBox30.Text = MyData.Field_maxcount.ToString();
+            mainForm.myTextBox31.Text = MyData.Field_spellid_1.ToString();
+            mainForm.myTextBox32.Text = MyData.Field_spellcharges_1.ToString();
+            mainForm.myTextBox33.Text = MyData.Field_spellppmRate_1.ToString();
+            mainForm.myTextBox34.Text = MyData.Field_spellcooldown_1.ToString();
+            mainForm.myTextBox35.Text = MyData.Field_spellcategory_1.ToString();
+            mainForm.myTextBox36.Text = MyData.Field_spellcategorycooldown_1.ToString();
+            mainForm.myTextBox37.Text = MyData.Field_spellcategorycooldown_2.ToString();
+            mainForm.myTextBox38.Text = MyData.Field_spellcategory_2.ToString();
+            mainForm.myTextBox39.Text = MyData.Field_spellcooldown_2.ToString();
+            mainForm.myTextBox40.Text = MyData.Field_spellppmRate_2.ToString();
+            mainForm.myTextBox41.Text = MyData.Field_spellcharges_2.ToString();
+            mainForm.myTextBox42.Text = MyData.Field_spellid_2.ToString();
+            mainForm.myTextBox43.Text = MyData.Field_spellcategorycooldown_3.ToString();
+            mainForm.myTextBox44.Text = MyData.Field_spellcategory_3.ToString();
+            mainForm.myTextBox45.Text = MyData.Field_spellcooldown_3.ToString();
+            mainForm.myTextBox46.Text = MyData.Field_spellppmRate_3.ToString();
+            mainForm.myTextBox47.Text = MyData.Field_spellcharges_3.ToString();
+            mainForm.myTextBox48.Text = MyData.Field_spellid_3.ToString();
+            mainForm.myTextBox49.Text = MyData.Field_spellcategorycooldown_4.ToString();
+            mainForm.myTextBox50.Text = MyData.Field_spellcategory_4.ToString();
+            mainForm.myTextBox51.Text = MyData.Field_spellcooldown_4.ToString();
+            mainForm.myTextBox52.Text = MyData.Field_spellppmRate_4.ToString();
+            mainForm.myTextBox53.Text = MyData.Field_spellcharges_4.ToString();
+            mainForm.myTextBox54.Text = MyData.Field_spellid_4.ToString();
+            mainForm.myTextBox55.Text = MyData.Field_spellcategorycooldown_5.ToString();
+            mainForm.myTextBox56.Text = MyData.Field_spellcategory_5.ToString();
+            mainForm.myTextBox57.Text = MyData.Field_spellcooldown_5.ToString();
+            mainForm.myTextBox58.Text = MyData.Field_spellppmRate_5.ToString();
+            mainForm.myTextBox59.Text = MyData.Field_spellcharges_5.ToString();
+            mainForm.myTextBox60.Text = MyData.Field_spellid_5.ToString();
+            mainForm.myTextBox61.Text = MyData.Field_socketContent_1.ToString();
+            mainForm.myTextBox62.Text = MyData.Field_socketContent_2.ToString();
+            mainForm.myTextBox63.Text = MyData.Field_socketContent_3.ToString();
+            mainForm.myTextBox64.Text = MyData.Field_block.ToString();
+            mainForm.myTextBox65.Text = MyData.Field_armor.ToString();
+            mainForm.myTextBox66.Text = MyData.Field_ArmorDamageModifier.ToString();
+            mainForm.myTextBox67.Text = MyData.Field_MaxDurability.ToString();
+            mainForm.myTextBox68.Text = MyData.Field_ContainerSlots.ToString();
 
             // COMBOBOX
-            mainForm.comboBox1.SelectedIndex = mainForm.comboBox1.FindString(string.Format("[{0}]", QueryHandler.column_Quality));
-            mainForm.comboBox2.SelectedIndex = mainForm.comboBox2.FindString(string.Format("[{0}]", QueryHandler.column_bonding));
-            mainForm.comboBox3.SelectedIndex = mainForm.comboBox3.FindString(string.Format("[{0}]", QueryHandler.column_sheath));
-            mainForm.comboBox4.SelectedIndex = mainForm.comboBox4.FindString(string.Format("[{0}]", QueryHandler.column_class));
-            mainForm.comboBox5.SelectedIndex = mainForm.comboBox5.FindString(string.Format("[{0}]", QueryHandler.column_subclass));
-            mainForm.comboBox6.SelectedIndex = mainForm.comboBox6.FindString(string.Format("[{0}]", QueryHandler.column_InventoryType));
-            mainForm.comboBox7.SelectedIndex = mainForm.comboBox7.FindString(string.Format("[{0}]", QueryHandler.column_stat_type1));
-            mainForm.comboBox8.SelectedIndex = mainForm.comboBox8.FindString(string.Format("[{0}]", QueryHandler.column_stat_type2));
-            mainForm.comboBox9.SelectedIndex = mainForm.comboBox9.FindString(string.Format("[{0}]", QueryHandler.column_stat_type3));
-            mainForm.comboBox10.SelectedIndex = mainForm.comboBox10.FindString(string.Format("[{0}]", QueryHandler.column_stat_type4));
-            mainForm.comboBox11.SelectedIndex = mainForm.comboBox11.FindString(string.Format("[{0}]", QueryHandler.column_stat_type5));
-            mainForm.comboBox12.SelectedIndex = mainForm.comboBox12.FindString(string.Format("[{0}]", QueryHandler.column_stat_type6));
-            mainForm.comboBox13.SelectedIndex = mainForm.comboBox13.FindString(string.Format("[{0}]", QueryHandler.column_stat_type7));
-            mainForm.comboBox14.SelectedIndex = mainForm.comboBox14.FindString(string.Format("[{0}]", QueryHandler.column_stat_type8));
-            mainForm.comboBox15.SelectedIndex = mainForm.comboBox15.FindString(string.Format("[{0}]", QueryHandler.column_stat_type9));
-            mainForm.comboBox16.SelectedIndex = mainForm.comboBox16.FindString(string.Format("[{0}]", QueryHandler.column_stat_type10));
-            mainForm.comboBox17.SelectedIndex = mainForm.comboBox17.FindString(string.Format("[{0}]", QueryHandler.column_dmg_type1));
-            mainForm.comboBox18.SelectedIndex = mainForm.comboBox18.FindString(string.Format("[{0}]", QueryHandler.column_dmg_type2));
-            mainForm.comboBox19.SelectedIndex = mainForm.comboBox19.FindString(string.Format("[{0}]", QueryHandler.column_ammo_type));
-            mainForm.comboBox20.SelectedIndex = mainForm.comboBox20.FindString(string.Format("[{0}]", QueryHandler.column_Material)); // [-1] consumable at index 0
-            mainForm.comboBox21.SelectedIndex = mainForm.comboBox21.FindString(string.Format("[{0}]", QueryHandler.column_FoodType));
-            mainForm.comboBox22.SelectedIndex = mainForm.comboBox22.FindString(string.Format("[{0}]", QueryHandler.column_TotemCategory));
-            mainForm.comboBox23.SelectedIndex = mainForm.comboBox23.FindString(string.Format("[{0}]", QueryHandler.column_spelltrigger_1));
-            mainForm.comboBox24.SelectedIndex = mainForm.comboBox24.FindString(string.Format("[{0}]", QueryHandler.column_spelltrigger_2));
-            mainForm.comboBox25.SelectedIndex = mainForm.comboBox25.FindString(string.Format("[{0}]", QueryHandler.column_spelltrigger_3));
-            mainForm.comboBox26.SelectedIndex = mainForm.comboBox26.FindString(string.Format("[{0}]", QueryHandler.column_spelltrigger_4));
-            mainForm.comboBox27.SelectedIndex = mainForm.comboBox27.FindString(string.Format("[{0}]", QueryHandler.column_spelltrigger_5));
-            mainForm.comboBox28.SelectedIndex = mainForm.comboBox28.FindString(string.Format("[{0}]", QueryHandler.column_socketColor_1));
-            mainForm.comboBox29.SelectedIndex = mainForm.comboBox29.FindString(string.Format("[{0}]", QueryHandler.column_socketColor_2));
-            mainForm.comboBox30.SelectedIndex = mainForm.comboBox30.FindString(string.Format("[{0}]", QueryHandler.column_socketColor_3));
-            mainForm.comboBox31.SelectedIndex = mainForm.comboBox31.FindString(string.Format("[{0}]", QueryHandler.column_socketBonus));
+            mainForm.comboBox1.SelectedIndex = mainForm.comboBox1.FindString(string.Format("[{0}]", MyData.Field_Quality));
+            mainForm.comboBox2.SelectedIndex = mainForm.comboBox2.FindString(string.Format("[{0}]", MyData.Field_bonding));
+            mainForm.comboBox3.SelectedIndex = mainForm.comboBox3.FindString(string.Format("[{0}]", MyData.Field_sheath));
+            mainForm.comboBox4.SelectedIndex = mainForm.comboBox4.FindString(string.Format("[{0}]", MyData.Field_class));
+            mainForm.comboBox5.SelectedIndex = mainForm.comboBox5.FindString(string.Format("[{0}]", MyData.Field_subclass));
+            mainForm.comboBox6.SelectedIndex = mainForm.comboBox6.FindString(string.Format("[{0}]", MyData.Field_InventoryType));
+            mainForm.comboBox7.SelectedIndex = mainForm.comboBox7.FindString(string.Format("[{0}]", MyData.Field_stat_type1));
+            mainForm.comboBox8.SelectedIndex = mainForm.comboBox8.FindString(string.Format("[{0}]", MyData.Field_stat_type2));
+            mainForm.comboBox9.SelectedIndex = mainForm.comboBox9.FindString(string.Format("[{0}]", MyData.Field_stat_type3));
+            mainForm.comboBox10.SelectedIndex = mainForm.comboBox10.FindString(string.Format("[{0}]", MyData.Field_stat_type4));
+            mainForm.comboBox11.SelectedIndex = mainForm.comboBox11.FindString(string.Format("[{0}]", MyData.Field_stat_type5));
+            mainForm.comboBox12.SelectedIndex = mainForm.comboBox12.FindString(string.Format("[{0}]", MyData.Field_stat_type6));
+            mainForm.comboBox13.SelectedIndex = mainForm.comboBox13.FindString(string.Format("[{0}]", MyData.Field_stat_type7));
+            mainForm.comboBox14.SelectedIndex = mainForm.comboBox14.FindString(string.Format("[{0}]", MyData.Field_stat_type8));
+            mainForm.comboBox15.SelectedIndex = mainForm.comboBox15.FindString(string.Format("[{0}]", MyData.Field_stat_type9));
+            mainForm.comboBox16.SelectedIndex = mainForm.comboBox16.FindString(string.Format("[{0}]", MyData.Field_stat_type10));
+            mainForm.comboBox17.SelectedIndex = mainForm.comboBox17.FindString(string.Format("[{0}]", MyData.Field_dmg_type1));
+            mainForm.comboBox18.SelectedIndex = mainForm.comboBox18.FindString(string.Format("[{0}]", MyData.Field_dmg_type2));
+            mainForm.comboBox19.SelectedIndex = mainForm.comboBox19.FindString(string.Format("[{0}]", MyData.Field_ammo_type));
+            mainForm.comboBox20.SelectedIndex = mainForm.comboBox20.FindString(string.Format("[{0}]", MyData.Field_Material)); // [-1] consumable at index 0
+            mainForm.comboBox21.SelectedIndex = mainForm.comboBox21.FindString(string.Format("[{0}]", MyData.Field_FoodType));
+            mainForm.comboBox22.SelectedIndex = mainForm.comboBox22.FindString(string.Format("[{0}]", MyData.Field_TotemCategory));
+            mainForm.comboBox23.SelectedIndex = mainForm.comboBox23.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_1));
+            mainForm.comboBox24.SelectedIndex = mainForm.comboBox24.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_2));
+            mainForm.comboBox25.SelectedIndex = mainForm.comboBox25.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_3));
+            mainForm.comboBox26.SelectedIndex = mainForm.comboBox26.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_4));
+            mainForm.comboBox27.SelectedIndex = mainForm.comboBox27.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_5));
+            mainForm.comboBox28.SelectedIndex = mainForm.comboBox28.FindString(string.Format("[{0}]", MyData.Field_socketColor_1));
+            mainForm.comboBox29.SelectedIndex = mainForm.comboBox29.FindString(string.Format("[{0}]", MyData.Field_socketColor_2));
+            mainForm.comboBox30.SelectedIndex = mainForm.comboBox30.FindString(string.Format("[{0}]", MyData.Field_socketColor_3));
+            mainForm.comboBox31.SelectedIndex = mainForm.comboBox31.FindString(string.Format("[{0}]", MyData.Field_socketBonus));
 
             preLoadTemplate = false;
         }

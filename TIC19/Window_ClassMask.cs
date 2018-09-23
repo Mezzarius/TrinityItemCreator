@@ -57,13 +57,13 @@ namespace TrinityItemCreator
                     _mask += Convert.ToInt32(chkBox.Tag);
             }
 
-            QueryHandler.column_AllowableClass = _mask == 1535 ? -1 : _mask;
+            MyData.Field_AllowableClass = _mask == 1535 ? -1 : _mask;
             classMaskHex = _mask;
         }
 
         private void Window_ClassMask_Load(object sender, EventArgs e)
         {
-            classMaskHex = QueryHandler.column_AllowableClass == -1 ? 1535 : QueryHandler.column_AllowableClass;
+            classMaskHex = MyData.Field_AllowableClass == -1 ? 1535 : MyData.Field_AllowableClass;
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
                 if ((classMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)

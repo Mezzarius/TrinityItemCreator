@@ -62,166 +62,166 @@ namespace TrinityItemCreator
         private void MyTextBox25_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox25.Text, out int userVal))
-                QueryHandler.column_minMoneyLoot = userVal;
+                MyData.Field_minMoneyLoot = userVal;
         }
 
         private void MyTextBox1_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox1.Text, out int userVal))
-                QueryHandler.column_maxMoneyLoot = userVal;
+                MyData.Field_maxMoneyLoot = userVal;
         }
 
         private void MyTextBox2_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox2.Text, out int userVal))
-                QueryHandler.column_lockid = userVal;
+                MyData.Field_lockid = userVal;
         }
 
         private void MyTextBox3_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox3.Text, out int userVal))
-                QueryHandler.column_PageMaterial = userVal;
+                MyData.Field_PageMaterial = userVal;
         }
 
         private void MyTextBox4_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox4.Text, out int userVal))
-                QueryHandler.column_PageText = userVal;
+                MyData.Field_PageText = userVal;
         }
 
         private void MyTextBox5_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox5.Text, out int userVal))
-                QueryHandler.column_LanguageID = userVal;
+                MyData.Field_LanguageID = userVal;
         }
 
         private void MyTextBox21_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox21.Text, out int userVal))
-                QueryHandler.column_RequiredReputationFaction = userVal;
+                MyData.Field_RequiredReputationFaction = userVal;
         }
 
         private void MyTextBox22_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox2.Text, out int userVal))
-                QueryHandler.column_RequiredReputationRank = userVal;
+                MyData.Field_RequiredReputationRank = userVal;
         }
 
         private void MyTextBox7_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox7.Text, out int userVal))
-                QueryHandler.column_RequiredDisenchantSkill = userVal;
+                MyData.Field_RequiredDisenchantSkill = userVal;
         }
 
         private void MyTextBox8_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox8.Text, out int userVal))
-                QueryHandler.column_DisenchantID = userVal;
+                MyData.Field_DisenchantID = userVal;
         }
 
         private void MyTextBox19_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox19.Text, out int userVal))
-                QueryHandler.column_requiredhonorrank = userVal;
+                MyData.Field_requiredhonorrank = userVal;
         }
 
         private void MyTextBox20_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox20.Text, out int userVal))
-                QueryHandler.column_RequiredCityRank = userVal;
+                MyData.Field_RequiredCityRank = userVal;
         }
 
         private void MyTextBox16_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox16.Text, out int userVal))
-                QueryHandler.column_RequiredSkill = userVal;
+                MyData.Field_RequiredSkill = userVal;
         }
 
         private void MyTextBox17_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox17.Text, out int userVal))
-                QueryHandler.column_RequiredSkillRank = userVal;
+                MyData.Field_RequiredSkillRank = userVal;
         }
 
         private void MyTextBox18_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox18.Text, out int userVal))
-                QueryHandler.column_requiredspell = userVal;
+                MyData.Field_requiredspell = userVal;
         }
 
         private void MyTextBox15_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox15.Text, out int userVal))
-                QueryHandler.column_Map = userVal;
+                MyData.Field_Map = userVal;
         }
 
         private void MyTextBox14_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox14.Text, out int userVal))
-                QueryHandler.column_area = userVal;
+                MyData.Field_area = userVal;
         }
 
         private void MyTextBox13_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox13.Text, out int userVal))
-                QueryHandler.column_duration = userVal;
+                MyData.Field_duration = userVal;
         }
 
         private void MyTextBox6_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox6.Text, out int userVal))
-                QueryHandler.column_startquest = userVal;
+                MyData.Field_startquest = userVal;
         }
 
         private void MyTextBox9_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox9.Text, out int userVal))
-                QueryHandler.column_GemProperties = userVal;
+                MyData.Field_GemProperties = userVal;
         }
 
         private void MyTextBox10_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox10.Text, out int userVal))
-                QueryHandler.column_HolidayId = userVal;
+                MyData.Field_HolidayId = userVal;
         }
 
         private void MyTextBox11_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox11.Text, out int userVal))
-                QueryHandler.column_SoundOverrideSubclass = userVal;
+                MyData.Field_SoundOverrideSubclass = userVal;
         }
 
         private void MyTextBox12_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(MyTextBox12.Text, out int userVal))
-                QueryHandler.column_ItemLimitCategory = userVal;
+                MyData.Field_ItemLimitCategory = userVal;
         }
 
         private void Window_Other_Options_Load(object sender, EventArgs e)
         {
-            MyTextBox1.Text = QueryHandler.column_maxMoneyLoot.ToString();
-            MyTextBox2.Text = QueryHandler.column_lockid.ToString();
-            MyTextBox3.Text = QueryHandler.column_PageMaterial.ToString();
-            MyTextBox4.Text = QueryHandler.column_PageText.ToString();
-            MyTextBox5.Text = QueryHandler.column_LanguageID.ToString();
-            MyTextBox6.Text = QueryHandler.column_startquest.ToString();
-            MyTextBox7.Text = QueryHandler.column_RequiredDisenchantSkill.ToString();
-            MyTextBox8.Text = QueryHandler.column_DisenchantID.ToString();
-            MyTextBox9.Text = QueryHandler.column_GemProperties.ToString();
-            MyTextBox10.Text = QueryHandler.column_HolidayId.ToString();
-            MyTextBox11.Text = QueryHandler.column_SoundOverrideSubclass.ToString();
-            MyTextBox12.Text = QueryHandler.column_ItemLimitCategory.ToString();
-            MyTextBox13.Text = QueryHandler.column_duration.ToString();
-            MyTextBox14.Text = QueryHandler.column_area.ToString();
-            MyTextBox15.Text = QueryHandler.column_Map.ToString();
-            MyTextBox16.Text = QueryHandler.column_RequiredSkill.ToString();
-            MyTextBox17.Text = QueryHandler.column_RequiredSkillRank.ToString();
-            MyTextBox18.Text = QueryHandler.column_requiredspell.ToString();
-            MyTextBox19.Text = QueryHandler.column_requiredhonorrank.ToString();
-            MyTextBox20.Text = QueryHandler.column_RequiredCityRank.ToString();
-            MyTextBox21.Text = QueryHandler.column_RequiredReputationFaction.ToString();
-            MyTextBox22.Text = QueryHandler.column_RequiredReputationRank.ToString();
-            MyTextBox25.Text = QueryHandler.column_minMoneyLoot.ToString();
+            MyTextBox1.Text = MyData.Field_maxMoneyLoot.ToString();
+            MyTextBox2.Text = MyData.Field_lockid.ToString();
+            MyTextBox3.Text = MyData.Field_PageMaterial.ToString();
+            MyTextBox4.Text = MyData.Field_PageText.ToString();
+            MyTextBox5.Text = MyData.Field_LanguageID.ToString();
+            MyTextBox6.Text = MyData.Field_startquest.ToString();
+            MyTextBox7.Text = MyData.Field_RequiredDisenchantSkill.ToString();
+            MyTextBox8.Text = MyData.Field_DisenchantID.ToString();
+            MyTextBox9.Text = MyData.Field_GemProperties.ToString();
+            MyTextBox10.Text = MyData.Field_HolidayId.ToString();
+            MyTextBox11.Text = MyData.Field_SoundOverrideSubclass.ToString();
+            MyTextBox12.Text = MyData.Field_ItemLimitCategory.ToString();
+            MyTextBox13.Text = MyData.Field_duration.ToString();
+            MyTextBox14.Text = MyData.Field_area.ToString();
+            MyTextBox15.Text = MyData.Field_Map.ToString();
+            MyTextBox16.Text = MyData.Field_RequiredSkill.ToString();
+            MyTextBox17.Text = MyData.Field_RequiredSkillRank.ToString();
+            MyTextBox18.Text = MyData.Field_requiredspell.ToString();
+            MyTextBox19.Text = MyData.Field_requiredhonorrank.ToString();
+            MyTextBox20.Text = MyData.Field_RequiredCityRank.ToString();
+            MyTextBox21.Text = MyData.Field_RequiredReputationFaction.ToString();
+            MyTextBox22.Text = MyData.Field_RequiredReputationRank.ToString();
+            MyTextBox25.Text = MyData.Field_minMoneyLoot.ToString();
         }
     }
 }

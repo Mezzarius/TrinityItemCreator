@@ -59,13 +59,13 @@ namespace TrinityItemCreator
                     _mask += Convert.ToInt32(chkBox.Tag);
             }
 
-            QueryHandler.column_AllowableRace = _mask == 1791 ? -1 : _mask;
+            MyData.Field_AllowableRace = _mask == 1791 ? -1 : _mask;
             raceMaskHex = _mask;
         }
 
         private void Window_RaceMask_Load(object sender, EventArgs e)
         {
-            raceMaskHex = QueryHandler.column_AllowableRace == -1 ? 1791 : QueryHandler.column_AllowableRace;
+            raceMaskHex = MyData.Field_AllowableRace == -1 ? 1791 : MyData.Field_AllowableRace;
             foreach (var chkBox in Controls.OfType<CheckBox>())
             {
                 if ((raceMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrinityItemCreator.MyClass;
 
@@ -37,20 +32,14 @@ namespace TrinityItemCreator
 
         private void Form4_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
+            if (e.KeyCode == Keys.Space && listBox1.Items.Count > 0)
             {
+                Functions myFunctions = new Functions(mainForm);
+                myFunctions.LoadMyCustomTemplate(listBox1.SelectedItem.ToString());
                 Close();
             }
-            else if (e.KeyCode == Keys.Space)
-            {
-                DoTheLoadTemplate();
+            else if (e.KeyCode == Keys.Escape)
                 Close();
-            }
-        }
-
-        private void Button16_Click(object sender, EventArgs e)
-        {
-            Close();
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -64,26 +53,21 @@ namespace TrinityItemCreator
             listBox1.Items.AddRange(files);
 
             if (files == null || files.Length == 0)
-                button15.Enabled = false;
+                ButtonLoad.Enabled = false;
             else
                 listBox1.SelectedIndex = 0;
         }
         
-        private void Button15_Click(object sender, EventArgs e)
+        private void ButtonLoad_Click(object sender, EventArgs e)
         {
-            DoTheLoadTemplate();
+            Functions myFunctions = new Functions(mainForm);
+            myFunctions.LoadMyCustomTemplate(listBox1.SelectedItem.ToString());
             Close();
         }
 
-        private void DoTheLoadTemplate()
+        private void ButtonCancel_Click(object sender, EventArgs e)
         {
-            string path = "templates";
-
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-            Functions mCF = new Functions(mainForm);
-            mCF.LoadDefaultTemplate(14, File.ReadAllLines(string.Format(path + @"\{0}.txt", listBox1.SelectedItem.ToString())));
+            Close();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace TrinityItemCreator
             mainForm = form1;
         }
 
-        private void Button16_Click(object sender, EventArgs e)
+        private void ButtonSkip_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -31,35 +31,35 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonWeapon_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(0);
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonArmor_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(1);
             Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ButtonGem_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(2);
             Close();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void ButtonProjectile_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(3);
             Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void ButtonContainer_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(4);
@@ -73,62 +73,63 @@ namespace TrinityItemCreator
             Close();
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void ButtonGlyph_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(6);
             Close();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void ButtonRecipe_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(7);
             Close();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void ButtonQuest_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(8);
             Close();
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void ButtonKey_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(9);
             Close();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void ButtonReagent_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(10);
             Close();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void ButtonTradeGoods_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(11);
             Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ButtonConsumable_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(12);
+            Close();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void ButtonMisc_Click(object sender, EventArgs e)
         {
             Functions myF = new Functions(mainForm);
             myF.LoadDefaultTemplate(13);
             Close();
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void ButtonMyTemplates_Click(object sender, EventArgs e)
         {
             Close();
             Form4 form4 = new Form4(mainForm);

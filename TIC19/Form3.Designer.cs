@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.ButtonClose = new System.Windows.Forms.Button();
+            this.ButtonSave = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.LabelInfo = new System.Windows.Forms.Label();
+            this.LabelWarning = new System.Windows.Forms.Label();
             this.myTextBox2 = new MyTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -43,89 +43,89 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button15);
+            this.panel2.Controls.Add(this.ButtonClose);
+            this.panel2.Controls.Add(this.ButtonSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 161);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(461, 36);
             this.panel2.TabIndex = 31;
             // 
-            // button16
+            // ButtonClose
             // 
-            this.button16.BackColor = System.Drawing.Color.IndianRed;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(330, 7);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(104, 23);
-            this.button16.TabIndex = 1;
-            this.button16.Text = "CANCEL (ESC)";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.ButtonClose.BackColor = System.Drawing.Color.IndianRed;
+            this.ButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonClose.ForeColor = System.Drawing.Color.White;
+            this.ButtonClose.Location = new System.Drawing.Point(330, 7);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(104, 23);
+            this.ButtonClose.TabIndex = 1;
+            this.ButtonClose.Text = "CANCEL (ESC)";
+            this.ButtonClose.UseVisualStyleBackColor = false;
+            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
-            // button15
+            // ButtonSave
             // 
-            this.button15.BackColor = System.Drawing.Color.CadetBlue;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(25, 7);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(104, 23);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "SAVE";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.Button15_Click);
+            this.ButtonSave.BackColor = System.Drawing.Color.CadetBlue;
+            this.ButtonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.ButtonSave.ForeColor = System.Drawing.Color.White;
+            this.ButtonSave.Location = new System.Drawing.Point(25, 7);
+            this.ButtonSave.Name = "ButtonSave";
+            this.ButtonSave.Size = new System.Drawing.Size(104, 23);
+            this.ButtonSave.TabIndex = 0;
+            this.ButtonSave.Text = "SAVE";
+            this.ButtonSave.UseVisualStyleBackColor = false;
+            this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.LabelTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(461, 36);
             this.panel1.TabIndex = 30;
             // 
-            // label15
+            // LabelTitle
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(138, 10);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(175, 17);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Save your current template";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.LabelTitle.Location = new System.Drawing.Point(138, 10);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(175, 17);
+            this.LabelTitle.TabIndex = 0;
+            this.LabelTitle.Text = "Save your current template";
             // 
-            // label3
+            // LabelInfo
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Enabled = false;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(69, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(317, 17);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Please name your new template";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelInfo.BackColor = System.Drawing.Color.Transparent;
+            this.LabelInfo.Enabled = false;
+            this.LabelInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelInfo.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.LabelInfo.Location = new System.Drawing.Point(69, 75);
+            this.LabelInfo.Name = "LabelInfo";
+            this.LabelInfo.Size = new System.Drawing.Size(317, 17);
+            this.LabelInfo.TabIndex = 38;
+            this.LabelInfo.Text = "Please name your new template";
+            this.LabelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // LabelWarning
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(69, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 17);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "(Will be saved in /templates directory)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelWarning.BackColor = System.Drawing.Color.Transparent;
+            this.LabelWarning.Enabled = false;
+            this.LabelWarning.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWarning.ForeColor = System.Drawing.Color.DimGray;
+            this.LabelWarning.Location = new System.Drawing.Point(69, 121);
+            this.LabelWarning.Name = "LabelWarning";
+            this.LabelWarning.Size = new System.Drawing.Size(317, 17);
+            this.LabelWarning.TabIndex = 39;
+            this.LabelWarning.Text = "(Will be saved in /templates directory)";
+            this.LabelWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // myTextBox2
             // 
@@ -148,9 +148,9 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(461, 197);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelWarning);
             this.Controls.Add(this.myTextBox2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LabelInfo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -177,12 +177,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button ButtonClose;
+        private System.Windows.Forms.Button ButtonSave;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LabelTitle;
+        private System.Windows.Forms.Label LabelInfo;
         public MyTextBox myTextBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabelWarning;
     }
 }

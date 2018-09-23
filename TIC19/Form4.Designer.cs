@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.ButtonCancel = new System.Windows.Forms.Button();
+            this.ButtonLoad = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -43,43 +43,43 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button15);
+            this.panel2.Controls.Add(this.ButtonCancel);
+            this.panel2.Controls.Add(this.ButtonLoad);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 396);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 36);
             this.panel2.TabIndex = 31;
             // 
-            // button16
+            // ButtonCancel
             // 
-            this.button16.BackColor = System.Drawing.Color.IndianRed;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(174, 7);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(104, 23);
-            this.button16.TabIndex = 1;
-            this.button16.Text = "CANCEL (ESC)";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.Button16_Click);
+            this.ButtonCancel.BackColor = System.Drawing.Color.IndianRed;
+            this.ButtonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCancel.ForeColor = System.Drawing.Color.White;
+            this.ButtonCancel.Location = new System.Drawing.Point(174, 7);
+            this.ButtonCancel.Name = "ButtonCancel";
+            this.ButtonCancel.Size = new System.Drawing.Size(104, 23);
+            this.ButtonCancel.TabIndex = 1;
+            this.ButtonCancel.Text = "CANCEL (ESC)";
+            this.ButtonCancel.UseVisualStyleBackColor = false;
+            this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
-            // button15
+            // ButtonLoad
             // 
-            this.button15.BackColor = System.Drawing.Color.CadetBlue;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(12, 7);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(104, 23);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "LOAD (SPACE)";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.Button15_Click);
+            this.ButtonLoad.BackColor = System.Drawing.Color.CadetBlue;
+            this.ButtonLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLoad.ForeColor = System.Drawing.Color.White;
+            this.ButtonLoad.Location = new System.Drawing.Point(12, 7);
+            this.ButtonLoad.Name = "ButtonLoad";
+            this.ButtonLoad.Size = new System.Drawing.Size(104, 23);
+            this.ButtonLoad.TabIndex = 0;
+            this.ButtonLoad.Text = "LOAD (SPACE)";
+            this.ButtonLoad.UseVisualStyleBackColor = false;
+            this.ButtonLoad.Click += new System.EventHandler(this.ButtonLoad_Click);
             // 
             // panel1
             // 
@@ -165,8 +165,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button ButtonCancel;
+        private System.Windows.Forms.Button ButtonLoad;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ListBox listBox1;

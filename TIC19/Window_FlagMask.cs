@@ -60,13 +60,13 @@ namespace TrinityItemCreator
                 }
             }
 
-            QueryHandler.column_Flags = flagMask;
+            MyData.Field_Flags = flagMask;
             checkedListHex = flagMask;
         }
 
         private void Window_FlagMask_Load(object sender, EventArgs e)
         {
-            checkedListHex = QueryHandler.column_Flags;
+            checkedListHex = MyData.Field_Flags;
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();

@@ -37,6 +37,7 @@
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,7 +141,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -319,6 +319,14 @@
             this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom Template";
             this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
+            // 
+            // loadDefaultTemplateToolStripMenuItem
+            // 
+            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
+            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default Template";
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
             // 
             // exportAsToolStripMenuItem
             // 
@@ -2317,14 +2325,6 @@
             this.button11.TabIndex = 204;
             this.button11.UseVisualStyleBackColor = true;
             // 
-            // loadDefaultTemplateToolStripMenuItem
-            // 
-            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
-            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
-            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default Template";
-            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
-            // 
             // myTextBox68
             // 
             this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
@@ -3723,6 +3723,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

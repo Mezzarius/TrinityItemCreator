@@ -11,17 +11,15 @@ namespace TrinityItemCreator
         public Form1()
         {
             InitializeComponent();
-
-            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
         }
 
         protected override CreateParams CreateParams
         {
             get
             {
-                var parms = base.CreateParams;
-                parms.Style &= ~0x02000000;  // Turn off WS_CLIPCHILDREN
-                return parms;
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
             }
         }
 
@@ -1244,10 +1242,13 @@ namespace TrinityItemCreator
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Functions myF = new Functions(this);
+            myF.DelayMainFormPainting();
+
             // This is happening before closing form2
             if (!Functions.preLoadTemplate)
             {
-                Functions myF = new Functions(this);
+                
                 myF.LoadDefaultTemplate(99999);
             }
         }
@@ -1268,6 +1269,12 @@ namespace TrinityItemCreator
         {
             Form2 form2 = new Form2(this);
             form2.ShowDialog();
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            Functions myF = new Functions(this);
+            myF.DelayMainFormPainting();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System;
+using System.Threading.Tasks;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -18,7 +19,14 @@ namespace TrinityItemCreator.MyClass
             mainForm = form1;
         }
 
-        public void UnBlurMainForm()
+        public async void DelayMainFormPainting()
+        {
+            mainForm.Opacity = 0;
+            await Task.Delay(350);
+            mainForm.Opacity = .99;
+        }
+
+    public void UnBlurMainForm()
         {
             foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;
             foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>()) mtextBox.Enabled = true;

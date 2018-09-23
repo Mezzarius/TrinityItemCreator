@@ -30,13 +30,13 @@ public class MyTextBox : TextBox
     {
         base.WndProc(ref m);
         if (m.Msg == WM_NCPAINT && BorderColor != Color.Transparent &&
-            BorderStyle == System.Windows.Forms.BorderStyle.Fixed3D)
+            BorderStyle == BorderStyle.Fixed3D)
         {
             var hdc = GetWindowDC(this.Handle);
             using (var g = Graphics.FromHdcInternal(hdc))
             using (var p = new Pen(BorderColor))
                 g.DrawRectangle(p, new Rectangle(0, 0, Width - 1, Height - 1));
-            ReleaseDC(this.Handle, hdc);
+            ReleaseDC(Handle, hdc);
         }
     }
     protected override void OnSizeChanged(EventArgs e)

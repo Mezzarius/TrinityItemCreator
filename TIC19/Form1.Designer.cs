@@ -417,7 +417,7 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Enabled = false;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox1.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -466,7 +466,7 @@
             this.comboBox2.BackColor = System.Drawing.Color.White;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Enabled = false;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox2.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -564,7 +564,7 @@
             // 
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Enabled = false;
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox6.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
@@ -632,7 +632,7 @@
             this.comboBox7.BackColor = System.Drawing.Color.White;
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Enabled = false;
-            this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox7.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
@@ -691,7 +691,7 @@
             this.comboBox8.BackColor = System.Drawing.Color.White;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.Enabled = false;
-            this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox8.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
@@ -750,7 +750,7 @@
             this.comboBox9.BackColor = System.Drawing.Color.White;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.Enabled = false;
-            this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox9.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
@@ -809,7 +809,7 @@
             this.comboBox10.BackColor = System.Drawing.Color.White;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.Enabled = false;
-            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox10.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
@@ -868,7 +868,7 @@
             this.comboBox11.BackColor = System.Drawing.Color.White;
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.Enabled = false;
-            this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox11.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
@@ -927,7 +927,7 @@
             this.comboBox12.BackColor = System.Drawing.Color.White;
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.Enabled = false;
-            this.comboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox12.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
@@ -986,7 +986,7 @@
             this.comboBox13.BackColor = System.Drawing.Color.White;
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.Enabled = false;
-            this.comboBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox13.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
@@ -1045,7 +1045,7 @@
             this.comboBox14.BackColor = System.Drawing.Color.White;
             this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox14.Enabled = false;
-            this.comboBox14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox14.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Items.AddRange(new object[] {
@@ -1104,7 +1104,7 @@
             this.comboBox15.BackColor = System.Drawing.Color.White;
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.Enabled = false;
-            this.comboBox15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox15.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Items.AddRange(new object[] {
@@ -1163,7 +1163,7 @@
             this.comboBox16.BackColor = System.Drawing.Color.White;
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.Enabled = false;
-            this.comboBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox16.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
@@ -1243,7 +1243,7 @@
             this.comboBox17.BackColor = System.Drawing.Color.White;
             this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox17.Enabled = false;
-            this.comboBox17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox17.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Items.AddRange(new object[] {
@@ -1254,7 +1254,7 @@
             "[4] Frost",
             "[5] Shadow",
             "[6] Arcane"});
-            this.comboBox17.Location = new System.Drawing.Point(946, 516);
+            this.comboBox17.Location = new System.Drawing.Point(946, 515);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(139, 21);
             this.comboBox17.TabIndex = 93;
@@ -1265,7 +1265,7 @@
             this.comboBox18.BackColor = System.Drawing.Color.White;
             this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox18.Enabled = false;
-            this.comboBox18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox18.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Items.AddRange(new object[] {
@@ -1276,7 +1276,7 @@
             "[4] Frost",
             "[5] Shadow",
             "[6] Arcane"});
-            this.comboBox18.Location = new System.Drawing.Point(946, 545);
+            this.comboBox18.Location = new System.Drawing.Point(946, 544);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(139, 21);
             this.comboBox18.TabIndex = 96;
@@ -1287,7 +1287,7 @@
             this.comboBox19.BackColor = System.Drawing.Color.White;
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.Enabled = false;
-            this.comboBox19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox19.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox19.FormattingEnabled = true;
             this.comboBox19.Items.AddRange(new object[] {
@@ -1404,7 +1404,7 @@
             this.comboBox20.BackColor = System.Drawing.Color.White;
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.Enabled = false;
-            this.comboBox20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox20.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Items.AddRange(new object[] {
@@ -1450,7 +1450,7 @@
             this.comboBox21.BackColor = System.Drawing.Color.White;
             this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox21.Enabled = false;
-            this.comboBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox21.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox21.FormattingEnabled = true;
             this.comboBox21.Items.AddRange(new object[] {
@@ -1487,7 +1487,7 @@
             this.comboBox22.BackColor = System.Drawing.Color.White;
             this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox22.Enabled = false;
-            this.comboBox22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox22.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox22.FormattingEnabled = true;
             this.comboBox22.Items.AddRange(new object[] {
@@ -1556,7 +1556,7 @@
             this.comboBox23.BackColor = System.Drawing.Color.White;
             this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox23.Enabled = false;
-            this.comboBox23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox23.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox23.FormattingEnabled = true;
             this.comboBox23.Items.AddRange(new object[] {
@@ -1566,7 +1566,7 @@
             "[4] Soulstone",
             "[5] Use with no delay",
             "[6] Learn Spell ID"});
-            this.comboBox23.Location = new System.Drawing.Point(124, 609);
+            this.comboBox23.Location = new System.Drawing.Point(124, 607);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(100, 21);
             this.comboBox23.TabIndex = 29;
@@ -1642,7 +1642,7 @@
             this.comboBox24.BackColor = System.Drawing.Color.White;
             this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox24.Enabled = false;
-            this.comboBox24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox24.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox24.FormattingEnabled = true;
             this.comboBox24.Items.AddRange(new object[] {
@@ -1652,7 +1652,7 @@
             "[4] Soulstone",
             "[5] Use with no delay",
             "[6] Learn Spell ID"});
-            this.comboBox24.Location = new System.Drawing.Point(124, 636);
+            this.comboBox24.Location = new System.Drawing.Point(124, 634);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(100, 21);
             this.comboBox24.TabIndex = 36;
@@ -1663,7 +1663,7 @@
             this.comboBox25.BackColor = System.Drawing.Color.White;
             this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox25.Enabled = false;
-            this.comboBox25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox25.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox25.FormattingEnabled = true;
             this.comboBox25.Items.AddRange(new object[] {
@@ -1673,7 +1673,7 @@
             "[4] Soulstone",
             "[5] Use with no delay",
             "[6] Learn Spell ID"});
-            this.comboBox25.Location = new System.Drawing.Point(124, 663);
+            this.comboBox25.Location = new System.Drawing.Point(124, 661);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(100, 21);
             this.comboBox25.TabIndex = 43;
@@ -1684,7 +1684,7 @@
             this.comboBox26.BackColor = System.Drawing.Color.White;
             this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox26.Enabled = false;
-            this.comboBox26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox26.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Items.AddRange(new object[] {
@@ -1694,7 +1694,7 @@
             "[4] Soulstone",
             "[5] Use with no delay",
             "[6] Learn Spell ID"});
-            this.comboBox26.Location = new System.Drawing.Point(124, 690);
+            this.comboBox26.Location = new System.Drawing.Point(124, 688);
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(100, 21);
             this.comboBox26.TabIndex = 50;
@@ -1705,7 +1705,7 @@
             this.comboBox27.BackColor = System.Drawing.Color.White;
             this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox27.Enabled = false;
-            this.comboBox27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox27.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox27.FormattingEnabled = true;
             this.comboBox27.Items.AddRange(new object[] {
@@ -1715,7 +1715,7 @@
             "[4] Soulstone",
             "[5] Use with no delay",
             "[6] Learn Spell ID"});
-            this.comboBox27.Location = new System.Drawing.Point(124, 717);
+            this.comboBox27.Location = new System.Drawing.Point(124, 715);
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(100, 21);
             this.comboBox27.TabIndex = 57;
@@ -1726,7 +1726,7 @@
             this.comboBox28.BackColor = System.Drawing.Color.White;
             this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox28.Enabled = false;
-            this.comboBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox28.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox28.FormattingEnabled = true;
             this.comboBox28.Items.AddRange(new object[] {
@@ -1759,7 +1759,7 @@
             this.comboBox29.BackColor = System.Drawing.Color.White;
             this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox29.Enabled = false;
-            this.comboBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox29.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox29.FormattingEnabled = true;
             this.comboBox29.Items.AddRange(new object[] {
@@ -1909,7 +1909,7 @@
             this.comboBox30.BackColor = System.Drawing.Color.White;
             this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox30.Enabled = false;
-            this.comboBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox30.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox30.FormattingEnabled = true;
             this.comboBox30.Items.AddRange(new object[] {
@@ -2110,7 +2110,7 @@
             // 
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Enabled = false;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
@@ -2125,7 +2125,7 @@
             // 
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Enabled = false;
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
@@ -2156,7 +2156,7 @@
             // 
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Enabled = false;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -2326,12 +2326,13 @@
             // myTextBox68
             // 
             this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox68.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox68.Enabled = false;
-            this.myTextBox68.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox68.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox68.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox68.Location = new System.Drawing.Point(632, 715);
             this.myTextBox68.Name = "myTextBox68";
-            this.myTextBox68.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox68.Size = new System.Drawing.Size(100, 18);
             this.myTextBox68.TabIndex = 104;
             this.myTextBox68.Text = "0";
             this.myTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2343,12 +2344,13 @@
             // myTextBox67
             // 
             this.myTextBox67.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox67.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox67.Enabled = false;
-            this.myTextBox67.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox67.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox67.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox67.Location = new System.Drawing.Point(971, 666);
             this.myTextBox67.Name = "myTextBox67";
-            this.myTextBox67.Size = new System.Drawing.Size(114, 23);
+            this.myTextBox67.Size = new System.Drawing.Size(114, 18);
             this.myTextBox67.TabIndex = 103;
             this.myTextBox67.Text = "0";
             this.myTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2360,12 +2362,13 @@
             // myTextBox66
             // 
             this.myTextBox66.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox66.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox66.Enabled = false;
-            this.myTextBox66.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox66.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox66.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox66.Location = new System.Drawing.Point(851, 666);
             this.myTextBox66.Name = "myTextBox66";
-            this.myTextBox66.Size = new System.Drawing.Size(114, 23);
+            this.myTextBox66.Size = new System.Drawing.Size(114, 18);
             this.myTextBox66.TabIndex = 102;
             this.myTextBox66.Text = "0";
             this.myTextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2377,12 +2380,13 @@
             // myTextBox65
             // 
             this.myTextBox65.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox65.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox65.Enabled = false;
-            this.myTextBox65.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox65.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox65.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox65.Location = new System.Drawing.Point(738, 666);
             this.myTextBox65.Name = "myTextBox65";
-            this.myTextBox65.Size = new System.Drawing.Size(107, 23);
+            this.myTextBox65.Size = new System.Drawing.Size(107, 18);
             this.myTextBox65.TabIndex = 101;
             this.myTextBox65.Text = "0";
             this.myTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2394,12 +2398,13 @@
             // myTextBox64
             // 
             this.myTextBox64.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox64.Enabled = false;
-            this.myTextBox64.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox64.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox64.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox64.Location = new System.Drawing.Point(632, 666);
             this.myTextBox64.Name = "myTextBox64";
-            this.myTextBox64.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox64.Size = new System.Drawing.Size(100, 18);
             this.myTextBox64.TabIndex = 100;
             this.myTextBox64.Text = "0";
             this.myTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2411,12 +2416,13 @@
             // myTextBox63
             // 
             this.myTextBox63.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox63.Enabled = false;
-            this.myTextBox63.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox63.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox63.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox63.Location = new System.Drawing.Point(451, 507);
             this.myTextBox63.Name = "myTextBox63";
-            this.myTextBox63.Size = new System.Drawing.Size(161, 23);
+            this.myTextBox63.Size = new System.Drawing.Size(161, 18);
             this.myTextBox63.TabIndex = 26;
             this.myTextBox63.Text = "0";
             this.myTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2428,12 +2434,13 @@
             // myTextBox62
             // 
             this.myTextBox62.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox62.Enabled = false;
-            this.myTextBox62.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox62.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox62.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox62.Location = new System.Drawing.Point(283, 507);
             this.myTextBox62.Name = "myTextBox62";
-            this.myTextBox62.Size = new System.Drawing.Size(160, 23);
+            this.myTextBox62.Size = new System.Drawing.Size(160, 18);
             this.myTextBox62.TabIndex = 25;
             this.myTextBox62.Text = "0";
             this.myTextBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2445,12 +2452,13 @@
             // myTextBox61
             // 
             this.myTextBox61.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox61.Enabled = false;
-            this.myTextBox61.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox61.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox61.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox61.Location = new System.Drawing.Point(115, 507);
             this.myTextBox61.Name = "myTextBox61";
-            this.myTextBox61.Size = new System.Drawing.Size(160, 23);
+            this.myTextBox61.Size = new System.Drawing.Size(160, 18);
             this.myTextBox61.TabIndex = 24;
             this.myTextBox61.Text = "0";
             this.myTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2462,12 +2470,13 @@
             // myTextBox55
             // 
             this.myTextBox55.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox55.Enabled = false;
-            this.myTextBox55.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox55.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox55.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox55.Location = new System.Drawing.Point(526, 716);
             this.myTextBox55.Name = "myTextBox55";
-            this.myTextBox55.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox55.Size = new System.Drawing.Size(89, 18);
             this.myTextBox55.TabIndex = 62;
             this.myTextBox55.Text = "0";
             this.myTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2479,12 +2488,13 @@
             // myTextBox56
             // 
             this.myTextBox56.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox56.Enabled = false;
-            this.myTextBox56.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox56.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox56.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox56.Location = new System.Drawing.Point(447, 716);
             this.myTextBox56.Name = "myTextBox56";
-            this.myTextBox56.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox56.Size = new System.Drawing.Size(73, 18);
             this.myTextBox56.TabIndex = 61;
             this.myTextBox56.Text = "0";
             this.myTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2496,12 +2506,13 @@
             // myTextBox57
             // 
             this.myTextBox57.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox57.Enabled = false;
-            this.myTextBox57.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox57.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox57.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox57.Location = new System.Drawing.Point(361, 716);
             this.myTextBox57.Name = "myTextBox57";
-            this.myTextBox57.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox57.Size = new System.Drawing.Size(81, 18);
             this.myTextBox57.TabIndex = 60;
             this.myTextBox57.Text = "0";
             this.myTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2513,12 +2524,13 @@
             // myTextBox58
             // 
             this.myTextBox58.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox58.Enabled = false;
-            this.myTextBox58.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox58.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox58.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox58.Location = new System.Drawing.Point(295, 716);
             this.myTextBox58.Name = "myTextBox58";
-            this.myTextBox58.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox58.Size = new System.Drawing.Size(61, 18);
             this.myTextBox58.TabIndex = 59;
             this.myTextBox58.Text = "0";
             this.myTextBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2530,12 +2542,13 @@
             // myTextBox59
             // 
             this.myTextBox59.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox59.Enabled = false;
-            this.myTextBox59.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox59.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox59.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox59.Location = new System.Drawing.Point(229, 716);
             this.myTextBox59.Name = "myTextBox59";
-            this.myTextBox59.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox59.Size = new System.Drawing.Size(61, 18);
             this.myTextBox59.TabIndex = 58;
             this.myTextBox59.Text = "0";
             this.myTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2547,12 +2560,13 @@
             // myTextBox60
             // 
             this.myTextBox60.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox60.Enabled = false;
-            this.myTextBox60.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox60.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox60.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox60.Location = new System.Drawing.Point(18, 716);
             this.myTextBox60.Name = "myTextBox60";
-            this.myTextBox60.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox60.Size = new System.Drawing.Size(100, 18);
             this.myTextBox60.TabIndex = 56;
             this.myTextBox60.Text = "0";
             this.myTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2564,12 +2578,13 @@
             // myTextBox49
             // 
             this.myTextBox49.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox49.Enabled = false;
-            this.myTextBox49.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox49.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox49.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox49.Location = new System.Drawing.Point(526, 689);
             this.myTextBox49.Name = "myTextBox49";
-            this.myTextBox49.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox49.Size = new System.Drawing.Size(89, 18);
             this.myTextBox49.TabIndex = 55;
             this.myTextBox49.Text = "0";
             this.myTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2581,12 +2596,13 @@
             // myTextBox50
             // 
             this.myTextBox50.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox50.Enabled = false;
-            this.myTextBox50.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox50.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox50.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox50.Location = new System.Drawing.Point(447, 689);
             this.myTextBox50.Name = "myTextBox50";
-            this.myTextBox50.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox50.Size = new System.Drawing.Size(73, 18);
             this.myTextBox50.TabIndex = 54;
             this.myTextBox50.Text = "0";
             this.myTextBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2598,12 +2614,13 @@
             // myTextBox51
             // 
             this.myTextBox51.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox51.Enabled = false;
-            this.myTextBox51.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox51.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox51.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox51.Location = new System.Drawing.Point(361, 689);
             this.myTextBox51.Name = "myTextBox51";
-            this.myTextBox51.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox51.Size = new System.Drawing.Size(81, 18);
             this.myTextBox51.TabIndex = 53;
             this.myTextBox51.Text = "0";
             this.myTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2615,12 +2632,13 @@
             // myTextBox52
             // 
             this.myTextBox52.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox52.Enabled = false;
-            this.myTextBox52.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox52.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox52.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox52.Location = new System.Drawing.Point(295, 689);
             this.myTextBox52.Name = "myTextBox52";
-            this.myTextBox52.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox52.Size = new System.Drawing.Size(61, 18);
             this.myTextBox52.TabIndex = 52;
             this.myTextBox52.Text = "0";
             this.myTextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2632,12 +2650,13 @@
             // myTextBox53
             // 
             this.myTextBox53.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox53.Enabled = false;
-            this.myTextBox53.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox53.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox53.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox53.Location = new System.Drawing.Point(229, 689);
             this.myTextBox53.Name = "myTextBox53";
-            this.myTextBox53.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox53.Size = new System.Drawing.Size(61, 18);
             this.myTextBox53.TabIndex = 51;
             this.myTextBox53.Text = "0";
             this.myTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2649,12 +2668,13 @@
             // myTextBox54
             // 
             this.myTextBox54.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox54.Enabled = false;
-            this.myTextBox54.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox54.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox54.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox54.Location = new System.Drawing.Point(18, 689);
             this.myTextBox54.Name = "myTextBox54";
-            this.myTextBox54.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox54.Size = new System.Drawing.Size(100, 18);
             this.myTextBox54.TabIndex = 49;
             this.myTextBox54.Text = "0";
             this.myTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2666,12 +2686,13 @@
             // myTextBox43
             // 
             this.myTextBox43.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox43.Enabled = false;
-            this.myTextBox43.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox43.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox43.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox43.Location = new System.Drawing.Point(526, 662);
             this.myTextBox43.Name = "myTextBox43";
-            this.myTextBox43.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox43.Size = new System.Drawing.Size(89, 18);
             this.myTextBox43.TabIndex = 48;
             this.myTextBox43.Text = "0";
             this.myTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2683,12 +2704,13 @@
             // myTextBox44
             // 
             this.myTextBox44.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox44.Enabled = false;
-            this.myTextBox44.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox44.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox44.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox44.Location = new System.Drawing.Point(447, 662);
             this.myTextBox44.Name = "myTextBox44";
-            this.myTextBox44.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox44.Size = new System.Drawing.Size(73, 18);
             this.myTextBox44.TabIndex = 47;
             this.myTextBox44.Text = "0";
             this.myTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2700,12 +2722,13 @@
             // myTextBox45
             // 
             this.myTextBox45.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox45.Enabled = false;
-            this.myTextBox45.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox45.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox45.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox45.Location = new System.Drawing.Point(361, 662);
             this.myTextBox45.Name = "myTextBox45";
-            this.myTextBox45.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox45.Size = new System.Drawing.Size(81, 18);
             this.myTextBox45.TabIndex = 46;
             this.myTextBox45.Text = "0";
             this.myTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2717,12 +2740,13 @@
             // myTextBox46
             // 
             this.myTextBox46.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox46.Enabled = false;
-            this.myTextBox46.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox46.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox46.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox46.Location = new System.Drawing.Point(295, 662);
             this.myTextBox46.Name = "myTextBox46";
-            this.myTextBox46.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox46.Size = new System.Drawing.Size(61, 18);
             this.myTextBox46.TabIndex = 45;
             this.myTextBox46.Text = "0";
             this.myTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2734,12 +2758,13 @@
             // myTextBox47
             // 
             this.myTextBox47.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox47.Enabled = false;
-            this.myTextBox47.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox47.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox47.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox47.Location = new System.Drawing.Point(229, 662);
             this.myTextBox47.Name = "myTextBox47";
-            this.myTextBox47.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox47.Size = new System.Drawing.Size(61, 18);
             this.myTextBox47.TabIndex = 44;
             this.myTextBox47.Text = "0";
             this.myTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2751,12 +2776,13 @@
             // myTextBox48
             // 
             this.myTextBox48.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox48.Enabled = false;
-            this.myTextBox48.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox48.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox48.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox48.Location = new System.Drawing.Point(18, 662);
             this.myTextBox48.Name = "myTextBox48";
-            this.myTextBox48.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox48.Size = new System.Drawing.Size(100, 18);
             this.myTextBox48.TabIndex = 42;
             this.myTextBox48.Text = "0";
             this.myTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2768,12 +2794,13 @@
             // myTextBox37
             // 
             this.myTextBox37.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox37.Enabled = false;
-            this.myTextBox37.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox37.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox37.Location = new System.Drawing.Point(526, 635);
             this.myTextBox37.Name = "myTextBox37";
-            this.myTextBox37.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox37.Size = new System.Drawing.Size(89, 18);
             this.myTextBox37.TabIndex = 41;
             this.myTextBox37.Text = "0";
             this.myTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2785,12 +2812,13 @@
             // myTextBox38
             // 
             this.myTextBox38.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox38.Enabled = false;
-            this.myTextBox38.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox38.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox38.Location = new System.Drawing.Point(447, 635);
             this.myTextBox38.Name = "myTextBox38";
-            this.myTextBox38.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox38.Size = new System.Drawing.Size(73, 18);
             this.myTextBox38.TabIndex = 40;
             this.myTextBox38.Text = "0";
             this.myTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2802,12 +2830,13 @@
             // myTextBox39
             // 
             this.myTextBox39.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox39.Enabled = false;
-            this.myTextBox39.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox39.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox39.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox39.Location = new System.Drawing.Point(361, 635);
             this.myTextBox39.Name = "myTextBox39";
-            this.myTextBox39.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox39.Size = new System.Drawing.Size(81, 18);
             this.myTextBox39.TabIndex = 39;
             this.myTextBox39.Text = "0";
             this.myTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2819,12 +2848,13 @@
             // myTextBox40
             // 
             this.myTextBox40.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox40.Enabled = false;
-            this.myTextBox40.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox40.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox40.Location = new System.Drawing.Point(295, 635);
             this.myTextBox40.Name = "myTextBox40";
-            this.myTextBox40.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox40.Size = new System.Drawing.Size(61, 18);
             this.myTextBox40.TabIndex = 38;
             this.myTextBox40.Text = "0";
             this.myTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2836,12 +2866,13 @@
             // myTextBox41
             // 
             this.myTextBox41.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox41.Enabled = false;
-            this.myTextBox41.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox41.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox41.Location = new System.Drawing.Point(229, 635);
             this.myTextBox41.Name = "myTextBox41";
-            this.myTextBox41.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox41.Size = new System.Drawing.Size(61, 18);
             this.myTextBox41.TabIndex = 37;
             this.myTextBox41.Text = "0";
             this.myTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2853,12 +2884,13 @@
             // myTextBox42
             // 
             this.myTextBox42.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox42.Enabled = false;
-            this.myTextBox42.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox42.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox42.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox42.Location = new System.Drawing.Point(18, 635);
             this.myTextBox42.Name = "myTextBox42";
-            this.myTextBox42.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox42.Size = new System.Drawing.Size(100, 18);
             this.myTextBox42.TabIndex = 35;
             this.myTextBox42.Text = "0";
             this.myTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2870,12 +2902,13 @@
             // myTextBox36
             // 
             this.myTextBox36.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox36.Enabled = false;
-            this.myTextBox36.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox36.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox36.Location = new System.Drawing.Point(526, 608);
             this.myTextBox36.Name = "myTextBox36";
-            this.myTextBox36.Size = new System.Drawing.Size(89, 23);
+            this.myTextBox36.Size = new System.Drawing.Size(89, 18);
             this.myTextBox36.TabIndex = 34;
             this.myTextBox36.Text = "0";
             this.myTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2887,12 +2920,13 @@
             // myTextBox35
             // 
             this.myTextBox35.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox35.Enabled = false;
-            this.myTextBox35.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox35.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox35.Location = new System.Drawing.Point(447, 608);
             this.myTextBox35.Name = "myTextBox35";
-            this.myTextBox35.Size = new System.Drawing.Size(73, 23);
+            this.myTextBox35.Size = new System.Drawing.Size(73, 18);
             this.myTextBox35.TabIndex = 33;
             this.myTextBox35.Text = "0";
             this.myTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2904,12 +2938,13 @@
             // myTextBox34
             // 
             this.myTextBox34.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox34.Enabled = false;
-            this.myTextBox34.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox34.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox34.Location = new System.Drawing.Point(361, 608);
             this.myTextBox34.Name = "myTextBox34";
-            this.myTextBox34.Size = new System.Drawing.Size(81, 23);
+            this.myTextBox34.Size = new System.Drawing.Size(81, 18);
             this.myTextBox34.TabIndex = 32;
             this.myTextBox34.Text = "0";
             this.myTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2921,12 +2956,13 @@
             // myTextBox33
             // 
             this.myTextBox33.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox33.Enabled = false;
-            this.myTextBox33.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox33.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox33.Location = new System.Drawing.Point(295, 608);
             this.myTextBox33.Name = "myTextBox33";
-            this.myTextBox33.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox33.Size = new System.Drawing.Size(61, 18);
             this.myTextBox33.TabIndex = 31;
             this.myTextBox33.Text = "0";
             this.myTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2938,12 +2974,13 @@
             // myTextBox32
             // 
             this.myTextBox32.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox32.Enabled = false;
-            this.myTextBox32.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox32.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox32.Location = new System.Drawing.Point(229, 608);
             this.myTextBox32.Name = "myTextBox32";
-            this.myTextBox32.Size = new System.Drawing.Size(61, 23);
+            this.myTextBox32.Size = new System.Drawing.Size(61, 18);
             this.myTextBox32.TabIndex = 30;
             this.myTextBox32.Text = "0";
             this.myTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2955,12 +2992,13 @@
             // myTextBox31
             // 
             this.myTextBox31.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox31.Enabled = false;
-            this.myTextBox31.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox31.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox31.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox31.Location = new System.Drawing.Point(18, 608);
             this.myTextBox31.Name = "myTextBox31";
-            this.myTextBox31.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox31.Size = new System.Drawing.Size(100, 18);
             this.myTextBox31.TabIndex = 28;
             this.myTextBox31.Text = "0";
             this.myTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2972,12 +3010,13 @@
             // myTextBox30
             // 
             this.myTextBox30.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox30.Enabled = false;
-            this.myTextBox30.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox30.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox30.Location = new System.Drawing.Point(511, 361);
             this.myTextBox30.Name = "myTextBox30";
-            this.myTextBox30.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox30.Size = new System.Drawing.Size(100, 18);
             this.myTextBox30.TabIndex = 17;
             this.myTextBox30.Text = "0";
             this.myTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2986,12 +3025,13 @@
             // myTextBox29
             // 
             this.myTextBox29.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox29.Enabled = false;
-            this.myTextBox29.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox29.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox29.Location = new System.Drawing.Point(315, 358);
             this.myTextBox29.Name = "myTextBox29";
-            this.myTextBox29.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox29.Size = new System.Drawing.Size(100, 18);
             this.myTextBox29.TabIndex = 16;
             this.myTextBox29.Text = "1";
             this.myTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3000,12 +3040,13 @@
             // myTextBox28
             // 
             this.myTextBox28.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox28.Enabled = false;
-            this.myTextBox28.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox28.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox28.Location = new System.Drawing.Point(115, 358);
             this.myTextBox28.Name = "myTextBox28";
-            this.myTextBox28.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox28.Size = new System.Drawing.Size(100, 18);
             this.myTextBox28.TabIndex = 15;
             this.myTextBox28.Text = "0";
             this.myTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3014,12 +3055,13 @@
             // myTextBox27
             // 
             this.myTextBox27.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox27.Enabled = false;
-            this.myTextBox27.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox27.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox27.Location = new System.Drawing.Point(511, 315);
             this.myTextBox27.Name = "myTextBox27";
-            this.myTextBox27.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox27.Size = new System.Drawing.Size(100, 18);
             this.myTextBox27.TabIndex = 14;
             this.myTextBox27.Text = "0";
             this.myTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3031,12 +3073,13 @@
             // myTextBox26
             // 
             this.myTextBox26.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox26.Enabled = false;
-            this.myTextBox26.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox26.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox26.Location = new System.Drawing.Point(315, 315);
             this.myTextBox26.Name = "myTextBox26";
-            this.myTextBox26.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox26.Size = new System.Drawing.Size(100, 18);
             this.myTextBox26.TabIndex = 13;
             this.myTextBox26.Text = "0";
             this.myTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3048,12 +3091,13 @@
             // myTextBox25
             // 
             this.myTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox25.Enabled = false;
-            this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox25.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox25.Location = new System.Drawing.Point(115, 315);
             this.myTextBox25.Name = "myTextBox25";
-            this.myTextBox25.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox25.Size = new System.Drawing.Size(100, 18);
             this.myTextBox25.TabIndex = 12;
             this.myTextBox25.Text = "0";
             this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3065,12 +3109,13 @@
             // myTextBox24
             // 
             this.myTextBox24.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox24.Enabled = false;
-            this.myTextBox24.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox24.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox24.Location = new System.Drawing.Point(985, 463);
             this.myTextBox24.Name = "myTextBox24";
-            this.myTextBox24.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox24.Size = new System.Drawing.Size(100, 18);
             this.myTextBox24.TabIndex = 90;
             this.myTextBox24.Text = "0";
             this.myTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3082,12 +3127,13 @@
             // myTextBox23
             // 
             this.myTextBox23.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox23.Enabled = false;
-            this.myTextBox23.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox23.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox23.Location = new System.Drawing.Point(880, 463);
             this.myTextBox23.Name = "myTextBox23";
-            this.myTextBox23.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox23.Size = new System.Drawing.Size(100, 18);
             this.myTextBox23.TabIndex = 89;
             this.myTextBox23.Text = "0";
             this.myTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3099,12 +3145,13 @@
             // myTextBox22
             // 
             this.myTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox22.Enabled = false;
-            this.myTextBox22.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox22.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox22.Location = new System.Drawing.Point(985, 574);
             this.myTextBox22.Name = "myTextBox22";
-            this.myTextBox22.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox22.Size = new System.Drawing.Size(100, 18);
             this.myTextBox22.TabIndex = 97;
             this.myTextBox22.Text = "1000";
             this.myTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3116,12 +3163,13 @@
             // myTextBox21
             // 
             this.myTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox21.Enabled = false;
-            this.myTextBox21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox21.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox21.Location = new System.Drawing.Point(985, 605);
             this.myTextBox21.Name = "myTextBox21";
-            this.myTextBox21.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox21.Size = new System.Drawing.Size(100, 18);
             this.myTextBox21.TabIndex = 99;
             this.myTextBox21.Text = "100";
             this.myTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3133,12 +3181,13 @@
             // myTextBox19
             // 
             this.myTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox19.Enabled = false;
-            this.myTextBox19.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox19.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox19.Location = new System.Drawing.Point(840, 544);
             this.myTextBox19.Name = "myTextBox19";
-            this.myTextBox19.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox19.Size = new System.Drawing.Size(100, 18);
             this.myTextBox19.TabIndex = 95;
             this.myTextBox19.Text = "0";
             this.myTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3150,12 +3199,13 @@
             // myTextBox20
             // 
             this.myTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox20.Enabled = false;
-            this.myTextBox20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox20.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox20.Location = new System.Drawing.Point(734, 544);
             this.myTextBox20.Name = "myTextBox20";
-            this.myTextBox20.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox20.Size = new System.Drawing.Size(100, 18);
             this.myTextBox20.TabIndex = 94;
             this.myTextBox20.Text = "0";
             this.myTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3167,12 +3217,13 @@
             // myTextBox18
             // 
             this.myTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox18.Enabled = false;
-            this.myTextBox18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox18.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox18.Location = new System.Drawing.Point(840, 515);
             this.myTextBox18.Name = "myTextBox18";
-            this.myTextBox18.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox18.Size = new System.Drawing.Size(100, 18);
             this.myTextBox18.TabIndex = 92;
             this.myTextBox18.Text = "0";
             this.myTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3184,12 +3235,13 @@
             // myTextBox17
             // 
             this.myTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox17.Enabled = false;
-            this.myTextBox17.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox17.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox17.Location = new System.Drawing.Point(734, 515);
             this.myTextBox17.Name = "myTextBox17";
-            this.myTextBox17.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox17.Size = new System.Drawing.Size(100, 18);
             this.myTextBox17.TabIndex = 91;
             this.myTextBox17.Text = "0";
             this.myTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3201,12 +3253,13 @@
             // myTextBox16
             // 
             this.myTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox16.Enabled = false;
-            this.myTextBox16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox16.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox16.Location = new System.Drawing.Point(985, 427);
             this.myTextBox16.Name = "myTextBox16";
-            this.myTextBox16.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox16.Size = new System.Drawing.Size(100, 18);
             this.myTextBox16.TabIndex = 88;
             this.myTextBox16.Text = "0";
             this.myTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3218,12 +3271,13 @@
             // myTextBox15
             // 
             this.myTextBox15.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox15.Enabled = false;
-            this.myTextBox15.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox15.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox15.Location = new System.Drawing.Point(985, 400);
             this.myTextBox15.Name = "myTextBox15";
-            this.myTextBox15.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox15.Size = new System.Drawing.Size(100, 18);
             this.myTextBox15.TabIndex = 86;
             this.myTextBox15.Text = "0";
             this.myTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3235,12 +3289,13 @@
             // myTextBox14
             // 
             this.myTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox14.Enabled = false;
-            this.myTextBox14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox14.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox14.Location = new System.Drawing.Point(985, 373);
             this.myTextBox14.Name = "myTextBox14";
-            this.myTextBox14.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox14.Size = new System.Drawing.Size(100, 18);
             this.myTextBox14.TabIndex = 84;
             this.myTextBox14.Text = "0";
             this.myTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3252,12 +3307,13 @@
             // myTextBox13
             // 
             this.myTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox13.Enabled = false;
-            this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox13.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox13.Location = new System.Drawing.Point(985, 346);
             this.myTextBox13.Name = "myTextBox13";
-            this.myTextBox13.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox13.Size = new System.Drawing.Size(100, 18);
             this.myTextBox13.TabIndex = 82;
             this.myTextBox13.Text = "0";
             this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3269,12 +3325,13 @@
             // myTextBox12
             // 
             this.myTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox12.Enabled = false;
-            this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox12.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox12.Location = new System.Drawing.Point(985, 319);
             this.myTextBox12.Name = "myTextBox12";
-            this.myTextBox12.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox12.Size = new System.Drawing.Size(100, 18);
             this.myTextBox12.TabIndex = 80;
             this.myTextBox12.Text = "0";
             this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3286,12 +3343,13 @@
             // myTextBox11
             // 
             this.myTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox11.Enabled = false;
-            this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox11.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox11.Location = new System.Drawing.Point(985, 292);
             this.myTextBox11.Name = "myTextBox11";
-            this.myTextBox11.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox11.Size = new System.Drawing.Size(100, 18);
             this.myTextBox11.TabIndex = 78;
             this.myTextBox11.Text = "0";
             this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3303,12 +3361,13 @@
             // myTextBox10
             // 
             this.myTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox10.Enabled = false;
-            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox10.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox10.Location = new System.Drawing.Point(985, 265);
             this.myTextBox10.Name = "myTextBox10";
-            this.myTextBox10.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox10.Size = new System.Drawing.Size(100, 18);
             this.myTextBox10.TabIndex = 76;
             this.myTextBox10.Text = "0";
             this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3320,12 +3379,13 @@
             // myTextBox9
             // 
             this.myTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox9.Enabled = false;
-            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox9.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox9.Location = new System.Drawing.Point(985, 238);
             this.myTextBox9.Name = "myTextBox9";
-            this.myTextBox9.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox9.Size = new System.Drawing.Size(100, 18);
             this.myTextBox9.TabIndex = 74;
             this.myTextBox9.Text = "0";
             this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3337,12 +3397,13 @@
             // myTextBox8
             // 
             this.myTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox8.Enabled = false;
-            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox8.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox8.Location = new System.Drawing.Point(985, 211);
             this.myTextBox8.Name = "myTextBox8";
-            this.myTextBox8.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox8.Size = new System.Drawing.Size(100, 18);
             this.myTextBox8.TabIndex = 72;
             this.myTextBox8.Text = "0";
             this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3354,12 +3415,13 @@
             // myTextBox7
             // 
             this.myTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox7.Enabled = false;
-            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox7.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox7.Location = new System.Drawing.Point(985, 184);
             this.myTextBox7.Name = "myTextBox7";
-            this.myTextBox7.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox7.Size = new System.Drawing.Size(100, 18);
             this.myTextBox7.TabIndex = 70;
             this.myTextBox7.Text = "0";
             this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3371,12 +3433,13 @@
             // myTextBox6
             // 
             this.myTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox6.Enabled = false;
-            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox6.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox6.Location = new System.Drawing.Point(115, 241);
             this.myTextBox6.Name = "myTextBox6";
-            this.myTextBox6.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox6.Size = new System.Drawing.Size(100, 18);
             this.myTextBox6.TabIndex = 9;
             this.myTextBox6.Text = "0";
             this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3388,12 +3451,13 @@
             // myTextBox5
             // 
             this.myTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox5.Enabled = false;
-            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox5.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox5.Location = new System.Drawing.Point(115, 212);
             this.myTextBox5.Name = "myTextBox5";
-            this.myTextBox5.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox5.Size = new System.Drawing.Size(100, 18);
             this.myTextBox5.TabIndex = 7;
             this.myTextBox5.Text = "0";
             this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3405,12 +3469,13 @@
             // myTextBox4
             // 
             this.myTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox4.Enabled = false;
-            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.myTextBox4.Location = new System.Drawing.Point(115, 141);
             this.myTextBox4.Name = "myTextBox4";
-            this.myTextBox4.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox4.Size = new System.Drawing.Size(100, 18);
             this.myTextBox4.TabIndex = 3;
             this.myTextBox4.Text = "0";
             this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3422,12 +3487,13 @@
             // myTextBox3
             // 
             this.myTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox3.Enabled = false;
-            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox3.ForeColor = System.Drawing.Color.DimGray;
             this.myTextBox3.Location = new System.Drawing.Point(115, 109);
             this.myTextBox3.Name = "myTextBox3";
-            this.myTextBox3.Size = new System.Drawing.Size(497, 23);
+            this.myTextBox3.Size = new System.Drawing.Size(497, 18);
             this.myTextBox3.TabIndex = 2;
             this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox3.TextChanged += new System.EventHandler(this.myTextBox3_TextChanged);
@@ -3435,12 +3501,13 @@
             // myTextBox2
             // 
             this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox2.Enabled = false;
-            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.myTextBox2.Location = new System.Drawing.Point(295, 80);
             this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.Size = new System.Drawing.Size(317, 23);
+            this.myTextBox2.Size = new System.Drawing.Size(317, 18);
             this.myTextBox2.TabIndex = 1;
             this.myTextBox2.Tag = "";
             this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3449,12 +3516,13 @@
             // myTextBox1
             // 
             this.myTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.myTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox1.Enabled = false;
-            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.myTextBox1.Location = new System.Drawing.Point(115, 80);
             this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.myTextBox1.Size = new System.Drawing.Size(100, 18);
             this.myTextBox1.TabIndex = 0;
             this.myTextBox1.Tag = "";
             this.myTextBox1.Text = "0";

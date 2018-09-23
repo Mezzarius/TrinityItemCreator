@@ -55,7 +55,12 @@ namespace TrinityItemCreator
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            string[] files = Directory.GetFiles(@"Templates", "*.txt", SearchOption.TopDirectoryOnly).Select(file => Path.GetFileNameWithoutExtension(file)).ToArray();
+            string path = "templates";
+
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+                string[] files = Directory.GetFiles(path, @"*.txt", SearchOption.TopDirectoryOnly).Select(file => Path.GetFileNameWithoutExtension(file)).ToArray();
             listBox1.Items.AddRange(files);
 
             if (files == null || files.Length == 0)
@@ -72,8 +77,13 @@ namespace TrinityItemCreator
 
         private void DoTheLoadTemplate()
         {
+            string path = "templates";
+
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
             Functions mCF = new Functions(mainForm);
-            mCF.LoadDefaultTemplate(14, File.ReadAllLines(string.Format(@"Templates\{0}.txt", listBox1.SelectedItem.ToString())));
+            mCF.LoadDefaultTemplate(14, File.ReadAllLines(string.Format(path + @"\{0}.txt", listBox1.SelectedItem.ToString())));
         }
     }
 }

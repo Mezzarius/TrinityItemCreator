@@ -22,7 +22,7 @@ namespace TrinityItemCreator.MyClass
         public async void DelayMainFormPainting()
         {
             mainForm.Opacity = 0;
-            await Task.Delay(350);
+            await Task.Delay(200);
             mainForm.Opacity = .99;
         }
 

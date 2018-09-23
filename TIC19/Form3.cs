@@ -59,12 +59,17 @@ namespace TrinityItemCreator
 
         private void Button15_Click(object sender, EventArgs e)
         {
-            string path = string.Format(@"Templates\{0}.txt", myTextBox2.Text);
+            string path = "templates";
+
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            string filepath = string.Format(path + @"\{0}.txt", myTextBox2.Text);
             if (myTextBox2.Text != "Required!")
             {
-                if (!File.Exists(path))
+                if (!File.Exists(filepath))
                 {
-                    using (TextWriter tw = new StreamWriter(path))
+                    using (TextWriter tw = new StreamWriter(filepath))
                     {
                         tw.Write(GetTemplateDataAsString());
                         tw.Close();

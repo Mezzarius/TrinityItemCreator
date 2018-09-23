@@ -421,6 +421,7 @@
             this.button15.TabIndex = 0;
             this.button15.Text = "CHOSE MY TEMPLATE";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // label1
             // 

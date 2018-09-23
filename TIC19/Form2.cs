@@ -127,5 +127,12 @@ namespace TIC19
             myF.LoadDefaultTemplate(13);
             Close();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Close();
+            Form4 form4 = new Form4(mainForm);
+            form4.ShowDialog();
+        }
     }
 }

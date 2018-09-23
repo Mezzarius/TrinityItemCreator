@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TIC.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -210,6 +213,7 @@
     <Content Include="Resources\medium_achievement_bg_captureflag_eos.jpg" />
     <Content Include="Resources\medium_achievement_bg_captureflag_wsg.jpg" />
     <Content Include="Resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg" />
+    <Content Include="TIC.ico" />
     <None Include="Resources\small_achievement_character_undead_male.jpg" />
     <None Include="Resources\small_achievement_character_troll_male.jpg" />
     <None Include="Resources\small_achievement_character_tauren_male.jpg" />

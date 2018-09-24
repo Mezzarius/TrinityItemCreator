@@ -63,6 +63,16 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ability_repair {
+            get {
+                object obj = ResourceManager.GetObject("ability_repair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap large_ability_hunter_wildquiver {
             get {
                 object obj = ResourceManager.GetObject("large_ability_hunter_wildquiver", resourceCulture);
@@ -343,6 +353,26 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medium_petbattle_health {
+            get {
+                object obj = ResourceManager.GetObject("medium_petbattle_health", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medium_petbattle_health_down {
+            get {
+                object obj = ResourceManager.GetObject("medium_petbattle_health-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medium_spell_fire_frostresistancetotem {
             get {
                 object obj = ResourceManager.GetObject("medium_spell_fire_frostresistancetotem", resourceCulture);
@@ -396,6 +426,16 @@ namespace TrinityItemCreator.Properties {
         internal static System.Drawing.Bitmap small_ability_rogue_dualweild {
             get {
                 object obj = ResourceManager.GetObject("small_ability_rogue_dualweild", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_ability_vanish {
+            get {
+                object obj = ResourceManager.GetObject("small_ability_vanish", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +556,46 @@ namespace TrinityItemCreator.Properties {
         internal static System.Drawing.Bitmap small_achievement_character_undead_male {
             get {
                 object obj = ResourceManager.GetObject("small_achievement_character_undead_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_inv_misc_bandage_10 {
+            get {
+                object obj = ResourceManager.GetObject("small_inv_misc_bandage_10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_petbattle_health {
+            get {
+                object obj = ResourceManager.GetObject("small_petbattle_health", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_petbattle_health_down {
+            get {
+                object obj = ResourceManager.GetObject("small_petbattle_health-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_spell_arcane_studentofmagic {
+            get {
+                object obj = ResourceManager.GetObject("small_spell_arcane_studentofmagic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

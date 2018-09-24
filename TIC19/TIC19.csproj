@@ -113,6 +113,12 @@
     <Compile Include="Window_FlagMask.Designer.cs">
       <DependentUpon>Window_FlagMask.cs</DependentUpon>
     </Compile>
+    <Compile Include="Window_GenerateStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_GenerateStats.Designer.cs">
+      <DependentUpon>Window_GenerateStats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Window_Other_Options.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     <EmbeddedResource Include="Window_FlagMask.resx">
       <DependentUpon>Window_FlagMask.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Window_GenerateStats.resx">
+      <DependentUpon>Window_GenerateStats.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Window_Other_Options.resx">
       <DependentUpon>Window_Other_Options.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +200,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ability_repair.jpg" />
     <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />
     <Content Include="Resources\large_ability_warrior_weaponmastery.jpg" />
     <Content Include="Resources\large_achievement_bg_captureflag_eos.jpg" />
@@ -214,6 +224,13 @@
     <Content Include="Resources\medium_achievement_bg_captureflag_eos.jpg" />
     <Content Include="Resources\medium_achievement_bg_captureflag_wsg.jpg" />
     <Content Include="Resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg" />
+    <None Include="Resources\small_inv_misc_bandage_10.jpg" />
+    <None Include="Resources\small_ability_vanish.jpg" />
+    <None Include="Resources\small_spell_arcane_studentofmagic.jpg" />
+    <None Include="Resources\small_petbattle_health-down.jpg" />
+    <None Include="Resources\medium_petbattle_health.jpg" />
+    <None Include="Resources\medium_petbattle_health-down.jpg" />
+    <None Include="Resources\small_petbattle_health.jpg" />
     <Content Include="TIC.ico" />
     <None Include="Resources\small_achievement_character_undead_male.jpg" />
     <None Include="Resources\small_achievement_character_troll_male.jpg" />

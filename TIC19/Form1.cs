@@ -868,5 +868,11 @@ namespace TrinityItemCreator
             Functions myF = new Functions(this);
             myF.DelayMainFormPainting();
         }
+
+        private void randomStatsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Window_GenerateStats wgs = new Window_GenerateStats(this);
+            wgs.ShowDialog();
+        }
     }
 }

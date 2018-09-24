@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonFinish = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ButtonSelectAll = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
@@ -38,54 +38,56 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TextBoxBagFamilyMask = new MyTextBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // ButtonFinish
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(235, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 151;
-            this.button1.Text = "FINISH (ESC)";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.ButtonFinish.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ButtonFinish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonFinish.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.ButtonFinish.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.ButtonFinish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonFinish.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFinish.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ButtonFinish.Location = new System.Drawing.Point(235, 8);
+            this.ButtonFinish.Name = "ButtonFinish";
+            this.ButtonFinish.Size = new System.Drawing.Size(117, 27);
+            this.ButtonFinish.TabIndex = 151;
+            this.ButtonFinish.Text = "FINISH (ESC)";
+            this.ButtonFinish.UseVisualStyleBackColor = false;
+            this.ButtonFinish.Click += new System.EventHandler(this.ButtonFinish_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.ButtonSelectAll);
+            this.panel3.Controls.Add(this.ButtonFinish);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 391);
+            this.panel3.Location = new System.Drawing.Point(0, 431);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(377, 42);
             this.panel3.TabIndex = 153;
             // 
-            // button2
+            // ButtonSelectAll
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(26, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 27);
-            this.button2.TabIndex = 153;
-            this.button2.Text = "SELECT/UNSELECT ALL";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.ButtonSelectAll.BackColor = System.Drawing.Color.Teal;
+            this.ButtonSelectAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSelectAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.ButtonSelectAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.ButtonSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSelectAll.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSelectAll.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ButtonSelectAll.Location = new System.Drawing.Point(26, 8);
+            this.ButtonSelectAll.Name = "ButtonSelectAll";
+            this.ButtonSelectAll.Size = new System.Drawing.Size(164, 27);
+            this.ButtonSelectAll.TabIndex = 153;
+            this.ButtonSelectAll.Text = "SELECT/UNSELECT ALL";
+            this.ButtonSelectAll.UseVisualStyleBackColor = false;
+            this.ButtonSelectAll.Click += new System.EventHandler(this.ButtonSelectAll_Click);
             // 
             // panel1
             // 
@@ -168,13 +170,44 @@
             this.panel6.Size = new System.Drawing.Size(338, 6);
             this.panel6.TabIndex = 158;
             // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label2.Location = new System.Drawing.Point(0, 389);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(377, 24);
+            this.label2.TabIndex = 173;
+            this.label2.Text = "Manual bag family mask input";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // TextBoxBagFamilyMask
+            // 
+            this.TextBoxBagFamilyMask.BorderColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxBagFamilyMask.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBoxBagFamilyMask.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TextBoxBagFamilyMask.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxBagFamilyMask.ForeColor = System.Drawing.Color.DimGray;
+            this.TextBoxBagFamilyMask.Location = new System.Drawing.Point(0, 413);
+            this.TextBoxBagFamilyMask.MaxLength = 9;
+            this.TextBoxBagFamilyMask.Name = "TextBoxBagFamilyMask";
+            this.TextBoxBagFamilyMask.Size = new System.Drawing.Size(377, 18);
+            this.TextBoxBagFamilyMask.TabIndex = 172;
+            this.TextBoxBagFamilyMask.Text = "0";
+            this.TextBoxBagFamilyMask.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBoxBagFamilyMask.TextChanged += new System.EventHandler(this.TextBoxBagFamilyMask_TextChanged);
+            this.TextBoxBagFamilyMask.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            // 
             // Window_BagFamilyMask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(377, 433);
+            this.ClientSize = new System.Drawing.Size(377, 473);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TextBoxBagFamilyMask);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -194,19 +227,19 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_BagFamilyMask";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_BagFamilyMask_FormClosed);
             this.Load += new System.EventHandler(this.Window_BagFamilyMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_BagFamilyMask_KeyDown);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonFinish;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
@@ -215,6 +248,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ButtonSelectAll;
+        private System.Windows.Forms.Label label2;
+        private MyTextBox TextBoxBagFamilyMask;
     }
 }

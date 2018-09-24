@@ -29,12 +29,17 @@ namespace TrinityItemCreator
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Close();
+            MyTextBox myTextBox = (MyTextBox)sender;
+            if (myTextBox.Text.Length <= 1 && e.KeyChar == (char)Keys.Back)
+                e.Handled = true;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void ButtonSelectAll_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
             mIsChecked = mIsChecked ? false : true;
@@ -46,32 +51,63 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void Window_FlagCustomMask_FormClosed(object sender, FormClosedEventArgs e)
+        private void ButtonFinish_Click(object sender, EventArgs e)
         {
-            int customFlagMask = 0;
+            Close();
+        }
+
+        private void TextBoxBagFamilyMask_TextChanged(object sender, EventArgs e)
+        {
+            int _textBoxMask = Convert.ToInt32(TextBoxFlagCustomMask.Text);
 
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                if (checkedListBox1.GetItemChecked(i))
-                {
-                    string s = checkedListBox1.Items[i].ToString();
-                    customFlagMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
-                }
+                string s = checkedListBox1.Items[i].ToString();
+                int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+                checkedListBox1.SetItemChecked(i, Convert.ToBoolean(_textBoxMask & itemMask));
             }
 
-            MyData.Field_flagsCustom = customFlagMask;
-            checkedListHex = customFlagMask;
+            MyData.Field_flagsCustom = _textBoxMask;
         }
 
         private void Window_FlagCustomMask_Load(object sender, EventArgs e)
         {
-            checkedListHex = MyData.Field_flagsCustom;
+            checkedListBox1.ItemCheck += new ItemCheckEventHandler(HandleCheckBoxItemState);
+            checkedListBox1.Click += new EventHandler(ResetManualTextBoxFlagCustomMask);
+
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();
-                if ((checkedListHex & Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1))) != 0)
+                int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+                if ((MyData.Field_flagsCustom & itemMask) != 0)
                     checkedListBox1.SetItemChecked(i, true);
+                else
+                    TextBoxFlagCustomMask.Text = MyData.Field_flagsCustom.ToString(); // contains different class mask then add full class mask to text box
             }
+        }
+
+        private void HandleCheckBoxItemState(object sender, ItemCheckEventArgs e)
+        {
+            string s = checkedListBox1.Items[e.Index].ToString();
+            int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+            if (e.NewValue == CheckState.Checked)
+            {
+                if ((MyData.Field_flagsCustom & itemMask) == 0)
+                    MyData.Field_flagsCustom += itemMask;
+            }
+            else
+            {
+                if ((MyData.Field_flagsCustom & itemMask) != 0)
+                    MyData.Field_flagsCustom -= itemMask;
+            }
+        }
+
+        private void ResetManualTextBoxFlagCustomMask(object sender, EventArgs e)
+        {
+            TextBoxFlagCustomMask.Text = "0";
         }
     }
 }

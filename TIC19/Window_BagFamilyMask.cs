@@ -8,7 +8,6 @@ namespace TrinityItemCreator
     {
         private Form1 mainForm;
         private static bool mIsChecked;
-        private static int checkedListHex = 0;
 
         public Window_BagFamilyMask(Form1 form1)
         {
@@ -29,17 +28,27 @@ namespace TrinityItemCreator
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Close();
+            MyTextBox myTextBox = (MyTextBox)sender;
+            if (myTextBox.Text.Length <= 1 && e.KeyChar == (char)Keys.Back)
+                e.Handled = true;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void ButtonSelectAll_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
                 checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
 
             mIsChecked = mIsChecked ? false : true;
+        }
+
+        private void ButtonFinish_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Window_BagFamilyMask_KeyDown(object sender, KeyEventArgs e)
@@ -48,32 +57,58 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void Window_BagFamilyMask_FormClosed(object sender, FormClosedEventArgs e)
+        private void TextBoxBagFamilyMask_TextChanged(object sender, EventArgs e)
         {
-            int bagFamilyMask = 0;
+            int _textBoxMask = Convert.ToInt32(TextBoxBagFamilyMask.Text);
 
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                if (checkedListBox1.GetItemChecked(i))
-                {
-                    string s = checkedListBox1.Items[i].ToString();
-                    bagFamilyMask += Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
-                }
+                string s = checkedListBox1.Items[i].ToString();
+                int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+                checkedListBox1.SetItemChecked(i, Convert.ToBoolean(_textBoxMask & itemMask));
             }
 
-            MyData.Field_BagFamily = bagFamilyMask;
-            checkedListHex = bagFamilyMask;
+            MyData.Field_BagFamily = _textBoxMask;
         }
 
         private void Window_BagFamilyMask_Load(object sender, EventArgs e)
         {
-            checkedListHex = MyData.Field_BagFamily;
+            checkedListBox1.ItemCheck += new ItemCheckEventHandler(HandleCheckBoxItemState);
+            checkedListBox1.Click += new EventHandler(ResetManualTextBoxBagFamilyMask);
+
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();
-                if ((checkedListHex & Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1))) != 0)
+                int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+                if ((MyData.Field_BagFamily & itemMask) != 0)
                     checkedListBox1.SetItemChecked(i, true);
+                else
+                    TextBoxBagFamilyMask.Text = MyData.Field_BagFamily.ToString(); // contains different class mask then add full class mask to text box
             }
+        }
+
+        private void HandleCheckBoxItemState(object sender, ItemCheckEventArgs e)
+        {
+            string s = checkedListBox1.Items[e.Index].ToString();
+            int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+
+            if (e.NewValue == CheckState.Checked)
+            {
+                if ((MyData.Field_BagFamily & itemMask) == 0)
+                    MyData.Field_BagFamily += itemMask;
+            }
+            else
+            {
+                if ((MyData.Field_BagFamily & itemMask) != 0)
+                    MyData.Field_BagFamily -= itemMask;
+            }
+        }
+
+        private void ResetManualTextBoxBagFamilyMask(object sender, EventArgs e)
+        {
+            TextBoxBagFamilyMask.Text = "0";
         }
     }
 }

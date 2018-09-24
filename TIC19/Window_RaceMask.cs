@@ -9,7 +9,6 @@ namespace TrinityItemCreator
     {
         private Form1 mainForm;
         private static bool mIsChecked = false;
-        private static int raceMaskHex = 0;
 
         public Window_RaceMask(Form1 form1)
         {
@@ -30,17 +29,27 @@ namespace TrinityItemCreator
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Close();
+            MyTextBox myTextBox = (MyTextBox)sender;
+            if (myTextBox.Text.Length <= 1 && e.KeyChar == (char)Keys.Back)
+                e.Handled = true;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void ButtonSelectAll_Click(object sender, EventArgs e)
         {
             foreach (var chkBox in Controls.OfType<CheckBox>())
                 chkBox.Checked = mIsChecked ? false : true;
 
             mIsChecked = mIsChecked ? false : true;
+        }
+
+        private void ButtonFinish_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Window_RaceMask_KeyDown(object sender, KeyEventArgs e)
@@ -49,28 +58,51 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void Window_RaceMask_FormClosed(object sender, FormClosedEventArgs e)
+        private void TextBoxRaceMask_TextChanged(object sender, EventArgs e)
         {
-            int _mask = 0; // start from 0 not -1
+            int _mask = Convert.ToInt32(TextBoxRaceMask.Text) < 0 ? 1791 : Convert.ToInt32(TextBoxRaceMask.Text);
 
-            foreach (var chkBox in Controls.OfType<CheckBox>())
-            {
-                if (chkBox.Checked)
-                    _mask += Convert.ToInt32(chkBox.Tag);
-            }
+            foreach (var checkBox in Controls.OfType<CheckBox>())
+                checkBox.Checked = Convert.ToBoolean(_mask & Convert.ToInt32(checkBox.Tag));
 
-            MyData.Field_AllowableRace = _mask == 1791 ? -1 : _mask;
-            raceMaskHex = _mask;
+            MyData.Field_AllowableRace = _mask;
         }
 
         private void Window_RaceMask_Load(object sender, EventArgs e)
         {
-            raceMaskHex = MyData.Field_AllowableRace == -1 ? 1791 : MyData.Field_AllowableRace;
-            foreach (var chkBox in Controls.OfType<CheckBox>())
+            MyData.Field_AllowableRace = MyData.Field_AllowableRace == -1 ? 0 : MyData.Field_AllowableRace;
+
+            foreach (var checkBox in Controls.OfType<CheckBox>())
             {
-                if ((raceMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)
-                    chkBox.Checked = true;
+                checkBox.CheckedChanged += new EventHandler(HandleCheckBoxState);
+                checkBox.Click += new EventHandler(ResetManualTextBoxRaceMask);
+
+                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) != 0)
+                    checkBox.Checked = true;
+                else
+                    TextBoxRaceMask.Text = MyData.Field_AllowableRace.ToString(); // contains different class mask then add full class mask to text box
             }
+        }
+
+        private void HandleCheckBoxState(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender;
+
+            if (checkBox.Checked)
+            {
+                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) == 0)
+                    MyData.Field_AllowableRace += Convert.ToInt32(checkBox.Tag);
+            }
+            else
+            {
+                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) != 0)
+                    MyData.Field_AllowableRace -= Convert.ToInt32(checkBox.Tag);
+            }
+        }
+
+        private void ResetManualTextBoxRaceMask(object sender, EventArgs e)
+        {
+            TextBoxRaceMask.Text = "0";
         }
     }
 }

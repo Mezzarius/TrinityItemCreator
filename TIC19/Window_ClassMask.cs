@@ -9,7 +9,6 @@ namespace TrinityItemCreator
     {
         private Form1 mainForm;
         private static bool mIsChecked = false;
-        private static int classMaskHex = 0;
 
         public Window_ClassMask(Form1 form1)
         {
@@ -30,15 +29,27 @@ namespace TrinityItemCreator
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Close();
+            MyTextBox myTextBox = (MyTextBox)sender;
+            if (myTextBox.Text.Length <= 1 && e.KeyChar == (char)Keys.Back)
+                e.Handled = true;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void ButtonSelectAll_Click(object sender, EventArgs e)
         {
-            foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = mIsChecked ? false : true;
+            foreach (var chkBox in Controls.OfType<CheckBox>())
+                chkBox.Checked = mIsChecked ? false : true;
+
             mIsChecked = mIsChecked ? false : true;
+        }
+
+        private void ButtonFinish_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Window_ClassMask_KeyDown(object sender, KeyEventArgs e)
@@ -47,28 +58,51 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void Window_ClassMask_FormClosed(object sender, FormClosedEventArgs e)
+        private void TextBoxClassMask_TextChanged(object sender, EventArgs e)
         {
-            int _mask = 0; // start from 0 not -1
+            int _mask = Convert.ToInt32(TextBoxClassMask.Text) < 0 ? 1535 : Convert.ToInt32(TextBoxClassMask.Text);
 
-            foreach (var chkBox in Controls.OfType<CheckBox>())
-            {
-                if (chkBox.Checked)
-                    _mask += Convert.ToInt32(chkBox.Tag);
-            }
+            foreach (var checkBox in Controls.OfType<CheckBox>())
+                checkBox.Checked = Convert.ToBoolean(_mask & Convert.ToInt32(checkBox.Tag));
 
-            MyData.Field_AllowableClass = _mask == 1535 ? -1 : _mask;
-            classMaskHex = _mask;
+            MyData.Field_AllowableClass = _mask;
         }
 
         private void Window_ClassMask_Load(object sender, EventArgs e)
         {
-            classMaskHex = MyData.Field_AllowableClass == -1 ? 1535 : MyData.Field_AllowableClass;
-            foreach (var chkBox in Controls.OfType<CheckBox>())
+            MyData.Field_AllowableClass = MyData.Field_AllowableClass == -1 ? 0 : MyData.Field_AllowableClass;
+
+            foreach (var checkBox in Controls.OfType<CheckBox>())
             {
-                if ((classMaskHex & Convert.ToInt32(chkBox.Tag)) != 0)
-                    chkBox.Checked = true;
+                checkBox.CheckedChanged += new EventHandler(HandleCheckBoxState);
+                checkBox.Click += new EventHandler(ResetManualTextBoxClassMask);
+
+                if ((MyData.Field_AllowableClass & Convert.ToInt32(checkBox.Tag)) != 0)
+                    checkBox.Checked = true;
+                else
+                    TextBoxClassMask.Text = MyData.Field_AllowableClass.ToString(); // contains different class mask then add full class mask to text box
             }
+        }
+        
+        private void HandleCheckBoxState(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender;
+
+            if (checkBox.Checked)
+            {
+                if ((MyData.Field_AllowableClass & Convert.ToInt32(checkBox.Tag)) == 0)
+                    MyData.Field_AllowableClass += Convert.ToInt32(checkBox.Tag);
+            }
+            else
+            {
+                if ((MyData.Field_AllowableClass & Convert.ToInt32(checkBox.Tag)) != 0)
+                    MyData.Field_AllowableClass -= Convert.ToInt32(checkBox.Tag);
+            }
+        }
+
+        private void ResetManualTextBoxClassMask(object sender, EventArgs e)
+        {
+            TextBoxClassMask.Text = "0";
         }
     }
 }

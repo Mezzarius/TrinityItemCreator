@@ -8,7 +8,6 @@ namespace TrinityItemCreator
     {
         private Form1 mainForm;
         private static bool mIsChecked;
-        private static int checkedListHex = 0;
 
         public Window_FlagExtraMask(Form1 form1)
         {

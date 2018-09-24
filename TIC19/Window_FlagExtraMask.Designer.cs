@@ -174,7 +174,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(498, 24);
             this.label2.TabIndex = 177;
-            this.label2.Text = "Manual  flag extra mask input";
+            this.label2.Text = "Manual flag extra mask input";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // TextBoxFlagExtraMask

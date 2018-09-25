@@ -11,6 +11,8 @@ namespace TrinityItemCreator
         public Form1()
         {
             InitializeComponent();
+
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
         }
 
         protected override CreateParams CreateParams

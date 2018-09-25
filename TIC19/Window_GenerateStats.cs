@@ -10,6 +10,7 @@ namespace TrinityItemCreator
     {
         private Form1 mainForm;
         private static bool[] CheckStatBoxes = new bool[10];
+        private static string[] rangeBoxes = { "1000", "10000" };
 
         public Window_GenerateStats(Form1 form1)
         {
@@ -24,9 +25,9 @@ namespace TrinityItemCreator
         {
             get
             {
-                var parms = base.CreateParams;
-                parms.Style &= ~0x02000000;  // Turn off WS_CLIPCHILDREN
-                return parms;
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
             }
         }
 
@@ -53,6 +54,9 @@ namespace TrinityItemCreator
 
         private void Window_GenerateStats_Load(object sender, EventArgs e)
         {
+            TextBoxRangeMin.Text = rangeBoxes[0];
+            TextBoxRangeMax.Text = rangeBoxes[1];
+
             CheckStat1.Checked = CheckStatBoxes[0];
             CheckStat2.Checked = CheckStatBoxes[1];
             CheckStat3.Checked = CheckStatBoxes[2];
@@ -89,6 +93,9 @@ namespace TrinityItemCreator
 
         private void Window_GenerateStats_FormClosed(object sender, FormClosedEventArgs e)
         {
+            rangeBoxes[0] = String.IsNullOrEmpty(TextBoxRangeMin.Text) ? "1000" : TextBoxRangeMin.Text;
+            rangeBoxes[1] = String.IsNullOrEmpty(TextBoxRangeMax.Text) ? "10000" : TextBoxRangeMax.Text;
+
             CheckStatBoxes[0] = CheckStat1.Checked;
             CheckStatBoxes[1] = CheckStat2.Checked;
             CheckStatBoxes[2] = CheckStat3.Checked;

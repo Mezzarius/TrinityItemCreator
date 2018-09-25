@@ -19,6 +19,9 @@ namespace TrinityItemCreator
         public Form3(Form1 form1)
         {
             InitializeComponent();
+
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
+
             mainForm = form1;
         }
 
@@ -26,9 +29,9 @@ namespace TrinityItemCreator
         {
             get
             {
-                var parms = base.CreateParams;
-                parms.Style &= ~0x02000000;  // Turn off WS_CLIPCHILDREN
-                return parms;
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
             }
         }
 

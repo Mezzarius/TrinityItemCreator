@@ -1230,7 +1230,7 @@
             this.TextBoxRangeMax.Size = new System.Drawing.Size(146, 20);
             this.TextBoxRangeMax.TabIndex = 39;
             this.TextBoxRangeMax.Tag = "";
-            this.TextBoxRangeMax.Text = "9000";
+            this.TextBoxRangeMax.Text = "10000";
             this.TextBoxRangeMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TextBoxRangeMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             // 

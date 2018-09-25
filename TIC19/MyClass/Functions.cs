@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -72,11 +73,22 @@ namespace TrinityItemCreator.MyClass
         public void LoadMyCustomTemplate(string listboxItemToFileName)
         {
             string path = "templates";
-            
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
 
-            LoadDefaultTemplate(14, File.ReadAllLines(string.Format(path + @"\{0}.txt", listboxItemToFileName)));
+            string[] lines = new string[139];
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load($"{path}\\{listboxItemToFileName}.xml");
+
+            int count = 0;
+            foreach (XmlNode node in doc.SelectNodes("//field"))
+            {
+                lines[count] = $"{node.InnerText}";
+                count++;
+            }
+
+            LoadDefaultTemplate(14, lines);
         }
 
         public void LoadDefaultTemplate(int templateID, string[] lines = null)

@@ -1,155 +1,172 @@
-﻿namespace TrinityItemCreator.MyClass
+﻿using System.IO;
+using System.Xml;
+using System.Xml.Linq;
+
+namespace TrinityItemCreator.MyClass
 {
     class MyData
     {
         public MyData() { }
 
-        public string GetTemplateDataAsString()
+        public bool SaveNewTemplateAsXML(string filename)
         {
-            string d1 = "\r\n", dend = "\r\n";
+            string path = "templates";
 
-            string TDataString =
-            Field_entry.ToString()
-            + d1 + Field_class.ToString()
-            + d1 + Field_subclass.ToString()
-            + d1 + Field_SoundOverrideSubclass.ToString()
-            + d1 + Field_name
-            + d1 + Field_displayid.ToString()
-            + d1 + Field_Quality.ToString()
-            + d1 + Field_Flags.ToString()
-            + d1 + Field_FlagsExtra.ToString()
-            + d1 + Field_BuyCount.ToString()
-            + d1 + Field_BuyPrice.ToString()
-            + d1 + Field_SellPrice.ToString()
-            + d1 + Field_InventoryType.ToString()
-            + d1 + Field_AllowableClass.ToString()
-            + d1 + Field_AllowableRace.ToString()
-            + d1 + Field_ItemLevel.ToString()
-            + d1 + Field_RequiredLevel.ToString()
-            + d1 + Field_RequiredSkill.ToString()
-            + d1 + Field_RequiredSkillRank.ToString()
-            + d1 + Field_requiredspell.ToString()
-            + d1 + Field_requiredhonorrank.ToString()
-            + d1 + Field_RequiredCityRank.ToString()
-            + d1 + Field_RequiredReputationFaction.ToString()
-            + d1 + Field_RequiredReputationRank.ToString()
-            + d1 + Field_maxcount.ToString()
-            + d1 + Field_stackable.ToString()
-            + d1 + Field_ContainerSlots.ToString()
-            + d1 + Field_StatsCount.ToString()
-            + d1 + Field_stat_type1.ToString()
-            + d1 + Field_stat_value1.ToString()
-            + d1 + Field_stat_type2.ToString()
-            + d1 + Field_stat_value2.ToString()
-            + d1 + Field_stat_type3.ToString()
-            + d1 + Field_stat_value3.ToString()
-            + d1 + Field_stat_type4.ToString()
-            + d1 + Field_stat_value4.ToString()
-            + d1 + Field_stat_type5.ToString()
-            + d1 + Field_stat_value5.ToString()
-            + d1 + Field_stat_type6.ToString()
-            + d1 + Field_stat_value6.ToString()
-            + d1 + Field_stat_type7.ToString()
-            + d1 + Field_stat_value7.ToString()
-            + d1 + Field_stat_type8.ToString()
-            + d1 + Field_stat_value8.ToString()
-            + d1 + Field_stat_type9.ToString()
-            + d1 + Field_stat_value9.ToString()
-            + d1 + Field_stat_type10.ToString()
-            + d1 + Field_stat_value10.ToString()
-            + d1 + Field_ScalingStatDistribution.ToString()
-            + d1 + Field_ScalingStatValue.ToString()
-            + d1 + Field_dmg_min1.ToString()
-            + d1 + Field_dmg_max1.ToString()
-            + d1 + Field_dmg_type1.ToString()
-            + d1 + Field_dmg_min2.ToString()
-            + d1 + Field_dmg_max2.ToString()
-            + d1 + Field_dmg_type2.ToString()
-            + d1 + Field_armor.ToString()
-            + d1 + Field_holy_res.ToString()
-            + d1 + Field_fire_res.ToString()
-            + d1 + Field_nature_res.ToString()
-            + d1 + Field_frost_res.ToString()
-            + d1 + Field_shadow_res.ToString()
-            + d1 + Field_arcane_res.ToString()
-            + d1 + Field_delay.ToString()
-            + d1 + Field_ammo_type.ToString()
-            + d1 + Field_RangedModRange.ToString()
-            + d1 + Field_spellid_1.ToString()
-            + d1 + Field_spelltrigger_1.ToString()
-            + d1 + Field_spellcharges_1.ToString()
-            + d1 + Field_spellppmRate_1.ToString()
-            + d1 + Field_spellcooldown_1.ToString()
-            + d1 + Field_spellcategory_1.ToString()
-            + d1 + Field_spellcategorycooldown_1.ToString()
-            + d1 + Field_spellid_2.ToString()
-            + d1 + Field_spelltrigger_2.ToString()
-            + d1 + Field_spellcharges_2.ToString()
-            + d1 + Field_spellppmRate_2.ToString()
-            + d1 + Field_spellcooldown_2.ToString()
-            + d1 + Field_spellcategory_2.ToString()
-            + d1 + Field_spellcategorycooldown_2.ToString()
-            + d1 + Field_spellid_3.ToString()
-            + d1 + Field_spelltrigger_3.ToString()
-            + d1 + Field_spellcharges_3.ToString()
-            + d1 + Field_spellppmRate_3.ToString()
-            + d1 + Field_spellcooldown_3.ToString()
-            + d1 + Field_spellcategory_3.ToString()
-            + d1 + Field_spellcategorycooldown_3.ToString()
-            + d1 + Field_spellid_4.ToString()
-            + d1 + Field_spelltrigger_4.ToString()
-            + d1 + Field_spellcharges_4.ToString()
-            + d1 + Field_spellppmRate_4.ToString()
-            + d1 + Field_spellcooldown_4.ToString()
-            + d1 + Field_spellcategory_4.ToString()
-            + d1 + Field_spellcategorycooldown_4.ToString()
-            + d1 + Field_spellid_5.ToString()
-            + d1 + Field_spelltrigger_5.ToString()
-            + d1 + Field_spellcharges_5.ToString()
-            + d1 + Field_spellppmRate_5.ToString()
-            + d1 + Field_spellcooldown_5.ToString()
-            + d1 + Field_spellcategory_5.ToString()
-            + d1 + Field_spellcategorycooldown_5.ToString()
-            + d1 + Field_bonding.ToString()
-            + d1 + Field_description
-            + d1 + Field_PageText.ToString()
-            + d1 + Field_LanguageID.ToString()
-            + d1 + Field_PageMaterial.ToString()
-            + d1 + Field_startquest.ToString()
-            + d1 + Field_lockid.ToString()
-            + d1 + Field_Material.ToString()
-            + d1 + Field_sheath.ToString()
-            + d1 + Field_RandomProperty.ToString()
-            + d1 + Field_RandomSuffix.ToString()
-            + d1 + Field_block.ToString()
-            + d1 + Field_itemset.ToString()
-            + d1 + Field_MaxDurability.ToString()
-            + d1 + Field_area.ToString()
-            + d1 + Field_Map.ToString()
-            + d1 + Field_BagFamily.ToString()
-            + d1 + Field_TotemCategory.ToString()
-            + d1 + Field_socketColor_1.ToString()
-            + d1 + Field_socketContent_1.ToString()
-            + d1 + Field_socketColor_2.ToString()
-            + d1 + Field_socketContent_2.ToString()
-            + d1 + Field_socketColor_3.ToString()
-            + d1 + Field_socketContent_3.ToString()
-            + d1 + Field_socketBonus.ToString()
-            + d1 + Field_GemProperties.ToString()
-            + d1 + Field_RequiredDisenchantSkill.ToString()
-            + d1 + Field_ArmorDamageModifier.ToString()
-            + d1 + Field_duration.ToString()
-            + d1 + Field_ItemLimitCategory.ToString()
-            + d1 + Field_HolidayId.ToString()
-            + d1 + Field_ScriptName
-            + d1 + Field_DisenchantID.ToString()
-            + d1 + Field_FoodType.ToString()
-            + d1 + Field_minMoneyLoot.ToString()
-            + d1 + Field_maxMoneyLoot.ToString()
-            + d1 + Field_flagsCustom.ToString()
-            + d1 + Field_VerifiedBuild.ToString() + dend;
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
 
-            return TDataString;
+            if (File.Exists($"{path}\\{filename}.xml"))
+                return false;
+
+                XDocument doc = new XDocument
+                (
+                    new XElement("table_data", new XAttribute("name", "item_template"),
+                        new XElement("row",
+                            new XElement("field", Field_entry.ToString()),
+                            new XElement("field", Field_class.ToString()),
+                            new XElement("field", Field_subclass.ToString()),
+                            new XElement("field", Field_SoundOverrideSubclass.ToString()),
+                            new XElement("field", Field_name),
+                            new XElement("field", Field_displayid.ToString()),
+                            new XElement("field", Field_Quality.ToString()),
+                            new XElement("field", Field_Flags.ToString()),
+                            new XElement("field", Field_FlagsExtra.ToString()),
+                            new XElement("field", Field_BuyCount.ToString()),
+                            new XElement("field", Field_BuyPrice.ToString()),
+                            new XElement("field", Field_SellPrice.ToString()),
+                            new XElement("field", Field_InventoryType.ToString()),
+                            new XElement("field", Field_AllowableClass.ToString()),
+                            new XElement("field", Field_AllowableRace.ToString()),
+                            new XElement("field", Field_ItemLevel.ToString()),
+                            new XElement("field", Field_RequiredLevel.ToString()),
+                            new XElement("field", Field_RequiredSkill.ToString()),
+                            new XElement("field", Field_RequiredSkillRank.ToString()),
+                            new XElement("field", Field_requiredspell.ToString()),
+                            new XElement("field", Field_requiredhonorrank.ToString()),
+                            new XElement("field", Field_RequiredCityRank.ToString()),
+                            new XElement("field", Field_RequiredReputationFaction.ToString()),
+                            new XElement("field", Field_RequiredReputationRank.ToString()),
+                            new XElement("field", Field_maxcount.ToString()),
+                            new XElement("field", Field_stackable.ToString()),
+                            new XElement("field", Field_ContainerSlots.ToString()),
+                            new XElement("field", Field_StatsCount.ToString()),
+                            new XElement("field", Field_stat_type1.ToString()),
+                            new XElement("field", Field_stat_value1.ToString()),
+                            new XElement("field", Field_stat_type2.ToString()),
+                            new XElement("field", Field_stat_value2.ToString()),
+                            new XElement("field", Field_stat_type3.ToString()),
+                            new XElement("field", Field_stat_value3.ToString()),
+                            new XElement("field", Field_stat_type4.ToString()),
+                            new XElement("field", Field_stat_value4.ToString()),
+                            new XElement("field", Field_stat_type5.ToString()),
+                            new XElement("field", Field_stat_value5.ToString()),
+                            new XElement("field", Field_stat_type6.ToString()),
+                            new XElement("field", Field_stat_value6.ToString()),
+                            new XElement("field", Field_stat_type7.ToString()),
+                            new XElement("field", Field_stat_value7.ToString()),
+                            new XElement("field", Field_stat_type8.ToString()),
+                            new XElement("field", Field_stat_value8.ToString()),
+                            new XElement("field", Field_stat_type9.ToString()),
+                            new XElement("field", Field_stat_value9.ToString()),
+                            new XElement("field", Field_stat_type10.ToString()),
+                            new XElement("field", Field_stat_value10.ToString()),
+                            new XElement("field", Field_ScalingStatDistribution.ToString()),
+                            new XElement("field", Field_ScalingStatValue.ToString()),
+                            new XElement("field", Field_dmg_min1.ToString()),
+                            new XElement("field", Field_dmg_max1.ToString()),
+                            new XElement("field", Field_dmg_type1.ToString()),
+                            new XElement("field", Field_dmg_min2.ToString()),
+                            new XElement("field", Field_dmg_max2.ToString()),
+                            new XElement("field", Field_dmg_type2.ToString()),
+                            new XElement("field", Field_armor.ToString()),
+                            new XElement("field", Field_holy_res.ToString()),
+                            new XElement("field", Field_fire_res.ToString()),
+                            new XElement("field", Field_nature_res.ToString()),
+                            new XElement("field", Field_frost_res.ToString()),
+                            new XElement("field", Field_shadow_res.ToString()),
+                            new XElement("field", Field_arcane_res.ToString()),
+                            new XElement("field", Field_delay.ToString()),
+                            new XElement("field", Field_ammo_type.ToString()),
+                            new XElement("field", Field_RangedModRange.ToString()),
+                            new XElement("field", Field_spellid_1.ToString()),
+                            new XElement("field", Field_spelltrigger_1.ToString()),
+                            new XElement("field", Field_spellcharges_1.ToString()),
+                            new XElement("field", Field_spellppmRate_1.ToString()),
+                            new XElement("field", Field_spellcooldown_1.ToString()),
+                            new XElement("field", Field_spellcategory_1.ToString()),
+                            new XElement("field", Field_spellcategorycooldown_1.ToString()),
+                            new XElement("field", Field_spellid_2.ToString()),
+                            new XElement("field", Field_spelltrigger_2.ToString()),
+                            new XElement("field", Field_spellcharges_2.ToString()),
+                            new XElement("field", Field_spellppmRate_2.ToString()),
+                            new XElement("field", Field_spellcooldown_2.ToString()),
+                            new XElement("field", Field_spellcategory_2.ToString()),
+                            new XElement("field", Field_spellcategorycooldown_2.ToString()),
+                            new XElement("field", Field_spellid_3.ToString()),
+                            new XElement("field", Field_spelltrigger_3.ToString()),
+                            new XElement("field", Field_spellcharges_3.ToString()),
+                            new XElement("field", Field_spellppmRate_3.ToString()),
+                            new XElement("field", Field_spellcooldown_3.ToString()),
+                            new XElement("field", Field_spellcategory_3.ToString()),
+                            new XElement("field", Field_spellcategorycooldown_3.ToString()),
+                            new XElement("field", Field_spellid_4.ToString()),
+                            new XElement("field", Field_spelltrigger_4.ToString()),
+                            new XElement("field", Field_spellcharges_4.ToString()),
+                            new XElement("field", Field_spellppmRate_4.ToString()),
+                            new XElement("field", Field_spellcooldown_4.ToString()),
+                            new XElement("field", Field_spellcategory_4.ToString()),
+                            new XElement("field", Field_spellcategorycooldown_4.ToString()),
+                            new XElement("field", Field_spellid_5.ToString()),
+                            new XElement("field", Field_spelltrigger_5.ToString()),
+                            new XElement("field", Field_spellcharges_5.ToString()),
+                            new XElement("field", Field_spellppmRate_5.ToString()),
+                            new XElement("field", Field_spellcooldown_5.ToString()),
+                            new XElement("field", Field_spellcategory_5.ToString()),
+                            new XElement("field", Field_spellcategorycooldown_5.ToString()),
+                            new XElement("field", Field_bonding.ToString()),
+                            new XElement("field", Field_description),
+                            new XElement("field", Field_PageText.ToString()),
+                            new XElement("field", Field_LanguageID.ToString()),
+                            new XElement("field", Field_PageMaterial.ToString()),
+                            new XElement("field", Field_startquest.ToString()),
+                            new XElement("field", Field_lockid.ToString()),
+                            new XElement("field", Field_Material.ToString()),
+                            new XElement("field", Field_sheath.ToString()),
+                            new XElement("field", Field_RandomProperty.ToString()),
+                            new XElement("field", Field_RandomSuffix.ToString()),
+                            new XElement("field", Field_block.ToString()),
+                            new XElement("field", Field_itemset.ToString()),
+                            new XElement("field", Field_MaxDurability.ToString()),
+                            new XElement("field", Field_area.ToString()),
+                            new XElement("field", Field_Map.ToString()),
+                            new XElement("field", Field_BagFamily.ToString()),
+                            new XElement("field", Field_TotemCategory.ToString()),
+                            new XElement("field", Field_socketColor_1.ToString()),
+                            new XElement("field", Field_socketContent_1.ToString()),
+                            new XElement("field", Field_socketColor_2.ToString()),
+                            new XElement("field", Field_socketContent_2.ToString()),
+                            new XElement("field", Field_socketColor_3.ToString()),
+                            new XElement("field", Field_socketContent_3.ToString()),
+                            new XElement("field", Field_socketBonus.ToString()),
+                            new XElement("field", Field_GemProperties.ToString()),
+                            new XElement("field", Field_RequiredDisenchantSkill.ToString()),
+                            new XElement("field", Field_ArmorDamageModifier.ToString()),
+                            new XElement("field", Field_duration.ToString()),
+                            new XElement("field", Field_ItemLimitCategory.ToString()),
+                            new XElement("field", Field_HolidayId.ToString()),
+                            new XElement("field", Field_ScriptName),
+                            new XElement("field", Field_DisenchantID.ToString()),
+                            new XElement("field", Field_FoodType.ToString()),
+                            new XElement("field", Field_minMoneyLoot.ToString()),
+                            new XElement("field", Field_maxMoneyLoot.ToString()),
+                            new XElement("field", Field_flagsCustom.ToString()),
+                            new XElement("field", Field_VerifiedBuild.ToString())
+                        ) // /row
+                    ) // /table_data
+                );
+            doc.Save($"templates\\{filename}.xml");
+
+            return true;
         }
 
         public static string[][] SubClassArray = new string[][]

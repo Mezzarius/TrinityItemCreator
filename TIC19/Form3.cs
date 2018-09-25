@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrinityItemCreator.MyClass;
 
@@ -63,28 +57,16 @@ namespace TrinityItemCreator
         private void ButtonSave_Click(object sender, EventArgs e)
         {
             MyData myData = new MyData();
-            string path = "templates";
 
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-            string filepath = string.Format(path + @"\{0}.txt", myTextBox2.Text);
             if (myTextBox2.Text != "Required!")
             {
-                if (!File.Exists(filepath))
-                {
-                    using (TextWriter tw = new StreamWriter(filepath))
-                    {
-                        tw.Write(myData.GetTemplateDataAsString());
-                        tw.Close();
-                    }
-                    Close();
-                }
-                else
+                if (!myData.SaveNewTemplateAsXML(myTextBox2.Text))
                 {
                     LabelWarning.Text = "Name already in use!";
                     LabelWarning.ForeColor = Color.Red;
                 }
+                else
+                    Close();
             }
             else
                 LabelWarning.Text = "Please use a valid name!";

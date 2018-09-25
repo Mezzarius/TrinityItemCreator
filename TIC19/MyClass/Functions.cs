@@ -27,6 +27,37 @@ namespace TrinityItemCreator.MyClass
             mainForm.Opacity = .99;
         }
 
+        public int GenerateOddEvenNumber(Random random, int rangeMin, int rangeMax, int numberType = 0)
+        {
+            int randomNumber = 0;
+
+            switch (numberType)
+            {
+                case 0: // odd and even
+                    randomNumber  = random.Next(rangeMin, rangeMax);
+                    break;
+                case 1: // odd
+                    {
+                        int ans = random.Next(rangeMin, rangeMax);
+                        if (ans % 2 == 1) return ans;
+                        else
+                        {
+                            if (ans + 1 <= rangeMax)
+                                randomNumber = ans + 1;
+                            else if (ans - 1 >= rangeMin)
+                                randomNumber = ans - 1;
+                            else return 0;
+                        }
+                    }
+                    break;
+                case 2: // even
+                    randomNumber = (2 * random.Next(rangeMin / 2, rangeMax / 2));
+                    break;
+            }
+
+            return randomNumber;
+        }
+
         public void UnBlurMainForm()
         {
             foreach (var menuStrip in mainForm.Controls.OfType<MenuStrip>()) menuStrip.Enabled = true;

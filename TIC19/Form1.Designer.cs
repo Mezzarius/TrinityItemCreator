@@ -384,7 +384,8 @@
             // randomStatsToolStripMenuItem
             // 
             this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
-            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
+            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.randomStatsToolStripMenuItem.Text = "Generate Stats";
             this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.randomStatsToolStripMenuItem_Click);
             // 

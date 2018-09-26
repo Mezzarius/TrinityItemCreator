@@ -61,6 +61,7 @@
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
     <Compile Include="MyClass\MyData.cs" />
+    <Compile Include="MyClass\MyExtensions.cs" />
     <Compile Include="MyClass\QueryHandler.cs" />
     <Compile Include="MyControls\MyOpacuePanel.cs">
       <SubType>Component</SubType>
@@ -94,6 +95,12 @@
     </Compile>
     <Compile Include="Window_ClassMask.Designer.cs">
       <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window_DisplayIdFinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_DisplayIdFinder.Designer.cs">
+      <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
     </Compile>
     <Compile Include="Window_FlagCustomMask.cs">
       <SubType>Form</SubType>
@@ -164,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Window_ClassMask.resx">
       <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window_DisplayIdFinder.resx">
+      <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Window_FlagCustomMask.resx">
       <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>

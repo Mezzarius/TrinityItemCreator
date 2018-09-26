@@ -109,22 +109,24 @@
             this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(17, 37);
+            this.listBox1.Location = new System.Drawing.Point(17, 46);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(266, 360);
+            this.listBox1.Size = new System.Drawing.Size(261, 340);
             this.listBox1.TabIndex = 32;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(289, 36);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(6, 361);
+            this.panel4.Size = new System.Drawing.Size(6, 360);
             this.panel4.TabIndex = 157;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 36);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(6, 360);

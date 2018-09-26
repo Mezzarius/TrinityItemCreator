@@ -223,9 +223,9 @@ namespace TrinityItemCreator
             MyData.Field_description = myTextBox3.Text;
         }
 
-        private void myTextBox4_TextChanged(object sender, EventArgs e)
+        private void TextBoxDisplayID_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(myTextBox4.Text, out int userVal))
+            if (int.TryParse(TextBoxDisplayID.Text, out int userVal))
                 MyData.Field_displayid = userVal;
         }
 
@@ -859,7 +859,7 @@ namespace TrinityItemCreator
             form4.ShowDialog();
         }
 
-        private void loadDefaultTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LoadDefaultTemplateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2(this);
             form2.ShowDialog();
@@ -871,10 +871,16 @@ namespace TrinityItemCreator
             myF.DelayMainFormPainting();
         }
 
-        private void randomStatsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RandomStatsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Window_GenerateStats wgs = new Window_GenerateStats(this);
             wgs.ShowDialog();
+        }
+
+        private void DisplayIDFinderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Window_DisplayIdFinder wdf = new Window_DisplayIdFinder(this);
+            wdf.ShowDialog();
         }
     }
 }

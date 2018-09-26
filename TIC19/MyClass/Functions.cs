@@ -442,7 +442,7 @@ namespace TrinityItemCreator.MyClass
             mainForm.myTextBox1.Text = MyData.Field_entry.ToString();
             mainForm.myTextBox2.Text = MyData.Field_name;
             mainForm.myTextBox3.Text = MyData.Field_description;
-            mainForm.myTextBox4.Text = MyData.Field_displayid.ToString();
+            mainForm.TextBoxDisplayID.Text = MyData.Field_displayid.ToString();
             mainForm.myTextBox5.Text = MyData.Field_ItemLevel.ToString();
             mainForm.myTextBox6.Text = MyData.Field_RequiredLevel.ToString();
             mainForm.myTextBox7.Text = MyData.Field_stat_value1.ToString();

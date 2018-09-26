@@ -43,6 +43,7 @@
             this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -199,7 +200,7 @@
             this.myTextBox7 = new MyTextBox();
             this.myTextBox6 = new MyTextBox();
             this.myTextBox5 = new MyTextBox();
-            this.myTextBox4 = new MyTextBox();
+            this.TextBoxDisplayID = new MyTextBox();
             this.myTextBox3 = new MyTextBox();
             this.myTextBox2 = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
@@ -318,7 +319,7 @@
             this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
             this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default";
-            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.loadDefaultTemplateToolStripMenuItem_Click);
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadDefaultTemplateToolStripMenuItem_Click);
             // 
             // loadCustomTemplateToolStripMenuItem
             // 
@@ -375,19 +376,28 @@
             // functionsToolStripMenuItem
             // 
             this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.displayIDFinderToolStripMenuItem,
             this.randomStatsToolStripMenuItem});
             this.functionsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_spell_arcane_studentofmagic;
             this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
             this.functionsToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
             this.functionsToolStripMenuItem.Text = "Functions";
             // 
+            // displayIDFinderToolStripMenuItem
+            // 
+            this.displayIDFinderToolStripMenuItem.Name = "displayIDFinderToolStripMenuItem";
+            this.displayIDFinderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.displayIDFinderToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.displayIDFinderToolStripMenuItem.Text = "DisplayID Finder";
+            this.displayIDFinderToolStripMenuItem.Click += new System.EventHandler(this.DisplayIDFinderToolStripMenuItem_Click);
+            // 
             // randomStatsToolStripMenuItem
             // 
             this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
             this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.randomStatsToolStripMenuItem.Text = "Generate Stats";
-            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.randomStatsToolStripMenuItem_Click);
+            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.RandomStatsToolStripMenuItem_Click);
             // 
             // aBOUTToolStripMenuItem
             // 
@@ -3353,23 +3363,23 @@
             this.myTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox5.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // myTextBox4
+            // TextBoxDisplayID
             // 
-            this.myTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox4.Enabled = false;
-            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox4.Location = new System.Drawing.Point(115, 141);
-            this.myTextBox4.Name = "myTextBox4";
-            this.myTextBox4.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox4.TabIndex = 3;
-            this.myTextBox4.Text = "0";
-            this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox4.TextChanged += new System.EventHandler(this.myTextBox4_TextChanged);
-            this.myTextBox4.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox4.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.TextBoxDisplayID.BorderColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxDisplayID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBoxDisplayID.Enabled = false;
+            this.TextBoxDisplayID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxDisplayID.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.TextBoxDisplayID.Location = new System.Drawing.Point(115, 141);
+            this.TextBoxDisplayID.Name = "TextBoxDisplayID";
+            this.TextBoxDisplayID.Size = new System.Drawing.Size(100, 18);
+            this.TextBoxDisplayID.TabIndex = 3;
+            this.TextBoxDisplayID.Text = "0";
+            this.TextBoxDisplayID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBoxDisplayID.TextChanged += new System.EventHandler(this.TextBoxDisplayID_TextChanged);
+            this.TextBoxDisplayID.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.TextBoxDisplayID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.TextBoxDisplayID.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // myTextBox3
             // 
@@ -3732,7 +3742,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.myTextBox4);
+            this.Controls.Add(this.TextBoxDisplayID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.myTextBox3);
             this.Controls.Add(this.label3);
@@ -3779,7 +3789,7 @@
         private System.Windows.Forms.Label label2;
         public MyTextBox myTextBox3;
         private System.Windows.Forms.Label label3;
-        public MyTextBox myTextBox4;
+        public MyTextBox TextBoxDisplayID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -3952,6 +3962,7 @@
         private System.Windows.Forms.ToolStripMenuItem functionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem randomStatsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayIDFinderToolStripMenuItem;
     }
 }
 

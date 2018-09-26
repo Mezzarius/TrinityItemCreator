@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using TrinityItemCreator.MyClass;
@@ -47,25 +48,23 @@ namespace TrinityItemCreator
 
             object[] buffer = new object[100];
             List<DataGridViewRow> rows = new List<DataGridViewRow>();
-            dataGridView1.Rows.Clear();
 
+            dataGridView1.Rows.Clear();
             foreach (string line in File.ReadLines($"data\\{displayFile}"))
             {
                 var values = line.Split('|');
 
                 if (line.CaseInsensitiveContains(searchField))
                 {
-                    buffer[0] = values[0];
-                    buffer[1] = values[1];
-                    buffer[2] = values[2];
+                    buffer[0] = values[0]; // entry
+                    buffer[1] = values[1]; // name
+                    buffer[2] = values[2]; // displayid
+                    buffer[3] = $"https://www.wowhead.com/item={values[0]}/#modelviewer:10+1"; // values[1]; // name; // quality
 
                     rows.Add(new DataGridViewRow());
                     rows[rows.Count - 1].CreateCells(dataGridView1, buffer);
-                    // ...
-                    // Break if you don't need to do anything else
                 }
             }
-            
             dataGridView1.Rows.AddRange(rows.ToArray());
         }
 
@@ -86,11 +85,15 @@ namespace TrinityItemCreator
         {
             if (e.ColumnIndex == 2 && e.RowIndex != -1)
                 dataGridView1.Cursor = Cursors.Hand;
+            else if (e.ColumnIndex == 3 && e.RowIndex != -1)
+                dataGridView1.Cursor = Cursors.Hand;
         }
 
         private void DataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 2 && e.RowIndex != -1)
+                dataGridView1.Cursor = Cursors.Default;
+            else if (e.ColumnIndex == 3 && e.RowIndex != -1)
                 dataGridView1.Cursor = Cursors.Default;
         }
 
@@ -104,6 +107,11 @@ namespace TrinityItemCreator
                     mainForm.TextBoxDisplayID.Text = MyData.Field_displayid.ToString();
                     Close();
                 }
+            }
+            else if(e.ColumnIndex == 3 && e.RowIndex != -1)
+            {
+                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                    Process.Start("chrome.exe", dataGridView1.CurrentCell.Value.ToString());
             }
         }
     }

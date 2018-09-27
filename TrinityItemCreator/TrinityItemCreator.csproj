@@ -227,6 +227,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\small_petbattle_health_down.jpg" />
     <Content Include="TrinityItemCreator.ico" />
     <None Include="Resources\ability_repair.jpg" />
     <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />

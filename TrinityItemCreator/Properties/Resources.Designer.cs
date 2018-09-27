@@ -565,7 +565,7 @@ namespace TrinityItemCreator.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap small_petbattle_health_down {
             get {
-                object obj = ResourceManager.GetObject("small_petbattle_health-down", resourceCulture);
+                object obj = ResourceManager.GetObject("small_petbattle_health_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

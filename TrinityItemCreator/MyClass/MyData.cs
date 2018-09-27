@@ -401,7 +401,7 @@ namespace TrinityItemCreator.MyClass
             Field_RequiredReputationFaction = 0,
             Field_RequiredReputationRank = 0,
             Field_maxcount = 0,
-            Field_stackable = -1,
+            Field_stackable = 1,
             Field_ContainerSlots = 0,
             Field_StatsCount  = 10,
             Field_stat_type1 = 0,

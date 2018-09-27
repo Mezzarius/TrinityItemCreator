@@ -353,26 +353,6 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap medium_petbattle_health {
-            get {
-                object obj = ResourceManager.GetObject("medium_petbattle_health", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap medium_petbattle_health_down {
-            get {
-                object obj = ResourceManager.GetObject("medium_petbattle_health-down", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap medium_spell_fire_frostresistancetotem {
             get {
                 object obj = ResourceManager.GetObject("medium_spell_fire_frostresistancetotem", resourceCulture);

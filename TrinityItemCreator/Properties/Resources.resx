@@ -163,12 +163,6 @@
   <data name="small_achievement_character_nightelf_female" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_achievement_character_nightelf_female.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium_petbattle_health" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medium_petbattle_health.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medium_petbattle_health-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medium_petbattle_health-down.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="medium_achievement_bg_interruptx_flagcapture_attempts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\medium_achievement_bg_interruptx_flagcapture_attempts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

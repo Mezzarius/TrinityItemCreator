@@ -65,7 +65,7 @@ namespace TrinityItemCreator
             foreach (var checkBox in Controls.OfType<CheckBox>())
                 checkBox.Checked = Convert.ToBoolean(_mask & Convert.ToInt32(checkBox.Tag));
 
-            MyData.Field_AllowableClass = _mask;
+            MyData.Field_AllowableClass = _mask == 0 ? -1 : _mask;
         }
 
         private void Window_ClassMask_Load(object sender, EventArgs e)
@@ -98,6 +98,9 @@ namespace TrinityItemCreator
                 if ((MyData.Field_AllowableClass & Convert.ToInt32(checkBox.Tag)) != 0)
                     MyData.Field_AllowableClass -= Convert.ToInt32(checkBox.Tag);
             }
+
+            if (MyData.Field_AllowableClass == 0)
+                MyData.Field_AllowableClass = -1;
         }
 
         private void ResetManualTextBoxClassMask(object sender, EventArgs e)

@@ -46,19 +46,22 @@
             this.panel2.Controls.Add(this.ButtonCancel);
             this.panel2.Controls.Add(this.ButtonLoad);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 396);
+            this.panel2.Location = new System.Drawing.Point(0, 360);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(295, 36);
+            this.panel2.Size = new System.Drawing.Size(491, 36);
             this.panel2.TabIndex = 31;
             // 
             // ButtonCancel
             // 
+            this.ButtonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonCancel.BackColor = System.Drawing.Color.IndianRed;
             this.ButtonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonCancel.ForeColor = System.Drawing.Color.White;
-            this.ButtonCancel.Location = new System.Drawing.Point(174, 7);
+            this.ButtonCancel.Location = new System.Drawing.Point(367, 7);
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(104, 23);
             this.ButtonCancel.TabIndex = 1;
@@ -68,12 +71,15 @@
             // 
             // ButtonLoad
             // 
+            this.ButtonLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonLoad.BackColor = System.Drawing.Color.CadetBlue;
             this.ButtonLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLoad.ForeColor = System.Drawing.Color.White;
-            this.ButtonLoad.Location = new System.Drawing.Point(12, 7);
+            this.ButtonLoad.Location = new System.Drawing.Point(17, 7);
             this.ButtonLoad.Name = "ButtonLoad";
             this.ButtonLoad.Size = new System.Drawing.Size(104, 23);
             this.ButtonLoad.TabIndex = 0;
@@ -88,7 +94,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 36);
+            this.panel1.Size = new System.Drawing.Size(491, 36);
             this.panel1.TabIndex = 30;
             // 
             // label15
@@ -96,7 +102,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(59, 9);
+            this.label15.Location = new System.Drawing.Point(140, 9);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(178, 17);
             this.label15.TabIndex = 0;
@@ -111,16 +117,16 @@
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(17, 46);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(261, 340);
+            this.listBox1.Size = new System.Drawing.Size(454, 300);
             this.listBox1.TabIndex = 32;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(289, 36);
+            this.panel4.Location = new System.Drawing.Point(485, 36);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(6, 360);
+            this.panel4.Size = new System.Drawing.Size(6, 324);
             this.panel4.TabIndex = 157;
             // 
             // panel3
@@ -129,7 +135,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(6, 360);
+            this.panel3.Size = new System.Drawing.Size(6, 324);
             this.panel3.TabIndex = 158;
             // 
             // Form4
@@ -137,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(295, 432);
+            this.ClientSize = new System.Drawing.Size(491, 396);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.listBox1);

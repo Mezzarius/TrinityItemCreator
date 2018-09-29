@@ -65,7 +65,7 @@ namespace TrinityItemCreator
             foreach (var checkBox in Controls.OfType<CheckBox>())
                 checkBox.Checked = Convert.ToBoolean(_mask & Convert.ToInt32(checkBox.Tag));
 
-            MyData.Field_AllowableRace = _mask;
+            MyData.Field_AllowableRace = _mask == 0 ? -1 : _mask;
         }
 
         private void Window_RaceMask_Load(object sender, EventArgs e)
@@ -98,6 +98,9 @@ namespace TrinityItemCreator
                 if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) != 0)
                     MyData.Field_AllowableRace -= Convert.ToInt32(checkBox.Tag);
             }
+
+            if (MyData.Field_AllowableRace == 0)
+                MyData.Field_AllowableRace = -1;
         }
 
         private void ResetManualTextBoxRaceMask(object sender, EventArgs e)

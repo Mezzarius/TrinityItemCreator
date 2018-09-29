@@ -124,6 +124,12 @@
     <Compile Include="Window_DisplayIdFinder.Designer.cs">
       <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Window_EditDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window_EditDescription.Designer.cs">
+      <DependentUpon>Window_EditDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Window_FlagCustomMask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     <EmbeddedResource Include="Window_DisplayIdFinder.resx">
       <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Window_EditDescription.resx">
+      <DependentUpon>Window_EditDescription.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Window_FlagCustomMask.resx">
       <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +239,7 @@
     <None Include="Resources\small_petbattle_health_down.jpg" />
     <None Include="Resources\small_inv_misc_wrench_01.jpg" />
     <None Include="Resources\icon_GAMFTdatamovement.png" />
+    <None Include="Resources\Copy_File-512.png" />
     <Content Include="TrinityItemCreator.ico" />
     <None Include="Resources\ability_repair.jpg" />
     <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />

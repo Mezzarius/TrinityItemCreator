@@ -952,5 +952,11 @@ namespace TrinityItemCreator
                 }
             }
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Window_EditDescription wed = new Window_EditDescription(this);
+            wed.ShowDialog();
+        }
     }
 }

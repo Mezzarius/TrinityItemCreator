@@ -392,7 +392,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellcategory_5 = Convert.ToInt32(lines[99]);
                         MyData.Field_spellcategorycooldown_5 = Convert.ToInt32(lines[100]);
                         MyData.Field_bonding = Convert.ToInt32(lines[101]);
-                        MyData.Field_description = lines[102];
+                        MyData.Field_description = lines[102].Replace("\r\n", "\\n"); ;
                         MyData.Field_PageText = Convert.ToInt32(lines[103]);
                         MyData.Field_LanguageID = Convert.ToInt32(lines[104]);
                         MyData.Field_PageMaterial = Convert.ToInt32(lines[105]);

@@ -39,8 +39,8 @@ namespace TrinityItemCreator.MyClass
                         new XElement("field", Field_BuyPrice.ToString()),
                         new XElement("field", Field_SellPrice.ToString()),
                         new XElement("field", Field_InventoryType.ToString()),
-                        new XElement("field", Field_AllowableClass.ToString()),
-                        new XElement("field", Field_AllowableRace.ToString()),
+                        new XElement("field", Field_AllowableClass == 0 ? "-1" : Field_AllowableClass.ToString()), // temp fix
+                        new XElement("field", Field_AllowableRace == 0 ? "-1" : Field_AllowableRace.ToString()), // temp fix
                         new XElement("field", Field_ItemLevel.ToString()),
                         new XElement("field", Field_RequiredLevel.ToString()),
                         new XElement("field", Field_RequiredSkill.ToString()),

@@ -842,6 +842,8 @@ namespace TrinityItemCreator
             Functions myF = new Functions(this);
             myF.DelayMainFormPainting();
 
+            toolStripComboBox1.SelectedIndex = Properties.Settings.Default.SQLPrefix;
+
             // This is happening before closing form2
             if (!Functions.preLoadTemplate)
                 myF.LoadDefaultTemplate(99999);
@@ -881,6 +883,12 @@ namespace TrinityItemCreator
         {
             Window_DisplayIdFinder wdf = new Window_DisplayIdFinder(this);
             wdf.ShowDialog();
+        }
+
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.SQLPrefix = toolStripComboBox1.SelectedIndex;
+            Properties.Settings.Default.Save();
         }
     }
 }

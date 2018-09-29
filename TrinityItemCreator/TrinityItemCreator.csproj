@@ -228,6 +228,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\small_petbattle_health_down.jpg" />
+    <None Include="Resources\small_inv_misc_wrench_01.jpg" />
     <Content Include="TrinityItemCreator.ico" />
     <None Include="Resources\ability_repair.jpg" />
     <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />
@@ -256,9 +257,6 @@
     <None Include="Resources\small_inv_misc_bandage_10.jpg" />
     <None Include="Resources\small_ability_vanish.jpg" />
     <None Include="Resources\small_spell_arcane_studentofmagic.jpg" />
-    <None Include="Resources\small_petbattle_health-down.jpg" />
-    <None Include="Resources\medium_petbattle_health.jpg" />
-    <None Include="Resources\medium_petbattle_health-down.jpg" />
     <None Include="Resources\small_petbattle_health.jpg" />
     <None Include="Resources\small_achievement_character_undead_male.jpg" />
     <None Include="Resources\small_achievement_character_troll_male.jpg" />

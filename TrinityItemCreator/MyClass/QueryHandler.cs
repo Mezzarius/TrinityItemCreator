@@ -10,7 +10,15 @@ namespace TrinityItemCreator.MyClass
         {
             string d1 = ", ", dend = ");";
 
-            string VQuery = "INSERT INTO `item_template` (`entry`, " +
+            string sqlPrefix;
+            if (Properties.Settings.Default.SQLPrefix == 0)
+                sqlPrefix = "INSERT";
+            else
+                sqlPrefix = "REPLACE";
+
+            string VQuery = "-- Item created with TrinityItemCreator\n" +
+                sqlPrefix +
+                " INTO `item_template` (`entry`, " +
                 // --------------------------------------------------- COLUMNS
                 "`class`, " +
                 "`subclass`, " +

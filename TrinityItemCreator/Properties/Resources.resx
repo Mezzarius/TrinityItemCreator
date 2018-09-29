@@ -265,6 +265,9 @@
   <data name="small_inv_misc_bandage_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_inv_misc_bandage_10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="small_inv_misc_wrench_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_inv_misc_wrench_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="small_petbattle_health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_petbattle_health.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

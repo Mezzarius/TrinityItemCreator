@@ -553,6 +553,16 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap small_inv_misc_wrench_01 {
+            get {
+                object obj = ResourceManager.GetObject("small_inv_misc_wrench_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap small_petbattle_health {
             get {
                 object obj = ResourceManager.GetObject("small_petbattle_health", resourceCulture);

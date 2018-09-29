@@ -22,5 +22,17 @@ namespace TrinityItemCreator.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int SQLPrefix {
+            get {
+                return ((int)(this["SQLPrefix"]));
+            }
+            set {
+                this["SQLPrefix"] = value;
+            }
+        }
     }
 }

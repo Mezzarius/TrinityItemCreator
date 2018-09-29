@@ -2918,6 +2918,9 @@
             this.myTextBox30.Text = "0";
             this.myTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox30.TextChanged += new System.EventHandler(this.myTextBox30_TextChanged);
+            this.myTextBox30.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.myTextBox30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.myTextBox30.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // myTextBox29
             // 

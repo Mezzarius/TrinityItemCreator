@@ -60,11 +60,25 @@ namespace TrinityItemCreator
 
             if (myTextBox2.Text != "Required!")
             {
-                if (!myData.SaveNewTemplateAsXML(myTextBox2.Text))
+                bool replaceTemplate = false;
+                string path = "templates";
+                string filename = myTextBox2.Text;
+
+                if (!Directory.Exists(path))
+                    Directory.CreateDirectory(path);
+
+                if (File.Exists($"{path}\\{myTextBox2.Text}.xml"))
                 {
-                    LabelWarning.Text = "Name already in use!";
-                    LabelWarning.ForeColor = Color.Red;
+                    DialogResult dialogResult = MessageBox.Show($"Template {filename} already exists", "Do you want to replace?", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        LabelWarning.Text = $"Template {filename} replaced!";
+                        replaceTemplate = true;
+                    }
                 }
+
+                if (!myData.SaveNewTemplateAsXML(filename, replaceTemplate))
+                    LabelWarning.Text = "Name already in use, should've replaced!";
                 else
                     Close();
             }

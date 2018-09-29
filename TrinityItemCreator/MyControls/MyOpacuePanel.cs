@@ -23,7 +23,7 @@ public class MyOpacuePanel : Panel
         {
             if (value < 0 || value > 100)
                 throw new ArgumentException("value must be between 0 and 100");
-            this.opacity = value;
+            opacity = value;
         }
     }
     protected override CreateParams CreateParams
@@ -37,7 +37,7 @@ public class MyOpacuePanel : Panel
     }
     protected override void OnPaint(PaintEventArgs e)
     {
-        using (var brush = new SolidBrush(Color.FromArgb(this.opacity * 255 / 100, this.BackColor)))
+        using (var brush = new SolidBrush(Color.FromArgb(opacity * 255 / 100, BackColor)))
         {
             e.Graphics.FillRectangle(brush, this.ClientRectangle);
         }

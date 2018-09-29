@@ -229,6 +229,7 @@
   <ItemGroup>
     <None Include="Resources\small_petbattle_health_down.jpg" />
     <None Include="Resources\small_inv_misc_wrench_01.jpg" />
+    <None Include="Resources\icon_GAMFTdatamovement.png" />
     <Content Include="TrinityItemCreator.ico" />
     <None Include="Resources\ability_repair.jpg" />
     <Content Include="Resources\large_ability_hunter_wildquiver.jpg" />

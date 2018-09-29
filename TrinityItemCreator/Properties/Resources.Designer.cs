@@ -73,6 +73,16 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_GAMFTdatamovement {
+            get {
+                object obj = ResourceManager.GetObject("icon_GAMFTdatamovement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap large_ability_hunter_wildquiver {
             get {
                 object obj = ResourceManager.GetObject("large_ability_hunter_wildquiver", resourceCulture);

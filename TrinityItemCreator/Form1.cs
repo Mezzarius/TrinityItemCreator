@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using TrinityItemCreator.MyClass;
 
@@ -885,10 +886,71 @@ namespace TrinityItemCreator
             wdf.ShowDialog();
         }
 
-        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ToolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.SQLPrefix = toolStripComboBox1.SelectedIndex;
             Properties.Settings.Default.Save();
+        }
+
+        private void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent(DataFormats.FileDrop)) return;
+            var dragFiles = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if (dragFiles.Length == 1)
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                foreach (var file in files)
+                {
+                    var ext = Path.GetExtension(file);
+                    if (ext.Equals(".xml", StringComparison.CurrentCultureIgnoreCase))
+                    {
+                        e.Effect = DragDropEffects.Copy;
+
+                        Panel MyDragOverPanel = new Panel();
+
+                        MyDragOverPanel.BackColor = SystemColors.ControlLight;
+                        MyDragOverPanel.BackgroundImage = Properties.Resources.icon_GAMFTdatamovement;
+                        MyDragOverPanel.BackgroundImageLayout = ImageLayout.Center;
+                        MyDragOverPanel.Location = new Point(0, 0);
+                        MyDragOverPanel.Dock = DockStyle.Fill;
+                        MyDragOverPanel.Tag = "dragOverPanel";
+
+                        Controls.Add(MyDragOverPanel);
+                        MyDragOverPanel.BringToFront();
+                    }
+                    else
+                        e.Effect = DragDropEffects.None;
+                }
+            }
+        }
+
+        private void Form1_DragLeave(object sender, EventArgs e)
+        {
+            RemoveDragOverPanel();
+        }
+
+        private void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            RemoveDragOverPanel();
+
+            Functions fs = new Functions(this);
+            string[] FileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            foreach (string File in FileList)
+                fs.LoadMyCustomTemplate(File, true);
+
+            MessageBox.Show("Loaded an XML template.");
+        }
+
+        private void RemoveDragOverPanel()
+        {
+            foreach (Control item in Controls.OfType<Control>())
+            {
+                if (item.Tag.ToString() == "dragOverPanel")
+                {
+                    Controls.Remove(item);
+                    break; // appears to be necesary
+                }
+            }
         }
     }
 }

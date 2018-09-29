@@ -70,7 +70,7 @@ namespace TrinityItemCreator.MyClass
             mainForm.panel1.BackColor = Color.DarkSlateGray;
         }
 
-        public void LoadMyCustomTemplate(string listboxItemToFileName)
+        public void LoadMyCustomTemplate(string xmFileName, bool dragged = false)
         {
             string path = "templates";
             if (!Directory.Exists(path))
@@ -79,7 +79,10 @@ namespace TrinityItemCreator.MyClass
             string[] lines = new string[139];
 
             XmlDocument doc = new XmlDocument();
-            doc.Load($"{path}\\{listboxItemToFileName}.xml");
+            if (dragged)
+                doc.Load($"{xmFileName}");
+            else
+                doc.Load($"{path}\\{xmFileName}.xml");
 
             int count = 0;
             foreach (XmlNode node in doc.SelectNodes("//field"))

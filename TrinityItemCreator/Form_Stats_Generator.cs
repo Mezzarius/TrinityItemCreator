@@ -6,13 +6,13 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_GenerateStats : Form
+    public partial class Form_Stats_Generator : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
         private static bool[] CheckStatBoxes = new bool[10];
         private static string[] rangeBoxes = { "1000", "10000" };
 
-        public Window_GenerateStats(Form1 form1)
+        public Form_Stats_Generator(Form_Main form1)
         {
             InitializeComponent();
 

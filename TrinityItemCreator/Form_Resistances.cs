@@ -5,11 +5,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_Resistances : Form
+    public partial class Form_Resistances : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Window_Resistances(Form1 form1)
+        public Form_Resistances(Form_Main form1)
         {
             InitializeComponent();
 

@@ -7,11 +7,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Form4 : Form
+    public partial class Form_Load_Custom_Template : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Form4(Form1 form1)
+        public Form_Load_Custom_Template(Form_Main form1)
         {
             InitializeComponent();
 

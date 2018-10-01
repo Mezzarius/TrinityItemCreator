@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_GenerateStats
+    partial class Form_Stats_Generator
     {
         /// <summary>
         /// Required designer variable.
@@ -104,9 +104,9 @@
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
             this.label15.Location = new System.Drawing.Point(184, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(112, 20);
+            this.label15.Size = new System.Drawing.Size(119, 20);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Generate Stats";
+            this.label15.Text = "Stats Generator";
             // 
             // panel2
             // 
@@ -1250,7 +1250,7 @@
             this.TextBoxRangeMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TextBoxRangeMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             // 
-            // Window_GenerateStats
+            // Form_Stats_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1315,7 +1315,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_GenerateStats";
+            this.Name = "Form_Stats_Generator";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

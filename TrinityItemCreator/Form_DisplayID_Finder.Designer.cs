@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_DisplayIdFinder
+    partial class Form_DisplayID_Finder
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_ClassMask
+    partial class Form_Allowable_Class
     {
         /// <summary>
         /// Required designer variable.

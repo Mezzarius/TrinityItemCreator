@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_Resistances
+    partial class Form_Resistances
     {
         /// <summary>
         /// Required designer variable.

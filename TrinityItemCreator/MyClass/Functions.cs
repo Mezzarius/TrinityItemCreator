@@ -10,13 +10,13 @@ namespace TrinityItemCreator.MyClass
 {
     class Functions
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
         public static bool preLoadTemplate;
         public static bool preLoadSubClassMenu;
 
         public Functions() { }
 
-        public Functions(Form1 form1)
+        public Functions(Form_Main form1)
         {
             mainForm = form1;
         }

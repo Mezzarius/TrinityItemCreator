@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_EditDescription
+    partial class Form_Item_Description
     {
         /// <summary>
         /// Required designer variable.

@@ -4,12 +4,12 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_FlagExtraMask : Form
+    public partial class Form_Bag_Family_Mask : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
         private static bool mIsChecked;
 
-        public Window_FlagExtraMask(Form1 form1)
+        public Form_Bag_Family_Mask(Form_Main form1)
         {
             InitializeComponent();
 
@@ -46,20 +46,20 @@ namespace TrinityItemCreator
             mIsChecked = mIsChecked ? false : true;
         }
 
-        private void Window_FlagExtraMask_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-                Close();
-        }
-
         private void ButtonFinish_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void TextBoxFlagExtraMask_TextChanged(object sender, EventArgs e)
+        private void Window_BagFamilyMask_KeyDown(object sender, KeyEventArgs e)
         {
-            int _textBoxMask = Convert.ToInt32(TextBoxFlagExtraMask.Text);
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
+
+        private void TextBoxBagFamilyMask_TextChanged(object sender, EventArgs e)
+        {
+            int _textBoxMask = Convert.ToInt32(TextBoxBagFamilyMask.Text);
 
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
@@ -69,23 +69,23 @@ namespace TrinityItemCreator
                 checkedListBox1.SetItemChecked(i, Convert.ToBoolean(_textBoxMask & itemMask));
             }
 
-            MyData.Field_FlagsExtra = _textBoxMask;
+            MyData.Field_BagFamily = _textBoxMask;
         }
 
-        private void Window_FlagExtraMask_Load(object sender, EventArgs e)
+        private void Window_BagFamilyMask_Load(object sender, EventArgs e)
         {
             checkedListBox1.ItemCheck += new ItemCheckEventHandler(HandleCheckBoxItemState);
-            checkedListBox1.Click += new EventHandler(ResetManualTextBoxFlagExtraMask);
+            checkedListBox1.Click += new EventHandler(ResetManualTextBoxBagFamilyMask);
 
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 string s = checkedListBox1.Items[i].ToString();
                 int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
 
-                if ((MyData.Field_FlagsExtra & itemMask) != 0)
+                if ((MyData.Field_BagFamily & itemMask) != 0)
                     checkedListBox1.SetItemChecked(i, true);
                 else
-                    TextBoxFlagExtraMask.Text = MyData.Field_FlagsExtra.ToString(); // contains different class mask then add full class mask to text box
+                    TextBoxBagFamilyMask.Text = MyData.Field_BagFamily.ToString(); // contains different class mask then add full class mask to text box
             }
         }
 
@@ -96,19 +96,19 @@ namespace TrinityItemCreator
 
             if (e.NewValue == CheckState.Checked)
             {
-                if ((MyData.Field_FlagsExtra & itemMask) == 0)
-                    MyData.Field_FlagsExtra += itemMask;
+                if ((MyData.Field_BagFamily & itemMask) == 0)
+                    MyData.Field_BagFamily += itemMask;
             }
             else
             {
-                if ((MyData.Field_FlagsExtra & itemMask) != 0)
-                    MyData.Field_FlagsExtra -= itemMask;
+                if ((MyData.Field_BagFamily & itemMask) != 0)
+                    MyData.Field_BagFamily -= itemMask;
             }
         }
 
-        private void ResetManualTextBoxFlagExtraMask(object sender, EventArgs e)
+        private void ResetManualTextBoxBagFamilyMask(object sender, EventArgs e)
         {
-            TextBoxFlagExtraMask.Text = "0";
+            TextBoxBagFamilyMask.Text = "0";
         }
     }
 }

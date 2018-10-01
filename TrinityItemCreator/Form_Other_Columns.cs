@@ -5,11 +5,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_Other_Options : Form
+    public partial class Form_Other_Columns : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Window_Other_Options(Form1 form1)
+        public Form_Other_Columns(Form_Main form1)
         {
             InitializeComponent();
 

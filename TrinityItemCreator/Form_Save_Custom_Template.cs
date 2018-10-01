@@ -6,11 +6,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Form3 : Form
+    public partial class Form_Save_Custom_Template : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Form3(Form1 form1)
+        public Form_Save_Custom_Template(Form_Main form1)
         {
             InitializeComponent();
 

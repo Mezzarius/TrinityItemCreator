@@ -11,11 +11,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_EditDescription : Form
+    public partial class Form_Item_Description : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Window_EditDescription(Form1 form1)
+        public Form_Item_Description(Form_Main form1)
         {
             InitializeComponent();
 

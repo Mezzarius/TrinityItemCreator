@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_FlagMask
+    partial class Form_Flags
     {
         /// <summary>
         /// Required designer variable.

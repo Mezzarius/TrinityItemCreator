@@ -65,17 +65,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form3.cs">
+    <Compile Include="Form_Save_Custom_Template.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Form_Save_Custom_Template.Designer.cs">
+      <DependentUpon>Form_Save_Custom_Template.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Form_Load_Custom_Template.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Form_Load_Custom_Template.Designer.cs">
+      <DependentUpon>Form_Load_Custom_Template.cs</DependentUpon>
     </Compile>
     <Compile Include="MyClass\MyData.cs" />
     <Compile Include="MyClass\MyExtensions.cs" />
@@ -86,17 +86,17 @@
     <Compile Include="MyControls\MyTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Form_Default_Templates.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form_Default_Templates.Designer.cs">
+      <DependentUpon>Form_Default_Templates.cs</DependentUpon>
     </Compile>
     <Compile Include="MyClass\Functions.cs" />
     <Compile Include="Program.cs" />
@@ -106,121 +106,121 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Window_BagFamilyMask.cs">
+    <Compile Include="Form_Bag_Family_Mask.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_BagFamilyMask.Designer.cs">
-      <DependentUpon>Window_BagFamilyMask.cs</DependentUpon>
+    <Compile Include="Form_Bag_Family_Mask.Designer.cs">
+      <DependentUpon>Form_Bag_Family_Mask.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_ClassMask.cs">
+    <Compile Include="Form_Allowable_Class.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_ClassMask.Designer.cs">
-      <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    <Compile Include="Form_Allowable_Class.Designer.cs">
+      <DependentUpon>Form_Allowable_Class.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_DisplayIdFinder.cs">
+    <Compile Include="Form_DisplayID_Finder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_DisplayIdFinder.Designer.cs">
-      <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
+    <Compile Include="Form_DisplayID_Finder.Designer.cs">
+      <DependentUpon>Form_DisplayID_Finder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_EditDescription.cs">
+    <Compile Include="Form_Item_Description.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_EditDescription.Designer.cs">
-      <DependentUpon>Window_EditDescription.cs</DependentUpon>
+    <Compile Include="Form_Item_Description.Designer.cs">
+      <DependentUpon>Form_Item_Description.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_FlagCustomMask.cs">
+    <Compile Include="Form_Flags_Custom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_FlagCustomMask.Designer.cs">
-      <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>
+    <Compile Include="Form_Flags_Custom.Designer.cs">
+      <DependentUpon>Form_Flags_Custom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_FlagExtraMask.cs">
+    <Compile Include="Form_Flags_Extra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_FlagExtraMask.Designer.cs">
-      <DependentUpon>Window_FlagExtraMask.cs</DependentUpon>
+    <Compile Include="Form_Flags_Extra.Designer.cs">
+      <DependentUpon>Form_Flags_Extra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_FlagMask.cs">
+    <Compile Include="Form_Flags.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_FlagMask.Designer.cs">
-      <DependentUpon>Window_FlagMask.cs</DependentUpon>
+    <Compile Include="Form_Flags.Designer.cs">
+      <DependentUpon>Form_Flags.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_GenerateStats.cs">
+    <Compile Include="Form_Stats_Generator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_GenerateStats.Designer.cs">
-      <DependentUpon>Window_GenerateStats.cs</DependentUpon>
+    <Compile Include="Form_Stats_Generator.Designer.cs">
+      <DependentUpon>Form_Stats_Generator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_Other_Options.cs">
+    <Compile Include="Form_Other_Columns.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_Other_Options.Designer.cs">
-      <DependentUpon>Window_Other_Options.cs</DependentUpon>
+    <Compile Include="Form_Other_Columns.Designer.cs">
+      <DependentUpon>Form_Other_Columns.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_RaceMask.cs">
+    <Compile Include="Form_Allowable_Race.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_RaceMask.Designer.cs">
-      <DependentUpon>Window_RaceMask.cs</DependentUpon>
+    <Compile Include="Form_Allowable_Race.Designer.cs">
+      <DependentUpon>Form_Allowable_Race.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window_Resistances.cs">
+    <Compile Include="Form_Resistances.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window_Resistances.Designer.cs">
-      <DependentUpon>Window_Resistances.cs</DependentUpon>
+    <Compile Include="Form_Resistances.Designer.cs">
+      <DependentUpon>Form_Resistances.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Default_Templates.resx">
+      <DependentUpon>Form_Default_Templates.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Save_Custom_Template.resx">
+      <DependentUpon>Form_Save_Custom_Template.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Load_Custom_Template.resx">
+      <DependentUpon>Form_Load_Custom_Template.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_BagFamilyMask.resx">
-      <DependentUpon>Window_BagFamilyMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Bag_Family_Mask.resx">
+      <DependentUpon>Form_Bag_Family_Mask.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_ClassMask.resx">
-      <DependentUpon>Window_ClassMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Allowable_Class.resx">
+      <DependentUpon>Form_Allowable_Class.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_DisplayIdFinder.resx">
-      <DependentUpon>Window_DisplayIdFinder.cs</DependentUpon>
+    <EmbeddedResource Include="Form_DisplayID_Finder.resx">
+      <DependentUpon>Form_DisplayID_Finder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_EditDescription.resx">
-      <DependentUpon>Window_EditDescription.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Item_Description.resx">
+      <DependentUpon>Form_Item_Description.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_FlagCustomMask.resx">
-      <DependentUpon>Window_FlagCustomMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Flags_Custom.resx">
+      <DependentUpon>Form_Flags_Custom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_FlagExtraMask.resx">
-      <DependentUpon>Window_FlagExtraMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Flags_Extra.resx">
+      <DependentUpon>Form_Flags_Extra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_FlagMask.resx">
-      <DependentUpon>Window_FlagMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Flags.resx">
+      <DependentUpon>Form_Flags.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_GenerateStats.resx">
-      <DependentUpon>Window_GenerateStats.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Stats_Generator.resx">
+      <DependentUpon>Form_Stats_Generator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_Other_Options.resx">
-      <DependentUpon>Window_Other_Options.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Other_Columns.resx">
+      <DependentUpon>Form_Other_Columns.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_RaceMask.resx">
-      <DependentUpon>Window_RaceMask.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Allowable_Race.resx">
+      <DependentUpon>Form_Allowable_Race.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window_Resistances.resx">
-      <DependentUpon>Window_Resistances.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Resistances.resx">
+      <DependentUpon>Form_Resistances.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

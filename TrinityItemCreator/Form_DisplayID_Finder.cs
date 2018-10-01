@@ -8,11 +8,11 @@ using TrinityItemCreator.MyClass;
 namespace TrinityItemCreator
 {
 
-    public partial class Window_DisplayIdFinder : Form
+    public partial class Form_DisplayID_Finder : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Window_DisplayIdFinder(Form1 form1)
+        public Form_DisplayID_Finder(Form_Main form1)
         {
             InitializeComponent();
 

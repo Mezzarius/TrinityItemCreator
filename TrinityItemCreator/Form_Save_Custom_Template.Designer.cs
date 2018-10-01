@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Form3
+    partial class Form_Save_Custom_Template
     {
         /// <summary>
         /// Required designer variable.

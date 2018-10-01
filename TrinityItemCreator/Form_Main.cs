@@ -7,9 +7,9 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Form1 : Form
+    public partial class Form_Main : Form
     {
-        public Form1()
+        public Form_Main()
         {
             InitializeComponent();
 
@@ -31,7 +31,7 @@ namespace TrinityItemCreator
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(this);
+            Form_Default_Templates form2 = new Form_Default_Templates(this);
             form2.ShowDialog();
         }
 
@@ -87,49 +87,49 @@ namespace TrinityItemCreator
 
         private void Button9_Click(object sender, EventArgs e)
         {
-            var wr = new Window_Resistances(this);
+            var wr = new Form_Resistances(this);
             wr.ShowDialog();
         }
 
         private void Button10_Click(object sender, EventArgs e)
         {
-            var woO = new Window_Other_Options(this);
+            var woO = new Form_Other_Columns(this);
             woO.ShowDialog();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            var wcM = new Window_ClassMask(this);
+            var wcM = new Form_Allowable_Class(this);
             wcM.ShowDialog();
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            var wbF = new Window_BagFamilyMask(this);
+            var wbF = new Form_Bag_Family_Mask(this);
             wbF.ShowDialog();
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            var wrM = new Window_RaceMask(this);
+            var wrM = new Form_Allowable_Race(this);
             wrM.ShowDialog();
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            var wfM = new Window_FlagMask(this);
+            var wfM = new Form_Flags(this);
             wfM.ShowDialog();
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            var wfEM = new Window_FlagExtraMask(this);
+            var wfEM = new Form_Flags_Extra(this);
             wfEM.ShowDialog();
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
-            var wfCM = new Window_FlagCustomMask(this);
+            var wfCM = new Form_Flags_Custom(this);
             wfCM.ShowDialog();
         }
 
@@ -163,42 +163,42 @@ namespace TrinityItemCreator
 
             if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D1)
             {
-                var wcM = new Window_ClassMask(this);
+                var wcM = new Form_Allowable_Class(this);
                 wcM.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D2)
             {
-                var wrM = new Window_RaceMask(this);
+                var wrM = new Form_Allowable_Race(this);
                 wrM.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D3)
             {
-                var wbF = new Window_BagFamilyMask(this);
+                var wbF = new Form_Bag_Family_Mask(this);
                 wbF.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D1)
             {
-                var wfM = new Window_FlagMask(this);
+                var wfM = new Form_Flags(this);
                 wfM.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D2)
             {
-                var wfEM = new Window_FlagExtraMask(this);
+                var wfEM = new Form_Flags_Extra(this);
                 wfEM.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D3)
             {
-                var wfCM = new Window_FlagCustomMask(this);
+                var wfCM = new Form_Flags_Custom(this);
                 wfCM.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.R)
             {
-                var wr = new Window_Resistances(this);
+                var wr = new Form_Resistances(this);
                 wr.ShowDialog();
             }
             else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.O)
             {
-                var woO = new Window_Other_Options(this);
+                var woO = new Form_Other_Columns(this);
                 woO.ShowDialog();
             }
         }
@@ -852,19 +852,19 @@ namespace TrinityItemCreator
 
         private void SaveCurrentTemplateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(this);
+            Form_Save_Custom_Template form3 = new Form_Save_Custom_Template(this);
             form3.ShowDialog();
         }
 
         private void LoadCustomTemplateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4(this);
+            Form_Load_Custom_Template form4 = new Form_Load_Custom_Template(this);
             form4.ShowDialog();
         }
 
         private void LoadDefaultTemplateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(this);
+            Form_Default_Templates form2 = new Form_Default_Templates(this);
             form2.ShowDialog();
         }
 
@@ -876,13 +876,13 @@ namespace TrinityItemCreator
 
         private void RandomStatsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Window_GenerateStats wgs = new Window_GenerateStats(this);
+            Form_Stats_Generator wgs = new Form_Stats_Generator(this);
             wgs.ShowDialog();
         }
 
         private void DisplayIDFinderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Window_DisplayIdFinder wdf = new Window_DisplayIdFinder(this);
+            Form_DisplayID_Finder wdf = new Form_DisplayID_Finder(this);
             wdf.ShowDialog();
         }
 
@@ -955,7 +955,7 @@ namespace TrinityItemCreator
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Window_EditDescription wed = new Window_EditDescription(this);
+            Form_Item_Description wed = new Form_Item_Description(this);
             wed.ShowDialog();
         }
     }

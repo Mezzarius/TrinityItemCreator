@@ -1,6 +1,6 @@
 ﻿namespace TrinityItemCreator
 {
-    partial class Window_Other_Options
+    partial class Form_Other_Columns
     {
         /// <summary>
         /// Required designer variable.

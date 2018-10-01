@@ -5,12 +5,12 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Window_ClassMask : Form
+    public partial class Form_Allowable_Class : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
         private static bool mIsChecked = false;
 
-        public Window_ClassMask(Form1 form1)
+        public Form_Allowable_Class(Form_Main form1)
         {
             InitializeComponent();
 

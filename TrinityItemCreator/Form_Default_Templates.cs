@@ -4,11 +4,11 @@ using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
 {
-    public partial class Form2 : Form
+    public partial class Form_Default_Templates : Form
     {
-        private Form1 mainForm;
+        private Form_Main mainForm;
 
-        public Form2(Form1 form1)
+        public Form_Default_Templates(Form_Main form1)
         {
             InitializeComponent();
 
@@ -145,7 +145,7 @@ namespace TrinityItemCreator
         private void ButtonMyTemplates_Click(object sender, EventArgs e)
         {
             Close();
-            Form4 form4 = new Form4(mainForm);
+            Form_Load_Custom_Template form4 = new Form_Load_Custom_Template(mainForm);
             form4.ShowDialog();
         }
     }

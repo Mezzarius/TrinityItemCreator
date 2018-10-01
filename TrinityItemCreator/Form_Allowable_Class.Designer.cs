@@ -43,10 +43,8 @@
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ButtonSelectAll = new System.Windows.Forms.Button();
+            this.UncheckAllButton = new System.Windows.Forms.Button();
             this.ButtonFinish = new System.Windows.Forms.Button();
-            this.TextBoxClassMask = new MyTextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -314,30 +312,30 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.ButtonSelectAll);
+            this.panel3.Controls.Add(this.UncheckAllButton);
             this.panel3.Controls.Add(this.ButtonFinish);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 280);
+            this.panel3.Location = new System.Drawing.Point(0, 248);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(478, 42);
             this.panel3.TabIndex = 151;
             // 
-            // ButtonSelectAll
+            // UncheckAllButton
             // 
-            this.ButtonSelectAll.BackColor = System.Drawing.Color.Teal;
-            this.ButtonSelectAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSelectAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.ButtonSelectAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ButtonSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSelectAll.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSelectAll.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ButtonSelectAll.Location = new System.Drawing.Point(25, 8);
-            this.ButtonSelectAll.Name = "ButtonSelectAll";
-            this.ButtonSelectAll.Size = new System.Drawing.Size(164, 27);
-            this.ButtonSelectAll.TabIndex = 0;
-            this.ButtonSelectAll.Text = "SELECT/UNSELECT ALL";
-            this.ButtonSelectAll.UseVisualStyleBackColor = false;
-            this.ButtonSelectAll.Click += new System.EventHandler(this.ButtonSelectAll_Click);
+            this.UncheckAllButton.BackColor = System.Drawing.Color.Teal;
+            this.UncheckAllButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckAllButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.UncheckAllButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.UncheckAllButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UncheckAllButton.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UncheckAllButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.UncheckAllButton.Location = new System.Drawing.Point(25, 8);
+            this.UncheckAllButton.Name = "UncheckAllButton";
+            this.UncheckAllButton.Size = new System.Drawing.Size(164, 27);
+            this.UncheckAllButton.TabIndex = 0;
+            this.UncheckAllButton.Text = "UNSELECT ALL";
+            this.UncheckAllButton.UseVisualStyleBackColor = false;
+            this.UncheckAllButton.Click += new System.EventHandler(this.UnCheckAll_Click);
             // 
             // ButtonFinish
             // 
@@ -356,42 +354,13 @@
             this.ButtonFinish.UseVisualStyleBackColor = false;
             this.ButtonFinish.Click += new System.EventHandler(this.ButtonFinish_Click);
             // 
-            // TextBoxClassMask
-            // 
-            this.TextBoxClassMask.BorderColor = System.Drawing.Color.Gainsboro;
-            this.TextBoxClassMask.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBoxClassMask.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TextBoxClassMask.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxClassMask.ForeColor = System.Drawing.Color.DimGray;
-            this.TextBoxClassMask.Location = new System.Drawing.Point(0, 262);
-            this.TextBoxClassMask.Name = "TextBoxClassMask";
-            this.TextBoxClassMask.Size = new System.Drawing.Size(478, 18);
-            this.TextBoxClassMask.TabIndex = 168;
-            this.TextBoxClassMask.Text = "0";
-            this.TextBoxClassMask.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBoxClassMask.TextChanged += new System.EventHandler(this.TextBoxClassMask_TextChanged);
-            this.TextBoxClassMask.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label2.Location = new System.Drawing.Point(0, 238);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(478, 24);
-            this.label2.TabIndex = 169;
-            this.label2.Text = "Manual class mask input";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Window_ClassMask
+            // Form_Allowable_Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(478, 322);
+            this.ClientSize = new System.Drawing.Size(478, 290);
             this.ControlBox = false;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.TextBoxClassMask);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.checkBox10);
@@ -413,14 +382,15 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_ClassMask";
+            this.Name = "Form_Allowable_Class";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_ClassMask";
-            this.Load += new System.EventHandler(this.Window_ClassMask_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_ClassMask_KeyDown);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Allowable_Class_FormClosed);
+            this.Load += new System.EventHandler(this.Form_Allowable_Class_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_Allowable_Class_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -445,9 +415,7 @@
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button ButtonSelectAll;
+        private System.Windows.Forms.Button UncheckAllButton;
         private System.Windows.Forms.Button ButtonFinish;
-        private MyTextBox TextBoxClassMask;
-        private System.Windows.Forms.Label label2;
     }
 }

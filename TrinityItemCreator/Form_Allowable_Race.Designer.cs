@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ButtonSelectAll = new System.Windows.Forms.Button();
+            this.UncheckAllButton = new System.Windows.Forms.Button();
             this.ButtonFinish = new System.Windows.Forms.Button();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -45,8 +45,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TextBoxRaceMask = new MyTextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -94,30 +92,30 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.ButtonSelectAll);
+            this.panel3.Controls.Add(this.UncheckAllButton);
             this.panel3.Controls.Add(this.ButtonFinish);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 282);
+            this.panel3.Location = new System.Drawing.Point(0, 244);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(474, 42);
             this.panel3.TabIndex = 151;
             // 
-            // ButtonSelectAll
+            // UncheckAllButton
             // 
-            this.ButtonSelectAll.BackColor = System.Drawing.Color.Teal;
-            this.ButtonSelectAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSelectAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.ButtonSelectAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ButtonSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSelectAll.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSelectAll.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ButtonSelectAll.Location = new System.Drawing.Point(25, 8);
-            this.ButtonSelectAll.Name = "ButtonSelectAll";
-            this.ButtonSelectAll.Size = new System.Drawing.Size(164, 27);
-            this.ButtonSelectAll.TabIndex = 0;
-            this.ButtonSelectAll.Text = "SELECT/UNSELECT ALL";
-            this.ButtonSelectAll.UseVisualStyleBackColor = false;
-            this.ButtonSelectAll.Click += new System.EventHandler(this.ButtonSelectAll_Click);
+            this.UncheckAllButton.BackColor = System.Drawing.Color.Teal;
+            this.UncheckAllButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckAllButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.UncheckAllButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.UncheckAllButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UncheckAllButton.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UncheckAllButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.UncheckAllButton.Location = new System.Drawing.Point(25, 8);
+            this.UncheckAllButton.Name = "UncheckAllButton";
+            this.UncheckAllButton.Size = new System.Drawing.Size(164, 27);
+            this.UncheckAllButton.TabIndex = 0;
+            this.UncheckAllButton.Text = "UNSELECT ALL";
+            this.UncheckAllButton.UseVisualStyleBackColor = false;
+            this.UncheckAllButton.Click += new System.EventHandler(this.UncheckAll_Click);
             // 
             // ButtonFinish
             // 
@@ -356,42 +354,13 @@
             this.checkBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label2.Location = new System.Drawing.Point(0, 240);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(474, 24);
-            this.label2.TabIndex = 171;
-            this.label2.Text = "Manual race mask input";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // TextBoxRaceMask
-            // 
-            this.TextBoxRaceMask.BorderColor = System.Drawing.Color.Gainsboro;
-            this.TextBoxRaceMask.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBoxRaceMask.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TextBoxRaceMask.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxRaceMask.ForeColor = System.Drawing.Color.DimGray;
-            this.TextBoxRaceMask.Location = new System.Drawing.Point(0, 264);
-            this.TextBoxRaceMask.Name = "TextBoxRaceMask";
-            this.TextBoxRaceMask.Size = new System.Drawing.Size(474, 18);
-            this.TextBoxRaceMask.TabIndex = 170;
-            this.TextBoxRaceMask.Text = "0";
-            this.TextBoxRaceMask.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBoxRaceMask.TextChanged += new System.EventHandler(this.TextBoxRaceMask_TextChanged);
-            this.TextBoxRaceMask.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            // 
-            // Window_RaceMask
+            // Form_Allowable_Race
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(474, 324);
+            this.ClientSize = new System.Drawing.Size(474, 286);
             this.ControlBox = false;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.TextBoxRaceMask);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.checkBox4);
@@ -413,14 +382,15 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_RaceMask";
+            this.Name = "Form_Allowable_Race";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_RaceMask";
-            this.Load += new System.EventHandler(this.Window_RaceMask_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_RaceMask_KeyDown);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Allowable_Race_FormClosed);
+            this.Load += new System.EventHandler(this.Form_Allowable_Race_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_Allowable_Race_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -445,9 +415,7 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button ButtonSelectAll;
+        private System.Windows.Forms.Button UncheckAllButton;
         private System.Windows.Forms.Button ButtonFinish;
-        private System.Windows.Forms.Label label2;
-        private MyTextBox TextBoxRaceMask;
     }
 }

@@ -8,7 +8,6 @@ namespace TrinityItemCreator
     public partial class Form_Allowable_Race : Form
     {
         private Form_Main mainForm;
-        private static bool mIsChecked = false;
 
         public Form_Allowable_Race(Form_Main form1)
         {
@@ -29,83 +28,29 @@ namespace TrinityItemCreator
             }
         }
 
-        private void Watermark_myTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void Form_Allowable_Race_Load(object sender, EventArgs e)
         {
-            MyTextBox myTextBox = (MyTextBox)sender;
-            if (myTextBox.Text.Length <= 1 && e.KeyChar == (char)Keys.Back)
-                e.Handled = true;
+            int _maskToHandle = MyData.Field_AllowableRace < 0 ? 0 : MyData.Field_AllowableRace;
 
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                e.Handled = true;
+            foreach (var checkBox in Controls.OfType<CheckBox>()) if ((_maskToHandle & Convert.ToInt32(checkBox.Tag)) != 0) { checkBox.Checked = true; }
         }
 
-        private void ButtonSelectAll_Click(object sender, EventArgs e)
+        private void Form_Allowable_Race_FormClosed(object sender, FormClosedEventArgs e)
         {
-            foreach (var chkBox in Controls.OfType<CheckBox>())
-                chkBox.Checked = mIsChecked ? false : true;
+            int _maskToHandle = 0;
 
-            mIsChecked = mIsChecked ? false : true;
-        }
+            foreach (var checkBox in Controls.OfType<CheckBox>()) { if (checkBox.Checked) _maskToHandle += Convert.ToInt32(checkBox.Tag); }
 
-        private void ButtonFinish_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Window_RaceMask_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-                Close();
-        }
-
-        private void TextBoxRaceMask_TextChanged(object sender, EventArgs e)
-        {
-            int _mask = Convert.ToInt32(TextBoxRaceMask.Text) < 0 ? 1791 : Convert.ToInt32(TextBoxRaceMask.Text);
-
-            foreach (var checkBox in Controls.OfType<CheckBox>())
-                checkBox.Checked = Convert.ToBoolean(_mask & Convert.ToInt32(checkBox.Tag));
-
-            MyData.Field_AllowableRace = _mask == 0 ? -1 : _mask;
-        }
-
-        private void Window_RaceMask_Load(object sender, EventArgs e)
-        {
-            MyData.Field_AllowableRace = MyData.Field_AllowableRace == -1 ? 0 : MyData.Field_AllowableRace;
-
-            foreach (var checkBox in Controls.OfType<CheckBox>())
-            {
-                checkBox.CheckedChanged += new EventHandler(HandleCheckBoxState);
-                checkBox.Click += new EventHandler(ResetManualTextBoxRaceMask);
-
-                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) != 0)
-                    checkBox.Checked = true;
-                else
-                    TextBoxRaceMask.Text = MyData.Field_AllowableRace.ToString(); // contains different class mask then add full class mask to text box
-            }
-        }
-
-        private void HandleCheckBoxState(object sender, EventArgs e)
-        {
-            CheckBox checkBox = (CheckBox)sender;
-
-            if (checkBox.Checked)
-            {
-                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) == 0)
-                    MyData.Field_AllowableRace += Convert.ToInt32(checkBox.Tag);
-            }
-            else
-            {
-                if ((MyData.Field_AllowableRace & Convert.ToInt32(checkBox.Tag)) != 0)
-                    MyData.Field_AllowableRace -= Convert.ToInt32(checkBox.Tag);
-            }
-
-            if (MyData.Field_AllowableRace == 0)
+            if (_maskToHandle == 0 || _maskToHandle < -1)
                 MyData.Field_AllowableRace = -1;
+            else
+                MyData.Field_AllowableRace = _maskToHandle;
         }
 
-        private void ResetManualTextBoxRaceMask(object sender, EventArgs e)
-        {
-            TextBoxRaceMask.Text = "0";
-        }
+        private void UncheckAll_Click(object sender, EventArgs e) { foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = false; }
+
+        private void ButtonFinish_Click(object sender, EventArgs e) { Close(); }
+
+        private void Form_Allowable_Race_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode == Keys.Escape) Close(); }
     }
 }

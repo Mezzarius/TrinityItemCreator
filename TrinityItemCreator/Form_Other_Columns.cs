@@ -197,6 +197,11 @@ namespace TrinityItemCreator
                 MyData.Field_ItemLimitCategory = userVal;
         }
 
+        private void MyTextBox23_TextChanged(object sender, EventArgs e)
+        {
+            MyData.Field_ScriptName = MyTextBox23.Text;
+        }
+
         private void Window_Other_Options_Load(object sender, EventArgs e)
         {
             MyTextBox1.Text = MyData.Field_maxMoneyLoot.ToString();
@@ -221,6 +226,7 @@ namespace TrinityItemCreator
             MyTextBox20.Text = MyData.Field_RequiredCityRank.ToString();
             MyTextBox21.Text = MyData.Field_RequiredReputationFaction.ToString();
             MyTextBox22.Text = MyData.Field_RequiredReputationRank.ToString();
+            MyTextBox23.Text = MyData.Field_ScriptName;
             MyTextBox25.Text = MyData.Field_minMoneyLoot.ToString();
         }
     }

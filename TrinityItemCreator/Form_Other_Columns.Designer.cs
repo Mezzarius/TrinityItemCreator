@@ -46,6 +46,24 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.MyTextBox23 = new MyTextBox();
+            this.MyTextBox22 = new MyTextBox();
+            this.MyTextBox21 = new MyTextBox();
+            this.MyTextBox20 = new MyTextBox();
+            this.MyTextBox19 = new MyTextBox();
+            this.MyTextBox18 = new MyTextBox();
+            this.MyTextBox17 = new MyTextBox();
+            this.MyTextBox16 = new MyTextBox();
             this.MyTextBox14 = new MyTextBox();
             this.MyTextBox15 = new MyTextBox();
             this.MyTextBox10 = new MyTextBox();
@@ -62,22 +80,6 @@
             this.MyTextBox2 = new MyTextBox();
             this.MyTextBox1 = new MyTextBox();
             this.MyTextBox25 = new MyTextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.MyTextBox16 = new MyTextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.MyTextBox17 = new MyTextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.MyTextBox18 = new MyTextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.MyTextBox19 = new MyTextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.MyTextBox20 = new MyTextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.MyTextBox21 = new MyTextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.MyTextBox22 = new MyTextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -298,6 +300,269 @@
             this.label13.Size = new System.Drawing.Size(35, 17);
             this.label13.TabIndex = 145;
             this.label13.Text = "Map";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Silver;
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 432);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(544, 42);
+            this.panel6.TabIndex = 152;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(208, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 27);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "FINISH (ESC)";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Enabled = false;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DimGray;
+            this.label14.Location = new System.Drawing.Point(292, 185);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 17);
+            this.label14.TabIndex = 153;
+            this.label14.Text = "Required Skill";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Enabled = false;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
+            this.label16.Location = new System.Drawing.Point(428, 185);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(92, 17);
+            this.label16.TabIndex = 155;
+            this.label16.Text = "Req Skill Rank";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Enabled = false;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DimGray;
+            this.label17.Location = new System.Drawing.Point(21, 241);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(94, 17);
+            this.label17.TabIndex = 157;
+            this.label17.Text = "Required Spell";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Enabled = false;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DimGray;
+            this.label18.Location = new System.Drawing.Point(15, 185);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(108, 17);
+            this.label18.TabIndex = 159;
+            this.label18.Text = "Req Honor Rank";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Enabled = false;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DimGray;
+            this.label19.Location = new System.Drawing.Point(158, 185);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 17);
+            this.label19.TabIndex = 161;
+            this.label19.Text = "Req City Rank";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Enabled = false;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DimGray;
+            this.label20.Location = new System.Drawing.Point(16, 131);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(106, 17);
+            this.label20.TabIndex = 163;
+            this.label20.Text = "Req Rep Faction";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Enabled = false;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DimGray;
+            this.label21.Location = new System.Drawing.Point(157, 131);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(92, 17);
+            this.label21.TabIndex = 165;
+            this.label21.Text = "Req Rep Rank";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Enabled = false;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DimGray;
+            this.label22.Location = new System.Drawing.Point(157, 369);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(82, 17);
+            this.label22.TabIndex = 167;
+            this.label22.Text = "Script Name";
+            // 
+            // MyTextBox23
+            // 
+            this.MyTextBox23.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox23.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox23.Location = new System.Drawing.Point(154, 389);
+            this.MyTextBox23.Name = "MyTextBox23";
+            this.MyTextBox23.Size = new System.Drawing.Size(370, 18);
+            this.MyTextBox23.TabIndex = 23;
+            this.MyTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox23.TextChanged += new System.EventHandler(this.MyTextBox23_TextChanged);
+            // 
+            // MyTextBox22
+            // 
+            this.MyTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox22.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox22.Location = new System.Drawing.Point(154, 151);
+            this.MyTextBox22.Name = "MyTextBox22";
+            this.MyTextBox22.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox22.TabIndex = 7;
+            this.MyTextBox22.Text = "0";
+            this.MyTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox22.TextChanged += new System.EventHandler(this.MyTextBox22_TextChanged);
+            this.MyTextBox22.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox22.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox21
+            // 
+            this.MyTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox21.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox21.Location = new System.Drawing.Point(19, 151);
+            this.MyTextBox21.Name = "MyTextBox21";
+            this.MyTextBox21.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox21.TabIndex = 6;
+            this.MyTextBox21.Text = "0";
+            this.MyTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox21.TextChanged += new System.EventHandler(this.MyTextBox21_TextChanged);
+            this.MyTextBox21.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox21.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox20
+            // 
+            this.MyTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox20.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox20.Location = new System.Drawing.Point(154, 205);
+            this.MyTextBox20.Name = "MyTextBox20";
+            this.MyTextBox20.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox20.TabIndex = 11;
+            this.MyTextBox20.Text = "0";
+            this.MyTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox20.TextChanged += new System.EventHandler(this.MyTextBox20_TextChanged);
+            this.MyTextBox20.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox20.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox19
+            // 
+            this.MyTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox19.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox19.Location = new System.Drawing.Point(19, 205);
+            this.MyTextBox19.Name = "MyTextBox19";
+            this.MyTextBox19.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox19.TabIndex = 10;
+            this.MyTextBox19.Text = "0";
+            this.MyTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox19.TextChanged += new System.EventHandler(this.MyTextBox19_TextChanged);
+            this.MyTextBox19.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox19.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox18
+            // 
+            this.MyTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox18.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox18.Location = new System.Drawing.Point(19, 261);
+            this.MyTextBox18.Name = "MyTextBox18";
+            this.MyTextBox18.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox18.TabIndex = 14;
+            this.MyTextBox18.Text = "0";
+            this.MyTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox18.TextChanged += new System.EventHandler(this.MyTextBox18_TextChanged);
+            this.MyTextBox18.Enter += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            this.MyTextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox18.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox17
+            // 
+            this.MyTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox17.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox17.Location = new System.Drawing.Point(424, 205);
+            this.MyTextBox17.Name = "MyTextBox17";
+            this.MyTextBox17.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox17.TabIndex = 13;
+            this.MyTextBox17.Text = "0";
+            this.MyTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox17.TextChanged += new System.EventHandler(this.MyTextBox17_TextChanged);
+            this.MyTextBox17.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox17.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
+            // 
+            // MyTextBox16
+            // 
+            this.MyTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
+            this.MyTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MyTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyTextBox16.ForeColor = System.Drawing.Color.DimGray;
+            this.MyTextBox16.Location = new System.Drawing.Point(285, 205);
+            this.MyTextBox16.Name = "MyTextBox16";
+            this.MyTextBox16.Size = new System.Drawing.Size(100, 18);
+            this.MyTextBox16.TabIndex = 12;
+            this.MyTextBox16.Text = "0";
+            this.MyTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MyTextBox16.TextChanged += new System.EventHandler(this.MyTextBox16_TextChanged);
+            this.MyTextBox16.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
+            this.MyTextBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
+            this.MyTextBox16.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
             // MyTextBox14
             // 
@@ -571,250 +836,15 @@
             this.MyTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
             this.MyTextBox25.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Silver;
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 432);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(544, 42);
-            this.panel6.TabIndex = 152;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(208, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "FINISH (ESC)";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // MyTextBox16
-            // 
-            this.MyTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox16.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox16.Location = new System.Drawing.Point(285, 205);
-            this.MyTextBox16.Name = "MyTextBox16";
-            this.MyTextBox16.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox16.TabIndex = 12;
-            this.MyTextBox16.Text = "0";
-            this.MyTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox16.TextChanged += new System.EventHandler(this.MyTextBox16_TextChanged);
-            this.MyTextBox16.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox16.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Enabled = false;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(292, 185);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 17);
-            this.label14.TabIndex = 153;
-            this.label14.Text = "Required Skill";
-            // 
-            // MyTextBox17
-            // 
-            this.MyTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox17.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox17.Location = new System.Drawing.Point(424, 205);
-            this.MyTextBox17.Name = "MyTextBox17";
-            this.MyTextBox17.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox17.TabIndex = 13;
-            this.MyTextBox17.Text = "0";
-            this.MyTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox17.TextChanged += new System.EventHandler(this.MyTextBox17_TextChanged);
-            this.MyTextBox17.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox17.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Enabled = false;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(428, 185);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 17);
-            this.label16.TabIndex = 155;
-            this.label16.Text = "Req Skill Rank";
-            // 
-            // MyTextBox18
-            // 
-            this.MyTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox18.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox18.Location = new System.Drawing.Point(19, 261);
-            this.MyTextBox18.Name = "MyTextBox18";
-            this.MyTextBox18.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox18.TabIndex = 14;
-            this.MyTextBox18.Text = "0";
-            this.MyTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox18.TextChanged += new System.EventHandler(this.MyTextBox18_TextChanged);
-            this.MyTextBox18.Enter += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            this.MyTextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox18.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Enabled = false;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(21, 241);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 17);
-            this.label17.TabIndex = 157;
-            this.label17.Text = "Required Spell";
-            // 
-            // MyTextBox19
-            // 
-            this.MyTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox19.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox19.Location = new System.Drawing.Point(19, 205);
-            this.MyTextBox19.Name = "MyTextBox19";
-            this.MyTextBox19.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox19.TabIndex = 10;
-            this.MyTextBox19.Text = "0";
-            this.MyTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox19.TextChanged += new System.EventHandler(this.MyTextBox19_TextChanged);
-            this.MyTextBox19.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox19.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Enabled = false;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(15, 185);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(108, 17);
-            this.label18.TabIndex = 159;
-            this.label18.Text = "Req Honor Rank";
-            // 
-            // MyTextBox20
-            // 
-            this.MyTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox20.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox20.Location = new System.Drawing.Point(154, 205);
-            this.MyTextBox20.Name = "MyTextBox20";
-            this.MyTextBox20.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox20.TabIndex = 11;
-            this.MyTextBox20.Text = "0";
-            this.MyTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox20.TextChanged += new System.EventHandler(this.MyTextBox20_TextChanged);
-            this.MyTextBox20.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox20.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Enabled = false;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(158, 185);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 17);
-            this.label19.TabIndex = 161;
-            this.label19.Text = "Req City Rank";
-            // 
-            // MyTextBox21
-            // 
-            this.MyTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox21.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox21.Location = new System.Drawing.Point(19, 151);
-            this.MyTextBox21.Name = "MyTextBox21";
-            this.MyTextBox21.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox21.TabIndex = 6;
-            this.MyTextBox21.Text = "0";
-            this.MyTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox21.TextChanged += new System.EventHandler(this.MyTextBox21_TextChanged);
-            this.MyTextBox21.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox21.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Enabled = false;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(16, 131);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(106, 17);
-            this.label20.TabIndex = 163;
-            this.label20.Text = "Req Rep Faction";
-            // 
-            // MyTextBox22
-            // 
-            this.MyTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
-            this.MyTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MyTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyTextBox22.ForeColor = System.Drawing.Color.DimGray;
-            this.MyTextBox22.Location = new System.Drawing.Point(154, 151);
-            this.MyTextBox22.Name = "MyTextBox22";
-            this.MyTextBox22.Size = new System.Drawing.Size(100, 18);
-            this.MyTextBox22.TabIndex = 7;
-            this.MyTextBox22.Text = "0";
-            this.MyTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MyTextBox22.TextChanged += new System.EventHandler(this.MyTextBox22_TextChanged);
-            this.MyTextBox22.Enter += new System.EventHandler(this.Watermark_MyTextBox_Enter);
-            this.MyTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_MyTextBox_KeyPress);
-            this.MyTextBox22.Leave += new System.EventHandler(this.Watermark_MyTextBox_Leave);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Enabled = false;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(157, 131);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(92, 17);
-            this.label21.TabIndex = 165;
-            this.label21.Text = "Req Rep Rank";
-            // 
-            // Window_Other_Options
+            // Form_Other_Columns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(544, 474);
             this.ControlBox = false;
+            this.Controls.Add(this.MyTextBox23);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.MyTextBox22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.MyTextBox21);
@@ -867,7 +897,7 @@
             this.ForeColor = System.Drawing.Color.Gainsboro;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "Window_Other_Options";
+            this.Name = "Form_Other_Columns";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -935,5 +965,7 @@
         private System.Windows.Forms.Label label20;
         public MyTextBox MyTextBox22;
         private System.Windows.Forms.Label label21;
+        public MyTextBox MyTextBox23;
+        private System.Windows.Forms.Label label22;
     }
 }

@@ -138,6 +138,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_description = "Only fits in a meta gem slot.";
                         MyData.Field_Material = -1;
                         MyData.Field_GemProperties = 942;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -148,6 +149,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_subclass = 3;
                         MyData.Field_name = "My Projectile Bullets";
                         MyData.Field_description = "More Pew Pew,Less QQ";
+                        MyData.Field_InventoryType = 24;
                         MyData.Field_BuyCount = 200;
                         MyData.Field_stackable = 200;
                         MyData.Field_Material = 2;
@@ -165,6 +167,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_description = "Some Extra Slots";
                         MyData.Field_ContainerSlots = 36;
                         MyData.Field_Material = 8;
+                        MyData.Field_InventoryType = 18;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -177,6 +180,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_description = "Some Extra Space for Arrows";
                         MyData.Field_ContainerSlots = 36;
                         MyData.Field_Material = 8;
+                        MyData.Field_InventoryType = 27;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -191,6 +195,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellid_1 = 65244;
                         MyData.Field_spellcooldown_1 = 0;
                         MyData.Field_BagFamily = 16;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -209,6 +214,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spelltrigger_2 = 6;
                         MyData.Field_spellcooldown_2 = -1;
                         MyData.Field_spellcategorycooldown_2 = -1;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -220,6 +226,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_name = "My Custom Quest Item";
                         MyData.Field_Material = -1;
                         MyData.Field_startquest = 337;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -237,6 +244,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellcooldown_1 = -1;
                         MyData.Field_spellcategorycooldown_1 = -1;
                         MyData.Field_BagFamily = 256;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
@@ -248,22 +256,24 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_name = "My Custom Reagent";
                         MyData.Field_Material = 2;
                         MyData.Field_stackable = 10;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
-                case 11: // trade good
+                case 11: // trade goods
                     {
                         MyData.Field_class = 7;
                         MyData.Field_subclass = 14;
                         MyData.Field_name = "My Custom Trade Good";
                         MyData.Field_Material = 4;
                         MyData.Field_stackable = 20;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
-                case 12: // consumable
+                case 12: // consumables
                     {
                         MyData.Field_class = 0;
                         MyData.Field_subclass = 5;
@@ -273,16 +283,18 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellid_1 = 26389;
                         MyData.Field_spellcategory_1 = 59;
                         MyData.Field_spellcategorycooldown_1 = 1000;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
-                case 13: // misc
+                case 13: // miscellaneous
                     {
                         MyData.Field_class = 4;
                         MyData.Field_subclass = 0;
                         MyData.Field_name = "Misc Custom Miscellaneous Item";
                         MyData.Field_Material = 0;
+                        MyData.Field_InventoryType = 0;
 
                         preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;

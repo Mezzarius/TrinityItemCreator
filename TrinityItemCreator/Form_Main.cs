@@ -75,7 +75,7 @@ namespace TrinityItemCreator
         {
             if (mouseDown)
             {
-                Location = new Point( (Location.X - lastLocation.X) + e.X, (Location.Y - lastLocation.Y) + e.Y );
+                Location = new Point((Location.X - lastLocation.X) + e.X, (Location.Y - lastLocation.Y) + e.Y);
                 Update();
             }
         }
@@ -651,190 +651,164 @@ namespace TrinityItemCreator
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox5.SelectedItem.ToString();
             MyData.Field_subclass = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox6.SelectedItem.ToString();
             MyData.Field_InventoryType = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox20.SelectedItem.ToString();
             MyData.Field_Material = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox21_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox21.SelectedItem.ToString();
             MyData.Field_FoodType = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox22_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox22.SelectedItem.ToString();
             MyData.Field_TotemCategory = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox28_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox28.SelectedItem.ToString();
             MyData.Field_socketColor_1 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox29_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox29.SelectedItem.ToString();
             MyData.Field_socketColor_2 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox30_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox30.SelectedItem.ToString();
             MyData.Field_socketColor_3 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox31_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox31.SelectedItem.ToString();
             MyData.Field_socketBonus = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox23_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox23.SelectedItem.ToString();
             MyData.Field_spelltrigger_1 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox24_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox24.SelectedItem.ToString();
             MyData.Field_spelltrigger_2 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox25.SelectedItem.ToString();
             MyData.Field_spelltrigger_3 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox26_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox26.SelectedItem.ToString();
             MyData.Field_spelltrigger_4 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox27_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox27.SelectedItem.ToString();
             MyData.Field_spelltrigger_5 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox7.SelectedItem.ToString();
             MyData.Field_stat_type1 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox8.SelectedItem.ToString();
             MyData.Field_stat_type2 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox9.SelectedItem.ToString();
             MyData.Field_stat_type3 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox10_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox10.SelectedItem.ToString();
             MyData.Field_stat_type4 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox11.SelectedItem.ToString();
             MyData.Field_stat_type5 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox12.SelectedItem.ToString();
             MyData.Field_stat_type6 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox13_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox13.SelectedItem.ToString();
             MyData.Field_stat_type7 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox14_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox14.SelectedItem.ToString();
             MyData.Field_stat_type8 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox15.SelectedItem.ToString();
             MyData.Field_stat_type9 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox16.SelectedItem.ToString();
             MyData.Field_stat_type10 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox17.SelectedItem.ToString();
             MyData.Field_dmg_type1 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox18.SelectedItem.ToString();
             MyData.Field_dmg_type2 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
         private void comboBox19_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox objComboBox = (ComboBox)sender;
-            string s = objComboBox.SelectedItem.ToString();
+            string s = comboBox19.SelectedItem.ToString();
             MyData.Field_ammo_type = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 

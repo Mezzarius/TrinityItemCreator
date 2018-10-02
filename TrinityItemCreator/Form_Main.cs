@@ -883,7 +883,7 @@ namespace TrinityItemCreator
                         Panel MyDragOverPanel = new Panel();
 
                         MyDragOverPanel.BackColor = SystemColors.ControlLight;
-                        MyDragOverPanel.BackgroundImage = Properties.Resources.icon_GAMFTdatamovement;
+                        MyDragOverPanel.BackgroundImage = Properties.Resources.Copy_File_512;
                         MyDragOverPanel.BackgroundImageLayout = ImageLayout.Center;
                         MyDragOverPanel.Location = new Point(0, 0);
                         MyDragOverPanel.Dock = DockStyle.Fill;

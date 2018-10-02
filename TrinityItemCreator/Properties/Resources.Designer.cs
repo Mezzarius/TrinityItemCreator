@@ -73,9 +73,9 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Copy_File_512 {
+        internal static System.Drawing.Bitmap bag_32_32 {
             get {
-                object obj = ResourceManager.GetObject("Copy_File_512", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_GAMFTdatamovement {
+        internal static System.Drawing.Bitmap Copy_File_512 {
             get {
-                object obj = ResourceManager.GetObject("icon_GAMFTdatamovement", resourceCulture);
+                object obj = ResourceManager.GetObject("Copy_File_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,16 +316,6 @@ namespace TrinityItemCreator.Properties {
         internal static System.Drawing.Bitmap medium_achievement_bg_interruptx_flagcapture_attempts {
             get {
                 object obj = ResourceManager.GetObject("medium_achievement_bg_interruptx_flagcapture_attempts", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap medium_inv_misc_bag_09_green {
-            get {
-                object obj = ResourceManager.GetObject("medium_inv_misc_bag_09_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -119,7 +119,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_Quality = 4;
                         MyData.Field_class = 4;
                         MyData.Field_subclass = 1;
-                        MyData.Field_InventoryType = 2;
+                        MyData.Field_InventoryType = 5;
                         MyData.Field_Material = 7;
                         MyData.Field_stat_type1 = 1;
                         MyData.Field_stat_type2 = 7;

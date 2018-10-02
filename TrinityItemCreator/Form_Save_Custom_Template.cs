@@ -64,8 +64,7 @@ namespace TrinityItemCreator
                 string path = "templates";
                 string filename = myTextBox2.Text;
 
-                if (!Directory.Exists(path))
-                    Directory.CreateDirectory(path);
+                Directory.CreateDirectory(path);
 
                 if (File.Exists($"{path}\\{myTextBox2.Text}.xml"))
                 {

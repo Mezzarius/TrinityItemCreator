@@ -12,8 +12,7 @@ namespace TrinityItemCreator.MyClass
         {
             string path = "templates";
 
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
+            Directory.CreateDirectory(path);
 
             if (File.Exists($"{path}\\{filename}.xml") && !replace)
                 return false;

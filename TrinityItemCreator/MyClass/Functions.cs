@@ -73,8 +73,7 @@ namespace TrinityItemCreator.MyClass
         public void LoadMyCustomTemplate(string xmFileName, bool dragged = false)
         {
             string path = "templates";
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
+            Directory.CreateDirectory(path);
 
             string[] lines = new string[139];
 

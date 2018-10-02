@@ -45,11 +45,9 @@ namespace TrinityItemCreator
         private void Form4_Load(object sender, EventArgs e)
         {
             string path = "templates";
+            Directory.CreateDirectory(path);
 
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-                string[] files = Directory.GetFiles(path, @"*.xml", SearchOption.TopDirectoryOnly).Select(file => Path.GetFileNameWithoutExtension(file)).ToArray();
+            string[] files = Directory.GetFiles(path, @"*.xml", SearchOption.TopDirectoryOnly).Select(file => Path.GetFileNameWithoutExtension(file)).ToArray();
             listBox1.Items.AddRange(files);
 
             if (files == null || files.Length == 0)

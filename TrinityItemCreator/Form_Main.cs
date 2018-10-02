@@ -205,7 +205,12 @@ namespace TrinityItemCreator
 
         private void ABOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Application developer: [artister.hd@gmail.com] All Rights Reserved!");
+            MessageBox.Show(
+                "Application developer: [artister.hd@gmail.com]\n"
+                +"\n"
+                +"CONTRIBUTORS:\n \n"
+                +" Sdyees, ..."
+                );
         }
 
         private void MyTextBox1_TextChanged(object sender, EventArgs e)

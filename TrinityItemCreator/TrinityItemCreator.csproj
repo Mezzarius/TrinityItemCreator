@@ -80,6 +80,7 @@
     <Compile Include="MyClass\MyData.cs" />
     <Compile Include="MyClass\MyExtensions.cs" />
     <Compile Include="MyClass\QueryHandler.cs" />
+    <Compile Include="MyClass\TooltipData.cs" />
     <Compile Include="MyControls\MyOpacuePanel.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace TrinityItemCreator.MyClass
@@ -317,7 +316,7 @@ namespace TrinityItemCreator.MyClass
                 "[0] Quiver (OBSOLETE)",
                 "[1] Quiver (OBSOLETE)",
                 "[2] Quiver",
-                "[3] Money Pouch"
+                "[3] Ammo Pouch"
             },
             
             // 12 : Quest

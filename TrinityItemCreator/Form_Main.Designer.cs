@@ -34,6 +34,23 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetAllFieldsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -75,7 +92,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.cb_item_material = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
@@ -124,6 +141,16 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -163,9 +190,9 @@
             this.myTextBox32 = new MyTextBox();
             this.myTextBox31 = new MyTextBox();
             this.myTextBox30 = new MyTextBox();
-            this.myTextBox29 = new MyTextBox();
+            this.tb_stackable = new MyTextBox();
             this.myTextBox28 = new MyTextBox();
-            this.myTextBox27 = new MyTextBox();
+            this.tb_buy_count = new MyTextBox();
             this.myTextBox26 = new MyTextBox();
             this.myTextBox25 = new MyTextBox();
             this.myTextBox24 = new MyTextBox();
@@ -189,35 +216,9 @@
             this.myTextBox6 = new MyTextBox();
             this.myTextBox5 = new MyTextBox();
             this.TextBoxDisplayID = new MyTextBox();
-            this.myTextBox3 = new MyTextBox();
-            this.myTextBox2 = new MyTextBox();
+            this.tb_item_description = new MyTextBox();
+            this.tb_item_name = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -304,6 +305,162 @@
             this.menuStrip1.Size = new System.Drawing.Size(1105, 31);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripSeparator2,
+            this.toolStripComboBox1});
+            this.settingsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_inv_misc_wrench_01;
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 22);
+            this.toolStripMenuItem1.Text = "Select SQL Prefix";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.AutoSize = false;
+            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
+            this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.toolStripComboBox1.Items.AddRange(new object[] {
+            "SQL Prefix [INSERT]",
+            "SQL Prefix [REPLACE]"});
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(150, 23);
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
+            // 
+            // templateToolStripMenuItem
+            // 
+            this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadDefaultTemplateToolStripMenuItem,
+            this.loadCustomTemplateToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.saveCurrentTemplateToolStripMenuItem});
+            this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.templateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.templateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_inv_misc_bandage_10;
+            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
+            this.templateToolStripMenuItem.Text = "Template";
+            // 
+            // loadDefaultTemplateToolStripMenuItem
+            // 
+            this.loadDefaultTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
+            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default";
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadDefaultTemplateToolStripMenuItem_Click);
+            // 
+            // loadCustomTemplateToolStripMenuItem
+            // 
+            this.loadCustomTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.loadCustomTemplateToolStripMenuItem.Name = "loadCustomTemplateToolStripMenuItem";
+            this.loadCustomTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
+            this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom";
+            this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
+            // 
+            // saveCurrentTemplateToolStripMenuItem
+            // 
+            this.saveCurrentTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.saveCurrentTemplateToolStripMenuItem.Name = "saveCurrentTemplateToolStripMenuItem";
+            this.saveCurrentTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
+            this.saveCurrentTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.saveCurrentTemplateToolStripMenuItem.Text = "Save Custom";
+            this.saveCurrentTemplateToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentTemplateToolStripMenuItem_Click);
+            // 
+            // exportAsToolStripMenuItem
+            // 
+            this.exportAsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToClipboardCTRLEToolStripMenuItem,
+            this.sQLToolStripMenuItem});
+            this.exportAsToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.exportAsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.ability_repair;
+            this.exportAsToolStripMenuItem.Name = "exportAsToolStripMenuItem";
+            this.exportAsToolStripMenuItem.Size = new System.Drawing.Size(82, 27);
+            this.exportAsToolStripMenuItem.Text = "Export as";
+            // 
+            // copyToClipboardCTRLEToolStripMenuItem
+            // 
+            this.copyToClipboardCTRLEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.copyToClipboardCTRLEToolStripMenuItem.Name = "copyToClipboardCTRLEToolStripMenuItem";
+            this.copyToClipboardCTRLEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.copyToClipboardCTRLEToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.copyToClipboardCTRLEToolStripMenuItem.Text = "Copy to Clipboard";
+            this.copyToClipboardCTRLEToolStripMenuItem.Click += new System.EventHandler(this.CopyToClipboardCTRLEToolStripMenuItem_Click);
+            // 
+            // sQLToolStripMenuItem
+            // 
+            this.sQLToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
+            this.sQLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.sQLToolStripMenuItem.Text = "SQL";
+            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
+            // 
+            // functionsToolStripMenuItem
+            // 
+            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.displayIDFinderToolStripMenuItem,
+            this.randomStatsToolStripMenuItem,
+            this.resetAllFieldsToolStripMenuItem});
+            this.functionsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_spell_arcane_studentofmagic;
+            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
+            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
+            this.functionsToolStripMenuItem.Text = "Functions";
+            // 
+            // displayIDFinderToolStripMenuItem
+            // 
+            this.displayIDFinderToolStripMenuItem.Name = "displayIDFinderToolStripMenuItem";
+            this.displayIDFinderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.displayIDFinderToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.displayIDFinderToolStripMenuItem.Text = "DisplayID Finder";
+            this.displayIDFinderToolStripMenuItem.Click += new System.EventHandler(this.DisplayIDFinderToolStripMenuItem_Click);
+            // 
+            // randomStatsToolStripMenuItem
+            // 
+            this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
+            this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
+            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.randomStatsToolStripMenuItem.Text = "Stats Generator";
+            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.RandomStatsToolStripMenuItem_Click);
+            // 
+            // resetAllFieldsToolStripMenuItem
+            // 
+            this.resetAllFieldsToolStripMenuItem.Name = "resetAllFieldsToolStripMenuItem";
+            this.resetAllFieldsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
+            this.resetAllFieldsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.resetAllFieldsToolStripMenuItem.Text = "Reset All Fields";
+            this.resetAllFieldsToolStripMenuItem.Click += new System.EventHandler(this.ResetAllFieldsToolStripMenuItem_Click);
+            // 
+            // aBOUTToolStripMenuItem
+            // 
+            this.aBOUTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.aBOUTToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_ability_vanish;
+            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
+            this.aBOUTToolStripMenuItem.Text = "About";
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.ABOUTToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -1343,15 +1500,15 @@
             this.label35.TabIndex = 131;
             this.label35.Text = "Material";
             // 
-            // comboBox20
+            // cb_item_material
             // 
-            this.comboBox20.BackColor = System.Drawing.Color.White;
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.Enabled = false;
-            this.comboBox20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox20.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.cb_item_material.BackColor = System.Drawing.Color.White;
+            this.cb_item_material.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_item_material.Enabled = false;
+            this.cb_item_material.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cb_item_material.ForeColor = System.Drawing.Color.DimGray;
+            this.cb_item_material.FormattingEnabled = true;
+            this.cb_item_material.Items.AddRange(new object[] {
             "[-1] Consumables",
             "[0]  Not Defined",
             "[1]  Metal",
@@ -1362,11 +1519,11 @@
             "[6]  Plate",
             "[7]  Cloth",
             "[8]  Leather"});
-            this.comboBox20.Location = new System.Drawing.Point(115, 406);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(100, 21);
-            this.comboBox20.TabIndex = 18;
-            this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.comboBox20_SelectedIndexChanged);
+            this.cb_item_material.Location = new System.Drawing.Point(115, 406);
+            this.cb_item_material.Name = "cb_item_material";
+            this.cb_item_material.Size = new System.Drawing.Size(100, 21);
+            this.cb_item_material.TabIndex = 18;
+            this.cb_item_material.SelectedIndexChanged += new System.EventHandler(this.cb_item_material_SelectedIndexChanged);
             // 
             // panel7
             // 
@@ -2117,6 +2274,172 @@
             this.comboBox3.TabIndex = 6;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
+            // button12
+            // 
+            this.button12.BackgroundImage = global::TrinityItemCreator.Properties.Resources.Copy_File_512;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.Enabled = false;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(588, 106);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(24, 24);
+            this.button12.TabIndex = 205;
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button11.Enabled = false;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Image = global::TrinityItemCreator.Properties.Resources.bag_32_32;
+            this.button11.Location = new System.Drawing.Point(736, 698);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(39, 39);
+            this.button11.TabIndex = 204;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Enabled = false;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.DimGray;
+            this.button10.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_enggizmos_26;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button10.Location = new System.Drawing.Point(955, 698);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 41);
+            this.button10.TabIndex = 106;
+            this.button10.Text = "Other Columns\r\n(CTRL+O)";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Enabled = false;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.DimGray;
+            this.button9.Image = global::TrinityItemCreator.Properties.Resources.medium_spell_fire_frostresistancetotem;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button9.Location = new System.Drawing.Point(831, 698);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(118, 41);
+            this.button9.TabIndex = 105;
+            this.button9.Text = "Resistances\r\n(CTRL+R)";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DimGray;
+            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button6.Location = new System.Drawing.Point(938, 127);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 41);
+            this.button6.TabIndex = 68;
+            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Enabled = false;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.DimGray;
+            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button5.Location = new System.Drawing.Point(785, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 67;
+            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Enabled = false;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
+            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(632, 127);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 41);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.Location = new System.Drawing.Point(938, 80);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 41);
+            this.button3.TabIndex = 65;
+            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button2.Location = new System.Drawing.Point(632, 80);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 41);
+            this.button2.TabIndex = 63;
+            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(785, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 41);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // myTextBox68
             // 
             this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
@@ -2819,20 +3142,20 @@
             this.myTextBox30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox30.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // myTextBox29
+            // tb_stackable
             // 
-            this.myTextBox29.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox29.Enabled = false;
-            this.myTextBox29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox29.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox29.Location = new System.Drawing.Point(315, 358);
-            this.myTextBox29.Name = "myTextBox29";
-            this.myTextBox29.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox29.TabIndex = 16;
-            this.myTextBox29.Text = "1";
-            this.myTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox29.TextChanged += new System.EventHandler(this.myTextBox29_TextChanged);
+            this.tb_stackable.BorderColor = System.Drawing.Color.Gainsboro;
+            this.tb_stackable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_stackable.Enabled = false;
+            this.tb_stackable.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_stackable.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_stackable.Location = new System.Drawing.Point(315, 358);
+            this.tb_stackable.Name = "tb_stackable";
+            this.tb_stackable.Size = new System.Drawing.Size(100, 18);
+            this.tb_stackable.TabIndex = 16;
+            this.tb_stackable.Text = "1";
+            this.tb_stackable.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_stackable.TextChanged += new System.EventHandler(this.tb_stackable_TextChanged);
             // 
             // myTextBox28
             // 
@@ -2849,23 +3172,23 @@
             this.myTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.myTextBox28.TextChanged += new System.EventHandler(this.myTextBox28_TextChanged);
             // 
-            // myTextBox27
+            // tb_buy_count
             // 
-            this.myTextBox27.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox27.Enabled = false;
-            this.myTextBox27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox27.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox27.Location = new System.Drawing.Point(511, 315);
-            this.myTextBox27.Name = "myTextBox27";
-            this.myTextBox27.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox27.TabIndex = 14;
-            this.myTextBox27.Text = "0";
-            this.myTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox27.TextChanged += new System.EventHandler(this.myTextBox27_TextChanged);
-            this.myTextBox27.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
-            this.myTextBox27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
-            this.myTextBox27.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
+            this.tb_buy_count.BorderColor = System.Drawing.Color.Gainsboro;
+            this.tb_buy_count.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_buy_count.Enabled = false;
+            this.tb_buy_count.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_buy_count.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_buy_count.Location = new System.Drawing.Point(511, 315);
+            this.tb_buy_count.Name = "tb_buy_count";
+            this.tb_buy_count.Size = new System.Drawing.Size(100, 18);
+            this.tb_buy_count.TabIndex = 14;
+            this.tb_buy_count.Text = "0";
+            this.tb_buy_count.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_buy_count.TextChanged += new System.EventHandler(this.tb_buy_count_TextChanged);
+            this.tb_buy_count.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
+            this.tb_buy_count.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
+            this.tb_buy_count.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
             // myTextBox26
             // 
@@ -3281,34 +3604,34 @@
             this.TextBoxDisplayID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.TextBoxDisplayID.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // myTextBox3
+            // tb_item_description
             // 
-            this.myTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox3.Enabled = false;
-            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.myTextBox3.Location = new System.Drawing.Point(115, 109);
-            this.myTextBox3.Name = "myTextBox3";
-            this.myTextBox3.Size = new System.Drawing.Size(497, 18);
-            this.myTextBox3.TabIndex = 2;
-            this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox3.TextChanged += new System.EventHandler(this.myTextBox3_TextChanged);
+            this.tb_item_description.BorderColor = System.Drawing.Color.Gainsboro;
+            this.tb_item_description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_item_description.Enabled = false;
+            this.tb_item_description.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_item_description.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_item_description.Location = new System.Drawing.Point(115, 109);
+            this.tb_item_description.Name = "tb_item_description";
+            this.tb_item_description.Size = new System.Drawing.Size(497, 18);
+            this.tb_item_description.TabIndex = 2;
+            this.tb_item_description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_item_description.TextChanged += new System.EventHandler(this.tb_item_description_TextChanged);
             // 
-            // myTextBox2
+            // tb_item_name
             // 
-            this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.myTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox2.Enabled = false;
-            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox2.Location = new System.Drawing.Point(295, 80);
-            this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.Size = new System.Drawing.Size(317, 18);
-            this.myTextBox2.TabIndex = 1;
-            this.myTextBox2.Tag = "";
-            this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox2.TextChanged += new System.EventHandler(this.myTextBox2_TextChanged);
+            this.tb_item_name.BorderColor = System.Drawing.Color.Gainsboro;
+            this.tb_item_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_item_name.Enabled = false;
+            this.tb_item_name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_item_name.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.tb_item_name.Location = new System.Drawing.Point(295, 80);
+            this.tb_item_name.Name = "tb_item_name";
+            this.tb_item_name.Size = new System.Drawing.Size(317, 18);
+            this.tb_item_name.TabIndex = 1;
+            this.tb_item_name.Tag = "";
+            this.tb_item_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_item_name.TextChanged += new System.EventHandler(this.tb_item_name_TextChanged);
             // 
             // myTextBox1
             // 
@@ -3328,319 +3651,6 @@
             this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImage = global::TrinityItemCreator.Properties.Resources.Copy_File_512;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Enabled = false;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(588, 106);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(24, 24);
-            this.button12.TabIndex = 205;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Enabled = false;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = global::TrinityItemCreator.Properties.Resources.bag_32_32;
-            this.button11.Location = new System.Drawing.Point(736, 698);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(39, 39);
-            this.button11.TabIndex = 204;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Enabled = false;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.DimGray;
-            this.button10.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_enggizmos_26;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button10.Location = new System.Drawing.Point(955, 698);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 41);
-            this.button10.TabIndex = 106;
-            this.button10.Text = "Other Columns\r\n(CTRL+O)";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.Button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Enabled = false;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.DimGray;
-            this.button9.Image = global::TrinityItemCreator.Properties.Resources.medium_spell_fire_frostresistancetotem;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.Location = new System.Drawing.Point(831, 698);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(118, 41);
-            this.button9.TabIndex = 105;
-            this.button9.Text = "Resistances\r\n(CTRL+R)";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Enabled = false;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(938, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 41);
-            this.button6.TabIndex = 68;
-            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(785, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 41);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(632, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 41);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(938, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 41);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(632, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 41);
-            this.button2.TabIndex = 63;
-            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(785, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripSeparator2,
-            this.toolStripComboBox1});
-            this.settingsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_inv_misc_wrench_01;
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 22);
-            this.toolStripMenuItem1.Text = "Select SQL Prefix";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.AutoSize = false;
-            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
-            this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            "SQL Prefix [INSERT]",
-            "SQL Prefix [REPLACE]"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(150, 23);
-            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
-            // 
-            // templateToolStripMenuItem
-            // 
-            this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadDefaultTemplateToolStripMenuItem,
-            this.loadCustomTemplateToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.saveCurrentTemplateToolStripMenuItem});
-            this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.templateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.templateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_inv_misc_bandage_10;
-            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
-            this.templateToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
-            this.templateToolStripMenuItem.Text = "Template";
-            // 
-            // loadDefaultTemplateToolStripMenuItem
-            // 
-            this.loadDefaultTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
-            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
-            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default";
-            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadDefaultTemplateToolStripMenuItem_Click);
-            // 
-            // loadCustomTemplateToolStripMenuItem
-            // 
-            this.loadCustomTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.loadCustomTemplateToolStripMenuItem.Name = "loadCustomTemplateToolStripMenuItem";
-            this.loadCustomTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom";
-            this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
-            // 
-            // saveCurrentTemplateToolStripMenuItem
-            // 
-            this.saveCurrentTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.saveCurrentTemplateToolStripMenuItem.Name = "saveCurrentTemplateToolStripMenuItem";
-            this.saveCurrentTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.saveCurrentTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.saveCurrentTemplateToolStripMenuItem.Text = "Save Custom";
-            this.saveCurrentTemplateToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentTemplateToolStripMenuItem_Click);
-            // 
-            // exportAsToolStripMenuItem
-            // 
-            this.exportAsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToClipboardCTRLEToolStripMenuItem,
-            this.sQLToolStripMenuItem});
-            this.exportAsToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.exportAsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.ability_repair;
-            this.exportAsToolStripMenuItem.Name = "exportAsToolStripMenuItem";
-            this.exportAsToolStripMenuItem.Size = new System.Drawing.Size(82, 27);
-            this.exportAsToolStripMenuItem.Text = "Export as";
-            // 
-            // copyToClipboardCTRLEToolStripMenuItem
-            // 
-            this.copyToClipboardCTRLEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.copyToClipboardCTRLEToolStripMenuItem.Name = "copyToClipboardCTRLEToolStripMenuItem";
-            this.copyToClipboardCTRLEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.copyToClipboardCTRLEToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.copyToClipboardCTRLEToolStripMenuItem.Text = "Copy to Clipboard";
-            this.copyToClipboardCTRLEToolStripMenuItem.Click += new System.EventHandler(this.CopyToClipboardCTRLEToolStripMenuItem_Click);
-            // 
-            // sQLToolStripMenuItem
-            // 
-            this.sQLToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
-            this.sQLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.sQLToolStripMenuItem.Text = "SQL";
-            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
-            // 
-            // functionsToolStripMenuItem
-            // 
-            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.displayIDFinderToolStripMenuItem,
-            this.randomStatsToolStripMenuItem});
-            this.functionsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_spell_arcane_studentofmagic;
-            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
-            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
-            this.functionsToolStripMenuItem.Text = "Functions";
-            // 
-            // displayIDFinderToolStripMenuItem
-            // 
-            this.displayIDFinderToolStripMenuItem.Name = "displayIDFinderToolStripMenuItem";
-            this.displayIDFinderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.displayIDFinderToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.displayIDFinderToolStripMenuItem.Text = "DisplayID Finder";
-            this.displayIDFinderToolStripMenuItem.Click += new System.EventHandler(this.DisplayIDFinderToolStripMenuItem_Click);
-            // 
-            // randomStatsToolStripMenuItem
-            // 
-            this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
-            this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.randomStatsToolStripMenuItem.Text = "Stats Generator";
-            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.RandomStatsToolStripMenuItem_Click);
-            // 
-            // aBOUTToolStripMenuItem
-            // 
-            this.aBOUTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.aBOUTToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.small_ability_vanish;
-            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
-            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
-            this.aBOUTToolStripMenuItem.Text = "About";
-            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.ABOUTToolStripMenuItem_Click);
             // 
             // Form_Main
             // 
@@ -3721,16 +3731,16 @@
             this.Controls.Add(this.comboBox21);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.comboBox20);
+            this.Controls.Add(this.cb_item_material);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.myTextBox30);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.myTextBox29);
+            this.Controls.Add(this.tb_stackable);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.myTextBox28);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.myTextBox27);
+            this.Controls.Add(this.tb_buy_count);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.myTextBox26);
             this.Controls.Add(this.myTextBox25);
@@ -3809,9 +3819,9 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.TextBoxDisplayID);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.myTextBox3);
+            this.Controls.Add(this.tb_item_description);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.myTextBox2);
+            this.Controls.Add(this.tb_item_name);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.myTextBox1);
             this.Controls.Add(this.label1);
@@ -3853,9 +3863,9 @@
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         public MyTextBox myTextBox1;
-        public MyTextBox myTextBox2;
+        public MyTextBox tb_item_name;
         private System.Windows.Forms.Label label2;
-        public MyTextBox myTextBox3;
+        public MyTextBox tb_item_description;
         private System.Windows.Forms.Label label3;
         public MyTextBox TextBoxDisplayID;
         private System.Windows.Forms.Label label4;
@@ -3936,18 +3946,18 @@
         public MyTextBox myTextBox25;
         private System.Windows.Forms.Label label29;
         public MyTextBox myTextBox26;
-        public MyTextBox myTextBox27;
+        public MyTextBox tb_buy_count;
         private System.Windows.Forms.Label label31;
         public MyTextBox myTextBox28;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label32;
-        public MyTextBox myTextBox29;
+        public MyTextBox tb_stackable;
         public MyTextBox myTextBox30;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        public System.Windows.Forms.ComboBox comboBox20;
+        public System.Windows.Forms.ComboBox cb_item_material;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label36;
         public System.Windows.Forms.ComboBox comboBox21;
@@ -4036,6 +4046,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ToolStripMenuItem resetAllFieldsToolStripMenuItem;
     }
 }
 

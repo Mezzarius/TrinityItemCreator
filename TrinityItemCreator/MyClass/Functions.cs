@@ -28,6 +28,63 @@ namespace TrinityItemCreator.MyClass
             mainForm.Opacity = .99;
         }
 
+        public void DoResetAllFields()
+        {
+            // main form changes will update MyData Fields automatically from main form
+            foreach (var mtextBox in mainForm.Controls.OfType<MyTextBox>())
+            {
+                if (mtextBox.Name == "tb_stackable") mtextBox.Text = "1";
+                else if (mtextBox.Name == "tb_item_name") mtextBox.Text = "";
+                else if (mtextBox.Name == "tb_item_description") mtextBox.Text = "";
+                else if (mtextBox.Name == "tb_buy_count") mtextBox.Text = "1";
+                else mtextBox.Text = "0";
+            }
+
+            foreach (var comboBox in mainForm.Controls.OfType<ComboBox>())
+            {
+                if (comboBox.Name == "cb_item_material") comboBox.SelectedIndex = 1;
+                else comboBox.SelectedIndex = 0;
+            }
+
+            // MyData Fields not in main form
+            MyData.Field_AllowableClass = -1;
+            MyData.Field_AllowableRace = -1;
+            MyData.Field_BagFamily = 0;
+            MyData.Field_Flags = 0;
+            MyData.Field_FlagsExtra = 0;
+            MyData.Field_flagsCustom = 0;
+            MyData.Field_arcane_res = 0;
+            MyData.Field_fire_res = 0;
+            MyData.Field_frost_res = 0;
+            MyData.Field_holy_res = 0;
+            MyData.Field_nature_res = 0;
+            MyData.Field_shadow_res = 0;
+            MyData.Field_minMoneyLoot = 0;
+            MyData.Field_maxMoneyLoot = 0;
+            MyData.Field_lockid = 0;
+            MyData.Field_LanguageID = 0;
+            MyData.Field_PageMaterial = 0;
+            MyData.Field_PageText = 0;
+            MyData.Field_RequiredReputationFaction = 0;
+            MyData.Field_RequiredReputationRank = 0;
+            MyData.Field_RequiredDisenchantSkill = -1;
+            MyData.Field_DisenchantID = 0;
+            MyData.Field_requiredhonorrank = 0;
+            MyData.Field_RequiredCityRank = 0;
+            MyData.Field_RequiredSkill = 0;
+            MyData.Field_RequiredSkillRank = 0;
+            MyData.Field_requiredspell = 0;
+            MyData.Field_Map = 0;
+            MyData.Field_area = 0;
+            MyData.Field_duration = 0;
+            MyData.Field_startquest = 0;
+            MyData.Field_GemProperties = 0;
+            MyData.Field_HolidayId = 0;
+            MyData.Field_SoundOverrideSubclass = -1;
+            MyData.Field_ItemLimitCategory = 0;
+            MyData.Field_ScriptName = "";
+        }
+
         public int GenerateOddEvenNumber(Random random, int rangeMin, int rangeMax, int numberType = 0)
         {
             int randomNumber = 0;
@@ -454,8 +511,8 @@ namespace TrinityItemCreator.MyClass
 
             // TEXTBOX
             mainForm.myTextBox1.Text = MyData.Field_entry.ToString();
-            mainForm.myTextBox2.Text = MyData.Field_name;
-            mainForm.myTextBox3.Text = MyData.Field_description;
+            mainForm.tb_item_name.Text = MyData.Field_name;
+            mainForm.tb_item_description.Text = MyData.Field_description;
             mainForm.TextBoxDisplayID.Text = MyData.Field_displayid.ToString();
             mainForm.myTextBox5.Text = MyData.Field_ItemLevel.ToString();
             mainForm.myTextBox6.Text = MyData.Field_RequiredLevel.ToString();
@@ -479,9 +536,9 @@ namespace TrinityItemCreator.MyClass
             mainForm.myTextBox24.Text = MyData.Field_ScalingStatValue.ToString();
             mainForm.myTextBox25.Text = MyData.Field_BuyPrice.ToString();
             mainForm.myTextBox26.Text = MyData.Field_SellPrice.ToString();
-            mainForm.myTextBox27.Text = MyData.Field_BuyCount.ToString();
+            mainForm.tb_buy_count.Text = MyData.Field_BuyCount.ToString();
             mainForm.myTextBox28.Text = MyData.Field_itemset.ToString();
-            mainForm.myTextBox29.Text = MyData.Field_stackable.ToString();
+            mainForm.tb_stackable.Text = MyData.Field_stackable.ToString();
             mainForm.myTextBox30.Text = MyData.Field_maxcount.ToString();
             mainForm.myTextBox31.Text = MyData.Field_spellid_1.ToString();
             mainForm.myTextBox32.Text = MyData.Field_spellcharges_1.ToString();
@@ -542,7 +599,7 @@ namespace TrinityItemCreator.MyClass
             mainForm.comboBox17.SelectedIndex = mainForm.comboBox17.FindString(string.Format("[{0}]", MyData.Field_dmg_type1));
             mainForm.comboBox18.SelectedIndex = mainForm.comboBox18.FindString(string.Format("[{0}]", MyData.Field_dmg_type2));
             mainForm.comboBox19.SelectedIndex = mainForm.comboBox19.FindString(string.Format("[{0}]", MyData.Field_ammo_type));
-            mainForm.comboBox20.SelectedIndex = mainForm.comboBox20.FindString(string.Format("[{0}]", MyData.Field_Material)); // [-1] consumable at index 0
+            mainForm.cb_item_material.SelectedIndex = mainForm.cb_item_material.FindString(string.Format("[{0}]", MyData.Field_Material)); // [-1] consumable at index 0
             mainForm.comboBox21.SelectedIndex = mainForm.comboBox21.FindString(string.Format("[{0}]", MyData.Field_FoodType));
             mainForm.comboBox22.SelectedIndex = mainForm.comboBox22.FindString(string.Format("[{0}]", MyData.Field_TotemCategory));
             mainForm.comboBox23.SelectedIndex = mainForm.comboBox23.FindString(string.Format("[{0}]", MyData.Field_spelltrigger_1));

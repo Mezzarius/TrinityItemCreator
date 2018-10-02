@@ -219,14 +219,14 @@ namespace TrinityItemCreator
                 MyData.Field_entry = userVal;
         }
 
-        private void myTextBox2_TextChanged(object sender, EventArgs e)
+        private void tb_item_name_TextChanged(object sender, EventArgs e)
         {
-            MyData.Field_name = myTextBox2.Text;
+            MyData.Field_name = tb_item_name.Text;
         }
 
-        private void myTextBox3_TextChanged(object sender, EventArgs e)
+        private void tb_item_description_TextChanged(object sender, EventArgs e)
         {
-            MyData.Field_description = myTextBox3.Text;
+            MyData.Field_description = tb_item_description.Text;
         }
 
         private void TextBoxDisplayID_TextChanged(object sender, EventArgs e)
@@ -259,9 +259,9 @@ namespace TrinityItemCreator
                 MyData.Field_SellPrice = userVal;
         }
 
-        private void myTextBox27_TextChanged(object sender, EventArgs e)
+        private void tb_buy_count_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(myTextBox27.Text, out int userVal))
+            if (int.TryParse(tb_buy_count.Text, out int userVal))
                 MyData.Field_BuyCount = userVal;
         }
 
@@ -271,9 +271,9 @@ namespace TrinityItemCreator
                 MyData.Field_itemset = userVal;
         }
 
-        private void myTextBox29_TextChanged(object sender, EventArgs e)
+        private void tb_stackable_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(myTextBox29.Text, out int userVal))
+            if (int.TryParse(tb_stackable.Text, out int userVal))
                 MyData.Field_stackable = userVal;
         }
 
@@ -666,9 +666,9 @@ namespace TrinityItemCreator
             MyData.Field_InventoryType = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
-        private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
+        private void cb_item_material_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string s = comboBox20.SelectedItem.ToString();
+            string s = cb_item_material.SelectedItem.ToString();
             MyData.Field_Material = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
         }
 
@@ -936,6 +936,16 @@ namespace TrinityItemCreator
         {
             Form_Item_Description wed = new Form_Item_Description(this);
             wed.ShowDialog();
+        }
+
+        private void ResetAllFieldsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to reset all fields??", "Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Functions mF = new Functions(this);
+                mF.DoResetAllFields();
+            }
         }
     }
 }

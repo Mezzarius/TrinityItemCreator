@@ -53,7 +53,7 @@ namespace TrinityItemCreator
         private void Window_EditDescription_FormClosed(object sender, FormClosedEventArgs e)
         {
             MyData.Field_description = richTextBox1.Text; //.Replace("\r\n","\\n");
-            mainForm.myTextBox3.Text = MyData.Field_description;
+            mainForm.tb_item_description.Text = MyData.Field_description;
         }
     }
 }

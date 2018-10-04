@@ -76,7 +76,7 @@
             this.ButtonSave.Name = "ButtonSave";
             this.ButtonSave.Size = new System.Drawing.Size(104, 23);
             this.ButtonSave.TabIndex = 0;
-            this.ButtonSave.Text = "SAVE";
+            this.ButtonSave.Text = "SAVE (ENTER)";
             this.ButtonSave.UseVisualStyleBackColor = false;
             this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
@@ -141,7 +141,7 @@
             this.myTextBox2.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox2.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // Form3
+            // Form_Save_Custom_Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,7 +160,7 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form3";
+            this.Name = "Form_Save_Custom_Template";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

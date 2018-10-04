@@ -33,6 +33,8 @@ namespace TrinityItemCreator
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+            else if (e.KeyCode == Keys.Enter)
+                ButtonSave_Click(sender, e);
         }
 
         private void Watermark_myTextBox_Leave(object sender, EventArgs e)

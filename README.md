@@ -3,10 +3,10 @@
 [More Videos Here](https://www.youtube.com/playlist?list=PLjoy2iZ5z1qeIZseVQ2buYEjyT5zqWUKu)
 ----------------------------
 ### Planing features:
-- [ ] Item Preview Tooltip
 - [ ] 4.3.4
 - [ ] Legion
 - [ ] Battle for Azeroth
+- [ ] Item Preview Tooltip
 - [ ] ~~Other Emulators~~
 ----------------------------
 ### Functionality:

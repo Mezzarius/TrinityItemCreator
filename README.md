@@ -4,7 +4,7 @@
 ----------------------------
 ### Planing features:
 - [ ] Item Preview Tooltip
-- [ ] Legion/Bfa
+- [ ] 4.3.4/Legion/Bfa
 - [ ] ~~Other Emulators~~
 ----------------------------
 ### Functionality:

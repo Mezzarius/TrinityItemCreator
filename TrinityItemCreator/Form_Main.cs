@@ -3,6 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using TrinityItemCreator.Dialog_Forms;
 using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator
@@ -946,6 +947,17 @@ namespace TrinityItemCreator
                 Functions mF = new Functions(this);
                 mF.DoResetAllFields();
             }
+        }
+
+        private void mySQLConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_DB_Info Fdbi = new Form_DB_Info();
+            Fdbi.ShowDialog();
+        }
+
+        private void databaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialog Forms\Form_DB_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Forms\Form_DB_Info.Designer.cs">
+      <DependentUpon>Form_DB_Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialog Forms\Form_Save_Custom_Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="Dialog Forms\Form_Resistances.Designer.cs">
       <DependentUpon>Form_Resistances.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dialog Forms\Form_DB_Info.resx">
+      <DependentUpon>Form_DB_Info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>

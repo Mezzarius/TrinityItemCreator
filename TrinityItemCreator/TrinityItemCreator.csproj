@@ -85,6 +85,10 @@
     <Compile Include="Dialog Forms\Form_Load_Custom_Template.Designer.cs">
       <DependentUpon>Form_Load_Custom_Template.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyClass\BinaryReaderExtensions.cs" />
+    <Compile Include="MyClass\DBC.cs" />
+    <Compile Include="MyClass\DBCReader.cs" />
+    <Compile Include="MyClass\Item.cs" />
     <Compile Include="MyClass\MyData.cs" />
     <Compile Include="MyClass\MyExtensions.cs" />
     <Compile Include="MyClass\QueryHandler.cs" />
@@ -231,6 +235,9 @@
     <None Include="data\displayidlist.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="data\ItemData.dbc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

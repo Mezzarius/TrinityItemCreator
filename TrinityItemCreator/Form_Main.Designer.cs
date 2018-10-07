@@ -41,7 +41,6 @@
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.importToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -223,6 +222,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.makeItemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -303,6 +303,7 @@
             this.exportAsToolStripMenuItem,
             this.templateToolStripMenuItem,
             this.functionsToolStripMenuItem,
+            this.makeItemdbcToolStripMenuItem,
             this.aBOUTToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 36);
             this.menuStrip1.Name = "menuStrip1";
@@ -360,8 +361,7 @@
             // importToToolStripMenuItem
             // 
             this.importToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.databaseToolStripMenuItem,
-            this.itemdbcToolStripMenuItem});
+            this.databaseToolStripMenuItem});
             this.importToToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_export;
             this.importToToolStripMenuItem.Name = "importToToolStripMenuItem";
             this.importToToolStripMenuItem.Size = new System.Drawing.Size(85, 27);
@@ -374,13 +374,6 @@
             this.databaseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.databaseToolStripMenuItem.Text = "Database";
             this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
-            // 
-            // itemdbcToolStripMenuItem
-            // 
-            this.itemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
-            this.itemdbcToolStripMenuItem.Name = "itemdbcToolStripMenuItem";
-            this.itemdbcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.itemdbcToolStripMenuItem.Text = "Item.dbc";
             // 
             // exportAsToolStripMenuItem
             // 
@@ -3699,6 +3692,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // makeItemdbcToolStripMenuItem
+            // 
+            this.makeItemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
+            this.makeItemdbcToolStripMenuItem.Name = "makeItemdbcToolStripMenuItem";
+            this.makeItemdbcToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
+            this.makeItemdbcToolStripMenuItem.Text = "Make Item.dbc";
+            this.makeItemdbcToolStripMenuItem.Click += new System.EventHandler(this.makeItemdbcToolStripMenuItem_Click);
+            // 
             // Form_Main
             // 
             this.AllowDrop = true;
@@ -4096,8 +4097,8 @@
         private System.Windows.Forms.ToolStripMenuItem resetAllFieldsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importToToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem itemdbcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mySQLConnectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem makeItemdbcToolStripMenuItem;
     }
 }
 

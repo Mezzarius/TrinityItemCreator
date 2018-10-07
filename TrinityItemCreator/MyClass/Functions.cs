@@ -5,8 +5,10 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml;
-using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Text;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -22,12 +24,98 @@ namespace TrinityItemCreator.MyClass
         {
             mainForm = form1;
         }
+        private Dictionary<int, Item> items = new Dictionary<int, Item>();
 
         public async void DelayMainFormPainting()
         {
             mainForm.Opacity = 0;
             await Task.Delay(200);
             mainForm.Opacity = .99;
+        }
+
+        public bool LoadItems()
+        {
+            MySqlConnection conn = new MySqlConnection(); ;
+            string conString = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
+                $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
+                $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
+
+            try
+            {
+                conn.ConnectionString = conString;
+                conn.Open();
+
+                string query = "SELECT entry AS itemID, class AS itemClass, subclass AS itemSubClass, SoundOverrideSubclass AS sound_override_subclassid, Material AS materialID, displayid AS itemDisplayInfo, InventoryType AS inventorySlotID, sheath AS sheathID FROM item_template";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Item item = new Item();
+
+                    item.itemID = int.Parse(reader["itemID"].ToString());
+                    item.itemClass = int.Parse(reader["itemClass"].ToString());
+                    item.itemSubClass = int.Parse(reader["itemSubclass"].ToString());
+                    item.sound_override_subclassid = int.Parse(reader["sound_override_subclassid"].ToString());
+                    item.materialID = int.Parse(reader["materialID"].ToString());
+                    item.itemDisplayInfo = int.Parse(reader["itemDisplayInfo"].ToString());
+                    item.inventorySlotID = int.Parse(reader["inventorySlotID"].ToString());
+                    item.sheathID = int.Parse(reader["sheathID"].ToString());
+
+                    items.Add(item.itemID, item);
+                }
+
+                string time = DateTime.Now.ToString("HH:mm:ss");
+                //MessageBox.Show(time + ": Loaded Items");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+
+            return true;
+        }
+
+        public void ItemsToDBC()
+        {
+            DBCReader reader = new DBCReader("data/ItemData.dbc");
+            BinaryWriter writer = new BinaryWriter(File.Open("Item.dbc", FileMode.Create));
+
+            DBCHeader header = new DBCHeader();
+            header.DBCmagic = DBCReader.DBCFmtSig;
+            header.RecordsCount = (uint)items.Count;
+            header.FieldsCount = (uint)reader.FieldsCount;
+            header.RecordSize = (uint)reader.RecordSize;
+            header.StringTableSize = (uint)reader.StringTableSize;
+
+            //Write header content
+            writer.Write(DBCReader.DBCFmtSig);
+            writer.Write(header.RecordsCount);
+            //MessageBox.Show($"recordsCount : {header.RecordsCount}");
+            writer.Write(header.FieldsCount);
+            //MessageBox.Show($"fieldsCount : {header.FieldsCount}");
+            writer.Write(header.RecordSize);
+            writer.Write(header.StringTableSize);
+
+            //Write item struct
+            foreach (var pair in items)
+            {
+                Item item = pair.Value;
+
+                byte[] buffer = new byte[Marshal.SizeOf(typeof(Item))];
+                GCHandle handle = GCHandle.Alloc(buffer, GCHandleType.Pinned);
+                Marshal.StructureToPtr(item, handle.AddrOfPinnedObject(), true);
+                writer.Write(buffer, 0, buffer.Length);
+                handle.Free();
+            }
+
+            //Write string table
+            foreach (var pair in reader.StringTable)
+                writer.Write(Encoding.UTF8.GetBytes(pair.Value + "\0"));
+
+            writer.Close();
+            MessageBox.Show("Conversion to DBC complete, please check main folder new Item.dbc file!");
         }
 
         public void ImportSQLItem()

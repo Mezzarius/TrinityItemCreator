@@ -964,5 +964,17 @@ namespace TrinityItemCreator
                 mF.ImportSQLItem();
             }
         }
+
+        private void makeItemdbcToolStripMenuItem_Click(object sender, EventArgs e)
+        { DialogResult result = MessageBox.Show("This feature will use database connection to receive items list!\n\n" +
+            $"Do you want to generate Item.dbc?\n\n" +
+            $"Check this application's folder after conversion is complete", "Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Functions myf = new Functions();
+                if (myf.LoadItems())
+                    myf.ItemsToDBC();
+            }
+        }
     }
 }

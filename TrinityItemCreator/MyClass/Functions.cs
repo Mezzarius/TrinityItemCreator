@@ -5,6 +5,7 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml;
+using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 namespace TrinityItemCreator.MyClass
@@ -31,23 +32,31 @@ namespace TrinityItemCreator.MyClass
 
         public void ImportSQLItem()
         {
-            MySqlConnection conn;
-            string conString = $"SERVER={Properties.Settings.Default.db_hostname}" +
-                $";PORT={Properties.Settings.Default.db_port}" +
-                $";DATABASE={Properties.Settings.Default.db_name}" +
-                $";UID={Properties.Settings.Default.db_user}" +
-                $";PASSWORD={Properties.Settings.Default.db_pass};" +
-                "SslMode=none";
+            bool ItWorked = true;
+            string conString = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
+                $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
+                $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
+
+            MySqlConnection conn = new MySqlConnection(conString);
             try
             {
-                conn = new MySqlConnection();
-                conn.ConnectionString = conString;
                 conn.Open();
-                MessageBox.Show("connection works");
+                MySqlCommand comm = conn.CreateCommand();
+                comm.CommandText = QueryHandler.GetExportQuery();
+                comm.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
+                ItWorked = false;
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (ItWorked)
+                    MessageBox.Show($"Successfully imported item:\n\n" +
+                        $"{MyData.Field_entry} - {MyData.Field_name}");
+
+                conn.Close();
             }
         }
 

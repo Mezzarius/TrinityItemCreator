@@ -210,7 +210,7 @@ namespace TrinityItemCreator
                 "Application developer: [artister.hd@gmail.com]\n"
                 +"\n"
                 +"CONTRIBUTORS:\n \n"
-                +" Sdyees, ..."
+                + " Sdyees (Code Cleanup), Freddan962 (Item.dbc Converter)"
                 );
         }
 

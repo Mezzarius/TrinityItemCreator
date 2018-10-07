@@ -961,7 +961,7 @@ namespace TrinityItemCreator
             if (result == DialogResult.Yes)
             {
                 Functions mF = new Functions(this);
-                mF.DoResetAllFields();
+                mF.ImportSQLItem();
             }
         }
     }

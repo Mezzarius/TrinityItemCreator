@@ -36,7 +36,8 @@ namespace TrinityItemCreator.MyClass
                 $";PORT={Properties.Settings.Default.db_port}" +
                 $";DATABASE={Properties.Settings.Default.db_name}" +
                 $";UID={Properties.Settings.Default.db_user}" +
-                $";PASSWORD={Properties.Settings.Default.db_pass};";
+                $";PASSWORD={Properties.Settings.Default.db_pass};" +
+                "SslMode=none";
             try
             {
                 conn = new MySqlConnection();

@@ -4,6 +4,7 @@
 ----------------------------
 ### Planing features:
 - [ ] Item.dbc Generator 3.3.5
+- [ ] Import to Database
 - [ ] 4.3.4
 - [ ] Legion
 - [ ] Battle for Azeroth

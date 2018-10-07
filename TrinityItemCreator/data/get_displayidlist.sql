@@ -1,0 +1,1 @@
+SELECT entry, NAME, displayid FROM item_template LIMIT 100000;

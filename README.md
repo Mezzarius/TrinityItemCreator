@@ -3,6 +3,7 @@
 [More Videos Here](https://www.youtube.com/playlist?list=PLjoy2iZ5z1qeIZseVQ2buYEjyT5zqWUKu)
 ----------------------------
 ### Planing features:
+- [ ] Item.dbc Generator 3.3.5
 - [ ] 4.3.4
 - [ ] Legion
 - [ ] Battle for Azeroth

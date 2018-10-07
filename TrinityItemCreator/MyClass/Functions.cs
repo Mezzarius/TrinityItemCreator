@@ -5,6 +5,7 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml;
+using MySql.Data.MySqlClient;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -26,6 +27,27 @@ namespace TrinityItemCreator.MyClass
             mainForm.Opacity = 0;
             await Task.Delay(200);
             mainForm.Opacity = .99;
+        }
+
+        public void ImportSQLItem()
+        {
+            MySqlConnection conn;
+            string conString = $"SERVER={Properties.Settings.Default.db_hostname}" +
+                $";PORT={Properties.Settings.Default.db_port}" +
+                $";DATABASE={Properties.Settings.Default.db_name}" +
+                $";UID={Properties.Settings.Default.db_user}" +
+                $";PASSWORD={Properties.Settings.Default.db_pass};";
+            try
+            {
+                conn = new MySqlConnection();
+                conn.ConnectionString = conString;
+                conn.Open();
+                MessageBox.Show("connection works");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void DoResetAllFields()

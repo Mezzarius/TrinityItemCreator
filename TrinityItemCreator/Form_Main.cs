@@ -957,7 +957,12 @@ namespace TrinityItemCreator
 
         private void databaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show($"Do you want to import this item in your database?", "Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Functions mF = new Functions(this);
+                mF.DoResetAllFields();
+            }
         }
     }
 }

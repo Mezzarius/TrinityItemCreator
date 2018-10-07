@@ -3,8 +3,6 @@
 [More Videos Here](https://www.youtube.com/playlist?list=PLjoy2iZ5z1qeIZseVQ2buYEjyT5zqWUKu)
 ----------------------------
 ### Planing features:
-- [ ] Item.dbc Generator 3.3.5
-- [ ] Import to Database
 - [ ] 4.3.4
 - [ ] Legion
 - [ ] Battle for Azeroth
@@ -12,6 +10,8 @@
 - [ ] ~~Other Emulators~~
 ----------------------------
 ### Functionality:
+- [x] Import to database
+- [x] Item.dbc Maker
 - [x] Export item as *.SQL or Copy to Clipboard
 - [x] Export setting for sql prefix `insert` or `replace`
 - [x] Load default or custom template

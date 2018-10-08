@@ -9,6 +9,7 @@ using MySql.Data.MySqlClient;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
 
 namespace TrinityItemCreator.MyClass
 {
@@ -24,7 +25,22 @@ namespace TrinityItemCreator.MyClass
         {
             mainForm = form1;
         }
+
         private Dictionary<int, Item> items = new Dictionary<int, Item>();
+
+        public static bool IsDBConnected()
+        {
+            string conn_info = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
+                $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
+                $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
+
+            MySqlConnection conn = new MySqlConnection(conn_info);
+            try { conn.Open(); }
+            catch { return false; }
+            finally { if (conn.State == ConnectionState.Open) conn.Close(); }
+
+            return true;
+        }
 
         public async void DelayMainFormPainting()
         {

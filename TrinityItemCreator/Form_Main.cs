@@ -828,6 +828,10 @@ namespace TrinityItemCreator
             // This is happening before closing form2
             if (!Functions.preLoadTemplate)
                 myF.LoadDefaultTemplate(99999);
+
+            string dbConnection = "Database Connection: ";
+            LabelDBConnection.Text = dbConnection + (Functions.IsDBConnected() ? "Yes" : "None");
+            LabelDBConnection.ForeColor = Functions.IsDBConnected() ? Color.LimeGreen : Color.IndianRed;
         }
 
         private void SaveCurrentTemplateToolStripMenuItem_Click(object sender, EventArgs e)
@@ -951,7 +955,7 @@ namespace TrinityItemCreator
 
         private void mySQLConnectionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_DB_Info Fdbi = new Form_DB_Info();
+            Form_DB_Info Fdbi = new Form_DB_Info(this);
             Fdbi.ShowDialog();
         }
 

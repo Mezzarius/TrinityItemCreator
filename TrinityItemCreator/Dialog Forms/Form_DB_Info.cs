@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrinityItemCreator.MyClass;
 
 namespace TrinityItemCreator.Dialog_Forms
 {
     public partial class Form_DB_Info : Form
     {
-        public Form_DB_Info()
+        private Form_Main mainForm;
+
+        public Form_DB_Info(Form_Main form1)
         {
             InitializeComponent();
 
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
+
+            mainForm = form1;
         }
 
         protected override CreateParams CreateParams
@@ -87,6 +86,13 @@ namespace TrinityItemCreator.Dialog_Forms
             TextBoxUser.Text = Properties.Settings.Default.db_user;
             TextBoxPass.Text = Properties.Settings.Default.db_pass;
             TextBoxDB.Text = Properties.Settings.Default.db_name;
+        }
+
+        private void Form_DB_Info_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            string dbConnection = "Database Connection: ";
+            mainForm.LabelDBConnection.Text = dbConnection + (Functions.IsDBConnected() ? "Yes" : "None");
+            mainForm.LabelDBConnection.ForeColor = Functions.IsDBConnected() ? Color.LimeGreen : Color.IndianRed;
         }
     }
 }

@@ -53,6 +53,7 @@
             this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetAllFieldsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeItemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -144,6 +145,17 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LabelDBConnection = new System.Windows.Forms.Label();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -212,17 +224,6 @@
             this.tb_item_description = new MyTextBox();
             this.tb_item_name = new MyTextBox();
             this.myTextBox1 = new MyTextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.makeItemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -349,7 +350,7 @@
             // 
             this.toolStripComboBox1.AutoSize = false;
             this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
+            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.toolStripComboBox1.Items.AddRange(new object[] {
             "SQL Prefix [INSERT]",
@@ -371,7 +372,7 @@
             // 
             this.databaseToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_database;
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.databaseToolStripMenuItem.Text = "Database";
             this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
             // 
@@ -492,6 +493,14 @@
             this.resetAllFieldsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.resetAllFieldsToolStripMenuItem.Text = "Reset All Fields";
             this.resetAllFieldsToolStripMenuItem.Click += new System.EventHandler(this.ResetAllFieldsToolStripMenuItem_Click);
+            // 
+            // makeItemdbcToolStripMenuItem
+            // 
+            this.makeItemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
+            this.makeItemdbcToolStripMenuItem.Name = "makeItemdbcToolStripMenuItem";
+            this.makeItemdbcToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
+            this.makeItemdbcToolStripMenuItem.Text = "Make Item.dbc";
+            this.makeItemdbcToolStripMenuItem.Click += new System.EventHandler(this.makeItemdbcToolStripMenuItem_Click);
             // 
             // aBOUTToolStripMenuItem
             // 
@@ -2314,6 +2323,183 @@
             this.comboBox3.TabIndex = 6;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
+            // button12
+            // 
+            this.button12.BackgroundImage = global::TrinityItemCreator.Properties.Resources.Copy_File_512;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.Enabled = false;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(588, 106);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(24, 24);
+            this.button12.TabIndex = 205;
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button11.Enabled = false;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Image = global::TrinityItemCreator.Properties.Resources.icon_bag;
+            this.button11.Location = new System.Drawing.Point(736, 696);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(66, 48);
+            this.button11.TabIndex = 204;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Enabled = false;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.DimGray;
+            this.button10.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_enggizmos_26;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button10.Location = new System.Drawing.Point(955, 698);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 41);
+            this.button10.TabIndex = 106;
+            this.button10.Text = "Other Columns\r\n(CTRL+O)";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Enabled = false;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.DimGray;
+            this.button9.Image = global::TrinityItemCreator.Properties.Resources.medium_spell_fire_frostresistancetotem;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button9.Location = new System.Drawing.Point(831, 698);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(118, 41);
+            this.button9.TabIndex = 105;
+            this.button9.Text = "Resistances\r\n(CTRL+R)";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DimGray;
+            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button6.Location = new System.Drawing.Point(938, 127);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 41);
+            this.button6.TabIndex = 68;
+            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Enabled = false;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.DimGray;
+            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button5.Location = new System.Drawing.Point(785, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 67;
+            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Enabled = false;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
+            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(632, 127);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 41);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.Location = new System.Drawing.Point(938, 80);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 41);
+            this.button3.TabIndex = 65;
+            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button2.Location = new System.Drawing.Point(632, 80);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 41);
+            this.button2.TabIndex = 63;
+            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(785, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 41);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // LabelDBConnection
+            // 
+            this.LabelDBConnection.BackColor = System.Drawing.Color.Transparent;
+            this.LabelDBConnection.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.LabelDBConnection.Location = new System.Drawing.Point(911, 36);
+            this.LabelDBConnection.Name = "LabelDBConnection";
+            this.LabelDBConnection.Size = new System.Drawing.Size(194, 31);
+            this.LabelDBConnection.TabIndex = 206;
+            this.LabelDBConnection.Text = "Database Connection: Fail";
+            this.LabelDBConnection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // myTextBox68
             // 
             this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
@@ -3526,185 +3712,12 @@
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
             // 
-            // button12
-            // 
-            this.button12.BackgroundImage = global::TrinityItemCreator.Properties.Resources.Copy_File_512;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Enabled = false;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(588, 106);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(24, 24);
-            this.button12.TabIndex = 205;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Enabled = false;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = global::TrinityItemCreator.Properties.Resources.icon_bag;
-            this.button11.Location = new System.Drawing.Point(736, 696);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(66, 48);
-            this.button11.TabIndex = 204;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Enabled = false;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.DimGray;
-            this.button10.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_enggizmos_26;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button10.Location = new System.Drawing.Point(955, 698);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 41);
-            this.button10.TabIndex = 106;
-            this.button10.Text = "Other Columns\r\n(CTRL+O)";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.Button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Enabled = false;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.DimGray;
-            this.button9.Image = global::TrinityItemCreator.Properties.Resources.medium_spell_fire_frostresistancetotem;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.Location = new System.Drawing.Point(831, 698);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(118, 41);
-            this.button9.TabIndex = 105;
-            this.button9.Text = "Resistances\r\n(CTRL+R)";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Enabled = false;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(938, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 41);
-            this.button6.TabIndex = 68;
-            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(785, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 41);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(632, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 41);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(938, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 41);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(632, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 41);
-            this.button2.TabIndex = 63;
-            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(785, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // makeItemdbcToolStripMenuItem
-            // 
-            this.makeItemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
-            this.makeItemdbcToolStripMenuItem.Name = "makeItemdbcToolStripMenuItem";
-            this.makeItemdbcToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
-            this.makeItemdbcToolStripMenuItem.Text = "Make Item.dbc";
-            this.makeItemdbcToolStripMenuItem.Click += new System.EventHandler(this.makeItemdbcToolStripMenuItem_Click);
-            // 
             // Form_Main
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1105, 773);
+            this.Controls.Add(this.LabelDBConnection);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.myTextBox68);
@@ -4099,6 +4112,7 @@
         private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mySQLConnectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem makeItemdbcToolStripMenuItem;
+        public System.Windows.Forms.Label LabelDBConnection;
     }
 }
 

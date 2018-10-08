@@ -1,4 +1,6 @@
-# Trinity Item Creator [![Build Status](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator.svg?branch=master)](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator) [![Percentage of issues still open](http://isitmaintained.com/badge/open/TrinityItemCreator/TrinityItemCreator.svg)](http://isitmaintained.com/project/TrinityItemCreator/TrinityItemCreator "Percentage of issues still open")
+## Trinity Item Creator 
+[![Build Status](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator.svg?branch=master)](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator) [![Percentage of issues still open](http://isitmaintained.com/badge/open/TrinityItemCreator/TrinityItemCreator.svg)](http://isitmaintained.com/project/TrinityItemCreator/TrinityItemCreator "Percentage of issues still open")
+[![Discord server](https://img.shields.io/badge/Join-Discord-blue.svg)](https://discord.gg/KW5R2j7 "Join us on discord")
 
 [More Videos Here](https://www.youtube.com/playlist?list=PLjoy2iZ5z1qeIZseVQ2buYEjyT5zqWUKu)
 ----------------------------

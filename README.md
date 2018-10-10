@@ -19,4 +19,4 @@
 - [x] DisplayID Finder
 - [x] Stats Generator
 
-![Trinity Item Creator 2.x](https://image.ibb.co/n6hFeU/Trinity_Item_Creator_2_x.jpg)
+![Trinity Item Creator 2.x](https://image.ibb.co/mgpK9U/Screenshot_1.jpg)

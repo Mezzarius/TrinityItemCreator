@@ -205,7 +205,6 @@
             // 
             // TextBoxSearch
             // 
-            this.TextBoxSearch.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxSearch.ForeColor = System.Drawing.Color.DimGray;

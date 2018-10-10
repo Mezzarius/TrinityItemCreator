@@ -161,38 +161,7 @@ namespace TrinityItemCreator
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-
-            if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D1)
-            {
-                var wcM = new Form_Allowable_Class(this);
-                wcM.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D2)
-            {
-                var wrM = new Form_Allowable_Race(this);
-                wrM.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.D3)
-            {
-                var wbF = new Form_Bag_Family_Mask(this);
-                wbF.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D1)
-            {
-                var wfM = new Form_Flags(this);
-                wfM.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D2)
-            {
-                var wfEM = new Form_Flags_Extra(this);
-                wfEM.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Shift) && e.KeyCode == Keys.D3)
-            {
-                var wfCM = new Form_Flags_Custom(this);
-                wfCM.ShowDialog();
-            }
-            else if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.R)
+            if (ModifierKeys.HasFlag(Keys.Control) && e.KeyCode == Keys.R)
             {
                 var wr = new Form_Resistances(this);
                 wr.ShowDialog();
@@ -822,6 +791,7 @@ namespace TrinityItemCreator
         {
             Functions myF = new Functions(this);
             myF.DelayMainFormPainting();
+            myF.SetFlagsMasksButtonCurrentValue();
 
             toolStripComboBox1.SelectedIndex = Properties.Settings.Default.SQLPrefix;
 

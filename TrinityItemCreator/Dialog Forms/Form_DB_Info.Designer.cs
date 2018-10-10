@@ -182,7 +182,6 @@
             // 
             // TextBoxDB
             // 
-            this.TextBoxDB.BorderColor = System.Drawing.Color.Blue;
             this.TextBoxDB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxDB.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxDB.Location = new System.Drawing.Point(156, 190);
@@ -193,7 +192,6 @@
             // 
             // TextBoxPass
             // 
-            this.TextBoxPass.BorderColor = System.Drawing.Color.Blue;
             this.TextBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxPass.Location = new System.Drawing.Point(263, 132);
@@ -205,7 +203,6 @@
             // 
             // TextBoxUser
             // 
-            this.TextBoxUser.BorderColor = System.Drawing.Color.Blue;
             this.TextBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxUser.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxUser.Location = new System.Drawing.Point(27, 132);
@@ -216,7 +213,6 @@
             // 
             // TextBoxPort
             // 
-            this.TextBoxPort.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxPort.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxPort.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxPort.ForeColor = System.Drawing.Color.DimGray;
@@ -230,7 +226,6 @@
             // 
             // TextBoxAddress
             // 
-            this.TextBoxAddress.BorderColor = System.Drawing.Color.Blue;
             this.TextBoxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxAddress.Location = new System.Drawing.Point(27, 76);

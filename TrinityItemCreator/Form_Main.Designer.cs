@@ -149,12 +149,12 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonFlagCustom = new System.Windows.Forms.Button();
+            this.ButtonFlagExtra = new System.Windows.Forms.Button();
+            this.ButtonFlag = new System.Windows.Forms.Button();
+            this.ButtonBagFamilyMask = new System.Windows.Forms.Button();
+            this.ButtonAllowableClass = new System.Windows.Forms.Button();
+            this.ButtonAllowableRace = new System.Windows.Forms.Button();
             this.LabelDBConnection = new System.Windows.Forms.Label();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
@@ -2386,108 +2386,108 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
-            // button6
+            // ButtonFlagCustom
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Enabled = false;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DimGray;
-            this.button6.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(938, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 41);
-            this.button6.TabIndex = 68;
-            this.button6.Text = "Flag Custom Mask\r\n(SHIFT+3)";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            this.ButtonFlagCustom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonFlagCustom.Enabled = false;
+            this.ButtonFlagCustom.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFlagCustom.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonFlagCustom.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_interruptx_flagcapture_attempts;
+            this.ButtonFlagCustom.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonFlagCustom.Location = new System.Drawing.Point(938, 127);
+            this.ButtonFlagCustom.Name = "ButtonFlagCustom";
+            this.ButtonFlagCustom.Size = new System.Drawing.Size(147, 41);
+            this.ButtonFlagCustom.TabIndex = 68;
+            this.ButtonFlagCustom.Text = "Flag Custom Mask\r\nValue: (N/A)";
+            this.ButtonFlagCustom.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonFlagCustom.UseVisualStyleBackColor = true;
+            this.ButtonFlagCustom.Click += new System.EventHandler(this.Button6_Click);
             // 
-            // button5
+            // ButtonFlagExtra
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(785, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 41);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Flag Extra Mask\r\n(SHIFT+2)";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.ButtonFlagExtra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonFlagExtra.Enabled = false;
+            this.ButtonFlagExtra.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFlagExtra.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonFlagExtra.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_eos;
+            this.ButtonFlagExtra.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonFlagExtra.Location = new System.Drawing.Point(785, 127);
+            this.ButtonFlagExtra.Name = "ButtonFlagExtra";
+            this.ButtonFlagExtra.Size = new System.Drawing.Size(147, 41);
+            this.ButtonFlagExtra.TabIndex = 67;
+            this.ButtonFlagExtra.Text = "Flag Extra Mask\r\nValue: (N/A)";
+            this.ButtonFlagExtra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonFlagExtra.UseVisualStyleBackColor = true;
+            this.ButtonFlagExtra.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // button4
+            // ButtonFlag
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DimGray;
-            this.button4.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(632, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 41);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Flag Mask\r\n(SHIFT+1)";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.ButtonFlag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonFlag.Enabled = false;
+            this.ButtonFlag.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFlag.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonFlag.Image = global::TrinityItemCreator.Properties.Resources.medium_achievement_bg_captureflag_wsg;
+            this.ButtonFlag.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonFlag.Location = new System.Drawing.Point(632, 127);
+            this.ButtonFlag.Name = "ButtonFlag";
+            this.ButtonFlag.Size = new System.Drawing.Size(147, 41);
+            this.ButtonFlag.TabIndex = 66;
+            this.ButtonFlag.Text = "Flag Mask\r\nValue: (N/A)";
+            this.ButtonFlag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonFlag.UseVisualStyleBackColor = true;
+            this.ButtonFlag.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // button3
+            // ButtonBagFamilyMask
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DimGray;
-            this.button3.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(938, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 41);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Bag Family Mask\r\n(CTRL+3)";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.ButtonBagFamilyMask.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonBagFamilyMask.Enabled = false;
+            this.ButtonBagFamilyMask.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonBagFamilyMask.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonBagFamilyMask.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_bag_14;
+            this.ButtonBagFamilyMask.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonBagFamilyMask.Location = new System.Drawing.Point(938, 80);
+            this.ButtonBagFamilyMask.Name = "ButtonBagFamilyMask";
+            this.ButtonBagFamilyMask.Size = new System.Drawing.Size(147, 41);
+            this.ButtonBagFamilyMask.TabIndex = 65;
+            this.ButtonBagFamilyMask.Text = "Bag Family Mask\r\nValue: (N/A)";
+            this.ButtonBagFamilyMask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonBagFamilyMask.UseVisualStyleBackColor = true;
+            this.ButtonBagFamilyMask.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button2
+            // ButtonAllowableClass
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DimGray;
-            this.button2.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(632, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 41);
-            this.button2.TabIndex = 63;
-            this.button2.Text = "Allowed Class\r\n(CTRL+1)";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.ButtonAllowableClass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonAllowableClass.Enabled = false;
+            this.ButtonAllowableClass.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAllowableClass.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonAllowableClass.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_head_02;
+            this.ButtonAllowableClass.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonAllowableClass.Location = new System.Drawing.Point(632, 80);
+            this.ButtonAllowableClass.Name = "ButtonAllowableClass";
+            this.ButtonAllowableClass.Size = new System.Drawing.Size(147, 41);
+            this.ButtonAllowableClass.TabIndex = 63;
+            this.ButtonAllowableClass.Text = "Allowed Class\r\nValue: (N/A)";
+            this.ButtonAllowableClass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonAllowableClass.UseVisualStyleBackColor = true;
+            this.ButtonAllowableClass.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button1
+            // ButtonAllowableRace
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(785, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "Allowed Race\r\n(CTRL+2)";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.ButtonAllowableRace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButtonAllowableRace.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonAllowableRace.Enabled = false;
+            this.ButtonAllowableRace.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAllowableRace.ForeColor = System.Drawing.Color.DimGray;
+            this.ButtonAllowableRace.Image = global::TrinityItemCreator.Properties.Resources.medium_inv_misc_tournaments_tabard_bloodelf;
+            this.ButtonAllowableRace.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ButtonAllowableRace.Location = new System.Drawing.Point(785, 80);
+            this.ButtonAllowableRace.Name = "ButtonAllowableRace";
+            this.ButtonAllowableRace.Size = new System.Drawing.Size(147, 41);
+            this.ButtonAllowableRace.TabIndex = 64;
+            this.ButtonAllowableRace.Text = "Allowed Race\r\nValue: (N/A)";
+            this.ButtonAllowableRace.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonAllowableRace.UseVisualStyleBackColor = true;
+            this.ButtonAllowableRace.Click += new System.EventHandler(this.Button1_Click);
             // 
             // LabelDBConnection
             // 
@@ -2502,7 +2502,6 @@
             // 
             // myTextBox68
             // 
-            this.myTextBox68.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox68.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox68.Enabled = false;
             this.myTextBox68.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2520,7 +2519,6 @@
             // 
             // myTextBox67
             // 
-            this.myTextBox67.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox67.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox67.Enabled = false;
             this.myTextBox67.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2538,7 +2536,6 @@
             // 
             // myTextBox66
             // 
-            this.myTextBox66.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox66.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox66.Enabled = false;
             this.myTextBox66.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2556,7 +2553,6 @@
             // 
             // myTextBox65
             // 
-            this.myTextBox65.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox65.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox65.Enabled = false;
             this.myTextBox65.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2574,7 +2570,6 @@
             // 
             // myTextBox64
             // 
-            this.myTextBox64.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox64.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox64.Enabled = false;
             this.myTextBox64.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2592,7 +2587,6 @@
             // 
             // myTextBox63
             // 
-            this.myTextBox63.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox63.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox63.Enabled = false;
             this.myTextBox63.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2610,7 +2604,6 @@
             // 
             // myTextBox62
             // 
-            this.myTextBox62.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox62.Enabled = false;
             this.myTextBox62.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2628,7 +2621,6 @@
             // 
             // myTextBox61
             // 
-            this.myTextBox61.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox61.Enabled = false;
             this.myTextBox61.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2646,7 +2638,6 @@
             // 
             // myTextBox55
             // 
-            this.myTextBox55.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox55.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox55.Enabled = false;
             this.myTextBox55.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2664,7 +2655,6 @@
             // 
             // myTextBox56
             // 
-            this.myTextBox56.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox56.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox56.Enabled = false;
             this.myTextBox56.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2682,7 +2672,6 @@
             // 
             // myTextBox57
             // 
-            this.myTextBox57.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox57.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox57.Enabled = false;
             this.myTextBox57.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2700,7 +2689,6 @@
             // 
             // myTextBox58
             // 
-            this.myTextBox58.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox58.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox58.Enabled = false;
             this.myTextBox58.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2718,7 +2706,6 @@
             // 
             // myTextBox59
             // 
-            this.myTextBox59.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox59.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox59.Enabled = false;
             this.myTextBox59.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2736,7 +2723,6 @@
             // 
             // myTextBox60
             // 
-            this.myTextBox60.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox60.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox60.Enabled = false;
             this.myTextBox60.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2754,7 +2740,6 @@
             // 
             // myTextBox49
             // 
-            this.myTextBox49.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox49.Enabled = false;
             this.myTextBox49.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2772,7 +2757,6 @@
             // 
             // myTextBox50
             // 
-            this.myTextBox50.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox50.Enabled = false;
             this.myTextBox50.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2790,7 +2774,6 @@
             // 
             // myTextBox51
             // 
-            this.myTextBox51.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox51.Enabled = false;
             this.myTextBox51.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2808,7 +2791,6 @@
             // 
             // myTextBox52
             // 
-            this.myTextBox52.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox52.Enabled = false;
             this.myTextBox52.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2826,7 +2808,6 @@
             // 
             // myTextBox53
             // 
-            this.myTextBox53.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox53.Enabled = false;
             this.myTextBox53.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2844,7 +2825,6 @@
             // 
             // myTextBox54
             // 
-            this.myTextBox54.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox54.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox54.Enabled = false;
             this.myTextBox54.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2862,7 +2842,6 @@
             // 
             // myTextBox43
             // 
-            this.myTextBox43.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox43.Enabled = false;
             this.myTextBox43.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2880,7 +2859,6 @@
             // 
             // myTextBox44
             // 
-            this.myTextBox44.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox44.Enabled = false;
             this.myTextBox44.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2898,7 +2876,6 @@
             // 
             // myTextBox45
             // 
-            this.myTextBox45.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox45.Enabled = false;
             this.myTextBox45.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2916,7 +2893,6 @@
             // 
             // myTextBox46
             // 
-            this.myTextBox46.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox46.Enabled = false;
             this.myTextBox46.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2934,7 +2910,6 @@
             // 
             // myTextBox47
             // 
-            this.myTextBox47.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox47.Enabled = false;
             this.myTextBox47.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2952,7 +2927,6 @@
             // 
             // myTextBox48
             // 
-            this.myTextBox48.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox48.Enabled = false;
             this.myTextBox48.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2970,7 +2944,6 @@
             // 
             // myTextBox37
             // 
-            this.myTextBox37.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox37.Enabled = false;
             this.myTextBox37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2988,7 +2961,6 @@
             // 
             // myTextBox38
             // 
-            this.myTextBox38.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox38.Enabled = false;
             this.myTextBox38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3006,7 +2978,6 @@
             // 
             // myTextBox39
             // 
-            this.myTextBox39.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox39.Enabled = false;
             this.myTextBox39.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3024,7 +2995,6 @@
             // 
             // myTextBox40
             // 
-            this.myTextBox40.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox40.Enabled = false;
             this.myTextBox40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3042,7 +3012,6 @@
             // 
             // myTextBox41
             // 
-            this.myTextBox41.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox41.Enabled = false;
             this.myTextBox41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3060,7 +3029,6 @@
             // 
             // myTextBox42
             // 
-            this.myTextBox42.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox42.Enabled = false;
             this.myTextBox42.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3078,7 +3046,6 @@
             // 
             // myTextBox36
             // 
-            this.myTextBox36.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox36.Enabled = false;
             this.myTextBox36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3096,7 +3063,6 @@
             // 
             // myTextBox35
             // 
-            this.myTextBox35.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox35.Enabled = false;
             this.myTextBox35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3114,7 +3080,6 @@
             // 
             // myTextBox34
             // 
-            this.myTextBox34.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox34.Enabled = false;
             this.myTextBox34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3132,7 +3097,6 @@
             // 
             // myTextBox33
             // 
-            this.myTextBox33.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox33.Enabled = false;
             this.myTextBox33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3150,7 +3114,6 @@
             // 
             // myTextBox32
             // 
-            this.myTextBox32.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox32.Enabled = false;
             this.myTextBox32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3168,7 +3131,6 @@
             // 
             // myTextBox31
             // 
-            this.myTextBox31.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox31.Enabled = false;
             this.myTextBox31.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3186,7 +3148,6 @@
             // 
             // myTextBox30
             // 
-            this.myTextBox30.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox30.Enabled = false;
             this.myTextBox30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3204,7 +3165,6 @@
             // 
             // tb_stackable
             // 
-            this.tb_stackable.BorderColor = System.Drawing.Color.Gainsboro;
             this.tb_stackable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_stackable.Enabled = false;
             this.tb_stackable.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3219,7 +3179,6 @@
             // 
             // myTextBox28
             // 
-            this.myTextBox28.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox28.Enabled = false;
             this.myTextBox28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3234,7 +3193,6 @@
             // 
             // tb_buy_count
             // 
-            this.tb_buy_count.BorderColor = System.Drawing.Color.Gainsboro;
             this.tb_buy_count.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_buy_count.Enabled = false;
             this.tb_buy_count.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3252,7 +3210,6 @@
             // 
             // myTextBox26
             // 
-            this.myTextBox26.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox26.Enabled = false;
             this.myTextBox26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3270,7 +3227,6 @@
             // 
             // myTextBox25
             // 
-            this.myTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox25.Enabled = false;
             this.myTextBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3288,7 +3244,6 @@
             // 
             // myTextBox24
             // 
-            this.myTextBox24.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox24.Enabled = false;
             this.myTextBox24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3306,7 +3261,6 @@
             // 
             // myTextBox23
             // 
-            this.myTextBox23.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox23.Enabled = false;
             this.myTextBox23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3324,7 +3278,6 @@
             // 
             // myTextBox22
             // 
-            this.myTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox22.Enabled = false;
             this.myTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3342,7 +3295,6 @@
             // 
             // myTextBox21
             // 
-            this.myTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox21.Enabled = false;
             this.myTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3360,7 +3312,6 @@
             // 
             // myTextBox19
             // 
-            this.myTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox19.Enabled = false;
             this.myTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3378,7 +3329,6 @@
             // 
             // myTextBox20
             // 
-            this.myTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox20.Enabled = false;
             this.myTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3396,7 +3346,6 @@
             // 
             // myTextBox18
             // 
-            this.myTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox18.Enabled = false;
             this.myTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3414,7 +3363,6 @@
             // 
             // myTextBox17
             // 
-            this.myTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox17.Enabled = false;
             this.myTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3432,7 +3380,6 @@
             // 
             // myTextBox16
             // 
-            this.myTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox16.Enabled = false;
             this.myTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3450,7 +3397,6 @@
             // 
             // myTextBox15
             // 
-            this.myTextBox15.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox15.Enabled = false;
             this.myTextBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3468,7 +3414,6 @@
             // 
             // myTextBox14
             // 
-            this.myTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox14.Enabled = false;
             this.myTextBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3486,7 +3431,6 @@
             // 
             // myTextBox13
             // 
-            this.myTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox13.Enabled = false;
             this.myTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3504,7 +3448,6 @@
             // 
             // myTextBox12
             // 
-            this.myTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox12.Enabled = false;
             this.myTextBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3522,7 +3465,6 @@
             // 
             // myTextBox11
             // 
-            this.myTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox11.Enabled = false;
             this.myTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3540,7 +3482,6 @@
             // 
             // myTextBox10
             // 
-            this.myTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox10.Enabled = false;
             this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3558,7 +3499,6 @@
             // 
             // myTextBox9
             // 
-            this.myTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox9.Enabled = false;
             this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3576,7 +3516,6 @@
             // 
             // myTextBox8
             // 
-            this.myTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox8.Enabled = false;
             this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3594,7 +3533,6 @@
             // 
             // myTextBox7
             // 
-            this.myTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox7.Enabled = false;
             this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3612,7 +3550,6 @@
             // 
             // myTextBox6
             // 
-            this.myTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox6.Enabled = false;
             this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3630,7 +3567,6 @@
             // 
             // myTextBox5
             // 
-            this.myTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox5.Enabled = false;
             this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3648,7 +3584,6 @@
             // 
             // TextBoxDisplayID
             // 
-            this.TextBoxDisplayID.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxDisplayID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxDisplayID.Enabled = false;
             this.TextBoxDisplayID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3666,7 +3601,6 @@
             // 
             // tb_item_description
             // 
-            this.tb_item_description.BorderColor = System.Drawing.Color.Gainsboro;
             this.tb_item_description.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_item_description.Enabled = false;
             this.tb_item_description.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3680,7 +3614,6 @@
             // 
             // tb_item_name
             // 
-            this.tb_item_name.BorderColor = System.Drawing.Color.Gainsboro;
             this.tb_item_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_item_name.Enabled = false;
             this.tb_item_name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3695,7 +3628,6 @@
             // 
             // myTextBox1
             // 
-            this.myTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.myTextBox1.Enabled = false;
             this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3854,12 +3786,12 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonFlagCustom);
+            this.Controls.Add(this.ButtonFlagExtra);
+            this.Controls.Add(this.ButtonFlag);
+            this.Controls.Add(this.ButtonBagFamilyMask);
+            this.Controls.Add(this.ButtonAllowableClass);
+            this.Controls.Add(this.ButtonAllowableRace);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label12);
@@ -3948,12 +3880,12 @@
         public System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button5;
-        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button ButtonAllowableRace;
+        public System.Windows.Forms.Button ButtonAllowableClass;
+        public System.Windows.Forms.Button ButtonBagFamilyMask;
+        public System.Windows.Forms.Button ButtonFlag;
+        public System.Windows.Forms.Button ButtonFlagExtra;
+        public System.Windows.Forms.Button ButtonFlagCustom;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.ComboBox comboBox7;

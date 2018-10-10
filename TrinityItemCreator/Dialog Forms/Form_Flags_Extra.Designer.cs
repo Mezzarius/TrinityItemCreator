@@ -179,7 +179,6 @@
             // 
             // TextBoxFlagExtraMask
             // 
-            this.TextBoxFlagExtraMask.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxFlagExtraMask.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxFlagExtraMask.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.TextBoxFlagExtraMask.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,7 +193,7 @@
             this.TextBoxFlagExtraMask.TextChanged += new System.EventHandler(this.TextBoxFlagExtraMask_TextChanged);
             this.TextBoxFlagExtraMask.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             // 
-            // Window_FlagExtraMask
+            // Form_Flags_Extra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,12 +215,13 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_FlagExtraMask";
+            this.Name = "Form_Flags_Extra";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Window_FlagExtraMask";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Flags_Extra_FormClosed);
             this.Load += new System.EventHandler(this.Window_FlagExtraMask_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_FlagExtraMask_KeyDown);
             this.panel3.ResumeLayout(false);

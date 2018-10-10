@@ -1220,7 +1220,6 @@
             // 
             // TextBoxRangeMax
             // 
-            this.TextBoxRangeMax.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxRangeMax.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxRangeMax.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxRangeMax.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -1236,7 +1235,6 @@
             // 
             // TextBoxRangeMin
             // 
-            this.TextBoxRangeMin.BorderColor = System.Drawing.Color.Gainsboro;
             this.TextBoxRangeMin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoxRangeMin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxRangeMin.ForeColor = System.Drawing.Color.DarkSlateGray;

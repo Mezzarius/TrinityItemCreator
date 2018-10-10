@@ -434,7 +434,6 @@
             // 
             // MyTextBox23
             // 
-            this.MyTextBox23.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox23.ForeColor = System.Drawing.Color.DimGray;
@@ -447,7 +446,6 @@
             // 
             // MyTextBox22
             // 
-            this.MyTextBox22.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox22.ForeColor = System.Drawing.Color.DimGray;
@@ -464,7 +462,6 @@
             // 
             // MyTextBox21
             // 
-            this.MyTextBox21.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox21.ForeColor = System.Drawing.Color.DimGray;
@@ -481,7 +478,6 @@
             // 
             // MyTextBox20
             // 
-            this.MyTextBox20.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox20.ForeColor = System.Drawing.Color.DimGray;
@@ -498,7 +494,6 @@
             // 
             // MyTextBox19
             // 
-            this.MyTextBox19.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox19.ForeColor = System.Drawing.Color.DimGray;
@@ -515,7 +510,6 @@
             // 
             // MyTextBox18
             // 
-            this.MyTextBox18.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox18.ForeColor = System.Drawing.Color.DimGray;
@@ -532,7 +526,6 @@
             // 
             // MyTextBox17
             // 
-            this.MyTextBox17.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox17.ForeColor = System.Drawing.Color.DimGray;
@@ -549,7 +542,6 @@
             // 
             // MyTextBox16
             // 
-            this.MyTextBox16.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox16.ForeColor = System.Drawing.Color.DimGray;
@@ -566,7 +558,6 @@
             // 
             // MyTextBox14
             // 
-            this.MyTextBox14.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox14.ForeColor = System.Drawing.Color.DimGray;
@@ -583,7 +574,6 @@
             // 
             // MyTextBox15
             // 
-            this.MyTextBox15.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox15.ForeColor = System.Drawing.Color.DimGray;
@@ -600,7 +590,6 @@
             // 
             // MyTextBox10
             // 
-            this.MyTextBox10.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox10.ForeColor = System.Drawing.Color.DimGray;
@@ -617,7 +606,6 @@
             // 
             // MyTextBox11
             // 
-            this.MyTextBox11.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox11.ForeColor = System.Drawing.Color.DimGray;
@@ -634,7 +622,6 @@
             // 
             // MyTextBox12
             // 
-            this.MyTextBox12.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox12.ForeColor = System.Drawing.Color.DimGray;
@@ -651,7 +638,6 @@
             // 
             // MyTextBox13
             // 
-            this.MyTextBox13.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox13.ForeColor = System.Drawing.Color.DimGray;
@@ -668,7 +654,6 @@
             // 
             // MyTextBox9
             // 
-            this.MyTextBox9.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox9.ForeColor = System.Drawing.Color.DimGray;
@@ -685,7 +670,6 @@
             // 
             // MyTextBox8
             // 
-            this.MyTextBox8.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox8.ForeColor = System.Drawing.Color.DimGray;
@@ -702,7 +686,6 @@
             // 
             // MyTextBox7
             // 
-            this.MyTextBox7.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox7.ForeColor = System.Drawing.Color.DimGray;
@@ -719,7 +702,6 @@
             // 
             // MyTextBox6
             // 
-            this.MyTextBox6.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox6.ForeColor = System.Drawing.Color.DimGray;
@@ -736,7 +718,6 @@
             // 
             // MyTextBox5
             // 
-            this.MyTextBox5.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox5.ForeColor = System.Drawing.Color.DimGray;
@@ -753,7 +734,6 @@
             // 
             // MyTextBox4
             // 
-            this.MyTextBox4.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox4.ForeColor = System.Drawing.Color.DimGray;
@@ -770,7 +750,6 @@
             // 
             // MyTextBox3
             // 
-            this.MyTextBox3.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox3.ForeColor = System.Drawing.Color.DimGray;
@@ -787,7 +766,6 @@
             // 
             // MyTextBox2
             // 
-            this.MyTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox2.ForeColor = System.Drawing.Color.DimGray;
@@ -804,7 +782,6 @@
             // 
             // MyTextBox1
             // 
-            this.MyTextBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox1.ForeColor = System.Drawing.Color.DimGray;
@@ -821,7 +798,6 @@
             // 
             // MyTextBox25
             // 
-            this.MyTextBox25.BorderColor = System.Drawing.Color.Gainsboro;
             this.MyTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MyTextBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyTextBox25.ForeColor = System.Drawing.Color.DimGray;

@@ -28,6 +28,62 @@ namespace TrinityItemCreator.MyClass
 
         private Dictionary<int, Item> items = new Dictionary<int, Item>();
 
+        /// <summary>
+        /// Get string value between [first] a and [last] b.
+        /// </summary>
+        private string Between(string text, string a, string b)
+        {
+            int posA = text.IndexOf(a);
+            int posB = text.LastIndexOf(b);
+            if (posA == -1)
+            {
+                return "";
+            }
+            if (posB == -1)
+            {
+                return "";
+            }
+            int adjustedPosA = posA + a.Length;
+            if (adjustedPosA >= posB)
+            {
+                return "";
+            }
+            return text.Substring(adjustedPosA, posB - adjustedPosA);
+        }
+
+        public void SetFlagsMasksButtonCurrentValue()
+        {
+            mainForm.ButtonAllowableClass.Text = mainForm.ButtonAllowableClass.Text.Replace
+            (
+                Between(mainForm.ButtonAllowableClass.Text, "(", ")"), MyData.Field_AllowableClass.ToString()
+            );
+
+            mainForm.ButtonAllowableRace.Text = mainForm.ButtonAllowableRace.Text.Replace
+            (
+                Between(mainForm.ButtonAllowableRace.Text, "(", ")"), MyData.Field_AllowableRace.ToString()
+            );
+
+            mainForm.ButtonBagFamilyMask.Text = mainForm.ButtonBagFamilyMask.Text.Replace
+            (
+                Between(mainForm.ButtonBagFamilyMask.Text, "(", ")"), MyData.Field_BagFamily.ToString()
+            );
+
+            mainForm.ButtonFlag.Text = mainForm.ButtonFlag.Text.Replace
+            (
+                Between(mainForm.ButtonFlag.Text, "(", ")"), MyData.Field_Flags.ToString()
+            );
+
+            mainForm.ButtonFlagExtra.Text = mainForm.ButtonFlagExtra.Text.Replace
+            (
+                Between(mainForm.ButtonFlagExtra.Text, "(", ")"), MyData.Field_FlagsExtra.ToString()
+            );
+
+            mainForm.ButtonFlagCustom.Text = mainForm.ButtonFlagCustom.Text.Replace
+            (
+                Between(mainForm.ButtonFlagCustom.Text, "(", ")"), MyData.Field_flagsCustom.ToString()
+            );
+        }
+
         public static bool IsDBConnected()
         {
             string conn_info = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +

@@ -110,5 +110,11 @@ namespace TrinityItemCreator
         {
             TextBoxBagFamilyMask.Text = "0";
         }
+
+        private void Form_Bag_Family_Mask_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Functions funcs = new Functions(mainForm);
+            funcs.SetFlagsMasksButtonCurrentValue();
+        }
     }
 }

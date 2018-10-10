@@ -45,6 +45,9 @@ namespace TrinityItemCreator
                 MyData.Field_AllowableRace = -1;
             else
                 MyData.Field_AllowableRace = _maskToHandle;
+
+            Functions funcs = new Functions(mainForm);
+            funcs.SetFlagsMasksButtonCurrentValue();
         }
 
         private void UncheckAll_Click(object sender, EventArgs e) { foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = false; }

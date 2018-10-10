@@ -129,7 +129,6 @@
             // 
             // myTextBox2
             // 
-            this.myTextBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.myTextBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.myTextBox2.Location = new System.Drawing.Point(69, 95);

@@ -45,6 +45,9 @@ namespace TrinityItemCreator
                 MyData.Field_AllowableClass = -1;
             else
                 MyData.Field_AllowableClass = _maskToHandle;
+
+            Functions funcs = new Functions(mainForm);
+            funcs.SetFlagsMasksButtonCurrentValue();
         }
 
         private void UnCheckAll_Click(object sender, EventArgs e) { foreach (var chkBox in Controls.OfType<CheckBox>()) chkBox.Checked = false; }

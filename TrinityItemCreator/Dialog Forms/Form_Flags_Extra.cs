@@ -110,5 +110,11 @@ namespace TrinityItemCreator
         {
             TextBoxFlagExtraMask.Text = "0";
         }
+
+        private void Form_Flags_Extra_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Functions funcs = new Functions(mainForm);
+            funcs.SetFlagsMasksButtonCurrentValue();
+        }
     }
 }

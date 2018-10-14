@@ -4,8 +4,6 @@
 
 ### Planing features
 - [ ] 4.3.4
-- [ ] Legion
-- [ ] Battle for Azeroth
 - [ ] Item Preview Tooltip
 - [ ] ~~Other Emulators~~
 

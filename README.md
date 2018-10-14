@@ -5,7 +5,6 @@
 ### Planing features
 - [ ] 4.3.4
 - [ ] Item Preview Tooltip
-- [ ] ~~Other Emulators~~
 
 ### Functionality
 - [x] Import to database

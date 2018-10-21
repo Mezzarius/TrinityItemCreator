@@ -285,12 +285,12 @@
             // 
             // label15
             // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Location = new System.Drawing.Point(450, 6);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(1105, 36);
+            this.label15.Size = new System.Drawing.Size(141, 20);
             this.label15.TabIndex = 0;
             this.label15.Text = "Trinity Item Creator";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -419,7 +419,7 @@
             this.templateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.templateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_templates;
             this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
-            this.templateToolStripMenuItem.Size = new System.Drawing.Size(96, 27);
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
             this.templateToolStripMenuItem.Text = "Templates";
             // 
             // loadDefaultTemplateToolStripMenuItem
@@ -521,7 +521,7 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(12, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 17);
+            this.label1.Size = new System.Drawing.Size(41, 17);
             this.label1.TabIndex = 32;
             this.label1.Text = "Entry";
             // 
@@ -707,7 +707,7 @@
             this.label12.ForeColor = System.Drawing.Color.DimGray;
             this.label12.Location = new System.Drawing.Point(12, 270);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 17);
+            this.label12.Size = new System.Drawing.Size(68, 17);
             this.label12.TabIndex = 56;
             this.label12.Text = "Inventory";
             // 
@@ -1592,7 +1592,7 @@
             this.label36.ForeColor = System.Drawing.Color.DimGray;
             this.label36.Location = new System.Drawing.Point(238, 406);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(72, 17);
+            this.label36.Size = new System.Drawing.Size(71, 17);
             this.label36.TabIndex = 133;
             this.label36.Text = "Food Type";
             // 
@@ -1690,7 +1690,7 @@
             this.label38.ForeColor = System.Drawing.Color.DimGray;
             this.label38.Location = new System.Drawing.Point(31, 588);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(72, 17);
+            this.label38.Size = new System.Drawing.Size(73, 17);
             this.label38.TabIndex = 136;
             this.label38.Text = "Spell Entry";
             // 
@@ -1771,7 +1771,7 @@
             this.label42.ForeColor = System.Drawing.Color.DimGray;
             this.label42.Location = new System.Drawing.Point(451, 588);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(63, 17);
+            this.label42.Size = new System.Drawing.Size(64, 17);
             this.label42.TabIndex = 149;
             this.label42.Text = "Category";
             // 
@@ -1784,7 +1784,7 @@
             this.label43.ForeColor = System.Drawing.Color.DimGray;
             this.label43.Location = new System.Drawing.Point(528, 588);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(84, 17);
+            this.label43.Size = new System.Drawing.Size(85, 17);
             this.label43.TabIndex = 151;
             this.label43.Text = "Category CD";
             // 
@@ -2110,7 +2110,7 @@
             this.label28.ForeColor = System.Drawing.Color.DimGray;
             this.label28.Location = new System.Drawing.Point(684, 464);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(191, 17);
+            this.label28.Size = new System.Drawing.Size(190, 17);
             this.label28.TabIndex = 112;
             this.label28.Text = "Scaling Stat Distribution/Value";
             // 
@@ -3842,6 +3842,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

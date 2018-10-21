@@ -136,9 +136,6 @@ namespace TrinityItemCreator.MyClass
 
                     items.Add(item.itemID, item);
                 }
-
-                string time = DateTime.Now.ToString("HH:mm:ss");
-                //MessageBox.Show(time + ": Loaded Items");
             }
             catch (Exception ex)
             {
@@ -152,21 +149,21 @@ namespace TrinityItemCreator.MyClass
         public void ItemsToDBC()
         {
             DBCReader reader = new DBCReader("data/ItemData.dbc");
-            BinaryWriter writer = new BinaryWriter(File.Open("Item.dbc", FileMode.Create));
+            BinaryWriter writer = new BinaryWriter(File.OpenWrite("Item.dbc"));
 
-            DBCHeader header = new DBCHeader();
-            header.DBCmagic = DBCReader.DBCFmtSig;
-            header.RecordsCount = (uint)items.Count;
-            header.FieldsCount = (uint)reader.FieldsCount;
-            header.RecordSize = (uint)reader.RecordSize;
-            header.StringTableSize = (uint)reader.StringTableSize;
+            DBCHeader header = new DBCHeader
+            {
+                DBCmagic = DBCReader.DBCFmtSig,
+                RecordsCount = (uint)items.Count,
+                FieldsCount = (uint)reader.FieldsCount,
+                RecordSize = (uint)reader.RecordSize,
+                StringTableSize = (uint)reader.StringTableSize
+            };
 
             //Write header content
             writer.Write(DBCReader.DBCFmtSig);
             writer.Write(header.RecordsCount);
-            //MessageBox.Show($"recordsCount : {header.RecordsCount}");
             writer.Write(header.FieldsCount);
-            //MessageBox.Show($"fieldsCount : {header.FieldsCount}");
             writer.Write(header.RecordSize);
             writer.Write(header.StringTableSize);
 

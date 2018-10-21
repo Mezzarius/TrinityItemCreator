@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Text;
 
 namespace TrinityItemCreator
@@ -14,7 +13,7 @@ namespace TrinityItemCreator
         public static string ReadStringNull(this BinaryReader reader)
         {
             byte num;
-            string text = String.Empty;
+            string text = string.Empty;
             System.Collections.Generic.List<byte> temp = new System.Collections.Generic.List<byte>();
 
             while ((num = reader.ReadByte()) != 0)

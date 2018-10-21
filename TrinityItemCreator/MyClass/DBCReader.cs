@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using System.Windows.Forms;
 
 namespace TrinityItemCreator
 {
@@ -36,20 +34,18 @@ namespace TrinityItemCreator
             {
                 if (reader.BaseStream.Length < HeaderSize)
                 {
-                    throw new InvalidDataException(String.Format("File {0} is corrupted!", fileName));
+                    throw new InvalidDataException(string.Format("File {0} is corrupted!", fileName));
                 }
 
                 if (reader.ReadUInt32() != DBCFmtSig)
                 {
-                    throw new InvalidDataException(String.Format("File {0} isn't valid DBC file!", fileName));
+                    throw new InvalidDataException(string.Format("File {0} isn't valid DBC file!", fileName));
                 }
 
                 RecordsCount = reader.ReadInt32();
                 FieldsCount = reader.ReadInt32();
                 RecordSize = reader.ReadInt32();
                 StringTableSize = reader.ReadInt32();
-
-                //MessageBox.Show($"FieldsCount: {FieldsCount}");
 
                 m_rows = new byte[RecordsCount][];
 

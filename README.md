@@ -1,6 +1,10 @@
 ## Trinity Item Creator 
-[![Build Status](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator.svg?branch=master)](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator) [![Percentage of issues still open](http://isitmaintained.com/badge/open/TrinityItemCreator/TrinityItemCreator.svg)](http://isitmaintained.com/project/TrinityItemCreator/TrinityItemCreator "Percentage of issues still open")
+[![Build Status](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator.svg?branch=master)](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator) 
+[![GitHub issues open](https://img.shields.io/github/issues/TrinityItemCreator/TrinityItemCreator.svg)]() 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed/TrinityItemCreator/TrinityItemCreator.svg)]() 
 [![Discord server](https://img.shields.io/badge/Join-Discord-blue.svg)](https://discord.gg/KW5R2j7 "Join us on discord")
+
+
 
 ### Planing features
 - [ ] 4.3.4

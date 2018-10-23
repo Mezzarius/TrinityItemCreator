@@ -4,7 +4,7 @@
 [![GitHub issues closed](https://img.shields.io/github/issues-closed/TrinityItemCreator/TrinityItemCreator.svg)]() 
 [![Discord server](https://img.shields.io/badge/Join-Discord-blue.svg)](https://discord.gg/KW5R2j7 "Join us on discord")
 
-
+![GitHub last commit](https://img.shields.io/github/last-commit/TrinityItemCreator/TrinityItemCreator.svg)
 
 ### Planing features
 - [ ] 4.3.4

@@ -114,18 +114,48 @@ namespace TrinityItemCreator.MyClass
 
             try
             {
+                Item item = new Item();
                 conn.ConnectionString = conString;
                 conn.Open();
 
-                string query = "SELECT entry AS itemID, class AS itemClass, subclass AS itemSubClass, SoundOverrideSubclass AS sound_override_subclassid, Material AS materialID, displayid AS itemDisplayInfo, InventoryType AS inventorySlotID, sheath AS sheathID FROM item_template";
+                string query = "SELECT entry AS itemID, class AS itemClass, subclass AS itemSubClass, SoundOverrideSubclass AS sound_override_subclassid, " +
+                    "Material AS materialID, displayid AS itemDisplayInfo, InventoryType AS inventorySlotID, sheath AS sheathID FROM item_template " +
+                    "ORDER BY entry ASC";
+
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
+                using (StreamReader sr = new StreamReader("data/itemdata.csv"))
+                {
+                    string currentLine;
+                    while ((currentLine = sr.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrEmpty(currentLine))
+                        {
+                            var values = currentLine.Split(',');
+
+                            item.itemID = int.Parse(values[0]);
+                            item.itemClass = int.Parse(values[1]);
+                            item.itemSubClass = int.Parse(values[2]);
+                            item.sound_override_subclassid = int.Parse(values[3]);
+                            item.materialID = int.Parse(values[4]);
+                            item.itemDisplayInfo = int.Parse(values[5]);
+                            item.inventorySlotID = int.Parse(values[6]);
+                            item.sheathID = int.Parse(values[7]);
+
+                            items.Add(item.itemID, item);
+                        }
+                    }
+                }
+
                 while (reader.Read())
                 {
-                    Item item = new Item();
-
                     item.itemID = int.Parse(reader["itemID"].ToString());
+
+                    // check if item from dbc is same as item from item_template
+                    if (items.ContainsKey(item.itemID))
+                        items.Remove(item.itemID); // remove because we add the values from db which stays up to date!
+
                     item.itemClass = int.Parse(reader["itemClass"].ToString());
                     item.itemSubClass = int.Parse(reader["itemSubclass"].ToString());
                     item.sound_override_subclassid = int.Parse(reader["sound_override_subclassid"].ToString());
@@ -148,7 +178,7 @@ namespace TrinityItemCreator.MyClass
 
         public void ItemsToDBC()
         {
-            DBCReader reader = new DBCReader("data/ItemData.dbc");
+            DBCReader reader = new DBCReader("data/itemheader.dbc");
             BinaryWriter writer = new BinaryWriter(File.OpenWrite("Item.dbc"));
 
             DBCHeader header = new DBCHeader

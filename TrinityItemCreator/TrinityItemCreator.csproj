@@ -247,9 +247,12 @@
     <None Include="data\displayidlist.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="data\ItemData.dbc">
+    <None Include="data\itemdata.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
+    <None Include="data\itemheader.dbc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -280,9 +283,6 @@
     <None Include="Resources\icon_right_arrow_3.png" />
     <None Include="Resources\icon_right_arrow_2.png" />
     <None Include="Resources\icon_right_arrow_1.png" />
-    <Content Include="data\get_displayidlist.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\icon_functions.png" />
     <None Include="Resources\icon_about.png" />
     <None Include="Resources\icon_bag.png" />

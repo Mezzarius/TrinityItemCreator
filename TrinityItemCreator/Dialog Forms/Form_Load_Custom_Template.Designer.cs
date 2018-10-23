@@ -138,7 +138,7 @@
             this.panel3.Size = new System.Drawing.Size(6, 324);
             this.panel3.TabIndex = 158;
             // 
-            // Form4
+            // Form_Load_Custom_Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -156,11 +156,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form4";
+            this.Name = "Form_Load_Custom_Template";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.Form4_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form4_KeyDown);
             this.panel2.ResumeLayout(false);

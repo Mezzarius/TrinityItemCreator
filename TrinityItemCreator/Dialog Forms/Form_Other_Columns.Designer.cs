@@ -877,7 +877,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Window_Other_Options";
             this.Load += new System.EventHandler(this.Window_Other_Options_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_Other_Options_KeyDown);

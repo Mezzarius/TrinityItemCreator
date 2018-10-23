@@ -131,7 +131,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label2.Location = new System.Drawing.Point(395, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 20);
+            this.label2.Size = new System.Drawing.Size(35, 20);
             this.label2.TabIndex = 38;
             this.label2.Text = "Port";
             // 
@@ -153,7 +153,7 @@
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label4.Location = new System.Drawing.Point(259, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 75;
             this.label4.Text = "Password";
             // 
@@ -164,7 +164,7 @@
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label5.Location = new System.Drawing.Point(185, 167);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 20);
+            this.label5.Size = new System.Drawing.Size(160, 20);
             this.label5.TabIndex = 76;
             this.label5.Text = "World Database Name";
             // 
@@ -260,7 +260,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_DB_Info";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_DB_Info_FormClosed);
             this.Load += new System.EventHandler(this.Form_DB_Info_Load);

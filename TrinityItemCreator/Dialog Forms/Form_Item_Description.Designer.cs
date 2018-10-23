@@ -117,7 +117,7 @@
             this.richTextBox1.Text = "";
             this.richTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RichTextBox1_KeyDown);
             // 
-            // Window_EditDescription
+            // Form_Item_Description
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,11 +135,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Window_EditDescription";
+            this.Name = "Form_Item_Description";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_EditDescription_FormClosed);
             this.Load += new System.EventHandler(this.Window_EditDescription_Load);
             this.panel2.ResumeLayout(false);

@@ -1316,7 +1316,7 @@
             this.Name = "Form_Stats_Generator";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Window_GenerateStats_FormClosed);
             this.Load += new System.EventHandler(this.Window_GenerateStats_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Window_GenerateStats_KeyDown);

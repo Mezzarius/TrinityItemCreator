@@ -212,7 +212,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Window_FlagCustomMask";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Flags_Custom_FormClosed);
             this.Load += new System.EventHandler(this.Window_FlagCustomMask_Load);

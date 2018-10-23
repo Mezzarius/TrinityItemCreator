@@ -1,7 +1,7 @@
 ## Trinity Item Creator 
 [![Build Status](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator.svg?branch=master)](https://travis-ci.com/TrinityItemCreator/TrinityItemCreator) 
-[![GitHub issues open](https://img.shields.io/github/issues/TrinityItemCreator/TrinityItemCreator.svg)]() 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed/TrinityItemCreator/TrinityItemCreator.svg)]() 
+[![GitHub issues open](https://img.shields.io/github/issues/TrinityItemCreator/TrinityItemCreator.svg)](https://github.com/TrinityItemCreator/TrinityItemCreator/issues?q=is%3Aopen+is%3Aissue) 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed/TrinityItemCreator/TrinityItemCreator.svg)](https://github.com/TrinityItemCreator/TrinityItemCreator/issues?q=is%3Aissue+is%3Aclosed) 
 [![Discord server](https://img.shields.io/badge/Join-Discord-blue.svg)](https://discord.gg/KW5R2j7 "Join us on discord")
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/TrinityItemCreator/TrinityItemCreator.svg)

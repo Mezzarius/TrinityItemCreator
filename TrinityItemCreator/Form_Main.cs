@@ -950,5 +950,11 @@ namespace TrinityItemCreator
                     myf.ItemsToDBC();
             }
         }
+
+        private void tableItemtemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ItemTemplate Fitt = new Form_ItemTemplate(this);
+            Fitt.ShowDialog();
+        }
     }
 }

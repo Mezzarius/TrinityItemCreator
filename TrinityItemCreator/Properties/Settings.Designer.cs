@@ -94,5 +94,29 @@ namespace TrinityItemCreator.Properties {
                 this["db_name"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("item_template_trinitycore_3.3.5")]
+        public string item_template_name {
+            get {
+                return ((string)(this["item_template_name"]));
+            }
+            set {
+                this["item_template_name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int item_template_selected {
+            get {
+                return ((int)(this["item_template_selected"]));
+            }
+            set {
+                this["item_template_selected"] = value;
+            }
+        }
     }
 }

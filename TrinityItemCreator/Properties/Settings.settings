@@ -20,5 +20,11 @@
     <Setting Name="db_name" Type="System.String" Scope="User">
       <Value Profile="(Default)">world</Value>
     </Setting>
+    <Setting Name="item_template_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">item_template_trinitycore_3.3.5</Value>
+    </Setting>
+    <Setting Name="item_template_selected" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

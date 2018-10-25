@@ -1,5 +1,8 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace TrinityItemCreator.MyClass
@@ -7,6 +10,18 @@ namespace TrinityItemCreator.MyClass
     class MyData
     {
         public MyData() { }
+
+        public static List<string> item_template_columns = new List<string>();
+
+        public void GetItemTemplateColumnNames()
+        {
+            string filename = Properties.Settings.Default.item_template_name;
+            item_template_columns.Clear();
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load($"data\\{filename}.xml");
+            foreach (XmlNode node in doc.SelectNodes("//field")) { item_template_columns.Add(node.Attributes["name"].Value); }
+        }
 
         public bool SaveNewTemplateAsXML(string filename, bool replace)
         {

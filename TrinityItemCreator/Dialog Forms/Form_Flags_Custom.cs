@@ -40,7 +40,8 @@ namespace TrinityItemCreator
 
         private void ButtonSelectAll_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < checkedListBox1.Items.Count; i++) checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+                checkedListBox1.SetItemChecked(i, mIsChecked ? false : true);
             mIsChecked = mIsChecked ? false : true;
         }
 
@@ -50,10 +51,7 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void ButtonFinish_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void ButtonFinish_Click(object sender, EventArgs e) => Close();
 
         private void TextBoxBagFamilyMask_TextChanged(object sender, EventArgs e)
         {
@@ -67,7 +65,7 @@ namespace TrinityItemCreator
                 checkedListBox1.SetItemChecked(i, Convert.ToBoolean(_textBoxMask & itemMask));
             }
 
-            MyData.Field_flagsCustom = _textBoxMask;
+            MyData.ItemTemplateValues[137] = _textBoxMask.ToString();
         }
 
         private void Window_FlagCustomMask_Load(object sender, EventArgs e)
@@ -80,10 +78,10 @@ namespace TrinityItemCreator
                 string s = checkedListBox1.Items[i].ToString();
                 int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
 
-                if ((MyData.Field_flagsCustom & itemMask) != 0)
+                if ((int.Parse(MyData.ItemTemplateValues[137]) & itemMask) != 0)
                     checkedListBox1.SetItemChecked(i, true);
                 else
-                    TextBoxFlagCustomMask.Text = MyData.Field_flagsCustom.ToString(); // contains different class mask then add full class mask to text box
+                    TextBoxFlagCustomMask.Text = MyData.ItemTemplateValues[137]; // contains different class mask then add full class mask to text box
             }
         }
 
@@ -92,16 +90,18 @@ namespace TrinityItemCreator
             string s = checkedListBox1.Items[e.Index].ToString();
             int itemMask = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
 
+            int.TryParse(MyData.ItemTemplateValues[137], out int toMask);
             if (e.NewValue == CheckState.Checked)
             {
-                if ((MyData.Field_flagsCustom & itemMask) == 0)
-                    MyData.Field_flagsCustom += itemMask;
+                if ((int.Parse(MyData.ItemTemplateValues[137]) & itemMask) == 0)
+                    toMask += itemMask;
             }
             else
             {
-                if ((MyData.Field_flagsCustom & itemMask) != 0)
-                    MyData.Field_flagsCustom -= itemMask;
+                if ((int.Parse(MyData.ItemTemplateValues[137]) & itemMask) != 0)
+                    toMask -= itemMask;
             }
+            MyData.ItemTemplateValues[137] = toMask.ToString();
         }
 
         private void ResetManualTextBoxFlagCustomMask(object sender, EventArgs e)

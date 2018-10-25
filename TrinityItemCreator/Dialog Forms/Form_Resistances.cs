@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using TrinityItemCreator.MyClass;
 
@@ -59,50 +59,14 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void myTextBox5_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox5.Text, out int userVal))
-                MyData.Field_holy_res = userVal;
-        }
-
-        private void myTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox1.Text, out int userVal))
-                MyData.Field_frost_res = userVal;
-        }
-
-        private void myTextBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox2.Text, out int userVal))
-                MyData.Field_fire_res = userVal;
-        }
-
-        private void myTextBox6_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox6.Text, out int userVal))
-                MyData.Field_shadow_res = userVal;
-        }
-
-        private void myTextBox4_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox4.Text, out int userVal))
-                MyData.Field_nature_res = userVal;
-        }
-
-        private void myTextBox3_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(myTextBox3.Text, out int userVal))
-                MyData.Field_arcane_res = userVal;
-        }
+        private void MyTextBoxValue_Changed(object sender, EventArgs e) => MyData.ItemTemplateValues[int.Parse(((MyTextBox)sender).Tag.ToString())] = ((MyTextBox)sender).Text;
 
         private void Window_Resistances_Load(object sender, EventArgs e)
         {
-            myTextBox1.Text = MyData.Field_frost_res.ToString();
-            myTextBox2.Text = MyData.Field_fire_res.ToString();
-            myTextBox3.Text = MyData.Field_arcane_res.ToString();
-            myTextBox4.Text = MyData.Field_nature_res.ToString();
-            myTextBox5.Text = MyData.Field_holy_res.ToString();
-            myTextBox6.Text = MyData.Field_shadow_res.ToString();
+            foreach (MyTextBox mytextbox in Controls.OfType<MyTextBox>())
+            {
+                mytextbox.Text = MyData.ItemTemplateValues[int.Parse(mytextbox.Tag.ToString())];
+            }
         }
     }
 }

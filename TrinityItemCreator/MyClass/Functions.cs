@@ -17,7 +17,6 @@ namespace TrinityItemCreator.MyClass
     {
         private Form_Main mainForm;
         public static bool preLoadTemplate;
-        public static bool preLoadSubClassMenu;
 
         public Functions() { }
 
@@ -27,6 +26,8 @@ namespace TrinityItemCreator.MyClass
         }
 
         private Dictionary<int, Item> items = new Dictionary<int, Item>();
+
+        public static bool PreLoadSubClassMenu { get; set; }
 
         /// <summary>
         /// Get string value between [first] a and [last] b.
@@ -386,7 +387,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_dmg_max1 = 200;
                         MyData.Field_delay = 1000;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 1: // armor
@@ -403,7 +404,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_stat_value2 = 20;
                         MyData.Field_armor = 100;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 2: // gem
@@ -416,7 +417,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_GemProperties = 942;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 3: // projectile
@@ -433,7 +434,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_dmg_max1 = 200;
                         MyData.Field_delay = 1000;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 4:// container
@@ -445,7 +446,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_Material = 8;
                         MyData.Field_InventoryType = 18;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 5: // quiver
@@ -458,7 +459,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_Material = 8;
                         MyData.Field_InventoryType = 27;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 6: // glyph
@@ -473,7 +474,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_BagFamily = 16;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 7: // recipe
@@ -492,7 +493,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellcategorycooldown_2 = -1;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 8: // quest
@@ -504,7 +505,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_startquest = 337;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 9: // key
@@ -522,7 +523,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_BagFamily = 256;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 10: // reagent
@@ -534,7 +535,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_stackable = 10;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 11: // trade goods
@@ -546,7 +547,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_stackable = 20;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 12: // consumables
@@ -561,7 +562,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_spellcategorycooldown_1 = 1000;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 13: // miscellaneous
@@ -572,7 +573,7 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_Material = 0;
                         MyData.Field_InventoryType = 0;
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 case 14: // custom
@@ -717,12 +718,12 @@ namespace TrinityItemCreator.MyClass
                         MyData.Field_flagsCustom = Convert.ToInt32(lines[137]);
                         MyData.Field_VerifiedBuild = Convert.ToInt32(lines[138]);
 
-                        preLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
+                        PreLoadSubClassMenu = true; // temporary fix fo subclass menu selected index
                         break;
                     }
                 default:
                     {
-                        preLoadSubClassMenu = false;
+                        PreLoadSubClassMenu = false;
                         // any other template id
                         break;
                     }
@@ -802,8 +803,8 @@ namespace TrinityItemCreator.MyClass
             mainForm.comboBox1.SelectedIndex = mainForm.comboBox1.FindString(string.Format("[{0}]", MyData.Field_Quality));
             mainForm.comboBox2.SelectedIndex = mainForm.comboBox2.FindString(string.Format("[{0}]", MyData.Field_bonding));
             mainForm.comboBox3.SelectedIndex = mainForm.comboBox3.FindString(string.Format("[{0}]", MyData.Field_sheath));
-            mainForm.comboBox4.SelectedIndex = mainForm.comboBox4.FindString(string.Format("[{0}]", MyData.Field_class));
-            mainForm.comboBox5.SelectedIndex = mainForm.comboBox5.FindString(string.Format("[{0}]", MyData.Field_subclass));
+            mainForm.ComboBoxClass.SelectedIndex = mainForm.ComboBoxClass.FindString(string.Format("[{0}]", MyData.Field_class));
+            mainForm.ComboBoxSubclass.SelectedIndex = mainForm.ComboBoxSubclass.FindString(string.Format("[{0}]", MyData.Field_subclass));
             mainForm.comboBox6.SelectedIndex = mainForm.comboBox6.FindString(string.Format("[{0}]", MyData.Field_InventoryType));
             mainForm.comboBox7.SelectedIndex = mainForm.comboBox7.FindString(string.Format("[{0}]", MyData.Field_stat_type1));
             mainForm.comboBox8.SelectedIndex = mainForm.comboBox8.FindString(string.Format("[{0}]", MyData.Field_stat_type2));

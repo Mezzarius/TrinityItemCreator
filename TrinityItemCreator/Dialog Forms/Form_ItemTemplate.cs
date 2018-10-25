@@ -64,10 +64,7 @@ namespace TrinityItemCreator.Dialog_Forms
 
         private void ButtonApply_Click(object sender, EventArgs e)
         {
-            foreach (var item in MyData.item_template_columns)
-            {
-                MessageBox.Show(item);
-            }
+            
         }
     }
 }

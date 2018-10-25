@@ -25,10 +25,10 @@ namespace TrinityItemCreator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int SQLPrefix {
+        [global::System.Configuration.DefaultSettingValueAttribute("INSERT")]
+        public string SQLPrefix {
             get {
-                return ((int)(this["SQLPrefix"]));
+                return ((string)(this["SQLPrefix"]));
             }
             set {
                 this["SQLPrefix"] = value;

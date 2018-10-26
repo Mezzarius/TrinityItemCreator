@@ -47,7 +47,10 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void ButtonCancel_Click(object sender, EventArgs e) => Close();
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
         private void Window_GenerateStats_Load(object sender, EventArgs e)
         {
@@ -65,27 +68,27 @@ namespace TrinityItemCreator
             CheckStat9.Checked = CheckStatBoxes[8];
             CheckStat10.Checked = CheckStatBoxes[9];
 
-            ComboBoxStat1.SelectedIndex = ComboBoxStat1.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[28]));
-            ComboBoxStat2.SelectedIndex = ComboBoxStat2.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[30]));
-            ComboBoxStat3.SelectedIndex = ComboBoxStat3.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[32]));
-            ComboBoxStat4.SelectedIndex = ComboBoxStat4.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[34]));
-            ComboBoxStat5.SelectedIndex = ComboBoxStat5.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[36]));
-            ComboBoxStat6.SelectedIndex = ComboBoxStat6.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[38]));
-            ComboBoxStat7.SelectedIndex = ComboBoxStat7.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[40]));
-            ComboBoxStat8.SelectedIndex = ComboBoxStat8.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[42]));
-            ComboBoxStat9.SelectedIndex = ComboBoxStat9.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[44]));
-            ComboBoxStat10.SelectedIndex = ComboBoxStat10.FindString(string.Format("[{0}]", MyData.ItemTemplateValues[46]));
+            ComboBoxStat1.SelectedIndex = ComboBoxStat1.FindString(string.Format("[{0}]", MyData.Field_stat_type1));
+            ComboBoxStat2.SelectedIndex = ComboBoxStat2.FindString(string.Format("[{0}]", MyData.Field_stat_type2));
+            ComboBoxStat3.SelectedIndex = ComboBoxStat3.FindString(string.Format("[{0}]", MyData.Field_stat_type3));
+            ComboBoxStat4.SelectedIndex = ComboBoxStat4.FindString(string.Format("[{0}]", MyData.Field_stat_type4));
+            ComboBoxStat5.SelectedIndex = ComboBoxStat5.FindString(string.Format("[{0}]", MyData.Field_stat_type5));
+            ComboBoxStat6.SelectedIndex = ComboBoxStat6.FindString(string.Format("[{0}]", MyData.Field_stat_type6));
+            ComboBoxStat7.SelectedIndex = ComboBoxStat7.FindString(string.Format("[{0}]", MyData.Field_stat_type7));
+            ComboBoxStat8.SelectedIndex = ComboBoxStat8.FindString(string.Format("[{0}]", MyData.Field_stat_type8));
+            ComboBoxStat9.SelectedIndex = ComboBoxStat9.FindString(string.Format("[{0}]", MyData.Field_stat_type9));
+            ComboBoxStat10.SelectedIndex = ComboBoxStat10.FindString(string.Format("[{0}]", MyData.Field_stat_type10));
 
-            LabelStatValue1.Text = MyData.ItemTemplateValues[28];
-            LabelStatValue2.Text = MyData.ItemTemplateValues[30];
-            LabelStatValue3.Text = MyData.ItemTemplateValues[32];
-            LabelStatValue4.Text = MyData.ItemTemplateValues[34];
-            LabelStatValue5.Text = MyData.ItemTemplateValues[36];
-            LabelStatValue6.Text = MyData.ItemTemplateValues[38];
-            LabelStatValue7.Text = MyData.ItemTemplateValues[40];
-            LabelStatValue8.Text = MyData.ItemTemplateValues[42];
-            LabelStatValue9.Text = MyData.ItemTemplateValues[44];
-            LabelStatValue10.Text = MyData.ItemTemplateValues[46];
+            LabelStatValue1.Text = MyData.Field_stat_value1.ToString();
+            LabelStatValue2.Text = MyData.Field_stat_value2.ToString();
+            LabelStatValue3.Text = MyData.Field_stat_value3.ToString();
+            LabelStatValue4.Text = MyData.Field_stat_value4.ToString();
+            LabelStatValue5.Text = MyData.Field_stat_value5.ToString();
+            LabelStatValue6.Text = MyData.Field_stat_value6.ToString();
+            LabelStatValue7.Text = MyData.Field_stat_value7.ToString();
+            LabelStatValue8.Text = MyData.Field_stat_value8.ToString();
+            LabelStatValue9.Text = MyData.Field_stat_value9.ToString();
+            LabelStatValue10.Text = MyData.Field_stat_value10.ToString();
         }
 
         private void Window_GenerateStats_FormClosed(object sender, FormClosedEventArgs e)
@@ -300,71 +303,71 @@ namespace TrinityItemCreator
             if (CheckStat1.Checked)
             {
                 string s = ComboBoxStat1.SelectedItem.ToString();
-                MyData.ItemTemplateValues[28] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[29] = LabelStatValue1.Text;
+                MyData.Field_stat_type1 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value1 = Convert.ToInt32(LabelStatValue1.Text);
             }
 
             if (CheckStat2.Checked)
             {
                 string s = ComboBoxStat2.SelectedItem.ToString();
-                MyData.ItemTemplateValues[30] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[31] = LabelStatValue2.Text;
+                MyData.Field_stat_type2 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value2 = Convert.ToInt32(LabelStatValue2.Text);
             }
 
             if (CheckStat3.Checked)
             {
                 string s = ComboBoxStat3.SelectedItem.ToString();
-                MyData.ItemTemplateValues[32] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[33] = LabelStatValue3.Text;
+                MyData.Field_stat_type3 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value3 = Convert.ToInt32(LabelStatValue3.Text);
             }
 
             if (CheckStat4.Checked)
             {
                 string s = ComboBoxStat4.SelectedItem.ToString();
-                MyData.ItemTemplateValues[34] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[35] = LabelStatValue4.Text;
+                MyData.Field_stat_type4 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value4 = Convert.ToInt32(LabelStatValue4.Text);
             }
 
             if (CheckStat5.Checked)
             {
                 string s = ComboBoxStat5.SelectedItem.ToString();
-                MyData.ItemTemplateValues[36] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[37] = LabelStatValue5.Text;
+                MyData.Field_stat_type5 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value5 = Convert.ToInt32(LabelStatValue5.Text);
             }
 
             if (CheckStat6.Checked)
             {
                 string s = ComboBoxStat6.SelectedItem.ToString();
-                MyData.ItemTemplateValues[38] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[39] = LabelStatValue6.Text;
+                MyData.Field_stat_type6 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value6 = Convert.ToInt32(LabelStatValue6.Text);
             }
 
             if (CheckStat7.Checked)
             {
                 string s = ComboBoxStat7.SelectedItem.ToString();
-                MyData.ItemTemplateValues[40] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[41] = LabelStatValue7.Text;
+                MyData.Field_stat_type7 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value7 = Convert.ToInt32(LabelStatValue7.Text);
             }
 
             if (CheckStat8.Checked)
             {
                 string s = ComboBoxStat8.SelectedItem.ToString();
-                MyData.ItemTemplateValues[42] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[43] = LabelStatValue8.Text;
+                MyData.Field_stat_type8 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value8 = Convert.ToInt32(LabelStatValue8.Text);
             }
 
             if (CheckStat9.Checked)
             {
                 string s = ComboBoxStat9.SelectedItem.ToString();
-                MyData.ItemTemplateValues[44] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[45] = LabelStatValue9.Text;
+                MyData.Field_stat_type9 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value9 = Convert.ToInt32(LabelStatValue9.Text);
             }
 
             if (CheckStat10.Checked)
             {
                 string s = ComboBoxStat10.SelectedItem.ToString();
-                MyData.ItemTemplateValues[46] = s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1);
-                MyData.ItemTemplateValues[47] = LabelStatValue10.Text;
+                MyData.Field_stat_type10 = Convert.ToInt32(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
+                MyData.Field_stat_value10 = Convert.ToInt32(LabelStatValue10.Text);
             }
 
             var myF = new Functions(mainForm);

@@ -30,29 +30,21 @@ namespace TrinityItemCreator
 
         private void Form_Allowable_Class_Load(object sender, EventArgs e)
         {
-            int _maskToHandle = int.Parse(MyData.ItemTemplateValues[13]) < 0 ? 0 : int.Parse(MyData.ItemTemplateValues[13]);
+            int _maskToHandle = MyData.Field_AllowableClass < 0 ? 0 : MyData.Field_AllowableClass;
 
-            foreach (CheckBox checkBox in Controls.OfType<CheckBox>())
-            {
-                if ((_maskToHandle & Convert.ToInt32(checkBox.Tag)) != 0)
-                    checkBox.Checked = true;
-            }
+            foreach (var checkBox in Controls.OfType<CheckBox>()) if ((_maskToHandle & Convert.ToInt32(checkBox.Tag)) != 0) { checkBox.Checked = true; }
         }
 
         private void Form_Allowable_Class_FormClosed(object sender, FormClosedEventArgs e)
         {
             int _maskToHandle = 0;
 
-            foreach (var checkBox in Controls.OfType<CheckBox>())
-            {
-                if (checkBox.Checked)
-                    _maskToHandle += Convert.ToInt32(checkBox.Tag);
-            }
+            foreach (var checkBox in Controls.OfType<CheckBox>()) { if (checkBox.Checked) _maskToHandle += Convert.ToInt32(checkBox.Tag); }
 
             if (_maskToHandle == 0 || _maskToHandle < -1)
-                MyData.ItemTemplateValues[13] = "-1";
+                MyData.Field_AllowableClass = -1;
             else
-                MyData.ItemTemplateValues[13] = _maskToHandle.ToString();
+                MyData.Field_AllowableClass = _maskToHandle;
 
             Functions funcs = new Functions(mainForm);
             funcs.SetFlagsMasksButtonCurrentValue();

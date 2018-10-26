@@ -37,8 +37,6 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void ButtonCancel_Click(object sender, EventArgs e) => Close();
-
         private void BindGridview(string searchField)
         {
             string displayFile = "displayidlist.csv";
@@ -68,6 +66,11 @@ namespace TrinityItemCreator
                 }
             }
             dataGridView1.Rows.AddRange(rows.ToArray());
+        }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void TextBoxSearch_TextChanged(object sender, EventArgs e)
@@ -100,8 +103,8 @@ namespace TrinityItemCreator
             {
                 if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
                 {
-                    MyData.ItemTemplateValues[5] = dataGridView1.CurrentCell.Value.ToString();
-                    mainForm.TextBoxDisplayID.Text = MyData.ItemTemplateValues[5];
+                    MyData.Field_displayid = Convert.ToInt32(dataGridView1.CurrentCell.Value.ToString());
+                    mainForm.TextBoxDisplayID.Text = MyData.Field_displayid.ToString();
                     Close();
                 }
             }

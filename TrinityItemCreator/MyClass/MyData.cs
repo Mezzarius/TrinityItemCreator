@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace TrinityItemCreator.MyClass
@@ -10,30 +7,6 @@ namespace TrinityItemCreator.MyClass
     class MyData
     {
         public MyData() { }
-
-        public static string[] ItemTemplateValues = new string[]
-        {
-            "1","0","0","-1","","0","0","0","0","1","0","0","0","-1","-1","0","0","0","0","0","0","0","0","0","0","1",
-            "0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0",
-            "0","0","0","0","0","0","0","0","0","0","0","1000","0","0","0","0","0","0","-1","0","-1","0","0","0",
-            "0","-1","0","-1","0","0","0","0","-1","0","-1","0","0","0","0","-1","0","-1","0","0","0","0","-1",
-            "0","-1","0","","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0",
-            "0","0","0","0","-1","0","0","0","0","","0","0","0","0","0","0"
-        };
-
-        public static List<string> GetItemTemplateColumns()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load($"data\\{Properties.Settings.Default.item_template_name}.xml");
-
-            List<string> item_template_columns = new List<string>();
-            foreach (XmlNode node in doc.SelectNodes("//field"))
-            {
-                item_template_columns.Add(node.Attributes["name"].Value);
-            }
-
-            return item_template_columns;
-        }
 
         public bool SaveNewTemplateAsXML(string filename, bool replace)
         {

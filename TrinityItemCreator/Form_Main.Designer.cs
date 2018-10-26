@@ -39,7 +39,6 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.tableItemtemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -143,10 +142,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.ComboBoxSubclass = new System.Windows.Forms.ComboBox();
-            this.ComboBoxClass = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.LabelDBConnection = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -157,6 +155,7 @@
             this.ButtonBagFamilyMask = new System.Windows.Forms.Button();
             this.ButtonAllowableClass = new System.Windows.Forms.Button();
             this.ButtonAllowableRace = new System.Windows.Forms.Button();
+            this.LabelDBConnection = new System.Windows.Forms.Label();
             this.myTextBox68 = new MyTextBox();
             this.myTextBox67 = new MyTextBox();
             this.myTextBox66 = new MyTextBox();
@@ -320,8 +319,7 @@
             this.mySQLConnectionToolStripMenuItem,
             this.toolStripMenuItem1,
             this.toolStripSeparator2,
-            this.toolStripComboBox1,
-            this.tableItemtemplateToolStripMenuItem});
+            this.toolStripComboBox1});
             this.settingsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_setting;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
@@ -356,19 +354,11 @@
             this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.toolStripComboBox1.Items.AddRange(new object[] {
-            "INSERT",
-            "REPLACE"});
+            "SQL Prefix [INSERT]",
+            "SQL Prefix [REPLACE]"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(150, 23);
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
-            // 
-            // tableItemtemplateToolStripMenuItem
-            // 
-            this.tableItemtemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
-            this.tableItemtemplateToolStripMenuItem.Name = "tableItemtemplateToolStripMenuItem";
-            this.tableItemtemplateToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.tableItemtemplateToolStripMenuItem.Text = "Table item_template";
-            this.tableItemtemplateToolStripMenuItem.Click += new System.EventHandler(this.TableItemtemplateToolStripMenuItem_Click);
             // 
             // importToToolStripMenuItem
             // 
@@ -594,8 +584,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(317, 21);
             this.comboBox1.TabIndex = 4;
-            this.comboBox1.Tag = "6";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -642,8 +631,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(146, 21);
             this.comboBox2.TabIndex = 5;
-            this.comboBox2.Tag = "102";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -764,8 +752,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(497, 21);
             this.comboBox6.TabIndex = 11;
-            this.comboBox6.Tag = "12";
-            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -848,8 +835,7 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(308, 21);
             this.comboBox7.TabIndex = 69;
-            this.comboBox7.Tag = "28";
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
             // comboBox8
             // 
@@ -908,8 +894,7 @@
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(308, 21);
             this.comboBox8.TabIndex = 71;
-            this.comboBox8.Tag = "30";
-            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
             // 
             // comboBox9
             // 
@@ -968,8 +953,7 @@
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(308, 21);
             this.comboBox9.TabIndex = 73;
-            this.comboBox9.Tag = "32";
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
             // 
             // comboBox10
             // 
@@ -1028,8 +1012,7 @@
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(308, 21);
             this.comboBox10.TabIndex = 75;
-            this.comboBox10.Tag = "34";
-            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.comboBox10_SelectedIndexChanged);
             // 
             // comboBox11
             // 
@@ -1088,8 +1071,7 @@
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(308, 21);
             this.comboBox11.TabIndex = 77;
-            this.comboBox11.Tag = "36";
-            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.comboBox11_SelectedIndexChanged);
             // 
             // comboBox12
             // 
@@ -1148,8 +1130,7 @@
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(308, 21);
             this.comboBox12.TabIndex = 79;
-            this.comboBox12.Tag = "38";
-            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // comboBox13
             // 
@@ -1208,8 +1189,7 @@
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(308, 21);
             this.comboBox13.TabIndex = 81;
-            this.comboBox13.Tag = "40";
-            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.comboBox13_SelectedIndexChanged);
             // 
             // comboBox14
             // 
@@ -1268,8 +1248,7 @@
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(308, 21);
             this.comboBox14.TabIndex = 83;
-            this.comboBox14.Tag = "42";
-            this.comboBox14.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox14.SelectedIndexChanged += new System.EventHandler(this.comboBox14_SelectedIndexChanged);
             // 
             // comboBox15
             // 
@@ -1328,8 +1307,7 @@
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(308, 21);
             this.comboBox15.TabIndex = 85;
-            this.comboBox15.Tag = "44";
-            this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.comboBox15_SelectedIndexChanged);
             // 
             // comboBox16
             // 
@@ -1388,8 +1366,7 @@
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(308, 21);
             this.comboBox16.TabIndex = 87;
-            this.comboBox16.Tag = "46";
-            this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.comboBox16_SelectedIndexChanged);
             // 
             // panel5
             // 
@@ -1432,8 +1409,7 @@
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(139, 21);
             this.comboBox17.TabIndex = 93;
-            this.comboBox17.Tag = "53";
-            this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.comboBox17_SelectedIndexChanged);
             // 
             // comboBox18
             // 
@@ -1455,8 +1431,7 @@
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(139, 21);
             this.comboBox18.TabIndex = 96;
-            this.comboBox18.Tag = "55";
-            this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.comboBox18_SelectedIndexChanged);
             // 
             // comboBox19
             // 
@@ -1474,8 +1449,7 @@
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(100, 21);
             this.comboBox19.TabIndex = 98;
-            this.comboBox19.Tag = "64";
-            this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.comboBox19_SelectedIndexChanged);
             // 
             // label26
             // 
@@ -1599,8 +1573,7 @@
             this.cb_item_material.Name = "cb_item_material";
             this.cb_item_material.Size = new System.Drawing.Size(100, 21);
             this.cb_item_material.TabIndex = 18;
-            this.cb_item_material.Tag = "108";
-            this.cb_item_material.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.cb_item_material.SelectedIndexChanged += new System.EventHandler(this.cb_item_material_SelectedIndexChanged);
             // 
             // panel7
             // 
@@ -1645,8 +1618,7 @@
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(296, 21);
             this.comboBox21.TabIndex = 19;
-            this.comboBox21.Tag = "134";
-            this.comboBox21.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox21.SelectedIndexChanged += new System.EventHandler(this.comboBox21_SelectedIndexChanged);
             // 
             // label37
             // 
@@ -1707,8 +1679,7 @@
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(388, 21);
             this.comboBox22.TabIndex = 20;
-            this.comboBox22.Tag = "118";
-            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.comboBox22_SelectedIndexChanged);
             // 
             // label38
             // 
@@ -1750,8 +1721,7 @@
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(100, 21);
             this.comboBox23.TabIndex = 29;
-            this.comboBox23.Tag = "67";
-            this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.comboBox23_SelectedIndexChanged);
             // 
             // label39
             // 
@@ -1837,8 +1807,7 @@
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(100, 21);
             this.comboBox24.TabIndex = 36;
-            this.comboBox24.Tag = "74";
-            this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.comboBox24_SelectedIndexChanged);
             // 
             // comboBox25
             // 
@@ -1859,8 +1828,7 @@
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(100, 21);
             this.comboBox25.TabIndex = 43;
-            this.comboBox25.Tag = "81";
-            this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
             // 
             // comboBox26
             // 
@@ -1881,8 +1849,7 @@
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(100, 21);
             this.comboBox26.TabIndex = 50;
-            this.comboBox26.Tag = "88";
-            this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.comboBox26_SelectedIndexChanged);
             // 
             // comboBox27
             // 
@@ -1903,8 +1870,7 @@
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(100, 21);
             this.comboBox27.TabIndex = 57;
-            this.comboBox27.Tag = "95";
-            this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.comboBox27_SelectedIndexChanged);
             // 
             // comboBox28
             // 
@@ -1924,8 +1890,7 @@
             this.comboBox28.Name = "comboBox28";
             this.comboBox28.Size = new System.Drawing.Size(160, 21);
             this.comboBox28.TabIndex = 21;
-            this.comboBox28.Tag = "119";
-            this.comboBox28.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox28.SelectedIndexChanged += new System.EventHandler(this.comboBox28_SelectedIndexChanged);
             // 
             // label44
             // 
@@ -1958,8 +1923,7 @@
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(160, 21);
             this.comboBox29.TabIndex = 22;
-            this.comboBox29.Tag = "121";
-            this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.comboBox29_SelectedIndexChanged);
             // 
             // label47
             // 
@@ -2008,8 +1972,7 @@
             this.comboBox31.Name = "comboBox31";
             this.comboBox31.Size = new System.Drawing.Size(160, 21);
             this.comboBox31.TabIndex = 27;
-            this.comboBox31.Tag = "125";
-            this.comboBox31.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox31.SelectedIndexChanged += new System.EventHandler(this.comboBox31_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -2110,8 +2073,7 @@
             this.comboBox30.Name = "comboBox30";
             this.comboBox30.Size = new System.Drawing.Size(160, 21);
             this.comboBox30.TabIndex = 23;
-            this.comboBox30.Tag = "123";
-            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged);
             // 
             // label33
             // 
@@ -2295,30 +2257,29 @@
             this.label13.TabIndex = 68;
             this.label13.Text = "Stat";
             // 
-            // ComboBoxSubclass
+            // comboBox5
             // 
-            this.ComboBoxSubclass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxSubclass.Enabled = false;
-            this.ComboBoxSubclass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ComboBoxSubclass.ForeColor = System.Drawing.Color.DimGray;
-            this.ComboBoxSubclass.FormattingEnabled = true;
-            this.ComboBoxSubclass.Items.AddRange(new object[] {
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Enabled = false;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
             "[0] (none)"});
-            this.ComboBoxSubclass.Location = new System.Drawing.Point(338, 239);
-            this.ComboBoxSubclass.Name = "ComboBoxSubclass";
-            this.ComboBoxSubclass.Size = new System.Drawing.Size(274, 21);
-            this.ComboBoxSubclass.TabIndex = 10;
-            this.ComboBoxSubclass.Tag = "2";
-            this.ComboBoxSubclass.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox5.Location = new System.Drawing.Point(338, 239);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(274, 21);
+            this.comboBox5.TabIndex = 10;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
-            // ComboBoxClass
+            // comboBox4
             // 
-            this.ComboBoxClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxClass.Enabled = false;
-            this.ComboBoxClass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ComboBoxClass.ForeColor = System.Drawing.Color.DimGray;
-            this.ComboBoxClass.FormattingEnabled = true;
-            this.ComboBoxClass.Items.AddRange(new object[] {
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Enabled = false;
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
             "[0] Consumable",
             "[1] Container",
             "[2] Weapon",
@@ -2336,12 +2297,11 @@
             "[14] Permanent(OBSOLETE)",
             "[15] Miscellaneous",
             "[16] Glyph"});
-            this.ComboBoxClass.Location = new System.Drawing.Point(338, 212);
-            this.ComboBoxClass.Name = "ComboBoxClass";
-            this.ComboBoxClass.Size = new System.Drawing.Size(274, 21);
-            this.ComboBoxClass.TabIndex = 8;
-            this.ComboBoxClass.Tag = "1";
-            this.ComboBoxClass.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
+            this.comboBox4.Location = new System.Drawing.Point(338, 212);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(274, 21);
+            this.comboBox4.TabIndex = 8;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -2362,19 +2322,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(274, 21);
             this.comboBox3.TabIndex = 6;
-            this.comboBox3.Tag = "109";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.MyComboBoxValue_Changed);
-            // 
-            // LabelDBConnection
-            // 
-            this.LabelDBConnection.BackColor = System.Drawing.Color.Transparent;
-            this.LabelDBConnection.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LabelDBConnection.Location = new System.Drawing.Point(911, 36);
-            this.LabelDBConnection.Name = "LabelDBConnection";
-            this.LabelDBConnection.Size = new System.Drawing.Size(194, 31);
-            this.LabelDBConnection.TabIndex = 206;
-            this.LabelDBConnection.Text = "Database Connection: Fail";
-            this.LabelDBConnection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // button12
             // 
@@ -2542,6 +2490,17 @@
             this.ButtonAllowableRace.UseVisualStyleBackColor = true;
             this.ButtonAllowableRace.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // LabelDBConnection
+            // 
+            this.LabelDBConnection.BackColor = System.Drawing.Color.Transparent;
+            this.LabelDBConnection.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.LabelDBConnection.Location = new System.Drawing.Point(911, 36);
+            this.LabelDBConnection.Name = "LabelDBConnection";
+            this.LabelDBConnection.Size = new System.Drawing.Size(194, 31);
+            this.LabelDBConnection.TabIndex = 206;
+            this.LabelDBConnection.Text = "Database Connection: Fail";
+            this.LabelDBConnection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // myTextBox68
             // 
             this.myTextBox68.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -2552,10 +2511,9 @@
             this.myTextBox68.Name = "myTextBox68";
             this.myTextBox68.Size = new System.Drawing.Size(100, 18);
             this.myTextBox68.TabIndex = 104;
-            this.myTextBox68.Tag = "26";
             this.myTextBox68.Text = "0";
             this.myTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox68.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox68.TextChanged += new System.EventHandler(this.myTextBox68_TextChanged);
             this.myTextBox68.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox68.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2570,10 +2528,9 @@
             this.myTextBox67.Name = "myTextBox67";
             this.myTextBox67.Size = new System.Drawing.Size(114, 18);
             this.myTextBox67.TabIndex = 103;
-            this.myTextBox67.Tag = "114";
             this.myTextBox67.Text = "0";
             this.myTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox67.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox67.TextChanged += new System.EventHandler(this.myTextBox67_TextChanged);
             this.myTextBox67.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox67.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2588,10 +2545,9 @@
             this.myTextBox66.Name = "myTextBox66";
             this.myTextBox66.Size = new System.Drawing.Size(114, 18);
             this.myTextBox66.TabIndex = 102;
-            this.myTextBox66.Tag = "128";
             this.myTextBox66.Text = "0";
             this.myTextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox66.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox66.TextChanged += new System.EventHandler(this.myTextBox66_TextChanged);
             this.myTextBox66.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox66.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2606,10 +2562,9 @@
             this.myTextBox65.Name = "myTextBox65";
             this.myTextBox65.Size = new System.Drawing.Size(107, 18);
             this.myTextBox65.TabIndex = 101;
-            this.myTextBox65.Tag = "56";
             this.myTextBox65.Text = "0";
             this.myTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox65.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox65.TextChanged += new System.EventHandler(this.myTextBox65_TextChanged);
             this.myTextBox65.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox65.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2624,10 +2579,9 @@
             this.myTextBox64.Name = "myTextBox64";
             this.myTextBox64.Size = new System.Drawing.Size(100, 18);
             this.myTextBox64.TabIndex = 100;
-            this.myTextBox64.Tag = "112";
             this.myTextBox64.Text = "0";
             this.myTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox64.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox64.TextChanged += new System.EventHandler(this.myTextBox64_TextChanged);
             this.myTextBox64.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox64.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2642,10 +2596,9 @@
             this.myTextBox63.Name = "myTextBox63";
             this.myTextBox63.Size = new System.Drawing.Size(161, 18);
             this.myTextBox63.TabIndex = 26;
-            this.myTextBox63.Tag = "124";
             this.myTextBox63.Text = "0";
             this.myTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox63.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox63.TextChanged += new System.EventHandler(this.myTextBox63_TextChanged);
             this.myTextBox63.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox63.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2660,10 +2613,9 @@
             this.myTextBox62.Name = "myTextBox62";
             this.myTextBox62.Size = new System.Drawing.Size(160, 18);
             this.myTextBox62.TabIndex = 25;
-            this.myTextBox62.Tag = "122";
             this.myTextBox62.Text = "0";
             this.myTextBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox62.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox62.TextChanged += new System.EventHandler(this.myTextBox62_TextChanged);
             this.myTextBox62.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox62.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2678,10 +2630,9 @@
             this.myTextBox61.Name = "myTextBox61";
             this.myTextBox61.Size = new System.Drawing.Size(160, 18);
             this.myTextBox61.TabIndex = 24;
-            this.myTextBox61.Tag = "120";
             this.myTextBox61.Text = "0";
             this.myTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox61.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox61.TextChanged += new System.EventHandler(this.myTextBox61_TextChanged);
             this.myTextBox61.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox61.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2696,10 +2647,9 @@
             this.myTextBox55.Name = "myTextBox55";
             this.myTextBox55.Size = new System.Drawing.Size(89, 18);
             this.myTextBox55.TabIndex = 62;
-            this.myTextBox55.Tag = "100";
             this.myTextBox55.Text = "0";
             this.myTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox55.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox55.TextChanged += new System.EventHandler(this.myTextBox55_TextChanged);
             this.myTextBox55.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox55.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2714,10 +2664,9 @@
             this.myTextBox56.Name = "myTextBox56";
             this.myTextBox56.Size = new System.Drawing.Size(73, 18);
             this.myTextBox56.TabIndex = 61;
-            this.myTextBox56.Tag = "99";
             this.myTextBox56.Text = "0";
             this.myTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox56.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox56.TextChanged += new System.EventHandler(this.myTextBox56_TextChanged);
             this.myTextBox56.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox56.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2732,10 +2681,9 @@
             this.myTextBox57.Name = "myTextBox57";
             this.myTextBox57.Size = new System.Drawing.Size(81, 18);
             this.myTextBox57.TabIndex = 60;
-            this.myTextBox57.Tag = "98";
             this.myTextBox57.Text = "0";
             this.myTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox57.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox57.TextChanged += new System.EventHandler(this.myTextBox57_TextChanged);
             this.myTextBox57.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox57.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2750,10 +2698,9 @@
             this.myTextBox58.Name = "myTextBox58";
             this.myTextBox58.Size = new System.Drawing.Size(61, 18);
             this.myTextBox58.TabIndex = 59;
-            this.myTextBox58.Tag = "97";
             this.myTextBox58.Text = "0";
             this.myTextBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox58.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox58.TextChanged += new System.EventHandler(this.myTextBox58_TextChanged);
             this.myTextBox58.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox58.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2768,10 +2715,9 @@
             this.myTextBox59.Name = "myTextBox59";
             this.myTextBox59.Size = new System.Drawing.Size(61, 18);
             this.myTextBox59.TabIndex = 58;
-            this.myTextBox59.Tag = "96";
             this.myTextBox59.Text = "0";
             this.myTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox59.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox59.TextChanged += new System.EventHandler(this.myTextBox59_TextChanged);
             this.myTextBox59.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox59.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox59.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2786,10 +2732,9 @@
             this.myTextBox60.Name = "myTextBox60";
             this.myTextBox60.Size = new System.Drawing.Size(100, 18);
             this.myTextBox60.TabIndex = 56;
-            this.myTextBox60.Tag = "94";
             this.myTextBox60.Text = "0";
             this.myTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox60.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox60.TextChanged += new System.EventHandler(this.myTextBox60_TextChanged);
             this.myTextBox60.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox60.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2804,10 +2749,9 @@
             this.myTextBox49.Name = "myTextBox49";
             this.myTextBox49.Size = new System.Drawing.Size(89, 18);
             this.myTextBox49.TabIndex = 55;
-            this.myTextBox49.Tag = "93";
             this.myTextBox49.Text = "0";
             this.myTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox49.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox49.TextChanged += new System.EventHandler(this.myTextBox49_TextChanged);
             this.myTextBox49.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox49.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox49.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2822,10 +2766,9 @@
             this.myTextBox50.Name = "myTextBox50";
             this.myTextBox50.Size = new System.Drawing.Size(73, 18);
             this.myTextBox50.TabIndex = 54;
-            this.myTextBox50.Tag = "92";
             this.myTextBox50.Text = "0";
             this.myTextBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox50.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox50.TextChanged += new System.EventHandler(this.myTextBox50_TextChanged);
             this.myTextBox50.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox50.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2840,10 +2783,9 @@
             this.myTextBox51.Name = "myTextBox51";
             this.myTextBox51.Size = new System.Drawing.Size(81, 18);
             this.myTextBox51.TabIndex = 53;
-            this.myTextBox51.Tag = "91";
             this.myTextBox51.Text = "0";
             this.myTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox51.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox51.TextChanged += new System.EventHandler(this.myTextBox51_TextChanged);
             this.myTextBox51.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox51.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2858,10 +2800,9 @@
             this.myTextBox52.Name = "myTextBox52";
             this.myTextBox52.Size = new System.Drawing.Size(61, 18);
             this.myTextBox52.TabIndex = 52;
-            this.myTextBox52.Tag = "90";
             this.myTextBox52.Text = "0";
             this.myTextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox52.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox52.TextChanged += new System.EventHandler(this.myTextBox52_TextChanged);
             this.myTextBox52.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox52.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2876,10 +2817,9 @@
             this.myTextBox53.Name = "myTextBox53";
             this.myTextBox53.Size = new System.Drawing.Size(61, 18);
             this.myTextBox53.TabIndex = 51;
-            this.myTextBox53.Tag = "89";
             this.myTextBox53.Text = "0";
             this.myTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox53.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox53.TextChanged += new System.EventHandler(this.myTextBox53_TextChanged);
             this.myTextBox53.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox53.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2894,10 +2834,9 @@
             this.myTextBox54.Name = "myTextBox54";
             this.myTextBox54.Size = new System.Drawing.Size(100, 18);
             this.myTextBox54.TabIndex = 49;
-            this.myTextBox54.Tag = "87";
             this.myTextBox54.Text = "0";
             this.myTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox54.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox54.TextChanged += new System.EventHandler(this.myTextBox54_TextChanged);
             this.myTextBox54.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox54.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2912,10 +2851,9 @@
             this.myTextBox43.Name = "myTextBox43";
             this.myTextBox43.Size = new System.Drawing.Size(89, 18);
             this.myTextBox43.TabIndex = 48;
-            this.myTextBox43.Tag = "86";
             this.myTextBox43.Text = "0";
             this.myTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox43.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox43.TextChanged += new System.EventHandler(this.myTextBox43_TextChanged);
             this.myTextBox43.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox43.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2930,10 +2868,9 @@
             this.myTextBox44.Name = "myTextBox44";
             this.myTextBox44.Size = new System.Drawing.Size(73, 18);
             this.myTextBox44.TabIndex = 47;
-            this.myTextBox44.Tag = "85";
             this.myTextBox44.Text = "0";
             this.myTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox44.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox44.TextChanged += new System.EventHandler(this.myTextBox44_TextChanged);
             this.myTextBox44.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox44.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2948,10 +2885,9 @@
             this.myTextBox45.Name = "myTextBox45";
             this.myTextBox45.Size = new System.Drawing.Size(81, 18);
             this.myTextBox45.TabIndex = 46;
-            this.myTextBox45.Tag = "84";
             this.myTextBox45.Text = "0";
             this.myTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox45.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox45.TextChanged += new System.EventHandler(this.myTextBox45_TextChanged);
             this.myTextBox45.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox45.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2966,10 +2902,9 @@
             this.myTextBox46.Name = "myTextBox46";
             this.myTextBox46.Size = new System.Drawing.Size(61, 18);
             this.myTextBox46.TabIndex = 45;
-            this.myTextBox46.Tag = "83";
             this.myTextBox46.Text = "0";
             this.myTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox46.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox46.TextChanged += new System.EventHandler(this.myTextBox46_TextChanged);
             this.myTextBox46.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox46.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -2984,10 +2919,9 @@
             this.myTextBox47.Name = "myTextBox47";
             this.myTextBox47.Size = new System.Drawing.Size(61, 18);
             this.myTextBox47.TabIndex = 44;
-            this.myTextBox47.Tag = "82";
             this.myTextBox47.Text = "0";
             this.myTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox47.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox47.TextChanged += new System.EventHandler(this.myTextBox47_TextChanged);
             this.myTextBox47.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox47.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3002,10 +2936,9 @@
             this.myTextBox48.Name = "myTextBox48";
             this.myTextBox48.Size = new System.Drawing.Size(100, 18);
             this.myTextBox48.TabIndex = 42;
-            this.myTextBox48.Tag = "80";
             this.myTextBox48.Text = "0";
             this.myTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox48.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox48.TextChanged += new System.EventHandler(this.myTextBox48_TextChanged);
             this.myTextBox48.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox48.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3020,10 +2953,9 @@
             this.myTextBox37.Name = "myTextBox37";
             this.myTextBox37.Size = new System.Drawing.Size(89, 18);
             this.myTextBox37.TabIndex = 41;
-            this.myTextBox37.Tag = "79";
             this.myTextBox37.Text = "0";
             this.myTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox37.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox37.TextChanged += new System.EventHandler(this.myTextBox37_TextChanged);
             this.myTextBox37.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox37.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3038,10 +2970,9 @@
             this.myTextBox38.Name = "myTextBox38";
             this.myTextBox38.Size = new System.Drawing.Size(73, 18);
             this.myTextBox38.TabIndex = 40;
-            this.myTextBox38.Tag = "78";
             this.myTextBox38.Text = "0";
             this.myTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox38.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox38.TextChanged += new System.EventHandler(this.myTextBox38_TextChanged);
             this.myTextBox38.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox38.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3056,10 +2987,9 @@
             this.myTextBox39.Name = "myTextBox39";
             this.myTextBox39.Size = new System.Drawing.Size(81, 18);
             this.myTextBox39.TabIndex = 39;
-            this.myTextBox39.Tag = "77";
             this.myTextBox39.Text = "0";
             this.myTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox39.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox39.TextChanged += new System.EventHandler(this.myTextBox39_TextChanged);
             this.myTextBox39.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox39.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox39.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3074,10 +3004,9 @@
             this.myTextBox40.Name = "myTextBox40";
             this.myTextBox40.Size = new System.Drawing.Size(61, 18);
             this.myTextBox40.TabIndex = 38;
-            this.myTextBox40.Tag = "76";
             this.myTextBox40.Text = "0";
             this.myTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox40.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox40.TextChanged += new System.EventHandler(this.myTextBox40_TextChanged);
             this.myTextBox40.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox40.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3092,10 +3021,9 @@
             this.myTextBox41.Name = "myTextBox41";
             this.myTextBox41.Size = new System.Drawing.Size(61, 18);
             this.myTextBox41.TabIndex = 37;
-            this.myTextBox41.Tag = "75";
             this.myTextBox41.Text = "0";
             this.myTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox41.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox41.TextChanged += new System.EventHandler(this.myTextBox41_TextChanged);
             this.myTextBox41.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox41.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3110,10 +3038,9 @@
             this.myTextBox42.Name = "myTextBox42";
             this.myTextBox42.Size = new System.Drawing.Size(100, 18);
             this.myTextBox42.TabIndex = 35;
-            this.myTextBox42.Tag = "73";
             this.myTextBox42.Text = "0";
             this.myTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox42.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox42.TextChanged += new System.EventHandler(this.myTextBox42_TextChanged);
             this.myTextBox42.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox42.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3128,10 +3055,9 @@
             this.myTextBox36.Name = "myTextBox36";
             this.myTextBox36.Size = new System.Drawing.Size(89, 18);
             this.myTextBox36.TabIndex = 34;
-            this.myTextBox36.Tag = "72";
             this.myTextBox36.Text = "0";
             this.myTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox36.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox36.TextChanged += new System.EventHandler(this.myTextBox36_TextChanged);
             this.myTextBox36.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox36.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3146,10 +3072,9 @@
             this.myTextBox35.Name = "myTextBox35";
             this.myTextBox35.Size = new System.Drawing.Size(73, 18);
             this.myTextBox35.TabIndex = 33;
-            this.myTextBox35.Tag = "71";
             this.myTextBox35.Text = "0";
             this.myTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox35.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox35.TextChanged += new System.EventHandler(this.myTextBox35_TextChanged);
             this.myTextBox35.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox35.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3164,10 +3089,9 @@
             this.myTextBox34.Name = "myTextBox34";
             this.myTextBox34.Size = new System.Drawing.Size(81, 18);
             this.myTextBox34.TabIndex = 32;
-            this.myTextBox34.Tag = "70";
             this.myTextBox34.Text = "0";
             this.myTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox34.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox34.TextChanged += new System.EventHandler(this.myTextBox34_TextChanged);
             this.myTextBox34.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox34.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3182,10 +3106,9 @@
             this.myTextBox33.Name = "myTextBox33";
             this.myTextBox33.Size = new System.Drawing.Size(61, 18);
             this.myTextBox33.TabIndex = 31;
-            this.myTextBox33.Tag = "69";
             this.myTextBox33.Text = "0";
             this.myTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox33.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox33.TextChanged += new System.EventHandler(this.myTextBox33_TextChanged);
             this.myTextBox33.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox33.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3200,10 +3123,9 @@
             this.myTextBox32.Name = "myTextBox32";
             this.myTextBox32.Size = new System.Drawing.Size(61, 18);
             this.myTextBox32.TabIndex = 30;
-            this.myTextBox32.Tag = "68";
             this.myTextBox32.Text = "0";
             this.myTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox32.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox32.TextChanged += new System.EventHandler(this.myTextBox32_TextChanged);
             this.myTextBox32.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox32.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3218,10 +3140,9 @@
             this.myTextBox31.Name = "myTextBox31";
             this.myTextBox31.Size = new System.Drawing.Size(100, 18);
             this.myTextBox31.TabIndex = 28;
-            this.myTextBox31.Tag = "66";
             this.myTextBox31.Text = "0";
             this.myTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox31.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox31.TextChanged += new System.EventHandler(this.myTextBox31_TextChanged);
             this.myTextBox31.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox31.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3236,10 +3157,9 @@
             this.myTextBox30.Name = "myTextBox30";
             this.myTextBox30.Size = new System.Drawing.Size(100, 18);
             this.myTextBox30.TabIndex = 17;
-            this.myTextBox30.Tag = "24";
             this.myTextBox30.Text = "0";
             this.myTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox30.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox30.TextChanged += new System.EventHandler(this.myTextBox30_TextChanged);
             this.myTextBox30.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox30.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3254,10 +3174,9 @@
             this.tb_stackable.Name = "tb_stackable";
             this.tb_stackable.Size = new System.Drawing.Size(100, 18);
             this.tb_stackable.TabIndex = 16;
-            this.tb_stackable.Tag = "25";
             this.tb_stackable.Text = "1";
             this.tb_stackable.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_stackable.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.tb_stackable.TextChanged += new System.EventHandler(this.tb_stackable_TextChanged);
             // 
             // myTextBox28
             // 
@@ -3269,10 +3188,9 @@
             this.myTextBox28.Name = "myTextBox28";
             this.myTextBox28.Size = new System.Drawing.Size(100, 18);
             this.myTextBox28.TabIndex = 15;
-            this.myTextBox28.Tag = "113";
             this.myTextBox28.Text = "0";
             this.myTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox28.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox28.TextChanged += new System.EventHandler(this.myTextBox28_TextChanged);
             // 
             // tb_buy_count
             // 
@@ -3284,10 +3202,9 @@
             this.tb_buy_count.Name = "tb_buy_count";
             this.tb_buy_count.Size = new System.Drawing.Size(100, 18);
             this.tb_buy_count.TabIndex = 14;
-            this.tb_buy_count.Tag = "9";
             this.tb_buy_count.Text = "0";
             this.tb_buy_count.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_buy_count.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.tb_buy_count.TextChanged += new System.EventHandler(this.tb_buy_count_TextChanged);
             this.tb_buy_count.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.tb_buy_count.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.tb_buy_count.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3302,10 +3219,9 @@
             this.myTextBox26.Name = "myTextBox26";
             this.myTextBox26.Size = new System.Drawing.Size(100, 18);
             this.myTextBox26.TabIndex = 13;
-            this.myTextBox26.Tag = "11";
             this.myTextBox26.Text = "0";
             this.myTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox26.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox26.TextChanged += new System.EventHandler(this.myTextBox26_TextChanged);
             this.myTextBox26.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox26.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3320,10 +3236,9 @@
             this.myTextBox25.Name = "myTextBox25";
             this.myTextBox25.Size = new System.Drawing.Size(100, 18);
             this.myTextBox25.TabIndex = 12;
-            this.myTextBox25.Tag = "10";
             this.myTextBox25.Text = "0";
             this.myTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox25.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox25.TextChanged += new System.EventHandler(this.myTextBox25_TextChanged);
             this.myTextBox25.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox25.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3338,10 +3253,9 @@
             this.myTextBox24.Name = "myTextBox24";
             this.myTextBox24.Size = new System.Drawing.Size(100, 18);
             this.myTextBox24.TabIndex = 90;
-            this.myTextBox24.Tag = "49";
             this.myTextBox24.Text = "0";
             this.myTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox24.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox24.TextChanged += new System.EventHandler(this.myTextBox24_TextChanged);
             this.myTextBox24.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox24.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3356,10 +3270,9 @@
             this.myTextBox23.Name = "myTextBox23";
             this.myTextBox23.Size = new System.Drawing.Size(100, 18);
             this.myTextBox23.TabIndex = 89;
-            this.myTextBox23.Tag = "48";
             this.myTextBox23.Text = "0";
             this.myTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox23.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox23.TextChanged += new System.EventHandler(this.myTextBox23_TextChanged);
             this.myTextBox23.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox23.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3374,10 +3287,9 @@
             this.myTextBox22.Name = "myTextBox22";
             this.myTextBox22.Size = new System.Drawing.Size(100, 18);
             this.myTextBox22.TabIndex = 97;
-            this.myTextBox22.Tag = "63";
             this.myTextBox22.Text = "1000";
             this.myTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox22.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox22.TextChanged += new System.EventHandler(this.myTextBox22_TextChanged);
             this.myTextBox22.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox22.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3392,10 +3304,9 @@
             this.myTextBox21.Name = "myTextBox21";
             this.myTextBox21.Size = new System.Drawing.Size(100, 18);
             this.myTextBox21.TabIndex = 99;
-            this.myTextBox21.Tag = "65";
             this.myTextBox21.Text = "100";
             this.myTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox21.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox21.TextChanged += new System.EventHandler(this.myTextBox21_TextChanged);
             this.myTextBox21.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox21.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3410,10 +3321,9 @@
             this.myTextBox19.Name = "myTextBox19";
             this.myTextBox19.Size = new System.Drawing.Size(100, 18);
             this.myTextBox19.TabIndex = 95;
-            this.myTextBox19.Tag = "54";
             this.myTextBox19.Text = "0";
             this.myTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox19.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox19.TextChanged += new System.EventHandler(this.myTextBox19_TextChanged);
             this.myTextBox19.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox19.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3428,10 +3338,9 @@
             this.myTextBox20.Name = "myTextBox20";
             this.myTextBox20.Size = new System.Drawing.Size(100, 18);
             this.myTextBox20.TabIndex = 94;
-            this.myTextBox20.Tag = "53";
             this.myTextBox20.Text = "0";
             this.myTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox20.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox20.TextChanged += new System.EventHandler(this.myTextBox20_TextChanged);
             this.myTextBox20.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox20.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3446,10 +3355,9 @@
             this.myTextBox18.Name = "myTextBox18";
             this.myTextBox18.Size = new System.Drawing.Size(100, 18);
             this.myTextBox18.TabIndex = 92;
-            this.myTextBox18.Tag = "51";
             this.myTextBox18.Text = "0";
             this.myTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox18.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox18.TextChanged += new System.EventHandler(this.myTextBox18_TextChanged);
             this.myTextBox18.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox18.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3464,10 +3372,9 @@
             this.myTextBox17.Name = "myTextBox17";
             this.myTextBox17.Size = new System.Drawing.Size(100, 18);
             this.myTextBox17.TabIndex = 91;
-            this.myTextBox17.Tag = "50";
             this.myTextBox17.Text = "0";
             this.myTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox17.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox17.TextChanged += new System.EventHandler(this.myTextBox17_TextChanged);
             this.myTextBox17.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox17.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3482,10 +3389,9 @@
             this.myTextBox16.Name = "myTextBox16";
             this.myTextBox16.Size = new System.Drawing.Size(100, 18);
             this.myTextBox16.TabIndex = 88;
-            this.myTextBox16.Tag = "47";
             this.myTextBox16.Text = "0";
             this.myTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox16.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox16.TextChanged += new System.EventHandler(this.myTextBox16_TextChanged);
             this.myTextBox16.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox16.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3500,10 +3406,9 @@
             this.myTextBox15.Name = "myTextBox15";
             this.myTextBox15.Size = new System.Drawing.Size(100, 18);
             this.myTextBox15.TabIndex = 86;
-            this.myTextBox15.Tag = "45";
             this.myTextBox15.Text = "0";
             this.myTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox15.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox15.TextChanged += new System.EventHandler(this.myTextBox15_TextChanged);
             this.myTextBox15.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox15.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3518,10 +3423,9 @@
             this.myTextBox14.Name = "myTextBox14";
             this.myTextBox14.Size = new System.Drawing.Size(100, 18);
             this.myTextBox14.TabIndex = 84;
-            this.myTextBox14.Tag = "43";
             this.myTextBox14.Text = "0";
             this.myTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox14.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox14.TextChanged += new System.EventHandler(this.myTextBox14_TextChanged);
             this.myTextBox14.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox14.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3536,10 +3440,9 @@
             this.myTextBox13.Name = "myTextBox13";
             this.myTextBox13.Size = new System.Drawing.Size(100, 18);
             this.myTextBox13.TabIndex = 82;
-            this.myTextBox13.Tag = "41";
             this.myTextBox13.Text = "0";
             this.myTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox13.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox13.TextChanged += new System.EventHandler(this.myTextBox13_TextChanged);
             this.myTextBox13.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox13.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3554,10 +3457,9 @@
             this.myTextBox12.Name = "myTextBox12";
             this.myTextBox12.Size = new System.Drawing.Size(100, 18);
             this.myTextBox12.TabIndex = 80;
-            this.myTextBox12.Tag = "39";
             this.myTextBox12.Text = "0";
             this.myTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox12.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox12.TextChanged += new System.EventHandler(this.myTextBox12_TextChanged);
             this.myTextBox12.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox12.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3572,10 +3474,9 @@
             this.myTextBox11.Name = "myTextBox11";
             this.myTextBox11.Size = new System.Drawing.Size(100, 18);
             this.myTextBox11.TabIndex = 78;
-            this.myTextBox11.Tag = "37";
             this.myTextBox11.Text = "0";
             this.myTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox11.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox11.TextChanged += new System.EventHandler(this.myTextBox11_TextChanged);
             this.myTextBox11.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox11.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3590,10 +3491,9 @@
             this.myTextBox10.Name = "myTextBox10";
             this.myTextBox10.Size = new System.Drawing.Size(100, 18);
             this.myTextBox10.TabIndex = 76;
-            this.myTextBox10.Tag = "35";
             this.myTextBox10.Text = "0";
             this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox10.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox10.TextChanged += new System.EventHandler(this.myTextBox10_TextChanged);
             this.myTextBox10.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox10.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3608,10 +3508,9 @@
             this.myTextBox9.Name = "myTextBox9";
             this.myTextBox9.Size = new System.Drawing.Size(100, 18);
             this.myTextBox9.TabIndex = 74;
-            this.myTextBox9.Tag = "33";
             this.myTextBox9.Text = "0";
             this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox9.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox9.TextChanged += new System.EventHandler(this.myTextBox9_TextChanged);
             this.myTextBox9.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox9.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3626,10 +3525,9 @@
             this.myTextBox8.Name = "myTextBox8";
             this.myTextBox8.Size = new System.Drawing.Size(100, 18);
             this.myTextBox8.TabIndex = 72;
-            this.myTextBox8.Tag = "31";
             this.myTextBox8.Text = "0";
             this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox8.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox8.TextChanged += new System.EventHandler(this.myTextBox8_TextChanged);
             this.myTextBox8.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox8.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3644,10 +3542,9 @@
             this.myTextBox7.Name = "myTextBox7";
             this.myTextBox7.Size = new System.Drawing.Size(100, 18);
             this.myTextBox7.TabIndex = 70;
-            this.myTextBox7.Tag = "29";
             this.myTextBox7.Text = "0";
             this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox7.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox7.TextChanged += new System.EventHandler(this.myTextBox7_TextChanged);
             this.myTextBox7.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox7.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3662,10 +3559,9 @@
             this.myTextBox6.Name = "myTextBox6";
             this.myTextBox6.Size = new System.Drawing.Size(100, 18);
             this.myTextBox6.TabIndex = 9;
-            this.myTextBox6.Tag = "16";
             this.myTextBox6.Text = "0";
             this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox6.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox6.TextChanged += new System.EventHandler(this.myTextBox6_TextChanged);
             this.myTextBox6.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox6.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3680,10 +3576,9 @@
             this.myTextBox5.Name = "myTextBox5";
             this.myTextBox5.Size = new System.Drawing.Size(100, 18);
             this.myTextBox5.TabIndex = 7;
-            this.myTextBox5.Tag = "15";
             this.myTextBox5.Text = "0";
             this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox5.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox5.TextChanged += new System.EventHandler(this.myTextBox5_TextChanged);
             this.myTextBox5.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox5.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3698,10 +3593,9 @@
             this.TextBoxDisplayID.Name = "TextBoxDisplayID";
             this.TextBoxDisplayID.Size = new System.Drawing.Size(100, 18);
             this.TextBoxDisplayID.TabIndex = 3;
-            this.TextBoxDisplayID.Tag = "5";
             this.TextBoxDisplayID.Text = "0";
             this.TextBoxDisplayID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBoxDisplayID.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.TextBoxDisplayID.TextChanged += new System.EventHandler(this.TextBoxDisplayID_TextChanged);
             this.TextBoxDisplayID.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.TextBoxDisplayID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.TextBoxDisplayID.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3716,9 +3610,8 @@
             this.tb_item_description.Name = "tb_item_description";
             this.tb_item_description.Size = new System.Drawing.Size(497, 18);
             this.tb_item_description.TabIndex = 2;
-            this.tb_item_description.Tag = "102";
             this.tb_item_description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_item_description.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.tb_item_description.TextChanged += new System.EventHandler(this.tb_item_description_TextChanged);
             // 
             // tb_item_name
             // 
@@ -3730,9 +3623,9 @@
             this.tb_item_name.Name = "tb_item_name";
             this.tb_item_name.Size = new System.Drawing.Size(317, 18);
             this.tb_item_name.TabIndex = 1;
-            this.tb_item_name.Tag = "4";
+            this.tb_item_name.Tag = "";
             this.tb_item_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_item_name.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.tb_item_name.TextChanged += new System.EventHandler(this.tb_item_name_TextChanged);
             // 
             // myTextBox1
             // 
@@ -3744,10 +3637,10 @@
             this.myTextBox1.Name = "myTextBox1";
             this.myTextBox1.Size = new System.Drawing.Size(100, 18);
             this.myTextBox1.TabIndex = 0;
-            this.myTextBox1.Tag = "0";
+            this.myTextBox1.Tag = "";
             this.myTextBox1.Text = "0";
             this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.myTextBox1.TextChanged += new System.EventHandler(this.MyTextBoxValue_Changed);
+            this.myTextBox1.TextChanged += new System.EventHandler(this.MyTextBox1_TextChanged);
             this.myTextBox1.Enter += new System.EventHandler(this.Watermark_myTextBox_Enter);
             this.myTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Watermark_myTextBox_KeyPress);
             this.myTextBox1.Leave += new System.EventHandler(this.Watermark_myTextBox_Leave);
@@ -3905,9 +3798,9 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.ComboBoxSubclass);
+            this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.ComboBoxClass);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.myTextBox6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.myTextBox5);
@@ -3981,9 +3874,9 @@
         public MyTextBox myTextBox6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.ComboBox ComboBoxClass;
+        public System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.ComboBox ComboBoxSubclass;
+        public System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Panel panel2;
@@ -4153,7 +4046,6 @@
         private System.Windows.Forms.ToolStripMenuItem mySQLConnectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem makeItemdbcToolStripMenuItem;
         public System.Windows.Forms.Label LabelDBConnection;
-        private System.Windows.Forms.ToolStripMenuItem tableItemtemplateToolStripMenuItem;
     }
 }
 

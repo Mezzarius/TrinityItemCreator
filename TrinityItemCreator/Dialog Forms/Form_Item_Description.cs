@@ -34,20 +34,26 @@ namespace TrinityItemCreator
             }
         }
 
+        private void ButtonFinish_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Window_EditDescription_Load(object sender, EventArgs e)
+        {
+            richTextBox1.Text = MyData.Field_description;
+        }
+
         private void RichTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
         }
 
-        private void ButtonFinish_Click(object sender, EventArgs e) => Close();
-
-        private void Window_EditDescription_Load(object sender, EventArgs e) => richTextBox1.Text = MyData.ItemTemplateValues[102];
-
         private void Window_EditDescription_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MyData.ItemTemplateValues[102] = richTextBox1.Text; //.Replace("\r\n","\\n");
-            mainForm.tb_item_description.Text = MyData.ItemTemplateValues[102];
+            MyData.Field_description = richTextBox1.Text; //.Replace("\r\n","\\n");
+            mainForm.tb_item_description.Text = MyData.Field_description;
         }
     }
 }

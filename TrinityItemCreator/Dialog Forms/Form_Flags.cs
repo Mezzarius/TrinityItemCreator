@@ -52,7 +52,10 @@ namespace TrinityItemCreator
                 Close();
         }
 
-        private void ButtonFinish_Click(object sender, EventArgs e) => Close();
+        private void ButtonFinish_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
         private void TextBoxFlagMask_TextChanged(object sender, EventArgs e)
         {
@@ -66,7 +69,7 @@ namespace TrinityItemCreator
                 checkedListBox1.SetItemChecked(i, Convert.ToBoolean(_textBoxMask & itemMask));
             }
 
-            MyData.ItemTemplateValues[7] = _textBoxMask.ToString();
+            MyData.Field_Flags = _textBoxMask;
         }
 
         private void Window_FlagMask_Load(object sender, EventArgs e)
@@ -79,10 +82,10 @@ namespace TrinityItemCreator
                 string s = checkedListBox1.Items[i].ToString();
                 ulong itemMask = Convert.ToUInt64(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
 
-                if ((ulong.Parse(MyData.ItemTemplateValues[7]) & itemMask) != 0)
+                if ((MyData.Field_Flags & itemMask) != 0)
                     checkedListBox1.SetItemChecked(i, true);
                 else
-                    TextBoxFlagMask.Text = MyData.ItemTemplateValues[7]; // contains different class mask then add full class mask to text box
+                    TextBoxFlagMask.Text = MyData.Field_Flags.ToString(); // contains different class mask then add full class mask to text box
             }
         }
 
@@ -91,18 +94,16 @@ namespace TrinityItemCreator
             string s = checkedListBox1.Items[e.Index].ToString();
             ulong itemMask = Convert.ToUInt64(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1));
 
-            ulong.TryParse(MyData.ItemTemplateValues[7], out ulong toMask);
             if (e.NewValue == CheckState.Checked)
             {
-                if ((ulong.Parse(MyData.ItemTemplateValues[7]) & itemMask) == 0)
-                    toMask += itemMask;
+                if ((MyData.Field_Flags & itemMask) == 0)
+                    MyData.Field_Flags += itemMask;
             }
             else
             {
-                if ((ulong.Parse(MyData.ItemTemplateValues[7]) & itemMask) != 0)
-                    toMask += itemMask;
+                if ((MyData.Field_Flags & itemMask) != 0)
+                    MyData.Field_Flags -= itemMask;
             }
-            MyData.ItemTemplateValues[7] = toMask.ToString();
         }
 
         private void ResetManualTextBoxFlagMask(object sender, EventArgs e)

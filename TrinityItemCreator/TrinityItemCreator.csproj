@@ -85,12 +85,6 @@
     <Compile Include="Dialog Forms\Form_DB_Info.Designer.cs">
       <DependentUpon>Form_DB_Info.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialog Forms\Form_ItemTemplate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialog Forms\Form_ItemTemplate.Designer.cs">
-      <DependentUpon>Form_ItemTemplate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dialog Forms\Form_Save_Custom_Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,9 +194,6 @@
     <EmbeddedResource Include="Dialog Forms\Form_DB_Info.resx">
       <DependentUpon>Form_DB_Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog Forms\Form_ItemTemplate.resx">
-      <DependentUpon>Form_ItemTemplate.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,9 +292,6 @@
     <None Include="Resources\icon_db_connection.png" />
     <None Include="Resources\icon_sql_prefix.png" />
     <None Include="Resources\icon_more.png" />
-    <Content Include="data\item_template_trinitycore_3.3.5.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="templates\My First Template Example.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

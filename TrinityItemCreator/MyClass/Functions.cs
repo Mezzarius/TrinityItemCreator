@@ -84,18 +84,26 @@ namespace TrinityItemCreator.MyClass
             );
         }
 
-        public static bool IsDBConnected()
+        public async void ShowDBConnectionSatus()
         {
-            string conn_info = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
-                $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
-                $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
+            try
+            {
+                string conn_info = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
+                    $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
+                    $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
 
-            MySqlConnection conn = new MySqlConnection(conn_info);
-            try { conn.Open(); }
-            catch { return false; }
-            finally { if (conn.State == ConnectionState.Open) conn.Close(); }
-
-            return true;
+                MySqlConnection conn = new MySqlConnection(conn_info);
+                await conn.OpenAsync();
+                await conn.CloseAsync();
+                
+                mainForm.LabelDBConnection.Text = $"Database Connection: Yes";
+                mainForm.LabelDBConnection.ForeColor = Color.LimeGreen;
+            }
+            catch
+            {
+                mainForm.LabelDBConnection.Text = $"Database Connection: No";
+                mainForm.LabelDBConnection.ForeColor = Color.IndianRed;
+            }
         }
 
         public async void DelayMainFormPainting()
@@ -107,13 +115,13 @@ namespace TrinityItemCreator.MyClass
 
         public bool LoadItems()
         {
-            MySqlConnection conn = new MySqlConnection(); ;
-            string conString = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
-                $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
-                $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
-
             try
             {
+                string conString = $"SERVER={Properties.Settings.Default.db_hostname};PORT={Properties.Settings.Default.db_port}" +
+                    $";DATABASE={Properties.Settings.Default.db_name};UID={Properties.Settings.Default.db_user}" +
+                    $";PASSWORD={Properties.Settings.Default.db_pass};SSLMODE=NONE;";
+                MySqlConnection conn = new MySqlConnection();
+
                 Item item = new Item();
                 conn.ConnectionString = conString;
                 conn.Open();
@@ -166,6 +174,8 @@ namespace TrinityItemCreator.MyClass
 
                     items.Add(item.itemID, item);
                 }
+
+                conn.Close();
             }
             catch (Exception ex)
             {

@@ -789,19 +789,17 @@ namespace TrinityItemCreator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Functions myF = new Functions(this);
-            myF.DelayMainFormPainting();
-            myF.SetFlagsMasksButtonCurrentValue();
+            Functions newf = new Functions(this);
+            newf.DelayMainFormPainting();
+            newf.SetFlagsMasksButtonCurrentValue();
 
             toolStripComboBox1.SelectedIndex = Properties.Settings.Default.SQLPrefix;
 
             // This is happening before closing form2
             if (!Functions.preLoadTemplate)
-                myF.LoadDefaultTemplate(99999);
+                newf.LoadDefaultTemplate(99999);
 
-            string dbConnection = "Database Connection: ";
-            LabelDBConnection.Text = dbConnection + (Functions.IsDBConnected() ? "Yes" : "None");
-            LabelDBConnection.ForeColor = Functions.IsDBConnected() ? Color.LimeGreen : Color.IndianRed;
+            newf.ShowDBConnectionSatus();
         }
 
         private void SaveCurrentTemplateToolStripMenuItem_Click(object sender, EventArgs e)
@@ -940,7 +938,8 @@ namespace TrinityItemCreator
         }
 
         private void makeItemdbcToolStripMenuItem_Click(object sender, EventArgs e)
-        { DialogResult result = MessageBox.Show("This feature will use database connection to receive items list!\n\n" +
+        {
+            DialogResult result = MessageBox.Show("This feature will use database connection to receive items list!\n\n" +
             $"Do you want to generate Item.dbc?\n\n" +
             $"Check this application's folder after conversion is complete", "Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)

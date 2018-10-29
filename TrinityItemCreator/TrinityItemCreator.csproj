@@ -292,6 +292,7 @@
     <None Include="Resources\icon_db_connection.png" />
     <None Include="Resources\icon_sql_prefix.png" />
     <None Include="Resources\icon_more.png" />
+    <None Include="Resources\icon_helmet.png" />
     <Content Include="templates\My First Template Example.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

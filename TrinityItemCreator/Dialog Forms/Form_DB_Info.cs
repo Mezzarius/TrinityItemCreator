@@ -90,9 +90,8 @@ namespace TrinityItemCreator.Dialog_Forms
 
         private void Form_DB_Info_FormClosed(object sender, FormClosedEventArgs e)
         {
-            string dbConnection = "Database Connection: ";
-            mainForm.LabelDBConnection.Text = dbConnection + (Functions.IsDBConnected() ? "Yes" : "None");
-            mainForm.LabelDBConnection.ForeColor = Functions.IsDBConnected() ? Color.LimeGreen : Color.IndianRed;
+            Functions newf = new Functions(mainForm);
+            newf.ShowDBConnectionSatus();
         }
     }
 }

@@ -34,6 +34,28 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mySQLConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.importToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetAllFieldsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeItemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.armorSetsGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -203,28 +225,6 @@
             this.ButtonBagFamilyMask = new System.Windows.Forms.Button();
             this.ButtonAllowableClass = new System.Windows.Forms.Button();
             this.ButtonAllowableRace = new System.Windows.Forms.Button();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mySQLConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.importToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToClipboardCTRLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadDefaultTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadCustomTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveCurrentTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.displayIDFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.randomStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetAllFieldsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.makeItemdbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.armorSetsGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -314,6 +314,213 @@
             this.menuStrip1.Size = new System.Drawing.Size(1105, 31);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = " ";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mySQLConnectionToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.toolStripSeparator2,
+            this.toolStripComboBox1});
+            this.settingsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_setting;
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // mySQLConnectionToolStripMenuItem
+            // 
+            this.mySQLConnectionToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_db_connection;
+            this.mySQLConnectionToolStripMenuItem.Name = "mySQLConnectionToolStripMenuItem";
+            this.mySQLConnectionToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.mySQLConnectionToolStripMenuItem.Text = "Database Connection";
+            this.mySQLConnectionToolStripMenuItem.Click += new System.EventHandler(this.mySQLConnectionToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.toolStripMenuItem1.Image = global::TrinityItemCreator.Properties.Resources.icon_sql_prefix;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 22);
+            this.toolStripMenuItem1.Text = "Sql prefix";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.AutoSize = false;
+            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.toolStripComboBox1.Items.AddRange(new object[] {
+            "SQL Prefix [INSERT]",
+            "SQL Prefix [REPLACE]"});
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(150, 23);
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
+            // 
+            // importToToolStripMenuItem
+            // 
+            this.importToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.databaseToolStripMenuItem});
+            this.importToToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_export;
+            this.importToToolStripMenuItem.Name = "importToToolStripMenuItem";
+            this.importToToolStripMenuItem.Size = new System.Drawing.Size(85, 27);
+            this.importToToolStripMenuItem.Text = "Import to";
+            // 
+            // databaseToolStripMenuItem
+            // 
+            this.databaseToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_database;
+            this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.databaseToolStripMenuItem.Text = "Database";
+            this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
+            // 
+            // exportAsToolStripMenuItem
+            // 
+            this.exportAsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToClipboardCTRLEToolStripMenuItem,
+            this.sQLToolStripMenuItem});
+            this.exportAsToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.exportAsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_import;
+            this.exportAsToolStripMenuItem.Name = "exportAsToolStripMenuItem";
+            this.exportAsToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
+            this.exportAsToolStripMenuItem.Text = "Save as";
+            // 
+            // copyToClipboardCTRLEToolStripMenuItem
+            // 
+            this.copyToClipboardCTRLEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.copyToClipboardCTRLEToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_clipboard;
+            this.copyToClipboardCTRLEToolStripMenuItem.Name = "copyToClipboardCTRLEToolStripMenuItem";
+            this.copyToClipboardCTRLEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.copyToClipboardCTRLEToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.copyToClipboardCTRLEToolStripMenuItem.Text = "Copy to Clipboard";
+            this.copyToClipboardCTRLEToolStripMenuItem.Click += new System.EventHandler(this.CopyToClipboardCTRLEToolStripMenuItem_Click);
+            // 
+            // sQLToolStripMenuItem
+            // 
+            this.sQLToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.sQLToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_sql;
+            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
+            this.sQLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.sQLToolStripMenuItem.Text = "SQL";
+            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
+            // 
+            // templateToolStripMenuItem
+            // 
+            this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadDefaultTemplateToolStripMenuItem,
+            this.loadCustomTemplateToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.saveCurrentTemplateToolStripMenuItem});
+            this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.templateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.templateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_templates;
+            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
+            this.templateToolStripMenuItem.Text = "Templates";
+            // 
+            // loadDefaultTemplateToolStripMenuItem
+            // 
+            this.loadDefaultTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.loadDefaultTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_3;
+            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
+            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default";
+            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadDefaultTemplateToolStripMenuItem_Click);
+            // 
+            // loadCustomTemplateToolStripMenuItem
+            // 
+            this.loadCustomTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.loadCustomTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_1;
+            this.loadCustomTemplateToolStripMenuItem.Name = "loadCustomTemplateToolStripMenuItem";
+            this.loadCustomTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
+            this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom";
+            this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
+            // 
+            // saveCurrentTemplateToolStripMenuItem
+            // 
+            this.saveCurrentTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.saveCurrentTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_2;
+            this.saveCurrentTemplateToolStripMenuItem.Name = "saveCurrentTemplateToolStripMenuItem";
+            this.saveCurrentTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
+            this.saveCurrentTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.saveCurrentTemplateToolStripMenuItem.Text = "Save Custom";
+            this.saveCurrentTemplateToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentTemplateToolStripMenuItem_Click);
+            // 
+            // functionsToolStripMenuItem
+            // 
+            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.displayIDFinderToolStripMenuItem,
+            this.randomStatsToolStripMenuItem,
+            this.resetAllFieldsToolStripMenuItem});
+            this.functionsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_functions;
+            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
+            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
+            this.functionsToolStripMenuItem.Text = "Functions";
+            // 
+            // displayIDFinderToolStripMenuItem
+            // 
+            this.displayIDFinderToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
+            this.displayIDFinderToolStripMenuItem.Name = "displayIDFinderToolStripMenuItem";
+            this.displayIDFinderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.displayIDFinderToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.displayIDFinderToolStripMenuItem.Text = "DisplayID Finder";
+            this.displayIDFinderToolStripMenuItem.Click += new System.EventHandler(this.DisplayIDFinderToolStripMenuItem_Click);
+            // 
+            // randomStatsToolStripMenuItem
+            // 
+            this.randomStatsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
+            this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
+            this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
+            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.randomStatsToolStripMenuItem.Text = "Stats Generator";
+            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.RandomStatsToolStripMenuItem_Click);
+            // 
+            // resetAllFieldsToolStripMenuItem
+            // 
+            this.resetAllFieldsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
+            this.resetAllFieldsToolStripMenuItem.Name = "resetAllFieldsToolStripMenuItem";
+            this.resetAllFieldsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
+            this.resetAllFieldsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.resetAllFieldsToolStripMenuItem.Text = "Reset All Fields";
+            this.resetAllFieldsToolStripMenuItem.Click += new System.EventHandler(this.ResetAllFieldsToolStripMenuItem_Click);
+            // 
+            // makeItemdbcToolStripMenuItem
+            // 
+            this.makeItemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
+            this.makeItemdbcToolStripMenuItem.Name = "makeItemdbcToolStripMenuItem";
+            this.makeItemdbcToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
+            this.makeItemdbcToolStripMenuItem.Text = "Make Item.dbc";
+            this.makeItemdbcToolStripMenuItem.Click += new System.EventHandler(this.makeItemdbcToolStripMenuItem_Click);
+            // 
+            // armorSetsGeneratorToolStripMenuItem
+            // 
+            this.armorSetsGeneratorToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_helmet;
+            this.armorSetsGeneratorToolStripMenuItem.Name = "armorSetsGeneratorToolStripMenuItem";
+            this.armorSetsGeneratorToolStripMenuItem.Size = new System.Drawing.Size(148, 27);
+            this.armorSetsGeneratorToolStripMenuItem.Text = "Armor Sets Generator";
+            this.armorSetsGeneratorToolStripMenuItem.Click += new System.EventHandler(this.armorSetsGeneratorToolStripMenuItem_Click);
+            // 
+            // aBOUTToolStripMenuItem
+            // 
+            this.aBOUTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.aBOUTToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_about;
+            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
+            this.aBOUTToolStripMenuItem.Text = "About";
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.ABOUTToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -3447,212 +3654,6 @@
             this.ButtonAllowableRace.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ButtonAllowableRace.UseVisualStyleBackColor = true;
             this.ButtonAllowableRace.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mySQLConnectionToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.toolStripSeparator2,
-            this.toolStripComboBox1});
-            this.settingsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_setting;
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            // 
-            // mySQLConnectionToolStripMenuItem
-            // 
-            this.mySQLConnectionToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_db_connection;
-            this.mySQLConnectionToolStripMenuItem.Name = "mySQLConnectionToolStripMenuItem";
-            this.mySQLConnectionToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.mySQLConnectionToolStripMenuItem.Text = "Database Connection";
-            this.mySQLConnectionToolStripMenuItem.Click += new System.EventHandler(this.mySQLConnectionToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.toolStripMenuItem1.Image = global::TrinityItemCreator.Properties.Resources.icon_sql_prefix;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 22);
-            this.toolStripMenuItem1.Text = "Sql prefix";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.AutoSize = false;
-            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toolStripComboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            "SQL Prefix [INSERT]",
-            "SQL Prefix [REPLACE]"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(150, 23);
-            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.ToolStripComboBox1_SelectedIndexChanged);
-            // 
-            // importToToolStripMenuItem
-            // 
-            this.importToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.databaseToolStripMenuItem});
-            this.importToToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_export;
-            this.importToToolStripMenuItem.Name = "importToToolStripMenuItem";
-            this.importToToolStripMenuItem.Size = new System.Drawing.Size(85, 27);
-            this.importToToolStripMenuItem.Text = "Import to";
-            // 
-            // databaseToolStripMenuItem
-            // 
-            this.databaseToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_database;
-            this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.databaseToolStripMenuItem.Text = "Database";
-            this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
-            // 
-            // exportAsToolStripMenuItem
-            // 
-            this.exportAsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToClipboardCTRLEToolStripMenuItem,
-            this.sQLToolStripMenuItem});
-            this.exportAsToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.exportAsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_import;
-            this.exportAsToolStripMenuItem.Name = "exportAsToolStripMenuItem";
-            this.exportAsToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
-            this.exportAsToolStripMenuItem.Text = "Save as";
-            // 
-            // copyToClipboardCTRLEToolStripMenuItem
-            // 
-            this.copyToClipboardCTRLEToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.copyToClipboardCTRLEToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_clipboard;
-            this.copyToClipboardCTRLEToolStripMenuItem.Name = "copyToClipboardCTRLEToolStripMenuItem";
-            this.copyToClipboardCTRLEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.copyToClipboardCTRLEToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.copyToClipboardCTRLEToolStripMenuItem.Text = "Copy to Clipboard";
-            this.copyToClipboardCTRLEToolStripMenuItem.Click += new System.EventHandler(this.CopyToClipboardCTRLEToolStripMenuItem_Click);
-            // 
-            // sQLToolStripMenuItem
-            // 
-            this.sQLToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.sQLToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_sql;
-            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
-            this.sQLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.sQLToolStripMenuItem.Text = "SQL";
-            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.SQLToolStripMenuItem_Click);
-            // 
-            // templateToolStripMenuItem
-            // 
-            this.templateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadDefaultTemplateToolStripMenuItem,
-            this.loadCustomTemplateToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.saveCurrentTemplateToolStripMenuItem});
-            this.templateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.templateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.templateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_templates;
-            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
-            this.templateToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
-            this.templateToolStripMenuItem.Text = "Templates";
-            // 
-            // loadDefaultTemplateToolStripMenuItem
-            // 
-            this.loadDefaultTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.loadDefaultTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_3;
-            this.loadDefaultTemplateToolStripMenuItem.Name = "loadDefaultTemplateToolStripMenuItem";
-            this.loadDefaultTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
-            this.loadDefaultTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.loadDefaultTemplateToolStripMenuItem.Text = "Load Default";
-            this.loadDefaultTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadDefaultTemplateToolStripMenuItem_Click);
-            // 
-            // loadCustomTemplateToolStripMenuItem
-            // 
-            this.loadCustomTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.loadCustomTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_1;
-            this.loadCustomTemplateToolStripMenuItem.Name = "loadCustomTemplateToolStripMenuItem";
-            this.loadCustomTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.loadCustomTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.loadCustomTemplateToolStripMenuItem.Text = "Load Custom";
-            this.loadCustomTemplateToolStripMenuItem.Click += new System.EventHandler(this.LoadCustomTemplateToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
-            // 
-            // saveCurrentTemplateToolStripMenuItem
-            // 
-            this.saveCurrentTemplateToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.saveCurrentTemplateToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_right_arrow_2;
-            this.saveCurrentTemplateToolStripMenuItem.Name = "saveCurrentTemplateToolStripMenuItem";
-            this.saveCurrentTemplateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.saveCurrentTemplateToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.saveCurrentTemplateToolStripMenuItem.Text = "Save Custom";
-            this.saveCurrentTemplateToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentTemplateToolStripMenuItem_Click);
-            // 
-            // functionsToolStripMenuItem
-            // 
-            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.displayIDFinderToolStripMenuItem,
-            this.randomStatsToolStripMenuItem,
-            this.resetAllFieldsToolStripMenuItem});
-            this.functionsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_functions;
-            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
-            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
-            this.functionsToolStripMenuItem.Text = "Functions";
-            // 
-            // displayIDFinderToolStripMenuItem
-            // 
-            this.displayIDFinderToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
-            this.displayIDFinderToolStripMenuItem.Name = "displayIDFinderToolStripMenuItem";
-            this.displayIDFinderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.displayIDFinderToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.displayIDFinderToolStripMenuItem.Text = "DisplayID Finder";
-            this.displayIDFinderToolStripMenuItem.Click += new System.EventHandler(this.DisplayIDFinderToolStripMenuItem_Click);
-            // 
-            // randomStatsToolStripMenuItem
-            // 
-            this.randomStatsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
-            this.randomStatsToolStripMenuItem.Name = "randomStatsToolStripMenuItem";
-            this.randomStatsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.randomStatsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.randomStatsToolStripMenuItem.Text = "Stats Generator";
-            this.randomStatsToolStripMenuItem.Click += new System.EventHandler(this.RandomStatsToolStripMenuItem_Click);
-            // 
-            // resetAllFieldsToolStripMenuItem
-            // 
-            this.resetAllFieldsToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_more;
-            this.resetAllFieldsToolStripMenuItem.Name = "resetAllFieldsToolStripMenuItem";
-            this.resetAllFieldsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.resetAllFieldsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.resetAllFieldsToolStripMenuItem.Text = "Reset All Fields";
-            this.resetAllFieldsToolStripMenuItem.Click += new System.EventHandler(this.ResetAllFieldsToolStripMenuItem_Click);
-            // 
-            // makeItemdbcToolStripMenuItem
-            // 
-            this.makeItemdbcToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_dbc;
-            this.makeItemdbcToolStripMenuItem.Name = "makeItemdbcToolStripMenuItem";
-            this.makeItemdbcToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
-            this.makeItemdbcToolStripMenuItem.Text = "Make Item.dbc";
-            this.makeItemdbcToolStripMenuItem.Click += new System.EventHandler(this.makeItemdbcToolStripMenuItem_Click);
-            // 
-            // aBOUTToolStripMenuItem
-            // 
-            this.aBOUTToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.aBOUTToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_about;
-            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
-            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
-            this.aBOUTToolStripMenuItem.Text = "About";
-            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.ABOUTToolStripMenuItem_Click);
-            // 
-            // armorSetsGeneratorToolStripMenuItem
-            // 
-            this.armorSetsGeneratorToolStripMenuItem.Image = global::TrinityItemCreator.Properties.Resources.icon_helmet;
-            this.armorSetsGeneratorToolStripMenuItem.Name = "armorSetsGeneratorToolStripMenuItem";
-            this.armorSetsGeneratorToolStripMenuItem.Size = new System.Drawing.Size(148, 27);
-            this.armorSetsGeneratorToolStripMenuItem.Text = "Armor Sets Generator";
             // 
             // Form_Main
             // 

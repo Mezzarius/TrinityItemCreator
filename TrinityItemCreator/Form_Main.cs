@@ -949,5 +949,11 @@ namespace TrinityItemCreator
                     myf.ItemsToDBC();
             }
         }
+
+        private void armorSetsGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Armor_Sets_Creator arsc = new Form_Armor_Sets_Creator(this);
+            arsc.ShowDialog();
+        }
     }
 }

@@ -53,34 +53,34 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.stat1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.stat2 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.stat3 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.stat4 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.stat5 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.stat6 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.stat7 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.stat8 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.stat9 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.stat10 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ChbAllOptions = new System.Windows.Forms.CheckBox();
@@ -94,16 +94,16 @@
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.Legs = new System.Windows.Forms.CheckBox();
             this.NoFlags = new System.Windows.Forms.CheckBox();
-            this.myTextBox10 = new MyTextBox();
-            this.myTextBox9 = new MyTextBox();
-            this.myTextBox8 = new MyTextBox();
-            this.myTextBox7 = new MyTextBox();
-            this.myTextBox6 = new MyTextBox();
-            this.myTextBox5 = new MyTextBox();
-            this.myTextBox4 = new MyTextBox();
-            this.myTextBox3 = new MyTextBox();
-            this.myTextBox2 = new MyTextBox();
-            this.myTextBox1 = new MyTextBox();
+            this.value10 = new MyTextBox();
+            this.value9 = new MyTextBox();
+            this.value8 = new MyTextBox();
+            this.value7 = new MyTextBox();
+            this.value6 = new MyTextBox();
+            this.value5 = new MyTextBox();
+            this.value4 = new MyTextBox();
+            this.value3 = new MyTextBox();
+            this.value2 = new MyTextBox();
+            this.value1 = new MyTextBox();
             this.tb_item_description = new MyTextBox();
             this.EntryTo = new MyTextBox();
             this.EntryFrom = new MyTextBox();
@@ -121,7 +121,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 613);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(786, 42);
+            this.panel3.Size = new System.Drawing.Size(777, 42);
             this.panel3.TabIndex = 153;
             // 
             // button1
@@ -168,7 +168,7 @@
             this.ButtonFinish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonFinish.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonFinish.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ButtonFinish.Location = new System.Drawing.Point(644, 8);
+            this.ButtonFinish.Location = new System.Drawing.Point(635, 8);
             this.ButtonFinish.Name = "ButtonFinish";
             this.ButtonFinish.Size = new System.Drawing.Size(117, 27);
             this.ButtonFinish.TabIndex = 154;
@@ -183,7 +183,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(786, 42);
+            this.panel1.Size = new System.Drawing.Size(777, 42);
             this.panel1.TabIndex = 152;
             // 
             // label15
@@ -437,14 +437,14 @@
             this.label8.TabIndex = 175;
             this.label8.Text = "Multiply stat value";
             // 
-            // comboBox7
+            // stat1
             // 
-            this.comboBox7.BackColor = System.Drawing.Color.White;
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.stat1.BackColor = System.Drawing.Color.White;
+            this.stat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat1.ForeColor = System.Drawing.Color.DimGray;
+            this.stat1.FormattingEnabled = true;
+            this.stat1.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -489,10 +489,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox7.Location = new System.Drawing.Point(154, 250);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(308, 23);
-            this.comboBox7.TabIndex = 176;
+            this.stat1.Location = new System.Drawing.Point(154, 250);
+            this.stat1.Name = "stat1";
+            this.stat1.Size = new System.Drawing.Size(308, 23);
+            this.stat1.TabIndex = 176;
             // 
             // label9
             // 
@@ -518,14 +518,14 @@
             this.label10.TabIndex = 181;
             this.label10.Text = "by %";
             // 
-            // comboBox1
+            // stat2
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.stat2.BackColor = System.Drawing.Color.White;
+            this.stat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat2.ForeColor = System.Drawing.Color.DimGray;
+            this.stat2.FormattingEnabled = true;
+            this.stat2.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -570,10 +570,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox1.Location = new System.Drawing.Point(154, 279);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(308, 23);
-            this.comboBox1.TabIndex = 180;
+            this.stat2.Location = new System.Drawing.Point(154, 279);
+            this.stat2.Name = "stat2";
+            this.stat2.Size = new System.Drawing.Size(308, 23);
+            this.stat2.TabIndex = 180;
             // 
             // label11
             // 
@@ -599,14 +599,14 @@
             this.label12.TabIndex = 185;
             this.label12.Text = "by %";
             // 
-            // comboBox2
+            // stat3
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.stat3.BackColor = System.Drawing.Color.White;
+            this.stat3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat3.ForeColor = System.Drawing.Color.DimGray;
+            this.stat3.FormattingEnabled = true;
+            this.stat3.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -651,10 +651,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox2.Location = new System.Drawing.Point(154, 308);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(308, 23);
-            this.comboBox2.TabIndex = 184;
+            this.stat3.Location = new System.Drawing.Point(154, 308);
+            this.stat3.Name = "stat3";
+            this.stat3.Size = new System.Drawing.Size(308, 23);
+            this.stat3.TabIndex = 184;
             // 
             // label13
             // 
@@ -680,14 +680,14 @@
             this.label14.TabIndex = 189;
             this.label14.Text = "by %";
             // 
-            // comboBox3
+            // stat4
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.White;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.stat4.BackColor = System.Drawing.Color.White;
+            this.stat4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat4.ForeColor = System.Drawing.Color.DimGray;
+            this.stat4.FormattingEnabled = true;
+            this.stat4.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -732,10 +732,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox3.Location = new System.Drawing.Point(154, 337);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(308, 23);
-            this.comboBox3.TabIndex = 188;
+            this.stat4.Location = new System.Drawing.Point(154, 337);
+            this.stat4.Name = "stat4";
+            this.stat4.Size = new System.Drawing.Size(308, 23);
+            this.stat4.TabIndex = 188;
             // 
             // label16
             // 
@@ -761,14 +761,14 @@
             this.label17.TabIndex = 193;
             this.label17.Text = "by %";
             // 
-            // comboBox4
+            // stat5
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.White;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.stat5.BackColor = System.Drawing.Color.White;
+            this.stat5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat5.ForeColor = System.Drawing.Color.DimGray;
+            this.stat5.FormattingEnabled = true;
+            this.stat5.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -813,10 +813,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox4.Location = new System.Drawing.Point(154, 366);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(308, 23);
-            this.comboBox4.TabIndex = 192;
+            this.stat5.Location = new System.Drawing.Point(154, 366);
+            this.stat5.Name = "stat5";
+            this.stat5.Size = new System.Drawing.Size(308, 23);
+            this.stat5.TabIndex = 192;
             // 
             // label18
             // 
@@ -842,14 +842,14 @@
             this.label19.TabIndex = 197;
             this.label19.Text = "by %";
             // 
-            // comboBox5
+            // stat6
             // 
-            this.comboBox5.BackColor = System.Drawing.Color.White;
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.stat6.BackColor = System.Drawing.Color.White;
+            this.stat6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat6.ForeColor = System.Drawing.Color.DimGray;
+            this.stat6.FormattingEnabled = true;
+            this.stat6.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -894,10 +894,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox5.Location = new System.Drawing.Point(154, 395);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(308, 23);
-            this.comboBox5.TabIndex = 196;
+            this.stat6.Location = new System.Drawing.Point(154, 395);
+            this.stat6.Name = "stat6";
+            this.stat6.Size = new System.Drawing.Size(308, 23);
+            this.stat6.TabIndex = 196;
             // 
             // label20
             // 
@@ -923,14 +923,14 @@
             this.label21.TabIndex = 201;
             this.label21.Text = "by %";
             // 
-            // comboBox6
+            // stat7
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.White;
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.stat7.BackColor = System.Drawing.Color.White;
+            this.stat7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat7.ForeColor = System.Drawing.Color.DimGray;
+            this.stat7.FormattingEnabled = true;
+            this.stat7.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -975,10 +975,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox6.Location = new System.Drawing.Point(154, 424);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(308, 23);
-            this.comboBox6.TabIndex = 200;
+            this.stat7.Location = new System.Drawing.Point(154, 424);
+            this.stat7.Name = "stat7";
+            this.stat7.Size = new System.Drawing.Size(308, 23);
+            this.stat7.TabIndex = 200;
             // 
             // label22
             // 
@@ -1004,14 +1004,14 @@
             this.label23.TabIndex = 205;
             this.label23.Text = "by %";
             // 
-            // comboBox8
+            // stat8
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.White;
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox8.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.stat8.BackColor = System.Drawing.Color.White;
+            this.stat8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat8.ForeColor = System.Drawing.Color.DimGray;
+            this.stat8.FormattingEnabled = true;
+            this.stat8.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -1056,10 +1056,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox8.Location = new System.Drawing.Point(154, 453);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(308, 23);
-            this.comboBox8.TabIndex = 204;
+            this.stat8.Location = new System.Drawing.Point(154, 453);
+            this.stat8.Name = "stat8";
+            this.stat8.Size = new System.Drawing.Size(308, 23);
+            this.stat8.TabIndex = 204;
             // 
             // label24
             // 
@@ -1085,14 +1085,14 @@
             this.label25.TabIndex = 209;
             this.label25.Text = "by %";
             // 
-            // comboBox9
+            // stat9
             // 
-            this.comboBox9.BackColor = System.Drawing.Color.White;
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox9.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.stat9.BackColor = System.Drawing.Color.White;
+            this.stat9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat9.ForeColor = System.Drawing.Color.DimGray;
+            this.stat9.FormattingEnabled = true;
+            this.stat9.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -1137,10 +1137,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox9.Location = new System.Drawing.Point(154, 482);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(308, 23);
-            this.comboBox9.TabIndex = 208;
+            this.stat9.Location = new System.Drawing.Point(154, 482);
+            this.stat9.Name = "stat9";
+            this.stat9.Size = new System.Drawing.Size(308, 23);
+            this.stat9.TabIndex = 208;
             // 
             // label26
             // 
@@ -1166,14 +1166,14 @@
             this.label27.TabIndex = 213;
             this.label27.Text = "by %";
             // 
-            // comboBox10
+            // stat10
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.White;
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox10.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.stat10.BackColor = System.Drawing.Color.White;
+            this.stat10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stat10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stat10.ForeColor = System.Drawing.Color.DimGray;
+            this.stat10.FormattingEnabled = true;
+            this.stat10.Items.AddRange(new object[] {
             "[0]  ITEM_MOD_MANA",
             "[1]  ITEM_MOD_HEALTH",
             "[3]  ITEM_MOD_AGILITY",
@@ -1218,10 +1218,10 @@
             "[46] ITEM_MOD_ HEALTH_REGEN",
             "[47] ITEM_MOD_SPELL_PENETRATION",
             "[48] ITEM_MOD_BLOCK_VALUE"});
-            this.comboBox10.Location = new System.Drawing.Point(154, 511);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(308, 23);
-            this.comboBox10.TabIndex = 212;
+            this.stat10.Location = new System.Drawing.Point(154, 511);
+            this.stat10.Name = "stat10";
+            this.stat10.Size = new System.Drawing.Size(308, 23);
+            this.stat10.TabIndex = 212;
             // 
             // label28
             // 
@@ -1385,135 +1385,135 @@
             this.NoFlags.Text = "No Flags / Custom / Extra";
             this.NoFlags.UseVisualStyleBackColor = true;
             // 
-            // myTextBox10
+            // value10
             // 
-            this.myTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox10.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox10.Location = new System.Drawing.Point(514, 513);
-            this.myTextBox10.Name = "myTextBox10";
-            this.myTextBox10.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox10.TabIndex = 214;
-            this.myTextBox10.Tag = "";
-            this.myTextBox10.Text = "1";
-            this.myTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value10.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value10.Location = new System.Drawing.Point(514, 513);
+            this.value10.Name = "value10";
+            this.value10.Size = new System.Drawing.Size(100, 18);
+            this.value10.TabIndex = 214;
+            this.value10.Tag = "";
+            this.value10.Text = "1";
+            this.value10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox9
+            // value9
             // 
-            this.myTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox9.Location = new System.Drawing.Point(514, 484);
-            this.myTextBox9.Name = "myTextBox9";
-            this.myTextBox9.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox9.TabIndex = 210;
-            this.myTextBox9.Tag = "";
-            this.myTextBox9.Text = "1";
-            this.myTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value9.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value9.Location = new System.Drawing.Point(514, 484);
+            this.value9.Name = "value9";
+            this.value9.Size = new System.Drawing.Size(100, 18);
+            this.value9.TabIndex = 210;
+            this.value9.Tag = "";
+            this.value9.Text = "1";
+            this.value9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox8
+            // value8
             // 
-            this.myTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox8.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox8.Location = new System.Drawing.Point(514, 455);
-            this.myTextBox8.Name = "myTextBox8";
-            this.myTextBox8.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox8.TabIndex = 206;
-            this.myTextBox8.Tag = "";
-            this.myTextBox8.Text = "1";
-            this.myTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value8.Location = new System.Drawing.Point(514, 455);
+            this.value8.Name = "value8";
+            this.value8.Size = new System.Drawing.Size(100, 18);
+            this.value8.TabIndex = 206;
+            this.value8.Tag = "";
+            this.value8.Text = "1";
+            this.value8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox7
+            // value7
             // 
-            this.myTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox7.Location = new System.Drawing.Point(514, 426);
-            this.myTextBox7.Name = "myTextBox7";
-            this.myTextBox7.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox7.TabIndex = 202;
-            this.myTextBox7.Tag = "";
-            this.myTextBox7.Text = "1";
-            this.myTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value7.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value7.Location = new System.Drawing.Point(514, 426);
+            this.value7.Name = "value7";
+            this.value7.Size = new System.Drawing.Size(100, 18);
+            this.value7.TabIndex = 202;
+            this.value7.Tag = "";
+            this.value7.Text = "1";
+            this.value7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox6
+            // value6
             // 
-            this.myTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox6.Location = new System.Drawing.Point(514, 397);
-            this.myTextBox6.Name = "myTextBox6";
-            this.myTextBox6.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox6.TabIndex = 198;
-            this.myTextBox6.Tag = "";
-            this.myTextBox6.Text = "1";
-            this.myTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value6.Location = new System.Drawing.Point(514, 397);
+            this.value6.Name = "value6";
+            this.value6.Size = new System.Drawing.Size(100, 18);
+            this.value6.TabIndex = 198;
+            this.value6.Tag = "";
+            this.value6.Text = "1";
+            this.value6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox5
+            // value5
             // 
-            this.myTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox5.Location = new System.Drawing.Point(514, 368);
-            this.myTextBox5.Name = "myTextBox5";
-            this.myTextBox5.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox5.TabIndex = 194;
-            this.myTextBox5.Tag = "";
-            this.myTextBox5.Text = "1";
-            this.myTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value5.Location = new System.Drawing.Point(514, 368);
+            this.value5.Name = "value5";
+            this.value5.Size = new System.Drawing.Size(100, 18);
+            this.value5.TabIndex = 194;
+            this.value5.Tag = "";
+            this.value5.Text = "1";
+            this.value5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox4
+            // value4
             // 
-            this.myTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox4.Location = new System.Drawing.Point(514, 339);
-            this.myTextBox4.Name = "myTextBox4";
-            this.myTextBox4.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox4.TabIndex = 190;
-            this.myTextBox4.Tag = "";
-            this.myTextBox4.Text = "1";
-            this.myTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value4.Location = new System.Drawing.Point(514, 339);
+            this.value4.Name = "value4";
+            this.value4.Size = new System.Drawing.Size(100, 18);
+            this.value4.TabIndex = 190;
+            this.value4.Tag = "";
+            this.value4.Text = "1";
+            this.value4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox3
+            // value3
             // 
-            this.myTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox3.Location = new System.Drawing.Point(514, 310);
-            this.myTextBox3.Name = "myTextBox3";
-            this.myTextBox3.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox3.TabIndex = 186;
-            this.myTextBox3.Tag = "";
-            this.myTextBox3.Text = "1";
-            this.myTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value3.Location = new System.Drawing.Point(514, 310);
+            this.value3.Name = "value3";
+            this.value3.Size = new System.Drawing.Size(100, 18);
+            this.value3.TabIndex = 186;
+            this.value3.Tag = "";
+            this.value3.Text = "1";
+            this.value3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox2
+            // value2
             // 
-            this.myTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox2.Location = new System.Drawing.Point(514, 281);
-            this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox2.TabIndex = 182;
-            this.myTextBox2.Tag = "";
-            this.myTextBox2.Text = "1";
-            this.myTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value2.Location = new System.Drawing.Point(514, 281);
+            this.value2.Name = "value2";
+            this.value2.Size = new System.Drawing.Size(100, 18);
+            this.value2.TabIndex = 182;
+            this.value2.Tag = "";
+            this.value2.Text = "1";
+            this.value2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // myTextBox1
+            // value1
             // 
-            this.myTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.myTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.myTextBox1.Location = new System.Drawing.Point(514, 252);
-            this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.Size = new System.Drawing.Size(100, 18);
-            this.myTextBox1.TabIndex = 178;
-            this.myTextBox1.Tag = "";
-            this.myTextBox1.Text = "1";
-            this.myTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.value1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.value1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.value1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.value1.Location = new System.Drawing.Point(514, 252);
+            this.value1.Name = "value1";
+            this.value1.Size = new System.Drawing.Size(100, 18);
+            this.value1.TabIndex = 178;
+            this.value1.Tag = "";
+            this.value1.Text = "1";
+            this.value1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_item_description
             // 
@@ -1574,7 +1574,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(786, 655);
+            this.ClientSize = new System.Drawing.Size(777, 655);
             this.ControlBox = false;
             this.Controls.Add(this.NoFlags);
             this.Controls.Add(this.Legs);
@@ -1588,45 +1588,45 @@
             this.Controls.Add(this.AllClasses);
             this.Controls.Add(this.ChbAllOptions);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.myTextBox10);
+            this.Controls.Add(this.value10);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.comboBox10);
+            this.Controls.Add(this.stat10);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this.myTextBox9);
+            this.Controls.Add(this.value9);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.stat9);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.myTextBox8);
+            this.Controls.Add(this.value8);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.stat8);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.myTextBox7);
+            this.Controls.Add(this.value7);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.stat7);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.myTextBox6);
+            this.Controls.Add(this.value6);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.stat6);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.myTextBox5);
+            this.Controls.Add(this.value5);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.stat5);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.myTextBox4);
+            this.Controls.Add(this.value4);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.stat4);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.myTextBox3);
+            this.Controls.Add(this.value3);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.stat3);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.myTextBox2);
+            this.Controls.Add(this.value2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.stat2);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.myTextBox1);
+            this.Controls.Add(this.value1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.stat1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label6);
@@ -1703,44 +1703,44 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.ComboBox comboBox7;
+        public System.Windows.Forms.ComboBox stat1;
         private System.Windows.Forms.Label label9;
-        public MyTextBox myTextBox1;
-        public MyTextBox myTextBox2;
+        public MyTextBox value1;
+        public MyTextBox value2;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox stat2;
         private System.Windows.Forms.Label label11;
-        public MyTextBox myTextBox3;
+        public MyTextBox value3;
         private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox stat3;
         private System.Windows.Forms.Label label13;
-        public MyTextBox myTextBox4;
+        public MyTextBox value4;
         private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.ComboBox stat4;
         private System.Windows.Forms.Label label16;
-        public MyTextBox myTextBox5;
+        public MyTextBox value5;
         private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.ComboBox comboBox4;
+        public System.Windows.Forms.ComboBox stat5;
         private System.Windows.Forms.Label label18;
-        public MyTextBox myTextBox6;
+        public MyTextBox value6;
         private System.Windows.Forms.Label label19;
-        public System.Windows.Forms.ComboBox comboBox5;
+        public System.Windows.Forms.ComboBox stat6;
         private System.Windows.Forms.Label label20;
-        public MyTextBox myTextBox7;
+        public MyTextBox value7;
         private System.Windows.Forms.Label label21;
-        public System.Windows.Forms.ComboBox comboBox6;
+        public System.Windows.Forms.ComboBox stat7;
         private System.Windows.Forms.Label label22;
-        public MyTextBox myTextBox8;
+        public MyTextBox value8;
         private System.Windows.Forms.Label label23;
-        public System.Windows.Forms.ComboBox comboBox8;
+        public System.Windows.Forms.ComboBox stat8;
         private System.Windows.Forms.Label label24;
-        public MyTextBox myTextBox9;
+        public MyTextBox value9;
         private System.Windows.Forms.Label label25;
-        public System.Windows.Forms.ComboBox comboBox9;
+        public System.Windows.Forms.ComboBox stat9;
         private System.Windows.Forms.Label label26;
-        public MyTextBox myTextBox10;
+        public MyTextBox value10;
         private System.Windows.Forms.Label label27;
-        public System.Windows.Forms.ComboBox comboBox10;
+        public System.Windows.Forms.ComboBox stat10;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel5;

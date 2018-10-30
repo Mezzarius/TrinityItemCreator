@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -802,6 +803,11 @@ namespace TrinityItemCreator
             string dbConnection = "Database Connection: ";
             LabelDBConnection.Text = dbConnection + (Functions.IsDBConnected() ? "Yes" : "None");
             LabelDBConnection.ForeColor = Functions.IsDBConnected() ? Color.LimeGreen : Color.IndianRed;
+
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+            string version = fvi.FileVersion;
+            label15.Text += $" Version {version}";
         }
 
         private void SaveCurrentTemplateToolStripMenuItem_Click(object sender, EventArgs e)

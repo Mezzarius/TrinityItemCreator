@@ -18,8 +18,18 @@ namespace TrinityItemCreator.Dialog_Forms
         private ComboBox[] stats;
         private MyTextBox[] values;
         private List<string> myquery = new List<string>();
+        private int[] tier1;
+        private int[] tier2;
+        private int[] tier3;
+        private int[] tier4;
+        private int[] tier5;
+        private int[] tier6;
+        private int[] tier7;
+        private int[] tier8;
+        private int[] tier9;
+        private int[] tier10;
 
-    public Form_Armor_Sets_Creator(Form_Main form1)
+        public Form_Armor_Sets_Creator(Form_Main form1)
         {
             InitializeComponent();
 
@@ -31,6 +41,69 @@ namespace TrinityItemCreator.Dialog_Forms
             options = new[] { AllClasses, AllRaces, NoMoneyCost, NoSellPrice, NoFlags };
             stats = new[] { stat1, stat2, stat3, stat4, stat5, stat6, stat7, stat8, stat9, stat10 };
             values = new[] { value1, value2, value3, value4, value5, value6, value7, value8, value9, value10 };
+
+            InitializeTier1();
+            InitializeTier2();
+            InitializeTier3();
+            InitializeTier4();
+            InitializeTier5();
+            InitializeTier6();
+            InitializeTier7();
+            InitializeTier8();
+            InitializeTier9();
+            InitializeTier10();
+        }
+
+        private void InitializeTier1()
+        {
+            tier1[1] = 209;         //warrior
+            tier1[2] = 208;         //paladin
+            tier1[4] = 206;         //hunter
+            tier1[8] = 204;         //rogue
+            tier1[16] = 202;        //priest
+            tier1[64] = 207;        //shaman
+            tier1[128] = 201;       //mage
+            tier1[256] = 203;       //warlock
+            tier1[1024] = 205;      //druid
+        }
+
+        private void InitializeTier2()
+        {
+            tier2[1] = 218;         //warrior
+            tier2[2] = 217;         //paladin
+            tier2[4] = 215;         //hunter
+            tier2[8] = 213;         //rogue
+            tier2[16] = 211;        //priest
+            tier2[64] = 216;        //shaman
+            tier2[128] = 213;       //mage
+            tier2[256] = 212;       //warlock
+            tier2[1024] = 214;      //druid
+        }
+
+        private void InitializeTier3()
+        {
+            tier3[1] = 523;         //warrior
+            tier3[2] = 528;         //paladin
+            tier3[4] = 530;         //hunter
+            tier3[8] = 524;         //rogue
+            tier3[16] = 525;        //priest
+            tier3[64] = 527;        //shaman
+            tier3[128] = 526;       //mage
+            tier3[256] = 529;       //warlock
+            tier3[1024] = 521;      //druid
+        }
+
+        private void InitializeTier4()
+        {
+            tier4[1] = 523;         //warrior
+            tier4[2] = 528;         //paladin
+            tier4[4] = 530;         //hunter
+            tier4[8] = 524;         //rogue
+            tier4[16] = 525;        //priest
+            tier4[64] = 527;        //shaman
+            tier4[128] = 526;       //mage
+            tier4[256] = 529;       //warlock
+            tier4[1024] = 521;      //druid
         }
 
         protected override CreateParams CreateParams
@@ -145,14 +218,26 @@ namespace TrinityItemCreator.Dialog_Forms
             string table_temp = "item_template_copy_temp";
 
             myquery.Clear();
-            myquery.AddRange(new string[]
-            {
-                // Create the temporary table where to handle these items
-                $"CREATE TABLE IF NOT EXISTS {table_temp} LIKE item_template;",
+            myquery.Add($"CREATE TABLE IF NOT EXISTS {table_temp} LIKE item_template;");
 
-                // Drop table after all operations are done
-                $"DROP TABLE IF EXISTS {table_temp};"
-            });
+            if (BaseStatsFrom.Enabled)
+            {
+                if (BaseStatsFrom.SelectedIndex == 0) // tier 1
+                {
+                    string s = BaseStatsFrom.SelectedItem.ToString();
+                    uint.TryParse(s.Remove(s.IndexOf(']')).Substring(s.IndexOf('[') + 1), out uint classid);
+                    string qline = "WHERE itemset IN(";
+
+                    if (classid == 1) // warrior
+                        qline += "209";
+
+                            qline += ")";
+                }
+            }
+            else
+            {
+
+            }
 
             return string.Empty;
         }

@@ -83,6 +83,16 @@ namespace TrinityItemCreator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_arrow_next_step {
+            get {
+                object obj = ResourceManager.GetObject("icon_arrow_next_step", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_bag {
             get {
                 object obj = ResourceManager.GetObject("icon_bag", resourceCulture);

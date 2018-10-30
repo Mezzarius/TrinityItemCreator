@@ -103,6 +103,12 @@
     <Compile Include="Dialog Forms\Form_Load_Custom_Template.Designer.cs">
       <DependentUpon>Form_Load_Custom_Template.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialog Forms\PagesArmorSetCreator\Page1ArmorSetCreator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog Forms\PagesArmorSetCreator\Page1ArmorSetCreator.Designer.cs">
+      <DependentUpon>Page1ArmorSetCreator.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyClass\BinaryReaderExtensions.cs" />
     <Compile Include="MyClass\DBC.cs" />
     <Compile Include="MyClass\DBCReader.cs" />
@@ -203,6 +209,9 @@
     <EmbeddedResource Include="Dialog Forms\Form_DB_Info.resx">
       <DependentUpon>Form_DB_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Forms\PagesArmorSetCreator\Page1ArmorSetCreator.resx">
+      <DependentUpon>Page1ArmorSetCreator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -302,6 +311,7 @@
     <None Include="Resources\icon_sql_prefix.png" />
     <None Include="Resources\icon_more.png" />
     <None Include="Resources\icon_helmet.png" />
+    <None Include="Resources\icon_arrow_next_step.png" />
     <Content Include="templates\My First Template Example.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

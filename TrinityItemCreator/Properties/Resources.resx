@@ -160,8 +160,8 @@
   <data name="large_inv_misc_dust_infinite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_inv_misc_dust_infinite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium_achievement_bg_captureflag_eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medium_achievement_bg_captureflag_eos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_templates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_templates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="small_spell_shaman_improvedstormstrike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_spell_shaman_improvedstormstrike.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,6 +174,9 @@
   </data>
   <data name="icon_clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_right_arrow_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_right_arrow_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,9 +193,6 @@
   <data name="icon_more" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medium_spell_fire_frostresistancetotem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medium_spell_fire_frostresistancetotem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="large_ability_warrior_weaponmastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_ability_warrior_weaponmastery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,8 +208,8 @@
   <data name="small_ability_rogue_dualweild" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_ability_rogue_dualweild.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="small_ability_paladin_hammeroftherighteous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small_ability_paladin_hammeroftherighteous.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_inv_enchant_formulaepic_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_inv_enchant_formulaepic_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large_achievement_bg_interruptx_flagcapture_attempts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_achievement_bg_interruptx_flagcapture_attempts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,26 +220,26 @@
   <data name="medium_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medium_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_right_arrow_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_right_arrow_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="small_petbattle_health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_petbattle_health.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_functions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_functions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_inv_jewelcrafting_gem_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large_inv_jewelcrafting_gem_37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medium_spell_fire_frostresistancetotem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_spell_fire_frostresistancetotem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large_achievement_quests_completed_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_achievement_quests_completed_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_right_arrow_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_right_arrow_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medium_achievement_bg_captureflag_eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medium_achievement_bg_captureflag_eos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_sql_prefix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_sql_prefix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_templates" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_templates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medium_inv_misc_tournaments_tabard_bloodelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medium_inv_misc_tournaments_tabard_bloodelf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,8 +259,8 @@
   <data name="small_ability_mage_frostfirebolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_ability_mage_frostfirebolt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_inv_enchant_formulaepic_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large_inv_enchant_formulaepic_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_inv_jewelcrafting_gem_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_inv_jewelcrafting_gem_37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large_inv_misc_ammo_bullet_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_inv_misc_ammo_bullet_06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,14 +274,20 @@
   <data name="icon_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="small_ability_paladin_hammeroftherighteous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_ability_paladin_hammeroftherighteous.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="small_achievement_character_gnome_male" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_achievement_character_gnome_male.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_inv_misc_head_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large_inv_misc_head_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="small_achievement_character_dwarf_male" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_achievement_character_dwarf_male.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="small_petbattle_health_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_petbattle_health_down.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_helmet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_helmet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_about" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,9 +313,6 @@
   <data name="small_achievement_character_draenei_female" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_achievement_character_draenei_female.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="small_achievement_character_dwarf_male" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small_achievement_character_dwarf_male.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="small_ability_hunter_snipershot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\small_ability_hunter_snipershot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -322,7 +325,7 @@
   <data name="icon_database" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_helmet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_helmet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_arrow_next_step" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_arrow_next_step.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
